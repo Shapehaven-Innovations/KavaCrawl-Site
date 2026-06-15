@@ -1,4 +1,7 @@
 .claude
 docs
 .superpowers
-.DS_Store
+.DS_Storespecs
+/specs
+specs
+spec

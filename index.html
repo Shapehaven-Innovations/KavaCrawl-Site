@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover kava bars, tea houses & hidden gems near you. Live check-ins, crawl routes & a community that knows the scene.">
+  <title>KavaCrawl — Your Island Crawl Starts Here</title>
+  <style>
+    /* ── Reset & variables ── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --teal:        #0a1f1a;
+      --gold:        #c9a84c;
+      --cream:       #f5ede0;
+      --cream-mid:   #ede3d0;
+      --brown-dark:  #1a1208;
+      --brown-mid:   #7a6240;
+      --sub-hero:    rgba(157,184,160,0.85);
+      --muted:       rgba(26,18,8,0.55);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--cream);
+      color: var(--brown-dark);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; }
+
+    img { display: block; max-width: 100%; }
+
+    /* ── Nav ── */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 48px;
+      z-index: 100;
+      background: rgba(10,31,26,0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(201,168,76,0.08);
+    }
+
+    .nav-brand {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .nav-link {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: rgba(245,240,232,0.65);
+      font-size: 12px;
+      text-decoration: none;
+    }
+
+    .nav-link:hover { color: rgba(245,240,232,0.7); }
+
+    /* ── Hero ── */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(20,80,50,0.6) 0%, transparent 60%),
+        var(--teal);
+      overflow: hidden;
+    }
+
+    .hero-logo {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin-bottom: 32px;
+      box-shadow: 0 0 80px rgba(201,168,76,0.18), 0 16px 60px rgba(0,0,0,0.6);
+    }
+
+    .eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    #hero h1 {
+      font-size: clamp(38px, 5.5vw, 64px);
+      font-weight: 900;
+      font-style: italic;
+      line-height: 1.05;
+      margin-bottom: 22px;
+      max-width: 660px;
+      color: #f5f0e8;
+    }
+
+    .hero-sub {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--sub-hero);
+      font-size: 16px;
+      line-height: 1.7;
+      max-width: 440px;
+      margin-bottom: 52px;
+    }
+
+    .cta-row {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-appstore {
+      background: var(--gold);
+      color: var(--teal);
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 32px rgba(201,168,76,0.28);
+    }
+
+    .btn-appstore:hover { opacity: 0.9; }
+
+    .download-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .qr-wrap {
+      background: white;
+      border-radius: 14px;
+      padding: 7px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+      margin-bottom: 9px;
+    }
+
+    .qr-wrap img { width: 120px; height: 120px; border-radius: 7px; }
+
+    .qr-caption {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: rgba(245,240,232,0.55);
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .android-note {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--gold);
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 20px;
+      padding: 3px 11px;
+    }
+
+    .dots {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 48px;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(245,240,232,0.18);
+    }
+
+    .dot.active {
+      width: 22px;
+      border-radius: 3px;
+      background: var(--gold);
+    }
+
+    /* ── Stats ── */
+    #stats {
+      background: var(--cream);
+      padding: 56px 40px 64px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .stat-widget {
+      flex: 1;
+      min-width: 190px;
+      max-width: 250px;
+      background: white;
+      border-radius: 18px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      box-shadow: 0 2px 16px rgba(122,98,64,0.09);
+      border: 1px solid rgba(201,168,76,0.12);
+    }
+
+    .stat-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(201,168,76,0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+    }
+
+    .stat-value {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--brown-dark);
+      font-size: 34px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .stat-value--sm { font-size: 24px; letter-spacing: -0.5px; }
+
+    .stat-label {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--gold);
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .stat-desc {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--brown-mid);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    /* ── Features ── */
+    #features {
+      background: var(--cream);
+      padding: 100px 40px;
+    }
+
+    #features .eyebrow { text-align: center; margin-bottom: 14px; }
+
+    #features h2 {
+      font-size: clamp(28px, 3.5vw, 44px);
+      font-weight: 900;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 64px;
+      line-height: 1.1;
+      color: var(--brown-dark);
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      position: relative;
+      background: white;
+      border: 1px solid rgba(201,168,76,0.12);
+      border-radius: 20px;
+      padding: 36px 30px 32px;
+      overflow: hidden;
+      box-shadow: 0 2px 24px rgba(122,98,64,0.07);
+    }
+
+    .feature-num {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 64px;
+      font-weight: 900;
+      color: rgba(201,168,76,0.1);
+      line-height: 1;
+      user-select: none;
+    }
+
+    .feature-tag {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--gold);
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .feature-card h3 {
+      font-size: 20px;
+      font-weight: 800;
+      font-style: italic;
+      margin-bottom: 12px;
+      line-height: 1.2;
+      color: var(--brown-dark);
+    }
+
+    .feature-card p {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--brown-mid);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    /* ── Screenshots ── */
+    #screenshots {
+      background:
+        radial-gradient(ellipse at 80% 30%, rgba(15,55,38,0.4) 0%, transparent 55%),
+        #091a14;
+      padding: 100px 24px 120px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    #screenshots .eyebrow { margin-bottom: 14px; }
+
+    #screenshots h2 {
+      font-size: clamp(28px, 3.5vw, 44px);
+      font-weight: 900;
+      font-style: italic;
+      margin-bottom: 0;
+      line-height: 1.1;
+      color: #f5f0e8;
+    }
+
+    .phone-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 56px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .phone-frame {
+      width: 148px;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 16px 60px rgba(0,0,0,0.55);
+      flex-shrink: 0;
+    }
+
+    .phone-frame img { width: 100%; }
+
+    .phone-frame:nth-child(1) { transform: translateY(20px); }
+    .phone-frame:nth-child(2) { transform: translateY(0px); }
+    .phone-frame:nth-child(3) { transform: translateY(12px); }
+    .phone-frame:nth-child(4) { transform: translateY(-8px); }
+
+    /* ── Culture ── */
+    #culture {
+      background: var(--cream);
+      padding: 110px 48px 120px;
+    }
+
+    .culture-inner {
+      max-width: 1060px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 72px;
+      align-items: center;
+    }
+
+    .culture-img { width: 100%; }
+
+    .culture-text .eyebrow { text-align: left; margin-bottom: 16px; }
+
+    .culture-text h2 {
+      font-size: clamp(28px, 3vw, 40px);
+      font-weight: 900;
+      font-style: italic;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: var(--brown-dark);
+    }
+
+    .culture-text p {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--brown-mid);
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .btn-appstore--dark {
+      background: var(--teal);
+      color: var(--gold);
+    }
+
+    .btn-appstore--dark:hover { opacity: 0.9; }
+
+    /* ── Footer ── */
+    #footer {
+      background: #050c09;
+      padding: 52px 24px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      border-top: 1px solid rgba(201,168,76,0.08);
+    }
+
+    .footer-logo-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .footer-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      opacity: 0.85;
+    }
+
+    .footer-wordmark {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .footer-tagline {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: rgba(245,240,232,0.18);
+      font-size: 9px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .footer-links a {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: rgba(245,240,232,0.55);
+      font-size: 11px;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover { color: rgba(245,240,232,0.6); }
+
+    .footer-copy {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: rgba(245,240,232,0.12);
+      font-size: 10px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      #nav { padding: 16px 24px; }
+      #hero { padding: 100px 20px 60px; }
+      .cta-row { flex-direction: column; gap: 28px; }
+      #stats { padding: 40px 20px 48px; gap: 12px; }
+      .stat-widget { min-width: 160px; }
+      #features { padding: 72px 20px; }
+      #features h2 { margin-bottom: 40px; }
+      #screenshots { padding: 72px 20px 80px; }
+      .phone-frame { width: 120px; }
+      .phone-frame:nth-child(n) { transform: none; }
+      #culture { padding: 72px 24px 80px; }
+      .culture-inner { grid-template-columns: 1fr; gap: 40px; }
+      .culture-img { max-width: 340px; margin: 0 auto; }
+      #footer { padding: 40px 20px 32px; }
+    }
+
+    @media (max-width: 480px) {
+      .stat-widget { min-width: 140px; max-width: 100%; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .phone-row { gap: 12px; }
+      .phone-frame { width: 100px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="nav" aria-label="Main navigation">
+    <span class="nav-brand">KavaCrawl</span>
+    <a class="nav-link" href="https://shapehaveninnovations.com/privacy.html">Privacy Policy</a>
+  </nav>
+
+  <section id="hero">
+    <img src="assets/logo.png" alt="KavaCrawl" class="hero-logo">
+    <p class="eyebrow">Welcome to the Island</p>
+    <h1>Your island crawl<br>starts here.</h1>
+    <p class="hero-sub">Discover kava bars, tea houses &amp; hidden gems near you. Live check-ins, crawl routes &amp; a community that knows the scene.</p>
+    <div class="cta-row">
+      <a href="https://apps.apple.com/gb/app/kavacrawl/id6772610237" class="btn-appstore">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on the App Store
+      </a>
+      <div class="download-block">
+        <div class="qr-wrap"><img src="assets/qr.png" alt="Scan QR code to download KavaCrawl"></div>
+        <span class="qr-caption">Scan to download</span>
+        <span class="android-note">Android coming soon</span>
+      </div>
+    </div>
+    <div class="dots" aria-hidden="true">
+      <div class="dot"></div>
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </section>
+
+  <section id="stats">
+    <div class="stat-widget">
+      <div class="stat-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="stat-value">500+</div>
+      <div class="stat-label">Kava Venues</div>
+      <div class="stat-desc">Bars, tea houses &amp; hidden gems mapped across the country.</div>
+    </div>
+    <div class="stat-widget">
+      <div class="stat-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <div class="stat-value">Live</div>
+      <div class="stat-label">Check-ins</div>
+      <div class="stat-desc">See who's out right now. Friends &amp; open bars always pinned.</div>
+    </div>
+    <div class="stat-widget">
+      <div class="stat-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      </div>
+      <div class="stat-value">Free</div>
+      <div class="stat-label">iOS App</div>
+      <div class="stat-desc">Download on the App Store. Android coming soon.</div>
+    </div>
+    <div class="stat-widget">
+      <div class="stat-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <div class="stat-value stat-value--sm">Nationwide</div>
+      <div class="stat-label">Coverage</div>
+      <div class="stat-desc">Powered by Google Maps. Every state, every city.</div>
+    </div>
+  </section>
+
+  <section id="features">
+    <p class="eyebrow">Everything you need</p>
+    <h2>The app for kava culture.</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-num" aria-hidden="true">01</span>
+        <p class="feature-tag">Discover</p>
+        <h3>Find every kava bar near you.</h3>
+        <p>Ratings, hours &amp; distance at a glance. Filter by type — kava bars, tea houses, hidden gems.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-num" aria-hidden="true">02</span>
+        <p class="feature-tag">Navigate</p>
+        <h3>See the scene on the map.</h3>
+        <p>Live check-ins, friends nearby &amp; open bars pinned. Know who's out before you leave.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-num" aria-hidden="true">03</span>
+        <p class="feature-tag">Crawl</p>
+        <h3>Build your crawl route.</h3>
+        <p>Pick your stops, set the order &amp; hit start. Turn any night into a proper island crawl.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-num" aria-hidden="true">04</span>
+        <p class="feature-tag">Community</p>
+        <h3>Events, vibes &amp; the crew.</h3>
+        <p>See what's happening tonight at every bar near you. Connect with the kava community.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="screenshots">
+    <p class="eyebrow">See it in action</p>
+    <h2>Built for the kava lifestyle.</h2>
+    <div class="phone-row">
+      <div class="phone-frame"><img src="assets/screen1.png" alt="KavaCrawl welcome screen"></div>
+      <div class="phone-frame"><img src="assets/screen2.png" alt="KavaCrawl discover screen"></div>
+      <div class="phone-frame"><img src="assets/screen3.png" alt="KavaCrawl map screen"></div>
+      <div class="phone-frame"><img src="assets/screen4.png" alt="KavaCrawl crawl route screen"></div>
+    </div>
+  </section>
+
+  <section id="culture">
+    <div class="culture-inner">
+      <img src="assets/lifestyle.png" alt="Person enjoying kava at sunset" class="culture-img">
+      <div class="culture-text">
+        <p class="eyebrow">The culture</p>
+        <h2>More than a bar guide.<br>It's a way of life.</h2>
+        <p>Kava culture is about community, connection &amp; finding your people. KavaCrawl puts the whole scene in your pocket — from the first pour to the last stop of the night.</p>
+        <a href="https://apps.apple.com/gb/app/kavacrawl/id6772610237" class="btn-appstore btn-appstore--dark">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Download on the App Store
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-logo-row">
+      <img src="assets/logo.png" alt="KavaCrawl" class="footer-logo">
+      <span class="footer-wordmark">KavaCrawl</span>
+    </div>
+    <span class="footer-tagline">Tea &amp; Kava Discovery</span>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="https://shapehaveninnovations.com/privacy.html">Privacy Policy</a>
+      <a href="https://apps.apple.com/gb/app/kavacrawl/id6772610237">App Store</a>
+    </nav>
+    <span class="footer-copy">&copy; 2026 Shape Haven Innovations. All rights reserved.</span>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KavaCrawlBot</title>
+  <meta name="description" content="What KavaCrawlBot is, what it fetches from kava bar websites, how often, and how to block it.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://kavacrawl.app/bot/">
+  <link rel="icon" href="/assets/logo.png">
+  <style>
+    :root { --bg:#f5ede0; --text:#1a1208; --muted:rgba(26,18,8,0.6); --line:#e0d3bb; --card:#ede3d0; --code:#e8dcc4; --bar:#0a1f1a; --link:#7a6240; --accent:#c9a84c; --accent-ink:#1a1208; }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+    a { color: var(--link); }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+    .top { background: var(--bar); }
+    .bar { display: flex; align-items: center; justify-content: space-between; min-height: 60px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.05rem; color: #f5ede0; text-decoration: none; }
+    .brand img { border-radius: 7px; }
+    .cta-small { font-size: .9rem; font-weight: 600; text-decoration: none; background: var(--accent); color: var(--accent-ink); padding: 8px 14px; border-radius: 999px; }
+    main { padding-top: 28px; padding-bottom: 56px; }
+    h1 { font-size: clamp(1.7rem, 4.2vw, 2.4rem); line-height: 1.2; margin: .2em 0 .3em; }
+    h2 { font-size: 1.35rem; line-height: 1.3; margin: 2em 0 .5em; }
+    p, li { font-size: 1.04rem; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92rem; }
+    code { background: var(--code); padding: 2px 6px; border-radius: 5px; }
+    pre { background: var(--code); padding: 14px 16px; border-radius: 10px; overflow-x: auto; line-height: 1.5; }
+    pre code { background: none; padding: 0; }
+    .foot { border-top: 1px solid var(--line); padding: 26px 0 40px; font-size: .9rem; color: var(--muted); }
+    .foot a { color: var(--muted); margin-right: 14px; }
+    @media (max-width: 520px) { .cta-small { display: none; } }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="/"><img src="/assets/logo.png" alt="" width="28" height="28">KavaCrawl</a>
+      <a class="cta-small" href="https://apps.apple.com/gb/app/kavacrawl/id6772610237">Download on the App Store</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article>
+      <h1>KavaCrawlBot</h1>
+      <p>KavaCrawlBot is the crawler behind <a href="/">KavaCrawl</a>, a free app that helps people find kava bars and compare their menus and prices. It identifies itself with this User-Agent:</p>
+      <pre><code>KavaCrawlBot/1.0 (+https://kavacrawl.app/bot)</code></pre>
+
+      <h2>What it fetches</h2>
+      <p>It visits the website of a kava bar or retailer that is listed in KavaCrawl and reads the public menu page, or the menu image or PDF linked from it, to record item names and prices. It does not log in, submit forms, or read anything behind a login. It only fetches a bar's own site, not search engines or social networks.</p>
+
+      <h2>How often and how fast</h2>
+      <ul>
+        <li>About once a week, and only when the page has changed.</li>
+        <li>At least 2 seconds between requests to the same site. If your robots.txt sets a <code>Crawl-delay</code>, it waits that long instead (up to 30 seconds).</li>
+        <li>A small number of pages per site: the home page and a few likely menu locations.</li>
+      </ul>
+
+      <h2>Robots.txt and how to block it</h2>
+      <p>KavaCrawlBot reads <code>robots.txt</code> before fetching and does not crawl paths it disallows. To stop it completely, add:</p>
+      <pre><code>User-agent: KavaCrawlBot
+Disallow: /</code></pre>
+      <p>Sites that block automated access are not retried repeatedly. Bar owners who would rather supply their menu directly can do so in the KavaCrawl app.</p>
+    </article>
+  </main>
+  <footer class="foot">
+    <div class="wrap"><a href="https://shapehaveninnovations.com/privacy">Privacy Policy</a><a href="https://apps.apple.com/gb/app/kavacrawl/id6772610237">App Store</a><a href="/">KavaCrawl Home</a><a href="https://shapehaveninnovations.com/">A Shapehaven Innovations product</a></div>
+  </footer>
+</body>
+</html>

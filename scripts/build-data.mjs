@@ -7,9 +7,13 @@
 //   mapdata/geocache.json): US Census first, then Nominatim, then the ZIP centroid. Only ZIP-centroid rows
 //   carry approx:true. A ranked bar whose address cannot be geocoded keeps the API's lat_r/lng_r.
 //   Each row's geo field names the source: census, nominatim, zip or lat_r.
+// - If /rankings returns no bars at all, the fetch is treated as failed: the script exits non-zero and
+//   leaves mapdata/venues.json alone. If the rebuilt rows equal the existing file's rows (ignoring the
+//   generated date), the file is not rewritten.
 import { readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import { geocodeAll, parseAddress } from './geocode.mjs'
+import { planVenuesWrite } from './lib/venues-file.mjs'
 
 const API = 'https://api.kavacrawl.shapehaveninnovations.com'
 const STATES = 'AZ,CA,CO,FL,MD,ME,MI,MO,NC,OH,OR,PA,SC,TX,WA,WI'.split(',')
@@ -56,6 +60,10 @@ for (const st of STATES) {
   await sleep(300)
 }
 console.log('ranked', ranked.length)
+if (ranked.length === 0) {
+  console.error(`refused: mapdata/venues.json not written: ${planVenuesWrite(0).reason}`)
+  process.exit(1)
+}
 
 // Geocode every pipeline address (cached; only new or changed addresses reach the network).
 const entries = pipeline.map((p) => {
@@ -102,7 +110,16 @@ for (const p of pipeline) {
   await sleep(250)
 }
 const venues = [...byId.values()]
-await writeFile(here('../mapdata/venues.json'), JSON.stringify({ generated: new Date().toISOString().slice(0, 10), venues }))
+const next = { generated: new Date().toISOString().slice(0, 10), venues }
+let prev = null
+try { prev = JSON.parse(await readFile(here('../mapdata/venues.json'), 'utf8')) } catch (e) { if (e.code !== 'ENOENT') throw e }
+const plan = planVenuesWrite(ranked.length, prev, next)
+if (plan.action === 'refuse') {
+  console.error(`refused: mapdata/venues.json not written: ${plan.reason}`)
+  process.exit(1)
+}
+if (plan.action === 'unchanged') console.log('unchanged mapdata/venues.json (same rows; date-only change skipped)')
+else await writeFile(here('../mapdata/venues.json'), JSON.stringify(next))
 const bySrc = {}
 for (const v of venues) bySrc[v.geo] = (bySrc[v.geo] || 0) + 1
 console.log('total', venues.length, 'approx', approx, 'skipped (no geocode or zip)', skipped, 'by source', JSON.stringify(bySrc),

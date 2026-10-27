@@ -1,4 +1,4 @@
-// Aggregate weekly events by weekday, night type and state. Output holds
+// Aggregate weekly events by weekday, night type and state, after dropping duplicate rows. Output holds
 // aggregates only: no event titles and no place ids.
 import { STATE_NAMES } from './states.mjs'
 import { classify, LISTING } from './event-types.mjs'
@@ -13,10 +13,19 @@ export function buildEventStats(events, venueIndex, rules, asOf) {
   const states = new Map() // st -> { events, bars: Set }
   const bars = new Set()
   const cities = new Set()
-  const excluded = { listings: 0, outsideMap: 0, invalid: 0 }
+  const excluded = { duplicates: 0, listings: 0, outsideMap: 0, invalid: 0 }
   let total = 0
+  // The feed can repeat a row exactly (two identical weekly slots at one venue): keep one per
+  // place, title (lowercased, trimmed) and weekday.
+  const seen = new Set()
 
   for (const e of events ?? []) {
+    const key = JSON.stringify([e?.place_id ?? null, clean(e?.title).toLowerCase(), e?.day_of_week ?? null])
+    if (seen.has(key)) {
+      excluded.duplicates++
+      continue
+    }
+    seen.add(key)
     const dow = e?.day_of_week
     if (!Number.isInteger(dow) || dow < 0 || dow > 6) {
       excluded.invalid++

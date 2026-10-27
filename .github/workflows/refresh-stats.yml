@@ -32,6 +32,8 @@ concurrency:
 
 jobs:
   refresh:
+    # Only main may push: a manual dispatch from another branch skips the job.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
@@ -87,4 +89,4 @@ jobs:
           git add mapdata
           git commit -m "$(date -u +%Y%d%m)-refresh dashboard data"
           git pull --rebase origin main
-          git push
+          git push origin HEAD:main

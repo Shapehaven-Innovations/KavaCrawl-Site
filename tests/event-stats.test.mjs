@@ -81,7 +81,7 @@ test('byState ties break on state code', () => {
 })
 
 test('excluded counts listings, off-map and invalid weekdays separately', () => {
-  assert.deepEqual(s.excluded, { listings: 1, outsideMap: 1, invalid: 1 })
+  assert.deepEqual(s.excluded, { duplicates: 0, listings: 1, outsideMap: 1, invalid: 1 })
 })
 
 test('output holds no titles and no place ids', () => {
@@ -99,4 +99,34 @@ test('no Unknown or Other keys', () => {
     assert.ok(!s.byState.some((x) => x.st === bad || x.name === bad))
     assert.ok(!(bad in s.typeByWeekday))
   }
+})
+
+const dupEvents = [
+  { place_id: 'ChIJfixtureFL1', title: 'Karaoke Night', day_of_week: 3 },
+  { place_id: 'ChIJfixtureFL1', title: 'Karaoke Night', day_of_week: 3 },
+  { place_id: 'ChIJfixtureFL1', title: '  karaoke NIGHT ', day_of_week: 3 },
+  { place_id: 'ChIJfixtureFL1', title: 'Karaoke Night', day_of_week: 4 },
+  { place_id: 'ChIJfixtureTX1', title: 'Karaoke Night', day_of_week: 3 },
+]
+const d = buildEventStats(dupEvents, venueIndex, rules, '2026-10-27')
+
+test('duplicate rows (same place, title ignoring case and spaces, weekday) collapse to one', () => {
+  assert.equal(d.totals.events, 3)
+  assert.deepEqual(d.byWeekday, [0, 0, 0, 2, 1, 0, 0])
+  assert.deepEqual(d.typeByWeekday.Karaoke, [0, 0, 0, 2, 1, 0, 0])
+  assert.deepEqual(d.byState, [
+    { st: 'FL', name: 'Florida', events: 2, bars: 1 },
+    { st: 'TX', name: 'Texas', events: 1, bars: 1 },
+  ])
+})
+
+test('excluded.duplicates counts the removed rows', () => {
+  assert.equal(d.excluded.duplicates, 2)
+  assert.equal(typeof d.excluded.duplicates, 'number')
+})
+
+test('dedupe output holds no titles and no place ids', () => {
+  const json = JSON.stringify(d).toLowerCase()
+  assert.ok(!json.includes('karaoke night'))
+  assert.ok(!json.includes('chij'))
 })

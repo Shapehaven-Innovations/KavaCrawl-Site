@@ -4,9 +4,9 @@
 // - Venues come from mapdata/venues.json, so counts match the home page map.
 // - Event rows come from --events-file (JSON array of {place_id, title, day_of_week}) or, when absent,
 //   from Cloudflare D1 (env CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, D1_DATABASE_ID). Hidden places
-//   are filtered out in the SQL.
+//   are filtered out in the SQL (a NULL hidden flag counts as visible).
 // - A file is written only when its numbers changed and both guards pass (no zero totals, no drop of
-//   more than 30% from the previous file). Prints one line per file: wrote, unchanged or refused.
+//   more than 30% and no rise of more than 2x from the previous file). Prints one line per file: wrote, unchanged or refused.
 //   Exits non-zero on a refusal or a failed query. --dry-run writes nothing.
 // - Outputs hold aggregates only: no venue names, event titles or place ids.
 import { readFile, writeFile } from 'node:fs/promises'
@@ -17,7 +17,7 @@ import { buildEventStats } from './lib/event-stats.mjs'
 import { loadRules } from './lib/event-types.mjs'
 import { checkTotals, sameNumbers } from './lib/guard.mjs'
 
-export const SQL = 'SELECT place_id, title, day_of_week FROM venue_events WHERE place_id IN (SELECT place_id FROM places WHERE hidden = 0)'
+export const SQL = 'SELECT place_id, title, day_of_week FROM venue_events WHERE place_id IN (SELECT place_id FROM places WHERE IFNULL(hidden, 0) = 0)'
 
 const VENUE_OUT = 'mapdata/venue-stats.json'
 const EVENTS_OUT = 'mapdata/events-stats.json'

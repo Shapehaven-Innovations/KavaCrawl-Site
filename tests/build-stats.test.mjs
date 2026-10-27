@@ -52,7 +52,7 @@ test('writes both files, then reports unchanged without touching them', () => {
   assert.ok(vs.vintage)
   assert.deepEqual(vs.excluded, { noLocation: 0 })
   assert.equal(es.totals.events, 3)
-  assert.deepEqual(es.excluded, { listings: 1, outsideMap: 1, invalid: 0 })
+  assert.deepEqual(es.excluded, { duplicates: 0, listings: 1, outsideMap: 1, invalid: 0 })
   assert.ok(es.vintage)
   const text = readFileSync(join(root, 'mapdata/events-stats.json'), 'utf8')
   assert.ok(!text.includes(venues[0].id), 'no place ids in output')
@@ -83,6 +83,31 @@ test('an empty events file is refused and leaves the files alone', () => {
   assert.equal(statSync(join(root, 'mapdata/events-stats.json')).mtimeMs, m2)
 })
 
+test('an event total rise of more than 2x is refused and leaves the files alone', () => {
+  const root = makeRoot()
+  run(['--root', root, '--events-file', eventsFile(root, rows)])
+  const before = readFileSync(join(root, 'mapdata/events-stats.json'), 'utf8')
+  const spike = [0, 1, 2, 3, 4, 5, 6].map((d) => ({ place_id: venues[0].id, title: 'Trivia Night', day_of_week: d }))
+  const r = run(['--root', root, '--events-file', eventsFile(root, spike, 'spike.json')])
+  assert.notEqual(r.status, 0)
+  assert.ok(lines(r).every((l) => l.startsWith('refused: ') && l.includes('event total rise')), r.stdout)
+  assert.equal(readFileSync(join(root, 'mapdata/events-stats.json'), 'utf8'), before)
+})
+
+test('a venue total rise of more than 2x is refused', () => {
+  const root = makeRoot()
+  run(['--root', root, '--events-file', eventsFile(root, rows)])
+  const vp = join(root, 'mapdata/venue-stats.json')
+  const prev = JSON.parse(readFileSync(vp, 'utf8'))
+  prev.totals.venues = Math.floor(venues.length / 3)
+  writeFileSync(vp, JSON.stringify(prev))
+  const before = readFileSync(vp, 'utf8')
+  const r = run(['--root', root, '--events-file', eventsFile(root, rows)])
+  assert.notEqual(r.status, 0)
+  assert.ok(lines(r).every((l) => l.startsWith('refused: ') && l.includes('venue total rise')), r.stdout)
+  assert.equal(readFileSync(vp, 'utf8'), before)
+})
+
 test('--dry-run writes nothing', () => {
   const root = makeRoot()
   const r = run(['--root', root, '--events-file', eventsFile(root, rows), '--dry-run'])
@@ -110,7 +135,7 @@ test('fetchEventRows posts the SQL and returns result[0].results', async () => {
   assert.equal(call.opts.method, 'POST')
   assert.equal(call.opts.headers.Authorization, 'Bearer tok')
   assert.deepEqual(JSON.parse(call.opts.body), { sql: SQL })
-  assert.equal(SQL, 'SELECT place_id, title, day_of_week FROM venue_events WHERE place_id IN (SELECT place_id FROM places WHERE hidden = 0)')
+  assert.equal(SQL, 'SELECT place_id, title, day_of_week FROM venue_events WHERE place_id IN (SELECT place_id FROM places WHERE IFNULL(hidden, 0) = 0)')
 })
 
 test('fetchEventRows throws on HTTP errors, API errors, bad shapes and missing env', async () => {

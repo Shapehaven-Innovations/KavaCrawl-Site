@@ -19,6 +19,15 @@ test('checkTotals refuses a drop of more than 30%', () => {
   assert.equal(checkTotals(100, 150).ok, true)
 })
 
+test('checkTotals refuses a rise of more than 2x', () => {
+  const r = checkTotals(100, 201)
+  assert.equal(r.ok, false)
+  assert.match(r.reason, /rise/)
+  assert.equal(checkTotals(100, 200).ok, true)
+  assert.equal(checkTotals(null, 10000).ok, true)
+  assert.equal(checkTotals(0, 10000).ok, true)
+})
+
 test('sameNumbers ignores only the top-level generated field', () => {
   const a = { generated: '2026-10-26', totals: { venues: 3 }, list: [{ generated: 'x', n: 1 }] }
   const b = { generated: '2026-10-27', totals: { venues: 3 }, list: [{ generated: 'x', n: 1 }] }

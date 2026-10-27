@@ -117,6 +117,13 @@
   font-style: normal;
   line-height: 1.5;
   text-align: left;
+  /* undo generic `footer { display:flex; margin; padding; gap }` rules in host pages */
+  display: block;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  width: auto;
+  max-width: none;
 }
 
 .site-footer__inner {
@@ -554,6 +561,7 @@
             <li><a href="https://github.com/Shapehaven-Innovations" target="_blank" rel="noopener">GitHub<svg class="site-footer__arrow" viewBox="0 0 10 10" width="9" height="9" aria-hidden="true" focusable="false"><path d="M2.5 7.5l5-5M3.5 2.5h4v4" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
           </ul>
           <p class="site-footer__sitenote"><a href="/">KavaCrawl home</a> · <a href="https://apps.apple.com/gb/app/kavacrawl/id6772610237" rel="noopener">App Store</a></p>
+          <p class="site-footer__sitenote">City and ZIP data from <a href="https://www.geonames.org/">GeoNames</a> (CC BY 4.0). Some bar locations &copy; OpenStreetMap contributors.</p>
           <p class="site-footer__sitenote">A <a href="https://shapehaveninnovations.com/">ShapeHaven Innovations</a> product</p>
         </div>
 

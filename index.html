@@ -352,6 +352,343 @@
     .btn:hover{transform:none}
   }
 </style>
+  <!-- footer-css:start -->
+  <style>
+/* Isolation so the footer looks the same inside any site's page CSS.
+   Comes first: .site-footer :where(...) has class-level specificity, so it beats
+   page rules like "p, li { font-size }" but loses to the BEM rules below. */
+:where(.site-footer),
+:where(.site-footer) *,
+:where(.site-footer) *::before,
+:where(.site-footer) *::after {
+  box-sizing: border-box;
+}
+
+.site-footer :where(p, ul, li, h2) {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Footer: takes its colours from the host page. Each site maps its own tokens
+   to --sf-page-* (see "theme" in footer/targets.json, stamped after this block),
+   so the footer follows the page background and light/dark theme. */
+.site-footer {
+  --sf-bg: var(--sf-page-bg, #faf9f5);
+  --sf-line: var(--sf-page-line, #e8e6dc);
+  --sf-muted: var(--sf-page-muted, #5e5d59);
+  --sf-bright: var(--sf-page-text, #141413);
+  --sf-soft: var(--sf-page-soft, color-mix(in srgb, var(--sf-bright) 82%, var(--sf-bg)));
+  --sf-accent: var(--sf-page-accent, #c6613f);
+  background: var(--sf-bg);
+  border-top: 1px solid var(--sf-line);
+  color: var(--sf-muted);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: left;
+  /* undo generic `footer { display:flex; margin; padding; gap }` rules in host pages */
+  display: block;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  width: auto;
+  max-width: none;
+}
+
+.site-footer__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  column-gap: clamp(2rem, 5vw, 6rem);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem clamp(1.5rem, 4vw, 4.5rem) 4.5rem;
+}
+
+.site-footer a {
+  color: var(--sf-muted);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.15s ease;
+}
+
+.site-footer a:hover {
+  color: var(--sf-bright);
+}
+
+.site-footer a:focus-visible,
+.site-footer summary:focus-visible {
+  outline: 2px solid var(--sf-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.site-footer ul {
+  list-style: none;
+}
+
+/* Left column: wordmark top, copyright + icon bottom */
+.site-footer__brand {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.site-footer__wordmark {
+  color: var(--sf-bright);
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+.site-footer__legal {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: end;
+  padding-top: 4rem;
+}
+
+.site-footer__copyright {
+  font-size: 0.75rem;
+}
+
+.site-footer__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin: 0.5rem 0 0 -8px;
+}
+
+.site-footer__icon svg {
+  display: block;
+}
+
+/* Centre column: accordion */
+.site-footer__menu {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  border-top: 1px solid var(--sf-line);
+}
+
+.site-footer__group {
+  border-bottom: 1px solid var(--sf-line);
+}
+
+.site-footer__group summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 52px;
+  padding: 0.75rem 0;
+  color: var(--sf-muted);
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.15s ease;
+}
+
+.site-footer__group summary::-webkit-details-marker {
+  display: none;
+}
+
+.site-footer__group summary::marker {
+  content: '';
+}
+
+.site-footer__group summary:hover,
+.site-footer__group[open] summary {
+  color: var(--sf-bright);
+}
+
+.site-footer__chevron {
+  flex: none;
+  transition: transform 0.2s ease;
+}
+
+.site-footer__group[open] .site-footer__chevron {
+  transform: rotate(180deg);
+}
+
+.site-footer__list {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.25rem 0 1.5rem;
+}
+
+.site-footer__sublabel {
+  color: var(--sf-soft);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin: -0.25rem 0 0.75rem;
+}
+
+.site-footer__note a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--sf-line);
+}
+
+/* Right column: About + Contact */
+.site-footer__about {
+  grid-column: 3;
+  grid-row: 1 / 4;
+}
+
+.site-footer__heading {
+  color: var(--sf-bright);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin: 0 0 0.25rem;
+}
+
+.site-footer__text {
+  max-width: 34ch;
+  margin-bottom: 2rem;
+}
+
+.site-footer__contact {
+  display: grid;
+  gap: 0.375rem;
+  margin-top: 0.5rem;
+}
+
+.site-footer__contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--sf-soft);
+}
+
+.site-footer__contact a:hover {
+  color: var(--sf-bright);
+}
+
+.site-footer__arrow {
+  flex: none;
+  color: var(--sf-muted);
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.site-footer__contact a:hover .site-footer__arrow {
+  color: var(--sf-accent);
+  transform: translate(1px, -1px);
+}
+
+/* Tablet: one column (wordmark, accordion, About/Contact, copyright) */
+@media (max-width: 992px) {
+  .site-footer__inner {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .site-footer__brand,
+  .site-footer__menu,
+  .site-footer__about,
+  .site-footer__legal {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .site-footer__brand {
+    margin-bottom: 2.5rem;
+  }
+
+  .site-footer__about {
+    margin-top: 3rem;
+  }
+
+  .site-footer__legal {
+    padding-top: 3rem;
+  }
+}
+
+/* Phone: bigger tap targets */
+@media (max-width: 600px) {
+  .site-footer__inner {
+    padding: 3.5rem 1.25rem 2.5rem;
+  }
+
+  .site-footer__list {
+    gap: 0;
+  }
+
+  .site-footer__list a,
+  .site-footer__contact a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0.4rem 0;
+    line-height: 1.4;
+  }
+
+  .site-footer__contact {
+    gap: 0;
+  }
+
+  .site-footer__icon {
+    width: 44px;
+    height: 44px;
+    margin-left: -12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-footer a,
+  .site-footer__group summary,
+  .site-footer__chevron,
+  .site-footer__arrow {
+    transition: none;
+  }
+
+  .site-footer__contact a:hover .site-footer__arrow {
+    transform: none;
+  }
+}
+
+/* Current page inside a footer list */
+.site-footer [aria-current="page"] {
+  color: var(--sf-bright);
+}
+
+.site-footer__wordmark a {
+  color: var(--sf-bright);
+}
+
+.site-footer__sitenote {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  max-width: 34ch;
+}
+
+.site-footer__sitenote a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--sf-line);
+}
+
+.site-footer__contact + .site-footer__sitenote {
+  margin-top: 2rem;
+}
+
+:root {
+  --sf-page-bg: #1b4538;
+  --sf-page-line: #34705c;
+  --sf-page-muted: #bcd3c8;
+  --sf-page-text: #f2ece0;
+  --sf-page-soft: #dcebe3;
+  --sf-page-accent: #6ece8d;
+}
+  </style>
+  <!-- footer-css:end -->
 </head>
 <body>
 <div class="wrap">
@@ -493,15 +830,102 @@
     </div>
   </section>
 
-  <footer>
-    <span>&copy; 2026 ShapeHaven Innovations LLC<br><small>City and ZIP data from <a href="https://www.geonames.org/">GeoNames</a> (CC BY 4.0). Some bar locations &copy; OpenStreetMap contributors.</small></span>
-    <div class="links">
-      <a href="https://shapehaveninnovations.com/privacy.html">Privacy</a>
-      <a href="/guides/kava-bar-events-what-to-expect/">Kava Bar Events Guide</a>
-      <a href="/guides/kava-bars-by-state-and-city/">Kava Bars by State and City</a>
-      <a href="https://shapehaveninnovations.com/">A ShapeHaven Innovations product</a>
-    </div>
-  </footer>
+  <!-- footer:start -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <p class="site-footer__wordmark"><a href="https://shapehaveninnovations.com/">ShapeHaven Innovations</a></p>
+        </div>
+
+        <div class="site-footer__menu">
+          <details class="site-footer__group">
+            <summary>
+              <span>Field Notes</span>
+              <svg class="site-footer__chevron" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3.5 6l4.5 4.5L12.5 6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <ul class="site-footer__list">
+              <li><a href="https://shapehaveninnovations.com/blog/">All Field Notes</a></li>
+              <li><a href="https://shapehaveninnovations.com/blog/php-critical-rce-patch">Two Critical PHP Flaws: What to Check and Patch Today</a></li>
+              <li><a href="https://shapehaveninnovations.com/blog/mdnsshark-app">mDNSShark: See Everything on Your Wi-Fi, Without Sending a Byte Out</a></li>
+              <li><a href="https://shapehaveninnovations.com/blog/worldmonitor-app">World Monitor: An Open-Source Dashboard Built for AI Agents</a></li>
+              <li><a href="https://shapehaveninnovations.com/feed.xml" target="_blank" rel="noopener">RSS feed</a></li>
+            </ul>
+          </details>
+
+          <details class="site-footer__group">
+            <summary>
+              <span>Guides</span>
+              <svg class="site-footer__chevron" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3.5 6l4.5 4.5L12.5 6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <ul class="site-footer__list">
+              <li><a href="/guides/kava-bar-events-what-to-expect/">Kava bar events: trivia, open mic and what to expect</a></li>
+              <li><a href="/guides/kava-bars-by-state-and-city/">Kava bars by state and city</a></li>
+            </ul>
+          </details>
+
+          <details class="site-footer__group">
+            <summary>
+              <span>Software</span>
+              <svg class="site-footer__chevron" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3.5 6l4.5 4.5L12.5 6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <ul class="site-footer__list">
+              <li><a href="https://kavacrawl.app/" target="_blank" rel="noopener">KavaCrawl</a></li>
+              <li><a href="https://returniq.shapehaveninnovations.com/" target="_blank" rel="noopener">ReturnIQ</a></li>
+              <li><a href="https://condoguard.app/" target="_blank" rel="noopener">CondoGuard</a></li>
+              <li><a href="https://mdnsshark.shapehaveninnovations.com/" target="_blank" rel="noopener">mDNSShark</a></li>
+              <li><a href="https://rhythmx.shapehaveninnovations.com/" target="_blank" rel="noopener">RhythmX</a></li>
+            </ul>
+          </details>
+
+          <details class="site-footer__group">
+            <summary>
+              <span>Support and bug reports</span>
+              <svg class="site-footer__chevron" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3.5 6l4.5 4.5L12.5 6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <ul class="site-footer__list">
+              <li><a href="https://shapehaveninnovations.com/support.html">Support page</a></li>
+              <li><a href="mailto:info@shapehaveninnovations.com">Email us</a></li>
+            </ul>
+            <p class="site-footer__sublabel">Public bug trackers</p>
+            <ul class="site-footer__list">
+              <li><a href="https://github.com/Shapehaven-Innovations/RhythmX/issues/new/choose" target="_blank" rel="noopener">RhythmX</a></li>
+              <li><a href="https://github.com/Shapehaven-Innovations/mDNSShark/issues/new/choose" target="_blank" rel="noopener">mDNSShark</a></li>
+              <li><a href="https://github.com/Shapehaven-Innovations/ReturnIQ-Site/issues/new/choose" target="_blank" rel="noopener">ReturnIQ</a></li>
+              <li><a href="https://github.com/Shapehaven-Innovations/KavaCrawl-Site/issues/new/choose" target="_blank" rel="noopener">KavaCrawl</a></li>
+            </ul>
+          </details>
+
+          <details class="site-footer__group">
+            <summary>
+              <span>Privacy and terms</span>
+              <svg class="site-footer__chevron" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3.5 6l4.5 4.5L12.5 6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <ul class="site-footer__list">
+              <li><a href="https://shapehaveninnovations.com/privacy.html">Privacy Policy</a></li>
+            </ul>
+          </details>
+        </div>
+
+        <div class="site-footer__about">
+          <h2 class="site-footer__heading">About</h2>
+          <p class="site-footer__text">ShapeHaven Innovations is a research and software lab. We chase good problems, then build iOS and web apps to solve them.</p>
+          <h2 class="site-footer__heading">Contact</h2>
+          <ul class="site-footer__contact">
+            <li><a href="mailto:info@shapehaveninnovations.com">Email<svg class="site-footer__arrow" viewBox="0 0 10 10" width="9" height="9" aria-hidden="true" focusable="false"><path d="M2.5 7.5l5-5M3.5 2.5h4v4" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="https://github.com/Shapehaven-Innovations" target="_blank" rel="noopener">GitHub<svg class="site-footer__arrow" viewBox="0 0 10 10" width="9" height="9" aria-hidden="true" focusable="false"><path d="M2.5 7.5l5-5M3.5 2.5h4v4" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          </ul>
+          <p class="site-footer__sitenote"><a href="/">KavaCrawl home</a> · <a href="https://apps.apple.com/gb/app/kavacrawl/id6772610237" rel="noopener">App Store</a></p>
+          <p class="site-footer__sitenote">City and ZIP data from <a href="https://www.geonames.org/">GeoNames</a> (CC BY 4.0). Some bar locations &copy; OpenStreetMap contributors.</p>
+          <p class="site-footer__sitenote">A <a href="https://shapehaveninnovations.com/">ShapeHaven Innovations</a> product</p>
+        </div>
+
+        <div class="site-footer__legal">
+          <p class="site-footer__copyright">&copy; 2026 ShapeHaven Innovations LLC</p>
+          <a class="site-footer__icon" href="https://github.com/Shapehaven-Innovations" target="_blank" rel="noopener" aria-label="ShapeHaven Innovations on GitHub (opens in a new tab)"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer:end -->
 </div>
 
 <script src="vendor/d3.min.js"></script>

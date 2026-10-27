@@ -1,0 +1,22 @@
+{
+  "vintage": "Vintage 2025 (July 1, 2025 resident population estimates)",
+  "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/totals/NST-EST2025-ALLDATA.csv",
+  "pop": {
+    "AZ": 7623818,
+    "CA": 39355309,
+    "CO": 6012561,
+    "FL": 23462518,
+    "MD": 6265347,
+    "ME": 1414874,
+    "MI": 10127884,
+    "MO": 6270541,
+    "NC": 11197968,
+    "OH": 11900510,
+    "OR": 4273586,
+    "PA": 13059432,
+    "SC": 5570274,
+    "TX": 31709821,
+    "WA": 8001020,
+    "WI": 5972787
+  }
+}

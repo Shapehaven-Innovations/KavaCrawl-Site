@@ -1,0 +1,15 @@
+{
+  "types": ["Games", "Specials", "Community", "Trivia", "Open mic", "Music", "Karaoke", "Movie night", "Art"],
+  "rules": [
+    { "type": "Movie night", "match": ["movie*", "film*", "cinema"] },
+    { "type": "Trivia", "match": ["trivia", "quiz*"] },
+    { "type": "Open mic", "match": ["open mic", "open jam", "talent show"] },
+    { "type": "Karaoke", "match": ["karaoke"] },
+    { "type": "Games", "match": ["pool", "poker", "bingo", "game*", "tournament*", "smash", "yahtzee", "chess", "tcg", "trading card*", "beyblade", "8-ball", "pong", "darts", "cornhole", "corn hole", "magic the gathering", "commander", "d&d", "dnd", "dice", "blackjack", "air hockey", "jackbox", "hobby", "nerd*"] },
+    { "type": "Music", "match": ["music", "live band", "acoustic", "concert*", "dj", "rave", "house party", "latin", "latino", "rock band", "live stream", "beats", "free show"] },
+    { "type": "Specials", "match": ["ladies", "happy hour", "special*", "deal*", "two for one", "2 for 1", "half off", "thirsty", "madness", "wing wednesday", "taco*", "bogo", "bottomless", "double shells", "free shell", "all you can drink", "refill", "coney", "power play", "buy 15", "monday*", "tuesday*", "wednesday*", "thursday*", "friday*", "saturday*", "sunday*", "saturdaze*", "sundaze*", "tgif", "weekend*"] },
+    { "type": "Art", "match": ["art", "paint*", "craft*", "draw*"] },
+    { "type": "Community", "match": ["wellness", "yoga", "meditat*", "ice bath", "flow", "circle*", "sound bath", "sound healing", "breathwork", "reset", "volunteer*", "workshop*", "meetup*", "mingle", "social", "service industry", "community", "club*", "book", "study", "market*", "vendor*", "bazaar*", "swap", "pop-up", "grooming", "nail trim*", "cookie*", "class*", "lesson*", "ambassador*", "recovery", "mental health", "check-in", "confessions", "philosophy", "podcast", "industry appreciation", "ceremonial", "communitea"] }
+  ],
+  "listing": ["weekly events", "weekly schedule", "this week at"]
+}

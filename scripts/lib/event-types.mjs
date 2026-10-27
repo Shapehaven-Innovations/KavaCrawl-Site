@@ -45,8 +45,9 @@ export function loadRules(path) {
 export function classify(title, rules) {
   const t = typeof title === 'string' ? title : ''
   if (t) {
-    for (const r of rules.rules) if (r.re.test(t)) return r.type
+    // Schedule-listing rows are never events, so they win over every type rule.
     if (rules.listingRe?.test(t)) return LISTING
+    for (const r of rules.rules) if (r.re.test(t)) return r.type
   }
   return FALLBACK
 }

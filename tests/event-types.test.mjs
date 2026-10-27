@@ -1,7 +1,7 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { fileURLToPath } from 'node:url'
-import { writeFileSync, mkdtempSync } from 'node:fs'
+import { writeFileSync, mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { loadRules, classify } from '../scripts/lib/event-types.mjs'
@@ -85,10 +85,25 @@ test('rule order: Games beats Music, earlier rules beat weekday Specials', () =>
   assert.equal(classify('Open Mic Monday', rules), 'Open mic')
 })
 
+test('schedule listings are checked before type rules', () => {
+  assert.equal(classify('Weekly Schedule - Karaoke & Bingo', rules), 'Listing')
+  assert.equal(classify('This Week at Bula Bar: Trivia', rules), 'Listing')
+  assert.equal(classify('Weekly Events & Hours', rules), 'Listing')
+})
+
+test('weekly real events are not listings', () => {
+  assert.equal(classify('Weekly Pool Tournament', rules), 'Games')
+  assert.equal(classify('Weekly Trivia', rules), 'Trivia')
+})
+
 // Helper: build rules from an object by writing a temp file.
 function loadRulesFrom(obj) {
   const dir = mkdtempSync(join(tmpdir(), 'event-rules-'))
-  const p = join(dir, 'rules.json')
-  writeFileSync(p, JSON.stringify(obj))
-  return loadRules(p)
+  try {
+    const p = join(dir, 'rules.json')
+    writeFileSync(p, JSON.stringify(obj))
+    return loadRules(p)
+  } finally {
+    rmSync(dir, { recursive: true, force: true })
+  }
 }

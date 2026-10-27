@@ -62,7 +62,7 @@ const entries = pipeline.map((p) => {
   const a = parseAddress(p.formatted_address)
   return a && { id: p.place_id, ...a }
 }).filter(Boolean)
-const geo = await geocodeAll(entries, (z) => zip.get(z), fileURLToPath(here('../mapmapdata/geocache.json')))
+const geo = await geocodeAll(entries, (z) => zip.get(z), fileURLToPath(here('../mapdata/geocache.json')))
 const located = (id) => { const g = geo.get(id); return g && (g.src === 'census' || g.src === 'nominatim') ? g : null }
 
 const byId = new Map()
@@ -102,7 +102,7 @@ for (const p of pipeline) {
   await sleep(250)
 }
 const venues = [...byId.values()]
-await writeFile(here('../mapmapdata/venues.json'), JSON.stringify({ generated: new Date().toISOString().slice(0, 10), venues }))
+await writeFile(here('../mapdata/venues.json'), JSON.stringify({ generated: new Date().toISOString().slice(0, 10), venues }))
 const bySrc = {}
 for (const v of venues) bySrc[v.geo] = (bySrc[v.geo] || 0) + 1
 console.log('total', venues.length, 'approx', approx, 'skipped (no geocode or zip)', skipped, 'by source', JSON.stringify(bySrc),

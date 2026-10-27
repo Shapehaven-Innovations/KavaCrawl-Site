@@ -280,7 +280,7 @@ export function concentrationHtml(byState, total) {
     label: name(r),
     value: num(r.venues),
     color: concColor(i, rows.length),
-    title: `${name(r)}: ${fmt(num(r.venues))} venues (${pct(num(r.venues), T)})`,
+    title: `${name(r)}: ${fmt(num(r.venues))} ${plural(num(r.venues), 'venue', 'venues')} (${pct(num(r.venues), T)})`,
   }))
   const extra = (s, i) => ` data-i="${i}" data-v="${esc(fmt(s.value))}" data-n="${esc(`${s.label}, ${pct(s.value, T)}`)}"`
   const svg =

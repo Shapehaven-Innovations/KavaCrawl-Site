@@ -160,6 +160,14 @@ test('concentrationHtml shows the lead share, grouped legend and slice labels', 
   assert.match(html, /#6ece8d/)
 })
 
+test('concentrationHtml slice tooltip uses singular for a one-venue state', () => {
+  const byState = [{ st: 'FL', name: 'Florida', venues: 299 }, { st: 'MD', name: 'Maryland', venues: 1 }]
+  const html = clean(R.concentrationHtml(byState, 300))
+  assert.match(html, /Maryland: 1 venue \(0\.3%\)/)
+  assert.ok(!html.includes('1 venues'))
+  assert.match(html, /Florida: 299 venues/)
+})
+
 test('densityHtml shows venue/city wording, the average marker and up bars', () => {
   const items = [
     { name: 'Florida', venues: 216, cities: 71, avg: 3.04 },

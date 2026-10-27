@@ -371,6 +371,17 @@ function valid(d) {
     Array.isArray(d.byState) && Array.isArray(d.topCities) && isObj(d.stateCities)
 }
 
+// Display copy for the extract and download: drops vintage and byState[].per100k.
+function displayCopy(d) {
+  const { vintage, ...rest } = d
+  rest.byState = d.byState.map((r) => {
+    if (!isObj(r)) return r
+    const { per100k, ...keep } = r
+    return keep
+  })
+  return rest
+}
+
 // Pretty-printed JSON with line numbers, keys and numbers coloured; built from DOM nodes.
 function writeExtract(pre, txt) {
   pre.textContent = ''
@@ -465,7 +476,7 @@ function render(R, d) {
   // Data extract
   const date = /^\d{4}-\d{2}-\d{2}$/.test(d.generated) ? d.generated : 'latest'
   $('ext-date').textContent = /^\d{4}-\d{2}-\d{2}$/.test(d.generated) ? d.generated : '—'
-  const txt = JSON.stringify(d, null, 2)
+  const txt = JSON.stringify(displayCopy(d), null, 2)
   writeExtract($('extract'), txt)
   $('dl').addEventListener('click', () => {
     const url = URL.createObjectURL(new Blob([txt], { type: 'application/json' }))

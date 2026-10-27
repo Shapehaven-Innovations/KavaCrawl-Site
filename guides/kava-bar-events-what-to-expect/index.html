@@ -366,6 +366,17 @@ function valid(d) {
     isObj(d.typeByWeekday) && isObj(d.excluded)
 }
 
+// Display copy for the extract and download: drops vintage and byState[].per100k.
+function displayCopy(d) {
+  const { vintage, ...rest } = d
+  rest.byState = d.byState.map((r) => {
+    if (!isObj(r)) return r
+    const { per100k, ...keep } = r
+    return keep
+  })
+  return rest
+}
+
 // Pretty-printed JSON with line numbers, keys and numbers coloured; built from DOM nodes.
 function writeExtract(pre, txt) {
   pre.textContent = ''
@@ -408,9 +419,17 @@ function render(R, d) {
 
   // Events by weeknight
   put('c-day', () => R.columnsHtml(d.byWeekday.map((v, i) => ({ label: DAYS[i], value: v }))))
-  const hi = d.byWeekday.indexOf(Math.max(...d.byWeekday))
-  const lo = d.byWeekday.indexOf(Math.min(...d.byWeekday))
-  if (hi !== lo) $('cap-day').textContent = `${DAY_NAMES[hi]} is busiest, ${DAY_NAMES[lo]} quietest`
+  const max = Math.max(...d.byWeekday)
+  const min = Math.min(...d.byWeekday)
+  const dayList = (v) => {
+    const n = DAY_NAMES.filter((_, i) => d.byWeekday[i] === v)
+    return n.length > 1 ? `${n.slice(0, -1).join(', ')} and ${n[n.length - 1]}` : n[0]
+  }
+  if (max !== min) {
+    const hiN = d.byWeekday.filter((v) => v === max).length
+    const loN = d.byWeekday.filter((v) => v === min).length
+    $('cap-day').textContent = `${dayList(max)} ${hiN > 1 ? 'tie as busiest' : 'is busiest'}, ${dayList(min)} ${loN > 1 ? 'tie as quietest' : 'quietest'}`
+  }
 
   // Night types
   const types = d.byType
@@ -422,14 +441,17 @@ function render(R, d) {
     return `<div class="donutwrap">${R.donutSvg(types, fmt(d.totals.events), 'weekly events')}${R.legendHtml(types)}</div>`
   })
   const ex = isN(d.excluded.listings) ? d.excluded.listings : 0
-  $('cap-cat').textContent = `Grouped by title keyword; ${fmt(ex)} schedule ${ex === 1 ? 'listing' : 'listings'} excluded`
+  $('cap-cat').textContent = ex > 0
+    ? `Grouped by title keyword; ${fmt(ex)} schedule ${ex === 1 ? 'listing' : 'listings'} excluded`
+    : 'Grouped by title keyword'
 
-  // Where: real states only, in file order (events descending)
+  // Where: real states only, events descending (ties by name), sorted on a copy
   const states = d.byState
     .filter((r) => isObj(r) && typeof r.st === 'string' && /^[A-Z]{2}$/.test(r.st) && typeof r.name === 'string' && r.name && isN(r.events) && r.events > 0)
+    .sort((a, b) => b.events - a.events || a.name.localeCompare(b.name))
     .map((r, i) => ({ label: r.name, value: r.events, color: SHARE_PALETTE[i % SHARE_PALETTE.length] }))
   put('c-where', () => (states.length ? R.shareHtml(states) + R.chipsHtml(states) : R.unavailable()))
-  if (states.length) $('cap-where').textContent = `Share of all ${fmt(d.totals.events)} events, ${states[0].label} ${pct(states[0].value, d.totals.events, 0)}`
+  if (states.length) $('cap-where').textContent = `Share of all ${fmt(d.totals.events)} weekly events, ${states[0].label} ${pct(states[0].value, d.totals.events, 0)}`
 
   // Night types by weeknight, rows by total descending
   const heatRows = Object.entries(d.typeByWeekday)
@@ -441,7 +463,7 @@ function render(R, d) {
   // Data extract
   const date = /^\d{4}-\d{2}-\d{2}$/.test(d.generated) ? d.generated : 'latest'
   $('ext-date').textContent = /^\d{4}-\d{2}-\d{2}$/.test(d.generated) ? d.generated : '—'
-  const txt = JSON.stringify(d, null, 2)
+  const txt = JSON.stringify(displayCopy(d), null, 2)
   writeExtract($('extract'), txt)
   $('dl').addEventListener('click', () => {
     const url = URL.createObjectURL(new Blob([txt], { type: 'application/json' }))

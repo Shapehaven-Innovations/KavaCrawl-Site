@@ -1,691 +1,822 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover kava bars, tea houses & hidden gems near you. Live check-ins, crawl routes & a community that knows the scene.">
-  <link rel="canonical" href="https://kavacrawl.app/">
-  <title>KavaCrawl: Find Kava Bars &amp; Plan a Crawl | iPhone App</title>
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="KavaCrawl">
-  <meta property="og:title" content="KavaCrawl: Find Kava Bars &amp; Plan a Crawl | iPhone App">
-  <meta property="og:description" content="Discover kava bars, tea houses &amp; hidden gems near you. Live check-ins, crawl routes &amp; a community that knows the scene.">
-  <meta property="og:url" content="https://kavacrawl.app/">
-  <meta property="og:image" content="https://kavacrawl.app/assets/lifestyle.png">
-  <meta property="og:image:width" content="1254">
-  <meta property="og:image:height" content="1254">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="KavaCrawl: Find Kava Bars &amp; Plan a Crawl | iPhone App">
-  <meta name="twitter:description" content="Discover kava bars, tea houses &amp; hidden gems near you. Live check-ins, crawl routes &amp; a community that knows the scene.">
-  <meta name="twitter:image" content="https://kavacrawl.app/assets/lifestyle.png">
-  <script type="application/ld+json">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KavaCrawl: Kava Prices Mapped | Budget-First Kava Bar Rankings</title>
+<meta name="description" content="Set a budget, search a zip code, city or state, and see the best kava bars near you by price and value. Private by design: your searches never leave your browser.">
+<link rel="icon" href="assets/icon-180.png">
+<link rel="canonical" href="https://kavacrawl.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KavaCrawl">
+<meta property="og:title" content="KavaCrawl: Kava Prices Mapped | Budget-First Kava Bar Rankings">
+<meta property="og:description" content="Every kava bar we know, glowing by what a shell costs. Set a budget, search a zip code, city or state, and see the best bars near you. Private by design.">
+<meta property="og:url" content="https://kavacrawl.app/">
+<meta property="og:image" content="https://kavacrawl.app/assets/lifestyle.png">
+<meta property="og:image:width" content="1254">
+<meta property="og:image:height" content="1254">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="KavaCrawl: Kava Prices Mapped | Budget-First Kava Bar Rankings">
+<meta name="twitter:description" content="Every kava bar we know, glowing by what a shell costs. Set a budget, search a zip code, city or state, and see the best bars near you. Private by design.">
+<meta name="twitter:image" content="https://kavacrawl.app/assets/lifestyle.png">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   "name": "KavaCrawl",
   "operatingSystem": "iOS",
   "applicationCategory": "LifestyleApplication",
-  "description": "Discover kava bars, tea houses & hidden gems near you. Live check-ins, crawl routes & a community that knows the scene.",
+  "description": "Every kava bar we know, glowing by what a shell costs. Set a budget, search a zip code, city or state, and see the best bars near you. Private by design.",
   "url": "https://kavacrawl.app/",
-  "downloadUrl": "https://apps.apple.com/gb/app/kavacrawl/id6772610237",
+  "downloadUrl": "https://apps.apple.com/us/app/kavacrawl-kava-bar-finder/id6772610237",
   "image": "https://kavacrawl.app/assets/lifestyle.png",
-  "publisher": {
-    "@type": "Organization",
-    "name": "ShapeHaven Innovations",
-    "url": "https://shapehaveninnovations.com/"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
+  "publisher": {"@type": "Organization", "name": "ShapeHaven Innovations", "url": "https://shapehaveninnovations.com/"},
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
 }
-  </script>
-  <style>
-    /* ── Reset & variables ── */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+</script>
+<style>
+  /* ---------- tokens ---------- */
+  :root{
+    --bg:#050e0c; --bg2:#0b1d19; --card:#102520; --line:#1f3f38; --line-soft:rgba(157,184,172,.12);
+    --ink:#f2ece0; --muted:#9db8ac; --faint:#7d9a8c; --mint:#6ece8d; --sun:#e98a5b; --teal:#0e5959;
+    --glass:rgba(11,29,25,.62); --glass-strong:rgba(9,24,21,.86);
+    --hi:inset 0 1px 0 rgba(242,236,224,.05);
+    --shadow:0 24px 60px -30px rgba(0,0,0,.8);
+    --ease:cubic-bezier(.2,.7,.2,1);
+  }
 
-    :root {
-      --teal:        #0a1f1a;
-      --gold:        #c9a84c;
-      --cream:       #f5ede0;
-      --cream-mid:   #ede3d0;
-      --brown-dark:  #1a1208;
-      --brown-mid:   #7a6240;
-      --sub-hero:    rgba(157,184,160,0.85);
-      --muted:       rgba(26,18,8,0.55);
+  /* ---------- base ---------- */
+  *{box-sizing:border-box;margin:0}
+  html{color-scheme:dark}
+  body{background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh}
+  /* aurora mesh + vignette, fixed behind everything (no background-attachment:fixed, which iOS ignores) */
+  body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none}
+  body::before{background:
+    radial-gradient(ellipse 120% 90% at 50% 40%,transparent 55%,rgba(0,0,0,.55) 100%),
+    radial-gradient(60% 50% at 8% -8%,rgba(14,89,89,.55),transparent 70%),
+    radial-gradient(42% 38% at 96% 2%,rgba(233,138,91,.16),transparent 70%),
+    radial-gradient(48% 42% at 72% 58%,rgba(110,206,141,.07),transparent 70%),
+    radial-gradient(70% 55% at 15% 105%,rgba(14,89,89,.28),transparent 70%),
+    var(--bg)}
+  /* faint grid + grain, faded toward the edges */
+  body::after{opacity:.9;background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    linear-gradient(rgba(157,184,172,.035) 1px,transparent 1px) 0 0/56px 56px,
+    linear-gradient(90deg,rgba(157,184,172,.035) 1px,transparent 1px) 0 0/56px 56px;
+    -webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,#000 30%,transparent 100%);
+    mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,#000 30%,transparent 100%)}
+  a{color:inherit;text-decoration:none}
+  [hidden]{display:none!important}
+  :focus-visible{outline:2px solid var(--mint);outline-offset:2px}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+  /* glass surface: solid fallback first, translucent where backdrop-filter exists.
+     Not on .mapcard: backdrop-filter would make it the containing block for the
+     position:fixed tooltip inside it and break tooltip placement. */
+  .kpi,.privacy div,.tablewrap,.legend,.zoombtns button,.tip,.pill{background:var(--bg2)}
+  @supports ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
+    .kpi,.privacy div,.tablewrap,.pill{background:var(--glass);-webkit-backdrop-filter:blur(14px) saturate(130%);backdrop-filter:blur(14px) saturate(130%)}
+    .legend,.zoombtns button,.tip{background:var(--glass-strong);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+  }
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--mint);color:#06210f;font-weight:700;padding:10px 18px;border-radius:999px;font-size:15px;border:1px solid transparent;cursor:pointer;font-family:inherit;line-height:1.3;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 8px 24px -12px rgba(110,206,141,.7);transition:transform .18s var(--ease),background-color .18s,box-shadow .18s,border-color .18s}
+  .btn:hover{background:#82dba0;transform:translateY(-1px)}
+  .btn:active{transform:none}
+  .btn.ghost{background:rgba(242,236,224,.03);color:var(--ink);border-color:var(--line);box-shadow:var(--hi)}
+  .btn.ghost:hover{background:rgba(110,206,141,.08);border-color:#2f5d52}
+
+  /* ---------- nav + hero ---------- */
+  nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:23px;line-height:1;letter-spacing:-.4px;min-width:0}
+  .brand img{width:40px;height:40px;flex:none;border-radius:11px;box-shadow:0 0 0 1px var(--line-soft),0 6px 18px -8px rgba(110,206,141,.5)}
+  header.top{padding:36px 0 6px}
+  .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:5px 12px 5px 10px;color:var(--mint);font-size:12px;letter-spacing:1.6px;font-weight:700;text-transform:uppercase;box-shadow:var(--hi)}
+  .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(110,206,141,.6);animation:pulse 2.4s ease-out infinite}
+  .pill .sep{color:var(--faint);font-weight:500;letter-spacing:.4px;text-transform:none}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(110,206,141,.55)}70%,100%{box-shadow:0 0 0 7px rgba(110,206,141,0)}}
+  h1{font-size:clamp(36px,6vw,64px);line-height:1.02;letter-spacing:-.035em;margin:16px 0 14px;font-weight:800;text-wrap:balance}
+  h1 .hl{color:var(--mint)}
+  @supports ((-webkit-background-clip:text) or (background-clip:text)){
+    h1 .hl{background:linear-gradient(100deg,#6ece8d 10%,#e9d56b 55%,#e98a5b 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  }
+  .lead{color:var(--muted);font-size:18px;line-height:1.6;max-width:36em;text-wrap:pretty}
+
+  /* ---------- KPI tiles ---------- */
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:30px 0 20px}
+  .kpi{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:18px;padding:16px 18px 15px;box-shadow:var(--hi),var(--shadow)}
+  .kpi::before{content:"";position:absolute;left:18px;right:18px;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(110,206,141,.55),transparent)}
+  .kpi .n{font-size:30px;font-weight:800;letter-spacing:-.03em;color:var(--mint);line-height:1.15;font-variant-numeric:tabular-nums}
+  .kpi .c{color:var(--muted);font-size:13.5px;line-height:1.4;margin-top:4px}
+
+  /* ---------- map card ---------- */
+  .mapcard{background:linear-gradient(180deg,rgba(14,36,31,.9),rgba(8,22,19,.94));border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:var(--hi),0 40px 90px -40px rgba(0,0,0,.9),0 0 0 1px rgba(0,0,0,.25)}
+  .maptools{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 14px;border-bottom:1px solid var(--line)}
+  .seg{display:flex;background:rgba(5,14,12,.6);border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px}
+  .seg button{border:0;background:none;color:var(--muted);font:inherit;font-size:13.5px;font-weight:600;padding:6px 14px;border-radius:999px;cursor:pointer;transition:background-color .18s,color .18s}
+  .seg button:hover{color:var(--ink)}
+  .seg button.on{background:linear-gradient(180deg,#24463b,#1a362e);color:var(--ink);box-shadow:inset 0 1px 0 rgba(242,236,224,.08),0 0 0 1px #2f5d52}
+  .budget{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+  .budget label{font-weight:600;color:var(--ink)}
+  .budget output{min-width:84px;color:var(--mint);font-weight:700;font-variant-numeric:tabular-nums}
+  /* slider: track echoes the price-heat ramp */
+  .budget input[type=range]{width:170px;height:22px;background:none;accent-color:var(--mint);-webkit-appearance:none;appearance:none;cursor:pointer;border-radius:999px}
+  .budget input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:999px;background:linear-gradient(90deg,#6ece8d,#e9d56b,#e98a5b);box-shadow:inset 0 0 0 1px rgba(0,0,0,.25)}
+  .budget input[type=range]::-moz-range-track{height:6px;border-radius:999px;background:linear-gradient(90deg,#6ece8d,#e9d56b,#e98a5b)}
+  .budget input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;margin-top:-6px;border-radius:50%;background:var(--ink);border:3px solid #0b1d19;box-shadow:0 0 0 1px var(--mint),0 2px 8px rgba(0,0,0,.5);transition:transform .15s var(--ease)}
+  .budget input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--ink);border:3px solid #0b1d19;box-shadow:0 0 0 1px var(--mint),0 2px 8px rgba(0,0,0,.5)}
+  .budget input[type=range]:hover::-webkit-slider-thumb,.budget input[type=range]:active::-webkit-slider-thumb{transform:scale(1.12)}
+  .budget input[type=range]:focus-visible{outline-offset:4px}
+
+  /* map backdrop: teal glow, faint graticule, inner vignette */
+  .mapbox{position:relative;background:
+    radial-gradient(55% 62% at 52% 46%,rgba(14,89,89,.38),transparent 72%),
+    radial-gradient(28% 30% at 82% 78%,rgba(233,138,91,.08),transparent 70%),
+    linear-gradient(rgba(157,184,172,.045) 1px,transparent 1px) 0 0/40px 40px,
+    linear-gradient(90deg,rgba(157,184,172,.045) 1px,transparent 1px) 0 0/40px 40px,
+    #040c0a;box-shadow:inset 0 0 90px rgba(0,0,0,.65)}
+  #map{display:block;width:100%;height:auto;aspect-ratio:975/610;max-height:640px;cursor:grab;touch-action:pan-y}
+  #map:active{cursor:grabbing}
+  .st{fill:rgba(15,34,29,.88);stroke:#2a5249;stroke-linejoin:round;cursor:pointer;transition:fill .15s,stroke .15s}
+  .st:hover,.st:focus{fill:#15302a;stroke:#7fae9c}
+  .st.sel{fill:#13291f;stroke:var(--ink)}
+  .glow{mix-blend-mode:screen;pointer-events:none}
+  .zoombtns{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+  .zoombtns button{width:34px;height:34px;border-radius:999px;border:1px solid var(--line);color:var(--ink);font-size:18px;line-height:1;cursor:pointer;box-shadow:var(--hi);transition:border-color .18s,color .18s}
+  .zoombtns button:hover{border-color:#3d7566;color:var(--mint)}
+  .legend{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12.5px;position:absolute;left:12px;bottom:10px;border:1px solid var(--line);border-radius:999px;padding:6px 12px;box-shadow:var(--hi)}
+  .legend i{display:block;width:120px;height:8px;border-radius:5px;background:linear-gradient(90deg,#6ece8d,#e9d56b,#e98a5b)}
+  .legend .nd{width:11px;height:11px;border-radius:50%;background:var(--faint);margin-left:8px}
+  .tip{position:fixed;pointer-events:none;z-index:20;border:1px solid var(--line);border-radius:12px;padding:8px 11px;font-size:13.5px;line-height:1.4;max-width:240px;opacity:0;box-shadow:0 12px 30px -12px rgba(0,0,0,.8);transition:opacity .1s}
+  .tip.on{opacity:1}
+
+  /* search */
+  .searchrow{display:flex;gap:10px;padding:14px 14px 8px;flex-wrap:wrap;border-top:1px solid var(--line)}
+  .searchrow input{flex:1;min-width:220px;background:rgba(5,14,12,.7);border:1px solid var(--line);border-radius:999px;color:var(--ink);font:inherit;font-size:16px;padding:11px 18px;transition:border-color .18s,box-shadow .18s}
+  .searchrow input::placeholder{color:var(--faint)}
+  .searchrow input:hover{border-color:#2f5d52}
+  .searchrow input:focus{border-color:var(--mint);box-shadow:0 0 0 3px rgba(110,206,141,.18)}
+  .hint{padding:0 18px 14px;color:var(--faint);font-size:13px}
+
+  /* ---------- privacy strip ---------- */
+  .privacy{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 0}
+  .privacy div{border:1px solid var(--line);border-left:2px solid rgba(110,206,141,.45);border-radius:16px;padding:14px 16px;box-shadow:var(--hi)}
+  .privacy b{display:block;font-size:15px;margin-bottom:3px}
+  .privacy span{color:var(--muted);font-size:13.5px}
+
+  /* ---------- table ---------- */
+  .sortbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 12px;font-size:13px;color:var(--muted)}
+  .sortbar button{font:inherit;font-size:13px;color:var(--muted);background:rgba(242,236,224,.03);border:1px solid var(--line);border-radius:999px;padding:5px 13px;cursor:pointer;transition:color .15s,border-color .15s,background .15s}
+  .sortbar button:hover{color:var(--ink);border-color:#2f5d52}
+  .sortbar button.on{color:#06210f;background:var(--mint);border-color:var(--mint);font-weight:700}
+  .sortbar button[hidden]{display:none}
+  .county{fill:none;stroke:#7fae9c;stroke-linejoin:round;pointer-events:none}
+  .ctick{fill:#f2ece0;opacity:.6;pointer-events:none}
+  .clabel{fill:#d9e8e0;font-weight:600;pointer-events:none;paint-order:stroke;stroke:#06110f;stroke-linejoin:round;text-anchor:middle}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .teaser{margin:26px 0 0}
+  .teaserhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+  .teaserhead h2{font-size:22px;letter-spacing:-.02em;line-height:1.2}
+  .teaserhead span{color:var(--muted);font-size:14.5px}
+  .tcards{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  .tcard{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:2px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--glass);box-shadow:var(--hi),var(--shadow);transition:border-color .15s,transform .15s}
+  .tcard:hover{border-color:#3d7566;transform:translateY(-2px)}
+  .tcard:focus-visible{outline:2px solid var(--mint);outline-offset:2px}
+  .tcard .tp{font-size:26px;font-weight:800;letter-spacing:-.03em;color:var(--mint);font-variant-numeric:tabular-nums;line-height:1.15}
+  .tcard .tn{font-weight:600;font-size:14.5px;line-height:1.3}
+  .tcard .ts{color:var(--muted);font-size:13px}
+  .how{margin:30px 0 0;border:1px solid var(--line);border-radius:20px;background:var(--glass);box-shadow:var(--hi),var(--shadow);overflow:hidden;position:relative}
+  .how::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(110,206,141,.55),transparent)}
+  .how summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px}
+  .how summary::-webkit-details-marker{display:none}
+  .how summary::after{content:"";flex:none;width:16px;height:16px;margin-right:4px;background:linear-gradient(var(--mint),var(--mint)) center/100% 2px no-repeat,linear-gradient(var(--mint),var(--mint)) center/2px 100% no-repeat;transition:transform .25s,opacity .2s;opacity:.85}
+  .how summary:hover::after{opacity:1}
+  .how[open] summary::after{transform:rotate(45deg)}
+  .how summary:focus-visible{outline:2px solid var(--mint);outline-offset:-2px;border-radius:20px}
+  .howh{font-weight:800;font-size:18px;letter-spacing:-.02em}
+  .tldr{color:var(--muted);font-size:14.5px;line-height:1.5;max-width:46em}
+  .tl-top{margin-top:18px;padding:12px 16px;border-radius:14px;border:1px solid rgba(110,206,141,.3);background:linear-gradient(90deg,rgba(110,206,141,.12),rgba(110,206,141,.03));color:var(--ink);max-width:none;font-size:15px}
+  .tldr b{display:inline-block;margin-right:8px;padding:1px 8px;border-radius:6px;background:rgba(110,206,141,.14);border:1px solid rgba(110,206,141,.3);color:var(--mint);font-size:11.5px;letter-spacing:1.4px;vertical-align:1px}
+  .tldr i,.hcard .fine i{font-style:normal;color:var(--ink);font-weight:600}
+  .howbody{padding:4px 22px 22px;border-top:1px solid var(--line-soft)}
+  .howgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:14px}
+  .hcard{border:1px solid var(--line);border-radius:16px;padding:18px;background:rgba(5,14,12,.35)}
+  .tl-top i{font-weight:400;color:inherit}
+  .hcard h3{font-size:12px;letter-spacing:1.8px;text-transform:uppercase;color:var(--mint);margin-bottom:10px}
+  .hcard p{color:var(--muted);font-size:14.5px}
+  .hcard .fine{font-size:13.5px;margin-top:12px;color:var(--faint)}
+  .chips{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+  .chips li{display:inline-flex;align-items:baseline;gap:6px;padding:6px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(242,236,224,.03);font-size:14px}
+  .chips li small{font-size:11.5px;color:var(--faint)}
+  .chips li.hot{border-color:rgba(110,206,141,.55);background:rgba(110,206,141,.14)}
+  .chips li.hot b{color:var(--mint)}
+  .chips li.hot small{color:#a8dcb9}
+  .rule{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:4px}
+  .rule.alt{margin-top:12px}
+  .rbox{padding:7px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(242,236,224,.04);font-size:13.5px;font-weight:600}
+  .rbox.ok{background:rgba(110,206,141,.18);border-color:rgba(110,206,141,.6);color:var(--mint)}
+  .rbox.na{border-style:dashed;color:var(--muted)}
+  .rop{color:var(--faint);font-weight:700}
+  .promises{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
+  .promises li{position:relative;padding-left:26px;color:var(--muted);font-size:14.5px}
+  .promises li::before{content:"";position:absolute;left:3px;top:.4em;width:6px;height:11px;border:solid var(--mint);border-width:0 2px 2px 0;transform:rotate(45deg)}
+  .promises b{color:var(--ink)}
+  .ver{margin-top:16px;color:var(--faint);font-size:12.5px;letter-spacing:.4px}
+  @media(max-width:760px){.howgrid{grid-template-columns:1fr}.how summary{padding:16px}.howbody{padding:4px 16px 18px}}
+  .howlink{margin-left:auto;background:none!important;border:0!important;padding:5px 2px!important;color:var(--mint)!important;text-decoration:underline;text-underline-offset:3px;cursor:pointer;font-size:13px}
+  @media(max-width:900px){.tcards{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:480px){.tcards{grid-template-columns:1fr}}
+  .tablehead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin:40px 0 12px}
+  .tablehead h2{font-size:26px;letter-spacing:-.025em;line-height:1.2}
+  .status{color:var(--muted);font-size:14.5px}
+  .tablewrap{border:1px solid var(--line);border-radius:20px;overflow-x:auto;box-shadow:var(--hi),var(--shadow)}
+  table{width:100%;border-collapse:separate;border-spacing:0;min-width:640px}
+  th{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);text-align:left;padding:13px 14px;white-space:nowrap;background:var(--glass-strong);box-shadow:inset 0 -1px 0 var(--line)}
+  th button{all:unset;cursor:pointer;display:inline-flex;gap:5px;align-items:center;border-radius:4px;transition:color .15s}
+  th button:hover,th button:focus-visible{color:var(--ink)}
+  th button:focus-visible{outline:2px solid var(--mint);outline-offset:3px}
+  th[aria-sort] button{color:var(--mint)}
+  th[aria-sort=ascending] button::after{content:"\2191"}
+  th[aria-sort=descending] button::after{content:"\2193"}
+  th.num,td.num{text-align:right}
+  td{padding:13px 14px;border-top:1px solid var(--line-soft);font-size:15px;transition:background-color .15s}
+  tbody tr:first-child td{border-top:0}
+  tbody tr{cursor:pointer}
+  tbody tr:hover td{background:rgba(110,206,141,.05)}
+  tbody tr:focus-within td{background:rgba(110,206,141,.07)}
+  tbody tr.sel td{background:rgba(110,206,141,.11)}
+  tbody tr.sel td:first-child{box-shadow:inset 3px 0 0 var(--mint)}
+  tbody tr[data-id]:focus-visible{outline:2px solid var(--mint);outline-offset:-2px}
+  tbody tr.group{cursor:default}
+  .group td,tbody tr.group:hover td{background:rgba(5,14,12,.55);color:var(--muted);font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;font-weight:700;padding-top:10px;padding-bottom:10px}
+  .rk{color:var(--muted);font-variant-numeric:tabular-nums}
+  .nm{font-weight:600}
+  .sub{color:var(--muted);font-size:13px}
+  .price{font-weight:800;font-variant-numeric:tabular-nums}
+  .na{color:#7a9689;font-weight:500}
+  .addp{display:inline-block;margin-left:8px;font-size:12px;color:var(--mint);font-weight:600;white-space:nowrap;border-radius:4px}
+  .addp:hover{text-decoration:underline}
+  .score{display:inline-block;min-width:44px;text-align:center;border:1px solid #2a5249;background:linear-gradient(180deg,rgba(110,206,141,.14),rgba(110,206,141,.05));color:var(--ink);border-radius:999px;padding:2px 10px;font-weight:700;font-variant-numeric:tabular-nums}
+  .empty{padding:26px;color:var(--muted);text-align:center}
+  .more{display:flex;width:fit-content;margin:16px auto 0}
+  .note{color:var(--faint);font-size:13px;margin:14px 2px 0;max-width:62em}
+
+  /* ---------- CTA + footer ---------- */
+  .cta-card{position:relative;overflow:hidden;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:48px 0 0;background:
+    radial-gradient(55% 140% at 100% 110%,rgba(233,138,91,.22),transparent 62%),
+    radial-gradient(60% 130% at 8% -10%,rgba(110,206,141,.26),transparent 62%),
+    linear-gradient(135deg,#0a2b29 0%,#09211f 55%,#0b1d1b 100%);
+    border:1px solid rgba(110,206,141,.28);border-radius:24px;padding:26px 30px;box-shadow:inset 0 1px 0 rgba(242,236,224,.1),0 0 0 1px rgba(6,17,15,.6),0 24px 60px -24px rgba(110,206,141,.28),var(--shadow)}
+  .cta-copy,.cta-act{position:relative}
+  .cta-copy{max-width:38em}
+  .mono,.cta-tag,.steps{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace}
+  .cta-tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.4px;font-weight:600;color:var(--mint);border:1px solid rgba(110,206,141,.35);background:rgba(6,17,15,.55);border-radius:8px;padding:5px 11px}
+  .cta-card b{display:block;font-size:clamp(24px,3.2vw,32px);line-height:1.12;letter-spacing:-.03em;margin:12px 0 8px}
+  .cta-card p{color:#dbe9e2;font-size:16px;margin:0}
+  .steps{list-style:none;counter-reset:n;padding:14px 16px;margin:18px 0 0;max-width:30em;background:rgba(4,12,10,.72);border:1px solid rgba(110,206,141,.22);border-radius:12px;font-size:13.5px;line-height:1.9;color:var(--ink);box-shadow:inset 0 1px 0 rgba(242,236,224,.06)}
+  .steps li{display:block;opacity:1;transform:none}
+  .steps li::before{content:">";color:var(--mint);font-weight:700;margin-right:10px}
+  .steps li.ok::before{content:"ok";color:#06210f;background:var(--mint);border-radius:4px;padding:0 6px;font-size:12px;margin-right:10px}
+  .steps .cur{display:inline-block;width:8px;height:15px;margin-left:4px;vertical-align:-2px;background:var(--mint);animation:blink 1.1s steps(1) infinite}
+  .steps .arg{color:var(--mint)}
+  .js .steps li{opacity:0;transform:translateX(-6px);transition:opacity .35s,transform .35s}
+  .js .steps.in li{opacity:1;transform:none}
+  .js .steps.in li:nth-child(2){transition-delay:.45s}.js .steps.in li:nth-child(3){transition-delay:.9s}.js .steps.in li:nth-child(4){transition-delay:1.35s}
+  @keyframes blink{50%{opacity:0}}
+  .cta-act{display:flex;flex-direction:column;align-items:center;gap:8px}
+  .cta-act small{color:#cfe0d8;font-size:13px}
+  .btn.go{background:linear-gradient(135deg,#8be6a8,#5fcf8f 55%,#3fb98f);color:#04210f;border-color:rgba(255,255,255,.25);
+    box-shadow:0 0 0 1px rgba(110,206,141,.5),0 8px 26px -6px rgba(110,206,141,.65),inset 0 1px 0 rgba(255,255,255,.45);position:relative;overflow:hidden;animation:breathe 3.6s ease-in-out infinite}
+  .btn.go::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-120%);transition:transform .7s ease}
+  .btn.go:hover{background:linear-gradient(135deg,#9ff0b8,#6ede9d 55%,#4ccaa0);transform:translateY(-1px)}
+  .btn.go:hover::after{transform:translateX(120%)}
+  .btn.go svg{width:14px;height:14px;transition:transform .2s}
+  .btn.go:hover svg{transform:translateX(3px)}
+  .btn.big{padding:15px 28px;font-size:17px}
+  /* Nav button stays secondary to the brand lockup; scoped to nav so .btn.go.big is untouched */
+  nav .btn.go{flex:none;white-space:nowrap;gap:5px;padding:7px 14px;font-size:14px;line-height:1.25;
+    box-shadow:0 0 0 1px rgba(110,206,141,.45),0 4px 14px -6px rgba(110,206,141,.5),inset 0 1px 0 rgba(255,255,255,.4);animation:breathe-sm 3.6s ease-in-out infinite}
+  nav .btn.go svg{width:12px;height:12px}
+  nav .btn.go:hover svg{transform:translateX(2px)}
+  @keyframes breathe-sm{0%,100%{box-shadow:0 0 0 1px rgba(110,206,141,.45),0 4px 14px -6px rgba(110,206,141,.45),inset 0 1px 0 rgba(255,255,255,.4)}50%{box-shadow:0 0 0 1px rgba(110,206,141,.6),0 5px 18px -6px rgba(110,206,141,.6),inset 0 1px 0 rgba(255,255,255,.4)}}
+  @keyframes breathe{0%,100%{box-shadow:0 0 0 1px rgba(110,206,141,.5),0 8px 24px -8px rgba(110,206,141,.5),inset 0 1px 0 rgba(255,255,255,.45)}50%{box-shadow:0 0 0 1px rgba(110,206,141,.7),0 10px 34px -4px rgba(110,206,141,.85),inset 0 1px 0 rgba(255,255,255,.45)}}
+  .wm{background:linear-gradient(100deg,transparent 42%,rgba(255,255,255,.95) 50%,transparent 58%) no-repeat 160% 0/250% 100%,linear-gradient(90deg,#f6efe2,#f6efe2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+  .brand.wow .wm{animation:shimmer 1.6s ease-out 1}
+  .brand.wow img{animation:iconglow 1.6s ease-out 1}
+  @keyframes shimmer{from{background-position:160% 0,0 0}to{background-position:-60% 0,0 0}}
+  @keyframes iconglow{0%,100%{box-shadow:0 0 0 1px var(--line-soft),0 6px 18px -8px rgba(110,206,141,.5)}40%{box-shadow:0 0 0 1px rgba(110,206,141,.6),0 0 26px 2px rgba(110,206,141,.6)}}
+  footer{border-top:1px solid var(--line);margin-top:56px;padding:24px 0 46px;color:var(--faint);font-size:14px;display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
+  footer a{transition:color .15s}
+  footer a:hover{color:var(--ink)}
+  footer .links{display:flex;gap:18px;flex-wrap:wrap}
+
+  /* ---------- responsive ---------- */
+  /* Wide screens: clip (not a scroll container) lets the header stick to the viewport.
+     Narrow screens keep overflow-x:auto for horizontal scroll, without the sticky header. */
+  @media(min-width:761px){
+    .tablewrap{overflow:clip}
+    thead th{position:sticky;top:0;z-index:2}
+    @supports ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
+      thead th{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
     }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-      background: var(--cream);
-      color: var(--brown-dark);
-      overflow-x: hidden;
-    }
-
-    h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; }
-
-    img { display: block; max-width: 100%; }
-
-    /* ── Nav ── */
-    #nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 48px;
-      z-index: 100;
-      background: rgba(10,31,26,0.7);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(201,168,76,0.08);
-    }
-
-    .nav-brand {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--gold);
-      font-weight: 800;
-      font-size: 12px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-    }
-
-    .nav-link {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: rgba(245,240,232,0.65);
-      font-size: 12px;
-      text-decoration: none;
-    }
-
-    .nav-link:hover { color: rgba(245,240,232,0.7); }
-
-    /* ── Hero ── */
-    #hero {
-      position: relative;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 120px 24px 80px;
-      background:
-        radial-gradient(ellipse at 50% 0%, rgba(20,80,50,0.6) 0%, transparent 60%),
-        var(--teal);
-      overflow: hidden;
-    }
-
-    .hero-logo {
-      width: 96px;
-      height: 96px;
-      border-radius: 50%;
-      margin-bottom: 32px;
-      box-shadow: 0 0 80px rgba(201,168,76,0.18), 0 16px 60px rgba(0,0,0,0.6);
-    }
-
-    .eyebrow {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--gold);
-      font-size: 10px;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-
-    #hero h1 {
-      font-size: clamp(38px, 5.5vw, 64px);
-      font-weight: 900;
-      font-style: italic;
-      line-height: 1.05;
-      margin-bottom: 22px;
-      max-width: 660px;
-      color: #f5f0e8;
-    }
-
-    .hero-sub {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--sub-hero);
-      font-size: 16px;
-      line-height: 1.7;
-      max-width: 440px;
-      margin-bottom: 52px;
-    }
-
-    .cta-row {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .btn-appstore {
-      background: var(--gold);
-      color: var(--teal);
-      padding: 16px 36px;
-      border-radius: 50px;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      font-weight: 800;
-      font-size: 14px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 8px 32px rgba(201,168,76,0.28);
-    }
-
-    .btn-appstore:hover { opacity: 0.9; }
-
-    .download-block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .qr-wrap {
-      background: white;
-      border-radius: 14px;
-      padding: 7px;
-      box-shadow: 0 6px 24px rgba(0,0,0,0.35);
-      margin-bottom: 9px;
-    }
-
-    .qr-wrap img { width: 120px; height: 120px; border-radius: 7px; }
-
-    .qr-caption {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: rgba(245,240,232,0.55);
-      font-size: 9px;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      margin-bottom: 7px;
-    }
-
-    .android-note {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--gold);
-      font-size: 9px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      border: 1px solid rgba(201,168,76,0.22);
-      border-radius: 20px;
-      padding: 3px 11px;
-    }
-
-    .dots {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: 48px;
-    }
-
-    .dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: rgba(245,240,232,0.18);
-    }
-
-    .dot.active {
-      width: 22px;
-      border-radius: 3px;
-      background: var(--gold);
-    }
-
-    /* ── Stats ── */
-    #stats {
-      background: var(--cream);
-      padding: 56px 40px 64px;
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .stat-widget {
-      flex: 1;
-      min-width: 190px;
-      max-width: 250px;
-      background: white;
-      border-radius: 18px;
-      padding: 28px 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      box-shadow: 0 2px 16px rgba(122,98,64,0.09);
-      border: 1px solid rgba(201,168,76,0.12);
-    }
-
-    .stat-icon {
-      width: 40px;
-      height: 40px;
-      background: rgba(201,168,76,0.1);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--gold);
-    }
-
-    .stat-value {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--brown-dark);
-      font-size: 34px;
-      font-weight: 900;
-      letter-spacing: -1px;
-      line-height: 1;
-    }
-
-    .stat-value--sm { font-size: 24px; letter-spacing: -0.5px; }
-
-    .stat-label {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--gold);
-      font-size: 9px;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-
-    .stat-desc {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--brown-mid);
-      font-size: 12px;
-      line-height: 1.5;
-    }
-
-    /* ── Features ── */
-    #features {
-      background: var(--cream);
-      padding: 100px 40px;
-    }
-
-    #features .eyebrow { text-align: center; margin-bottom: 14px; }
-
-    #features h2 {
-      font-size: clamp(28px, 3.5vw, 44px);
-      font-weight: 900;
-      font-style: italic;
-      text-align: center;
-      margin-bottom: 64px;
-      line-height: 1.1;
-      color: var(--brown-dark);
-      max-width: 1100px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .feature-card {
-      position: relative;
-      background: white;
-      border: 1px solid rgba(201,168,76,0.12);
-      border-radius: 20px;
-      padding: 36px 30px 32px;
-      overflow: hidden;
-      box-shadow: 0 2px 24px rgba(122,98,64,0.07);
-    }
-
-    .feature-num {
-      position: absolute;
-      top: 16px;
-      right: 20px;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 64px;
-      font-weight: 900;
-      color: rgba(201,168,76,0.1);
-      line-height: 1;
-      user-select: none;
-    }
-
-    .feature-tag {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--gold);
-      font-size: 9px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .feature-card h3 {
-      font-size: 20px;
-      font-weight: 800;
-      font-style: italic;
-      margin-bottom: 12px;
-      line-height: 1.2;
-      color: var(--brown-dark);
-    }
-
-    .feature-card p {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--brown-mid);
-      font-size: 13px;
-      line-height: 1.7;
-    }
-
-    /* ── Screenshots ── */
-    #screenshots {
-      background:
-        radial-gradient(ellipse at 80% 30%, rgba(15,55,38,0.4) 0%, transparent 55%),
-        #091a14;
-      padding: 100px 24px 120px;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    #screenshots .eyebrow { margin-bottom: 14px; }
-
-    #screenshots h2 {
-      font-size: clamp(28px, 3.5vw, 44px);
-      font-weight: 900;
-      font-style: italic;
-      margin-bottom: 0;
-      line-height: 1.1;
-      color: #f5f0e8;
-    }
-
-    .phone-row {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 56px;
-      flex-wrap: wrap;
-      align-items: flex-start;
-    }
-
-    .phone-frame {
-      width: 148px;
-      border-radius: 22px;
-      overflow: hidden;
-      box-shadow: 0 16px 60px rgba(0,0,0,0.55);
-      flex-shrink: 0;
-    }
-
-    .phone-frame img { width: 100%; }
-
-    .phone-frame:nth-child(1) { transform: translateY(20px); }
-    .phone-frame:nth-child(2) { transform: translateY(0px); }
-    .phone-frame:nth-child(3) { transform: translateY(12px); }
-    .phone-frame:nth-child(4) { transform: translateY(-8px); }
-
-    /* ── Culture ── */
-    #culture {
-      background: var(--cream);
-      padding: 110px 48px 120px;
-    }
-
-    .culture-inner {
-      max-width: 1060px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      gap: 72px;
-      align-items: center;
-    }
-
-    .culture-img { width: 100%; }
-
-    .culture-text .eyebrow { text-align: left; margin-bottom: 16px; }
-
-    .culture-text h2 {
-      font-size: clamp(28px, 3vw, 40px);
-      font-weight: 900;
-      font-style: italic;
-      line-height: 1.1;
-      margin-bottom: 20px;
-      color: var(--brown-dark);
-    }
-
-    .culture-text p {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--brown-mid);
-      font-size: 15px;
-      line-height: 1.8;
-      margin-bottom: 32px;
-    }
-
-    .btn-appstore--dark {
-      background: var(--teal);
-      color: var(--gold);
-    }
-
-    .btn-appstore--dark:hover { opacity: 0.9; }
-
-    /* ── Footer ── */
-    #footer {
-      background: #050c09;
-      padding: 52px 24px 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      border-top: 1px solid rgba(201,168,76,0.08);
-    }
-
-    .footer-logo-row {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .footer-logo {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      opacity: 0.85;
-    }
-
-    .footer-wordmark {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--gold);
-      font-weight: 800;
-      font-size: 11px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-    }
-
-    .footer-tagline {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: rgba(245,240,232,0.18);
-      font-size: 9px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 30px;
-    }
-
-    .footer-links a {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: rgba(245,240,232,0.55);
-      font-size: 11px;
-      text-decoration: none;
-    }
-
-    .footer-links a:hover { color: rgba(245,240,232,0.6); }
-
-    .footer-copy {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: rgba(245,240,232,0.12);
-      font-size: 10px;
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 768px) {
-      #nav { padding: 16px 24px; }
-      #hero { padding: 100px 20px 60px; }
-      .cta-row { flex-direction: column; gap: 28px; }
-      #stats { padding: 40px 20px 48px; gap: 12px; }
-      .stat-widget { min-width: 160px; }
-      #features { padding: 72px 20px; }
-      #features h2 { margin-bottom: 40px; }
-      #screenshots { padding: 72px 20px 80px; }
-      .phone-frame { width: 120px; }
-      .phone-frame:nth-child(n) { transform: none; }
-      #culture { padding: 72px 24px 80px; }
-      .culture-inner { grid-template-columns: 1fr; gap: 40px; }
-      .culture-img { max-width: 340px; margin: 0 auto; }
-      #footer { padding: 40px 20px 32px; }
-    }
-
-    @media (max-width: 480px) {
-      .stat-widget { min-width: 140px; max-width: 100%; }
-      .feature-grid { grid-template-columns: 1fr; }
-      .phone-row { gap: 12px; }
-      .phone-frame { width: 100px; }
-    }
-  </style>
+  }
+  @media(max-width:760px){
+    .kpis{grid-template-columns:1fr 1fr}
+    .privacy{grid-template-columns:1fr}
+    .hide-sm{display:none}
+    .legend i{width:70px}
+    .budget{flex:1 1 100%}
+    .budget input[type=range]{flex:1;min-width:0;width:auto}
+  }
+  @media(max-width:480px){
+    .wrap{padding:0 16px}
+    nav{padding:14px 0}
+    .brand{gap:10px;font-size:21px}
+    .brand img{width:36px;height:36px;border-radius:10px}
+    nav .btn.go{padding:7px 12px;font-size:13.5px}
+    header.top{padding-top:22px}
+    .lead{font-size:16.5px}
+    .kpi{padding:14px}
+    .kpi .n{font-size:24px}
+    .kpi .c{font-size:12.5px}
+    .legend{font-size:11.5px;gap:6px;padding:5px 9px;left:8px;bottom:8px}
+    .legend i{width:44px}
+    .legend .nd{margin-left:4px}
+    .searchrow input{min-width:100%}
+    .searchrow .btn{flex:1}
+    .cta-card{padding:22px 20px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+    .wm{background:linear-gradient(90deg,#f6efe2,#f6efe2);-webkit-background-clip:text;background-clip:text}
+    .btn:hover{transform:none}
+  }
+</style>
 </head>
 <body>
-
-  <nav id="nav" aria-label="Main navigation">
-    <span class="nav-brand">KavaCrawl</span>
-    <a class="nav-link" href="https://shapehaveninnovations.com/privacy.html">Privacy Policy</a>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="#"><img src="assets/icon.webp" alt="" width="40" height="40"><span class="wm">KavaCrawl</span></a>
+    <a class="btn go" href="https://apps.apple.com/us/app/kavacrawl-kava-bar-finder/id6772610237">Get the app <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
   </nav>
 
-  <section id="hero">
-    <img src="assets/logo.png" alt="KavaCrawl" class="hero-logo">
-    <p class="eyebrow">Welcome to the Island</p>
-    <h1>Your island crawl<br>starts here.</h1>
-    <p class="hero-sub">Discover kava bars, tea houses &amp; hidden gems near you. Live check-ins, crawl routes &amp; a community that knows the scene.</p>
-    <div class="cta-row">
-      <a href="https://apps.apple.com/gb/app/kavacrawl/id6772610237" class="btn-appstore">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        Download on the App Store
-      </a>
-      <div class="download-block">
-        <div class="qr-wrap"><img src="assets/qr.png" alt="Scan QR code to download KavaCrawl"></div>
-        <span class="qr-caption">Scan to download</span>
-        <span class="android-note">Android coming soon</span>
+  <header class="top">
+    <div class="pill"><span class="dot" aria-hidden="true"></span>KavaCrawl Index <span class="sep">Private by design</span></div>
+    <h1>Kava prices, <span class="hl">mapped.</span></h1>
+    <p class="lead">Every kava bar we know, glowing by what a shell costs. Set your budget, then search a zip code, city or state to see the best bars near you. We rank bars, never people.</p>
+  </header>
+
+  <div class="kpis" id="kpis" aria-live="polite"></div>
+
+  <section class="mapcard" aria-label="US kava price map">
+    <div class="maptools">
+      <div class="seg" id="metric" role="group" aria-label="Map metric">
+        <button class="on" data-m="price" aria-pressed="true">Price heat</button>
+        <button data-m="bars" aria-pressed="false">Bar density</button>
+      </div>
+      <div class="budget">
+        <label for="budget">Your budget</label>
+        <input id="budget" type="range" min="3" max="13" step="0.5" value="13">
+        <output id="budgetout" for="budget">Any price</output>
       </div>
     </div>
-    <div class="dots" aria-hidden="true">
-      <div class="dot"></div>
-      <div class="dot active"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
+    <div class="mapbox">
+      <svg id="map" viewBox="0 0 975 610" role="group" aria-label="Map of US kava bars. Each glowing dot is a bar, colored by shell price. The table below lists the same data."></svg>
+      <div class="zoombtns"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">&minus;</button></div>
+      <div class="legend" id="legend"></div>
+      <div class="tip" id="tip" role="status"></div>
+    </div>
+    <form class="searchrow" id="searchform" role="search">
+      <input id="q" type="search" autocomplete="off" placeholder="Zip code, city or state" aria-label="Search by zip code, city or state">
+      <button class="btn" type="submit">Search</button>
+      <button class="btn ghost" type="button" id="reset">All states</button>
+    </form>
+    <div id="announce" class="sr" aria-live="polite"></div>
+    <div class="hint" id="hint">Try 32904, Tampa, or Florida. Click any state to zoom in. Ctrl + scroll also zooms.</div>
+  </section>
+
+  <section class="teaser" id="teaser" aria-labelledby="th" hidden>
+    <div class="teaserhead"><h2 id="th">Lowest shell prices we've seen</h2><span>Search a zip, city or state to see every bar.</span></div>
+    <div class="tcards" id="tcards"></div>
+  </section>
+
+  <section id="results" aria-label="Search results" hidden>
+  <div class="tablehead">
+    <h2 id="tt">Top bars</h2>
+    <div class="status" id="status"></div>
+  </div>
+  <div class="sortbar" id="sortbar" role="group" aria-label="Sort bars">
+    <span>Sort</span>
+    <button type="button" data-k="smart">Best match</button>
+    <button type="button" data-k="price">Cheapest</button>
+    <button type="button" id="sdist" data-k="dist" hidden>Nearest</button>
+    <button type="button" data-k="idx">Top Index</button>
+    <button type="button" class="howlink" id="howlink">How the Index works</button>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr>
+        <th scope="col" class="num"><button data-s="rank" aria-label="Sort by rank">#</button></th>
+        <th scope="col"><button data-s="name">Bar</button></th>
+        <th scope="col" class="hide-sm"><button data-s="city">City</button></th>
+        <th scope="col" class="num"><button data-s="idx">Index</button></th>
+        <th scope="col" class="num"><button data-s="price">Shell price</button></th>
+        <th scope="col" class="num" id="dh" hidden><button data-s="dist">Distance</button></th>
+        <th scope="col" class="num hide-sm">Price updated</th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  <button class="btn ghost more" id="more" type="button" hidden>Show all bars</button>
+  </section>
+
+  <details class="how" id="how">
+    <summary>
+      <span class="howh">How the Index works</span>
+    </summary>
+    <div class="howbody">
+      <p class="tldr tl-top"><b>TL;DR</b> Every bar is scored from 0 to 100 on up to seven factors, with price weighing the most. A bar without enough data shows <i>Not yet scored</i> rather than a guess.</p>
+      <div class="howgrid">
+        <section class="hcard" aria-labelledby="h1">
+          <h3 id="h1">What it looks at</h3>
+          <p>The KavaCrawl Index scores each bar from 0 to 100 on price and value, using up to seven things.</p>
+          <ul class="chips" aria-label="Index inputs">
+            <li class="hot"><b>Price</b> <small>counts most</small></li>
+            <li>Menu</li>
+            <li>Hours</li>
+            <li>Happy hour</li>
+            <li>Dog policy</li>
+            <li>Data freshness</li>
+            <li class="cool"><b>Quiet</b> <small>counts least</small></li>
+          </ul>
+          <p class="fine">The price is compared with other bars in the same metro area, or a wider area when too few nearby bars have a price. Freshness is how recently the bar's data was checked, and quiet is how calm it tends to be.</p>
+        </section>
+        <section class="hcard" aria-labelledby="h2">
+          <h3 id="h2">When a bar gets a score</h3>
+          <div class="rule">
+            <span class="rbox">A known price</span><span class="rop" aria-hidden="true">+</span><span class="sr"> plus </span><span class="rbox">3 or more other known details</span><span class="rop" aria-hidden="true">=</span><span class="sr"> gives </span><span class="rbox ok">Index score</span>
+          </div>
+          <div class="rule alt">
+            <span class="rbox">Anything less</span><span class="rop" aria-hidden="true">=</span><span class="sr"> gives </span><span class="rbox na">Not yet scored</span>
+          </div>
+          <p class="fine"><i>Not yet scored</i> means we don't have enough data yet, not that the bar is bad. Quiet doesn't count toward the details needed.</p>
+        </section>
+      </div>
+      <ul class="promises">
+        <li><b>Never counted as zero.</b> Details we don't know are left out, and the rest are re-weighted.</li>
+        <li><b>Kept fresh.</b> Menus are refreshed weekly, and in the app a shell price older than 60 days is marked as possibly out of date.</li>
+        <li><b>Bars, never people.</b> Nobody can pay to win a comparison, and ads never change it.</li>
+        <li><b>Make it yours.</b> In the app you can change how much each factor counts and share a comparison made with your weights.</li>
+      </ul>
+      <p class="ver">Index v1.1 &middot; the default score you see in the app</p>
+    </div>
+  </details>
+
+  <div class="privacy">
+    <div><b>Your budget stays on your device</b><span>Set it once and we remember it in this browser only. It is never sent to us.</span></div>
+    <div><b>Searches never leave your browser</b><span>Zip codes and cities are matched against a list built into this page. No geocoding or map service is contacted from this page, so nobody sees what you type.</span></div>
+    <div><b>No account, no map tracking</b><span>The map is drawn by this page, with no map tile servers, sign-in or profiles. Page views are counted with Cloudflare Web Analytics, which does not use cookies.</span></div>
+  </div>
+
+  <p class="note" id="note"></p>
+
+  <section class="cta-card">
+    <div class="cta-copy">
+      <div class="cta-tag">// help build the map</div>
+      <b>Don't see your bar or your state?</b>
+      <p>Add it in the app. Every verified bar and price lights up this map for the next person.</p>
+      <ol class="steps" aria-label="How to contribute"><li>open <span class="arg">kavacrawl</span></li><li>tap <span class="arg">contribute</span></li><li>verify <span class="arg">--bar --price</span></li><li class="ok">map updated for everyone<span class="cur" aria-hidden="true"></span></li></ol>
+    </div>
+    <div class="cta-act">
+      <a class="btn go big" href="https://apps.apple.com/us/app/kavacrawl-kava-bar-finder/id6772610237">Download on the App Store <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      <small>Free for iPhone</small>
     </div>
   </section>
 
-  <section id="stats">
-    <div class="stat-widget">
-      <div class="stat-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      </div>
-      <div class="stat-value">500+</div>
-      <div class="stat-label">Kava Venues</div>
-      <div class="stat-desc">Bars, tea houses &amp; hidden gems mapped across the country.</div>
-    </div>
-    <div class="stat-widget">
-      <div class="stat-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-      </div>
-      <div class="stat-value">Live</div>
-      <div class="stat-label">Check-ins</div>
-      <div class="stat-desc">See who's out right now. Friends &amp; open bars always pinned.</div>
-    </div>
-    <div class="stat-widget">
-      <div class="stat-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-      </div>
-      <div class="stat-value">Free</div>
-      <div class="stat-label">iOS App</div>
-      <div class="stat-desc">Download on the App Store. Android coming soon.</div>
-    </div>
-    <div class="stat-widget">
-      <div class="stat-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-      </div>
-      <div class="stat-value stat-value--sm">Nationwide</div>
-      <div class="stat-label">Coverage</div>
-      <div class="stat-desc">Powered by Google Maps. Every state, every city.</div>
-    </div>
-  </section>
-
-  <section id="features">
-    <p class="eyebrow">Everything you need</p>
-    <h2>The app for kava culture.</h2>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <span class="feature-num" aria-hidden="true">01</span>
-        <p class="feature-tag">Discover</p>
-        <h3>Find every kava bar near you.</h3>
-        <p>Ratings, hours &amp; distance at a glance. Filter by type — kava bars, tea houses, hidden gems.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-num" aria-hidden="true">02</span>
-        <p class="feature-tag">Navigate</p>
-        <h3>See the scene on the map.</h3>
-        <p>Live check-ins, friends nearby &amp; open bars pinned. Know who's out before you leave.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-num" aria-hidden="true">03</span>
-        <p class="feature-tag">Crawl</p>
-        <h3>Build your crawl route.</h3>
-        <p>Pick your stops, set the order &amp; hit start. Turn any night into a proper island crawl.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-num" aria-hidden="true">04</span>
-        <p class="feature-tag">Community</p>
-        <h3>Events, vibes &amp; the crew.</h3>
-        <p>See what's happening tonight at every bar near you. Connect with the kava community.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="screenshots">
-    <p class="eyebrow">See it in action</p>
-    <h2>Built for the kava lifestyle.</h2>
-    <div class="phone-row">
-      <div class="phone-frame"><img src="assets/screen1.png" alt="KavaCrawl welcome screen"></div>
-      <div class="phone-frame"><img src="assets/screen2.png" alt="KavaCrawl discover screen"></div>
-      <div class="phone-frame"><img src="assets/screen3.png" alt="KavaCrawl map screen"></div>
-      <div class="phone-frame"><img src="assets/screen4.png" alt="KavaCrawl crawl route screen"></div>
-    </div>
-  </section>
-
-  <section id="culture">
-    <div class="culture-inner">
-      <img src="assets/lifestyle.png" alt="Person enjoying kava at sunset" class="culture-img">
-      <div class="culture-text">
-        <p class="eyebrow">The culture</p>
-        <h2>More than a bar guide.<br>It's a way of life.</h2>
-        <p>Kava culture is about community, connection &amp; finding your people. KavaCrawl puts the whole scene in your pocket — from the first pour to the last stop of the night.</p>
-        <a href="https://apps.apple.com/gb/app/kavacrawl/id6772610237" class="btn-appstore btn-appstore--dark">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          Download on the App Store
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer id="footer">
-    <div class="footer-logo-row">
-      <img src="assets/logo.png" alt="KavaCrawl" class="footer-logo">
-      <span class="footer-wordmark">KavaCrawl</span>
-    </div>
-    <span class="footer-tagline">Tea &amp; Kava Discovery</span>
-    <nav class="footer-links" aria-label="Footer navigation">
-      <a href="https://shapehaveninnovations.com/privacy">Privacy Policy</a>
-      <a href="https://apps.apple.com/gb/app/kavacrawl/id6772610237">App Store</a>
+  <footer>
+    <span>&copy; 2026 ShapeHaven Innovations LLC<br><small>City and ZIP data from <a href="https://www.geonames.org/">GeoNames</a> (CC BY 4.0). Some bar locations &copy; OpenStreetMap contributors.</small></span>
+    <div class="links">
+      <a href="https://shapehaveninnovations.com/privacy.html">Privacy</a>
       <a href="/guides/kava-bar-events-what-to-expect/">Kava Bar Events Guide</a>
       <a href="/guides/kava-bars-by-state-and-city/">Kava Bars by State and City</a>
-      <a href="https://shapehaveninnovations.com/">A Shapehaven Innovations product</a>
-    </nav>
-    <span class="footer-copy">&copy; 2026 Shape Haven Innovations. All rights reserved.</span>
+      <a href="https://shapehaveninnovations.com/">A ShapeHaven Innovations product</a>
+    </div>
   </footer>
+</div>
 
+<script src="vendor/d3.min.js"></script>
+<script src="vendor/topojson-client.min.js"></script>
+<script>
+(function(){
+  var brand=document.querySelector('.brand');
+  if(brand&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var play=function(){brand.classList.remove('wow');void brand.offsetWidth;brand.classList.add('wow')};
+    setTimeout(function(){play();setInterval(function(){if(!document.hidden)play()},7000)},5000);brand.addEventListener('mouseenter',play);
+  }
+  var steps=document.querySelector('.steps');
+  if(steps&&'IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    document.documentElement.classList.add('js');
+    new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){steps.classList.add('in');o.disconnect()}})},{threshold:.4}).observe(steps);
+  }
+  var STATES={AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',DC:'District of Columbia',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming'};
+  var NAME2ST={};Object.keys(STATES).forEach(function(k){NAME2ST[STATES[k].toLowerCase()]=k});
+  var W=975,H=610,ANY=13,NEAR=30;
+  var $=function(id){return document.getElementById(id)};
+  var V=[],byState={},stats={},budget=ANY,metric='price',view={type:'all'},sort={k:'smart',dir:-1},zips=null,zipsP=null,selId=null;
+  var proj=d3.geoAlbersUsa().scale(1300).translate([W/2,H/2]),path=d3.geoPath(),curK=1;
+
+  function money(v){return '$'+v.toFixed(2)}
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function median(a){a=a.slice().sort(function(x,y){return x-y});var m=a.length>>1;return a.length%2?a[m]:(a[m-1]+a[m])/2}
+  function miles(a,b,c,d){var r=Math.PI/180,x=Math.sin((c-a)*r/2),y=Math.sin((d-b)*r/2),h=x*x+Math.cos(a*r)*Math.cos(c*r)*y*y;return 7918*Math.asin(Math.sqrt(h))}
+  function ramp(t){var s=[[110,206,141],[233,213,107],[233,138,91]];t=Math.max(0,Math.min(1,t));var i=t<.5?0:1,u=t<.5?t*2:(t-.5)*2,a=s[i],b=s[i+1];return 'rgb('+[0,1,2].map(function(k){return Math.round(a[k]+(b[k]-a[k])*u)}).join(',')+')'}
+  function within(v){return budget>=ANY||(v.price!=null&&v.price<=budget)}
+  function store(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+  function load(k){try{return localStorage.getItem(k)}catch(e){return null}}
+
+  function compute(){
+    var n=0;V.slice().sort(function(a,b){return (b.idx==null?-1:b.idx)-(a.idx==null?-1:a.idx)}).forEach(function(v){v.rank=v.idx==null?null:++n});
+    byState={};V.forEach(function(v){(byState[v.st]=byState[v.st]||[]).push(v)});
+    stats={};Object.keys(byState).forEach(function(s){var p=byState[s].filter(function(v){return v.price!=null}).map(function(v){return v.price});stats[s]={n:byState[s].length,priced:p.length,med:p.length?median(p):null}});
+  }
+  function kpis(){
+    var priced=V.filter(function(v){return v.price!=null}),ps=priced.map(function(v){return v.price}),cheap=priced.slice().sort(function(a,b){return a.price-b.price})[0];
+    var pst=Object.keys(stats).filter(function(s){return stats[s].priced}).length,ok=V.filter(within).length;
+    var last=budget<ANY?[ok,'bars within '+money(budget)+' a shell']:[ps.length?money(median(ps)):'n/a','median shell price, '+pst+' state'+(pst===1?'':'s')];
+    $('kpis').innerHTML=[[V.length,'bars on the map, '+Object.keys(byState).length+' states'],[priced.length,'with a shell price'],[ps.length?money(Math.min.apply(0,ps)):'n/a','cheapest shell'+(cheap?' · '+esc(cheap.city)+', '+cheap.st:'')],last].map(function(k){return '<div class="kpi"><div class="n">'+k[0]+'</div><div class="c">'+k[1]+'</div></div>'}).join('');
+  }
+
+  /* ---------- map ---------- */
+  var svg=d3.select('#map'),g,gStates,gDots,gPin,zoom,tip=$('tip'),feats;
+  var gGlow,gCounty,gLabels,blur,pr=[0,1],ctyP=null,cityList=null,cityP=null,curT=d3.zoomIdentity;
+  /* county lines and city names fade in as you zoom, so the map gets finer detail without any tile server */
+  function loadCounties(){
+    if(ctyP)return;
+    ctyP=fetch('vendor/counties-albers-10m.json').then(function(r){return r.json()}).then(function(t){
+      gCounty.attr('d',path(topojson.mesh(t,t.objects.counties,function(a,b){return a!==b})));detail();
+    }).catch(function(){ctyP=null});
+  }
+  /* real city names at their true centers (GeoNames, places of 5,000+ people), self-hosted, drawn by priority as you zoom */
+  function loadCities(){
+    if(cityP)return;
+    cityP=fetch('mapdata/cities.json').then(function(r){return r.json()}).then(function(a){
+      cityList=[];a.forEach(function(c){var xy=proj([c[3],c[2]]);if(xy)cityList.push({name:c[0],st:c[1],x:xy[0],y:xy[1],pop:c[4],w:c[0].length*.6*11})});detail();
+    }).catch(function(){cityP=null});
+  }
+  function minPop(k){return k<3?Infinity:k<5?300000:k<8?80000:k<13?25000:0}
+  function detail(){
+    var k=curK;
+    gCounty.attr('opacity',Math.max(0,Math.min(.5,(k-3.5)/8))).attr('stroke-width',.6/k);
+    if(!cityList)return;
+    var mp=minPop(k),vis=[],placed=[],x0=-curT.x/k,x1=(W-curT.x)/k,y0=-curT.y/k,y1=(H-curT.y)/k;
+    if(mp!==Infinity)for(var i=0;i<cityList.length&&vis.length<150;i++){
+      var c=cityList[i];if(c.pop<mp)break;
+      if(c.x<x0||c.x>x1||c.y<y0||c.y>y1)continue;
+      var hit=false;for(var q=0;q<placed.length;q++){var o=placed[q];if(Math.abs(o.x-c.x)*k<(o.w+c.w)/2+8&&Math.abs(o.y-c.y)*k<16){hit=true;break}}
+      if(!hit){placed.push(c);vis.push(c)}
+    }
+    var sel=gLabels.selectAll('g.city').data(vis,function(c){return c.name+'|'+c.st}).join(function(en){var g2=en.append('g').attr('class','city');g2.append('circle').attr('class','ctick');g2.append('text').attr('class','clabel').text(function(c){return c.name});return g2});
+    sel.select('circle').attr('cx',function(c){return c.x}).attr('cy',function(c){return c.y}).attr('r',2/k);
+    sel.select('text').attr('x',function(c){return c.x}).attr('y',function(c){return c.y-5/k}).attr('font-size',11/k).attr('stroke-width',3/k);
+  }
+  function legend(){
+    $('legend').innerHTML=metric==='price'
+      ?'<span>'+money(pr[0])+'</span><i></i><span>'+money(pr[1])+'</span><span class="nd"></span><span>no price yet</span>'
+      :'<span>one bar</span><i style="background:linear-gradient(90deg,#1d5f49,#6ece8d,#f2ece0)"></i><span>many bars</span>';
+  }
+  function tipText(s){var t=stats[s];return '<b>'+STATES[s]+'</b><br>'+(t?t.n+' bar'+(t.n===1?'':'s')+'<br>'+(t.med!=null?'Median shell '+money(t.med)+' ('+t.priced+' priced'+(t.priced<3?', small sample':'')+')':'No shell prices yet'):'No bars yet')}
+  function moveTip(e){tip.style.left=Math.min(e.clientX+14,window.innerWidth-250)+'px';tip.style.top=(e.clientY+14)+'px'}
+  function dotColor(v){
+    if(metric==='bars')return '#6ece8d';
+    return v.price==null?'#7d9a8c':ramp(pr[1]===pr[0]?0:(v.price-pr[0])/(pr[1]-pr[0]));
+  }
+  function dotOpacity(v){return within(v)?1:.12}
+  function sizeDots(){
+    gDots.selectAll('circle').attr('r',function(v){return (v.id===selId?7:3.2)/curK}).attr('stroke-width',(selId?1.2:.8)/curK);
+    gGlow.selectAll('circle').attr('r',function(v){return (v.price==null?9:13)/curK});
+    blur.attr('stdDeviation',5/curK);
+    gPin.selectAll('circle').attr('r',function(d,i){return (i?3:9)/curK}).attr('stroke-width',2/curK);
+    gStates.selectAll('path').attr('stroke-width',function(){return (this.classList.contains('sel')?1.8:.7)/curK});
+  }
+  function drawDots(){
+    var data=V.filter(function(v){return v.xy});
+    gGlow.selectAll('circle').data(data,function(v){return v.id}).join('circle').attr('cx',function(v){return v.xy[0]}).attr('cy',function(v){return v.xy[1]});
+    gDots.selectAll('circle').data(data,function(v){return v.id}).join('circle')
+      .attr('cx',function(v){return v.xy[0]}).attr('cy',function(v){return v.xy[1]}).attr('stroke','#06110f').style('cursor','pointer')
+      .on('mousemove',function(e,v){tip.innerHTML='<b>'+esc(v.name)+'</b><br>'+(v.addr?esc(v.addr)+'<br>':'')+esc(v.city)+', '+v.st+'<br>'+(v.idx!=null?'Index '+v.idx+' · ':'')+(v.price!=null?money(v.price)+' shell':'no price yet');tip.classList.add('on');moveTip(e)})
+      .on('mouseleave',function(){tip.classList.remove('on')})
+      .on('click',function(e,v){e.stopPropagation();pick(v.id,false)});
+    restyle();
+  }
+  function restyle(){
+    gStates.selectAll('path').classed('sel',function(f){return view.type==='state'&&view.st===f.st});
+    gGlow.selectAll('circle').attr('fill',dotColor).attr('opacity',function(v){return within(v)?(v.price==null?.28:.5):0});
+    gDots.selectAll('circle').attr('fill',dotColor).attr('opacity',dotOpacity);
+    sizeDots();legend();
+  }
+  function zoomTo(cx,cy,k,ms){svg.transition().duration(ms==null?750:ms).call(zoom.transform,d3.zoomIdentity.translate(W/2,H/2).scale(k).translate(-cx,-cy))}
+  function zoomBox(b){var dx=b[1][0]-b[0][0],dy=b[1][1]-b[0][1];zoomTo((b[0][0]+b[1][0])/2,(b[0][1]+b[1][1])/2,Math.min(40,.85/Math.max(dx/W,dy/H)))}
+  function initMap(topo){
+    svg.append('defs').html('<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur id="blurstd" stdDeviation="5"/></filter>');
+    blur=d3.select('#blurstd');
+    var ps=V.filter(function(v){return v.price!=null}).map(function(v){return v.price});pr=ps.length?[Math.min.apply(0,ps),Math.max.apply(0,ps)]:[0,1];
+    g=svg.append('g');gStates=g.append('g');gCounty=g.append('path').attr('class','county').attr('opacity',0);gGlow=g.append('g').attr('class','glow').attr('filter','url(#blur)');gDots=g.append('g');gLabels=g.append('g');gPin=g.append('g');
+    feats=topojson.feature(topo,topo.objects.states).features;
+    feats.forEach(function(f){f.st=NAME2ST[f.properties.name.toLowerCase()]});
+    feats=feats.filter(function(f){return f.st});
+    gStates.selectAll('path').data(feats).join('path').attr('class','st').attr('d',path).attr('tabindex',0).attr('role','button')
+      .attr('aria-label',function(f){return STATES[f.st]+'. Show bars in this state.'})
+      .on('mousemove',function(e,f){tip.innerHTML=tipText(f.st);tip.classList.add('on');moveTip(e)})
+      .on('mouseleave',function(){tip.classList.remove('on')})
+      .on('focus',function(e,f){var b=this.getBoundingClientRect();tip.innerHTML=tipText(f.st);tip.classList.add('on');tip.style.left=b.left+'px';tip.style.top=(b.bottom+6)+'px'})
+      .on('blur',function(){tip.classList.remove('on')})
+      .on('click',function(e,f){tip.classList.remove('on');showState(f.st);$('q').value=STATES[f.st];$('hint').textContent='Showing '+STATES[f.st]+'.'})
+      .on('keydown',function(e,f){if(e.key==='Enter'||e.key===' '){e.preventDefault();showState(f.st);$('q').value=STATES[f.st];$('hint').textContent='Showing '+STATES[f.st]+'.'}});
+    V.forEach(function(v){v.xy=proj([v.lng,v.lat])});
+    zoom=d3.zoom().scaleExtent([1,60]).translateExtent([[-40,-40],[W+40,H+40]]).extent([[0,0],[W,H]])
+      .filter(function(e){return e.type==='wheel'?(e.ctrlKey||e.metaKey):!e.button})
+      .on('zoom',function(e){curK=e.transform.k;curT=e.transform;g.attr('transform',e.transform);if(curK>=3){if(!ctyP)loadCounties();if(!cityP)loadCities()}sizeDots();detail()});
+    svg.call(zoom);
+    $('zin').onclick=function(){svg.transition().duration(300).call(zoom.scaleBy,1.6)};
+    $('zout').onclick=function(){svg.transition().duration(300).call(zoom.scaleBy,1/1.6)};
+    drawDots();restyle();
+  }
+
+  /* ---------- table ---------- */
+  var CHIPDIR={smart:-1,price:1,dist:1,idx:-1};
+  var LIMIT=25,showAllRows=false,APP='https://apps.apple.com/us/app/kavacrawl-kava-bar-finder/id6772610237';
+  function grp(v){return v.idx!=null?0:v.price!=null?1:2}
+  function sortVal(v,k){return k==='name'?v.name.toLowerCase():k==='city'?(v.city||'').toLowerCase():v[k]}
+  /* default order: scored bars by Index, then priced bars cheapest first, then the rest by distance or name */
+  function smart(a,b){
+    var ga=grp(a),gb=grp(b);if(ga!==gb)return ga-gb;
+    if(ga===0)return b.idx-a.idx;
+    if(ga===1)return a.price-b.price;
+    return view.type==='near'?a.dist-b.dist:a.name.localeCompare(b.name);
+  }
+  /* nearest order after a city search: bars in the searched city first, then everything else by distance */
+  function inCity(v){return squash(v.city||'')+'|'+v.st===view.city}
+  function cityFirst(a,b){if(view.type!=='near'||!view.city)return 0;var x=inCity(a),y=inCity(b);return x===y?0:x?-1:1}
+  function baseRows(){
+    return view.type==='state'?(byState[view.st]||[]).slice():view.type==='near'?view.list.slice():V.slice();
+  }
+  function render(){
+    var base=baseRows(),rows=base.filter(within),hidden=base.length-rows.length;
+    var k=sort.k,d=sort.dir;
+    var isSmart=k==='smart';
+    rows.sort(isSmart?smart:function(a,b){if(k==='dist'&&d>0){var c=cityFirst(a,b);if(c)return c}var x=sortVal(a,k),y=sortVal(b,k);if(x==null&&y==null)return smart(a,b);if(x==null)return 1;if(y==null)return -1;return x<y?-d:x>y?d:smart(a,b)});
+    var total=rows.length,shown=showAllRows?rows:rows.slice(0,LIMIT);
+    var wd=view.type==='near';$('dh').hidden=!wd;
+    document.querySelectorAll('th[aria-sort]').forEach(function(t){t.removeAttribute('aria-sort')});
+    var btn=document.querySelector('th button[data-s="'+k+'"]');if(btn)btn.parentNode.setAttribute('aria-sort',d>0?'ascending':'descending');
+    $('sdist').hidden=!wd;
+    document.querySelectorAll('#sortbar button[data-k]').forEach(function(b){var on=b.dataset.k===k&&(k==='smart'||d===CHIPDIR[b.dataset.k]);b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+    var unscored=isSmart?rows.filter(function(v){return v.idx==null}).length:0,divided=false,cols=wd?7:6;
+    $('rows').innerHTML=shown.length?shown.map(function(v){
+      var div='';if(isSmart&&!divided&&v.idx==null&&unscored){divided=true;div='<tr class="group"><td colspan="'+cols+'">Not yet scored ('+unscored+' bar'+(unscored===1?'':'s')+')</td></tr>'}
+      return div+'<tr data-id="'+v.id+'" tabindex="0"'+(v.id===selId?' class="sel"':'')+'><td class="num rk">'+(v.rank==null?'&ndash;':v.rank)+'</td><td><div class="nm">'+esc(v.name)+'</div><div class="sub">'+(v.addr?esc(v.addr)+' &middot; ':'')+esc(v.city||'')+', '+v.st+'</div></td><td class="hide-sm">'+esc(v.city||'')+'</td><td class="num">'+(v.idx!=null?'<span class="score">'+v.idx+'</span>':'<span class="na" title="Needs a known price and more verified details before we score it">Not yet scored</span>')+'</td><td class="num price">'+(v.price!=null?money(v.price):'<span class="na">No price yet</span><a class="addp" href="'+APP+'">Add price</a>')+'</td>'+(wd?'<td class="num">'+v.dist.toFixed(1)+' mi</td>':'')+'<td class="num hide-sm sub">'+(v.price!=null&&v.updated?v.updated:'')+'</td></tr>'}).join('')
+      :'<tr><td colspan="7" class="empty">'+(budget<ANY?'No bars at or under '+money(budget)+' here. Move the budget slider up to see more.':'No bars here yet. Open KavaCrawl and tap Contribute to add one.')+'</td></tr>';
+    teaser();
+    $('more').hidden=total<=LIMIT;$('more').textContent=showAllRows?'Show fewer':'Show all '+total+' bars';
+    $('rows').querySelectorAll('tr[data-id]').forEach(function(r){r.onclick=function(){pick(r.dataset.id,true)};
+      /* Enter or Space on the focused row (not on its Add price link) selects it; focus returns to the re-rendered row */
+      r.onkeydown=function(e){if(e.target!==r||(e.key!=='Enter'&&e.key!==' '))return;e.preventDefault();var id=r.dataset.id;pick(id,true);var n=$('rows').querySelector('tr[data-id="'+id+'"]');if(n)n.focus()}});
+    var s=$('status').dataset.base||'';
+    $('status').textContent=s+(budget<ANY&&hidden?(s?' · ':'')+hidden+' hidden by your '+money(budget)+' budget (over budget or no price)':'');
+  }
+  function setStatus(t){$('status').dataset.base=t}
+  var REDUCE=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* the table only appears once there is a search or a state to show; before that, a teaser strip fills the space */
+  function teaser(){
+    var c=V.filter(function(v){return v.price!=null&&within(v)}).sort(function(a,b){return a.price-b.price||a.name.localeCompare(b.name)}).slice(0,5);
+    $('tcards').innerHTML=c.map(function(v){return '<button type="button" class="tcard" data-id="'+v.id+'"><span class="tp">'+money(v.price)+'</span><span class="tn">'+esc(v.name)+'</span><span class="ts">'+esc(v.city)+', '+v.st+'</span></button>'}).join('');
+    $('tcards').querySelectorAll('.tcard').forEach(function(b){b.onclick=function(){var id=b.dataset.id,f=document.activeElement===b;pick(id,true);var n=f&&$('tcards').querySelector('.tcard[data-id="'+id+'"]');if(n)n.focus()}});
+    $('teaser').hidden=!c.length||!$('results').hidden;
+  }
+  function setResults(on){$('results').hidden=!on;teaser()}
+  function announce(){$('announce').textContent=$('tt').textContent+'. '+($('status').dataset.base||'')}
+  function revealResults(){var r=$('results').getBoundingClientRect();if(r.top>window.innerHeight*.8)$('results').scrollIntoView({behavior:REDUCE?'auto':'smooth',block:'start'})}
+  function pick(id,fromTable){
+    var v=V.filter(function(x){return x.id===id})[0];if(!v)return;selId=id;
+    if(v.xy&&fromTable)zoomTo(v.xy[0],v.xy[1],Math.max(curK,7));
+    sizeDots();render();
+    if(v.xy)tip.classList.remove('on');
+    if(!fromTable){var r=document.querySelector('#rows tr.sel');if(r)r.scrollIntoView({behavior:'smooth',block:'nearest'})}
+  }
+
+  /* ---------- views ---------- */
+  function clearPin(){gPin.selectAll('*').remove()}
+  function showAll(){view={type:'all'};selId=null;clearPin();setResults(false);$('tt').textContent='Top bars';setStatus(V.length+' bars across '+Object.keys(byState).length+' states');sort={k:'smart',dir:-1};showAllRows=false;zoomTo(W/2,H/2,1);restyle();render();announce()}
+  function showState(s){
+    view={type:'state',st:s};selId=null;clearPin();setResults(true);var n=(byState[s]||[]).length;$('tt').textContent=STATES[s]+' bars';
+    setStatus(n?n+' bar'+(n===1?'':'s')+(stats[s].priced?' · median shell '+money(stats[s].med):' · no prices yet'):'No bars yet');
+    var f=feats.filter(function(x){return x.st===s})[0];if(f)zoomBox(path.bounds(f));
+    sort={k:'smart',dir:-1};showAllRows=false;restyle();render();announce();revealResults();
+  }
+  function showNear(lat,lng,label,city,st){
+    var p=proj([lng,lat]);if(!p){$('hint').textContent='That place is outside the map area.';return false}
+    var all=V.map(function(v){v.dist=miles(lat,lng,v.lat,v.lng);return v}).sort(function(a,b){return a.dist-b.dist});
+    var near=all.filter(function(v){return v.dist<=NEAR}),list=near.length?near:all.slice(0,10);
+    /* search results default to nearest first (Nearest chip active) */
+    view={type:'near',list:list,city:city?squash(city)+'|'+st:null};selId=null;sort={k:'dist',dir:1};showAllRows=false;
+    $('tt').textContent='Bars near '+label;
+    setStatus(near.length?near.length+' bar'+(near.length===1?'':'s')+' within '+NEAR+' mi':'No bars within '+NEAR+' mi. Showing the 10 nearest.');
+    clearPin();gPin.append('circle').attr('cx',p[0]).attr('cy',p[1]).attr('fill','none').attr('stroke','#f2ece0');gPin.append('circle').attr('cx',p[0]).attr('cy',p[1]).attr('fill','#f2ece0').attr('stroke','#06110f');
+    /* fit the search radius (or the 10 nearest bars) in the map view. A point north of the border projects
+       to null, so measure south as well; the fallback uses the bars' own map positions. */
+    var r;
+    if(near.length){var mi=NEAR*1.25,edge=proj([lng,lat+mi/69])||proj([lng,lat-mi/69]);r=edge?Math.hypot(edge[0]-p[0],edge[1]-p[1]):10}
+    else r=1.15*Math.max.apply(0,list.map(function(v){return v.xy?Math.hypot(v.xy[0]-p[0],v.xy[1]-p[1]):0}));
+    var k=Math.max(2,Math.min(60,.42*H/Math.max(r,1)));
+    setResults(true);zoomTo(p[0],p[1],k);restyle();render();announce();revealResults();
+  }
+
+  /* ---------- search (all local) ---------- */
+  /* "Palm Bay", "palmbay", "palm bay fl", "Palm Bay, Florida" and "Saint Pete" style input all land on the same key */
+  function squash(s){return String(s).toLowerCase().replace(/\bsaint\b/g,'st').replace(/\bft\b/g,'fort').replace(/[^a-z0-9]/g,'')}
+  var NAME2STSQ={};Object.keys(STATES).forEach(function(k){NAME2STSQ[squash(STATES[k])]=k});
+  function stateOf(x){x=String(x).trim();if(!x)return null;var u=x.toUpperCase().replace(/\./g,'');return STATES[u]?u:(NAME2STSQ[squash(x)]||null)}
+  function loadZips(){
+    if(zips)return Promise.resolve(zips);
+    return zipsP||(zipsP=fetch('mapdata/zips.json').then(function(r){return r.json()}).then(function(j){
+      var byZip={},byCity={},names={};
+      j.z.forEach(function(r){
+        var st=j.s[r[4]],city=j.c[r[3]],lat=r[1]/100,lng=r[2]/100;byZip[r[0]]=[lat,lng,city,st];
+        var sq=squash(city),key=sq+'|'+st,c=byCity[key]||(byCity[key]=[0,0,0,city,st]);c[0]+=lat;c[1]+=lng;c[2]++;
+        (names[sq]=names[sq]||{})[st]=true;
+      });
+      return zips={byZip:byZip,byCity:byCity,names:names};
+    }));
+  }
+  function pickCity(name,st,z){
+    var opts=z.names[name];if(!opts)return null;
+    var cands=Object.keys(opts).filter(function(s){return !st||s===st});if(!cands.length)return null;
+    cands.sort(function(a,b){return z.byCity[name+'|'+b][2]-z.byCity[name+'|'+a][2]});
+    var c=z.byCity[name+'|'+cands[0]];return{lat:c[0]/c[2],lng:c[1]/c[2],label:c[3]+', '+c[4],n:c[2],city:c[3],st:c[4]};
+  }
+  function findCity(q,z){
+    var raw=q.toLowerCase().trim(),st=null,name=raw,parts=raw.split(',');
+    if(parts.length>1){name=parts[0];st=stateOf(parts.slice(1).join(' '))}
+    else{var w=raw.split(/\s+/);
+      if(w.length>2&&stateOf(w.slice(-2).join(' '))){st=stateOf(w.slice(-2).join(' '));name=w.slice(0,-2).join(' ')}
+      else if(w.length>1&&stateOf(w[w.length-1])){st=stateOf(w[w.length-1]);name=w.slice(0,-1).join(' ')}}
+    name=squash(name);if(!name)return null;
+    var hit=pickCity(name,st,z);if(hit)return hit;
+    if(!st){var m=name.match(/^(.{3,}?)([a-z]{2})$/);if(m&&STATES[m[2].toUpperCase()]){hit=pickCity(m[1],m[2].toUpperCase(),z);if(hit)return hit}}
+    if(name.length<3)return null;
+    var best=null;Object.keys(z.names).forEach(function(k){if(k.indexOf(name)!==0)return;var h=pickCity(k,st,z);if(h&&(!best||h.n>best.n))best=h});
+    return best;
+  }
+  /* fallback: a bar's own city (Davie, Doral: the zip list files their zips under a neighbouring city), then a metro label */
+  function findMetro(q){
+    var sq=squash(q);if(sq.length<4)return null;
+    var hits=V.filter(function(v){return v.city&&squash(v.city)===sq}),city=hits.length?hits[0]:null;
+    if(city)hits=hits.filter(function(v){return v.st===city.st});
+    else hits=V.filter(function(v){return v.metro&&squash(v.metro)===sq});
+    if(!hits.length)return null;
+    var la=0,ln=0;hits.forEach(function(v){la+=v.lat;ln+=v.lng});
+    return city?{lat:la/hits.length,lng:ln/hits.length,label:city.city+', '+city.st,city:city.city,st:city.st}:{lat:la/hits.length,lng:ln/hits.length,label:hits[0].metro};
+  }
+  $('searchform').onsubmit=function(e){
+    e.preventDefault();var q=$('q').value.trim();if(!q)return;
+    if(!g){$('hint').textContent='The map is still loading. Try again in a moment.';return}
+    var st=stateOf(q);
+    if(st){showState(st);$('hint').textContent='Showing '+STATES[st]+'.';return}
+    $('hint').textContent='Searching...';
+    loadZips().then(function(z){
+      var geo=null,zm=q.match(/^\d{5}(-\d{4})?$/);
+      if(zm){var r=z.byZip[q.slice(0,5)];if(r)geo={lat:r[0],lng:r[1],label:r[2]+', '+r[3]+' '+q.slice(0,5)}}
+      else geo=findCity(q,z)||findMetro(q);
+      if(!geo){$('hint').textContent='No match. Try a 5-digit zip, a city (add the state if it is common, like Portland, OR), or a state. Street addresses are not supported, so your searches stay on your device.';return}
+      if(showNear(geo.lat,geo.lng,geo.label,geo.city,geo.st)!==false)$('hint').textContent='Showing bars near '+geo.label+'.';
+    }).catch(function(){$('hint').textContent='Could not load the zip list.'});
+  };
+  var HINT0='Try 32904, Tampa, or Florida. Click any state to zoom in. Ctrl + scroll also zooms.';
+  function resetAll(){$('q').value='';$('hint').textContent=HINT0;showAll()}
+  $('reset').onclick=resetAll;
+  $('howlink').onclick=function(){var h=$('how');h.open=true;h.scrollIntoView({behavior:REDUCE?'auto':'smooth',block:'center'});h.querySelector('summary').focus({preventScroll:true})};
+  /* clearing the box (the x button, backspacing to empty, Escape, or leaving it empty) zooms back out to all states */
+  function emptyReset(){if(!$('q').value.trim()&&view.type!=='all')resetAll()}
+  $('q').addEventListener('search',emptyReset);
+  $('q').addEventListener('input',emptyReset);
+  $('q').addEventListener('blur',emptyReset);
+  $('q').addEventListener('keydown',function(e){if(e.key==='Escape'&&(this.value||view.type!=='all')){e.preventDefault();resetAll()}});
+  $('metric').onclick=function(e){var b=e.target.closest('button');if(!b)return;metric=b.dataset.m;document.querySelectorAll('#metric button').forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});restyle()};
+  $('sortbar').onclick=function(e){var b=e.target.closest('button');if(!b||b.hidden||!b.dataset.k)return;sort={k:b.dataset.k,dir:CHIPDIR[b.dataset.k]};showAllRows=false;render()};
+  document.querySelector('thead').onclick=function(e){var b=e.target.closest('button');if(!b)return;var k=b.dataset.s;if(sort.k===k)sort.dir*=-1;else sort={k:k,dir:(k==='idx')?-1:1};render()};
+  function setBudget(v,save){budget=v;$('budget').value=v;$('budgetout').textContent=v>=ANY?'Any price':'Up to '+money(v);if(save)store('kc-budget',String(v));if(V.length){kpis();restyle();render()}}
+  $('budget').oninput=function(){setBudget(+this.value,true)};
+  var sb=parseFloat(load('kc-budget'));if(sb>=3&&sb<=ANY)setBudget(sb,false);
+
+  Promise.all([fetch('mapdata/venues.json').then(function(r){return r.json()}),fetch('vendor/states-albers-10m.json').then(function(r){return r.json()})]).then(function(a){
+    V=a[0].venues;compute();kpis();initMap(a[1]);
+    setStatus(V.length+' bars across '+Object.keys(byState).length+' states');
+    $('note').textContent='Snapshot of KavaCrawl data, '+a[0].generated+'. The Index scores a bar once it has a known price and enough other verified details. A missing price or score is left out of medians and rankings, never counted as zero.'+(function(n){return n?' Preview: '+(n===1?'one bar location is':n+' bar locations are')+' approximate (placed at the ZIP code center).':''})(V.filter(function(v){return v.approx}).length);
+    $('more').onclick=function(){showAllRows=!showAllRows;render()};
+    render();
+  }).catch(function(){$('results').hidden=false;$('status').textContent='Could not load the data.'});
+})();
+</script>
   <!-- Cloudflare Web Analytics -->
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6af77163fb7045ec93e5895e76b117a4"}'></script>
   <!-- End Cloudflare Web Analytics -->

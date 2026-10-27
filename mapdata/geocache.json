@@ -1,0 +1,2256 @@
+{
+ "ChIJ-6OwA3MB2YgR71fy4NT4sTU": {
+  "lat": 26.13143,
+  "lng": -80.14887,
+  "src": "census",
+  "match": "Exact",
+  "addr": "701 NW 5th Ave Unit 1040, Fort Lauderdale, FL 33311"
+ },
+ "ChIJ04ZNOt3RwogRVFWAQ_ojHpU": {
+  "lat": 27.86122,
+  "lng": -82.20259,
+  "src": "census",
+  "match": "Exact",
+  "addr": "16741 Fishhawk Blvd, Lithia, FL 33547"
+ },
+ "ChIJ09ZYeUniwogR9KQcVuRsBLs": {
+  "lat": 27.77021,
+  "lng": -82.66356,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "2235 1st Ave S, St. Petersburg, FL 33713"
+ },
+ "ChIJ0TJhqc1f3ogR8-otZsd9m-c": {
+  "lat": 27.63862,
+  "lng": -80.42992,
+  "src": "nominatim",
+  "match": "primary",
+  "addr": "5445 20th St #108, Vero Beach, FL 32966"
+ },
+ "ChIJ0X4nfQDF5YgRQZ5wpQSBou4": {
+  "lat": 30.12598,
+  "lng": -81.77548,
+  "src": "census",
+  "match": "Exact",
+  "addr": "179 College Dr #19, Orange Park, FL 32065"
+ },
+ "ChIJ1d_PewDn3ogRp_i8vmoIIoQ": {
+  "lat": 27.24876,
+  "lng": -80.27403,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3599 NW Federal Hwy, Jensen Beach, FL 34957"
+ },
+ "ChIJ1f6LpC6l2YgRmEcw_kSmvfM": {
+  "lat": 25.97752,
+  "lng": -80.2953,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3416 Red Rd, Miramar, FL 33025"
+ },
+ "ChIJ2T-H4yafVogRCtsr480sC-Q": {
+  "lat": 35.17956,
+  "lng": -80.88511,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "204 W Woodlawn Rd H, Charlotte, NC 28217"
+ },
+ "ChIJ2d_fFufJ5YgR7hTCwErvk6k": {
+  "lat": 30.17456,
+  "lng": -81.60398,
+  "src": "census",
+  "match": "Exact",
+  "addr": "11018 Old St Augustine Rd Ste 123, Jacksonville, FL 32257"
+ },
+ "ChIJ35keAB232YgR2EfCHpXYEb0": {
+  "lat": 25.79922,
+  "lng": -80.1977,
+  "src": "census",
+  "match": "Exact",
+  "addr": "125 NW 23rd St, Miami, FL 33127"
+ },
+ "ChIJ39JL2MC1RIYRYIC_UjLu7FA": {
+  "lat": 30.24803,
+  "lng": -97.77153,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "2110 S Lamar Blvd Ste a, Austin, TX 78704"
+ },
+ "ChIJ3X18gYLdmoARYxa3Kka7OUg": {
+  "lat": 38.61442,
+  "lng": -121.27109,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1949 Zinfandel Dr, Rancho Cordova, CA 95670"
+ },
+ "ChIJ3X1t-FRx54gR-5zzhsq_JhE": {
+  "lat": 28.63038,
+  "lng": -81.36331,
+  "src": "census",
+  "match": "Exact",
+  "addr": "400 N Orlando Ave Unit 109A, Maitland, FL 32751"
+ },
+ "ChIJ3YLM-g1X2YARBqMRytnxUFo": {
+  "lat": 32.76333,
+  "lng": -117.02386,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "8047 La Mesa Blvd Suite A, La Mesa, CA 91942"
+ },
+ "ChIJ3e-ax5sR24gR6RdsnEiNM7c": {
+  "lat": 26.45123,
+  "lng": -81.77346,
+  "src": "census",
+  "match": "Exact",
+  "addr": "10952 Eagle Village Dr #460, Fort Myers, FL 33913"
+ },
+ "ChIJ44bmcwC1RIYR8MTGfLi96jc": {
+  "lat": 30.26359,
+  "lng": -97.72497,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1620 E 7th St, Austin, TX 78702"
+ },
+ "ChIJ4SwTVb_p3ogR9r5mlFngB0s": {
+  "lat": 27.26424,
+  "lng": -80.28455,
+  "src": "census",
+  "match": "Exact",
+  "addr": "10931 US-1, Port St. Lucie, FL 34952"
+ },
+ "ChIJ4UHTDDGr2YgRyfBdZBYVLzw": {
+  "lat": 26.01153,
+  "lng": -80.14767,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2037 Hollywood Blvd, Hollywood, FL 33020"
+ },
+ "ChIJ4wTamkNp3ogRAmJ_8kXLqss": {
+  "lat": 27.81042,
+  "lng": -80.46489,
+  "src": "census",
+  "match": "Exact",
+  "addr": "807 Indian River Dr, Sebastian, FL 32958"
+ },
+ "ChIJ66Crs-S0RIYR6xll8X_7vC4": {
+  "lat": 30.28545,
+  "lng": -97.71217,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3200 Merrie Lynn Ave, Austin, TX 78722"
+ },
+ "ChIJ6Z3f9xKr2YgRyRAlmHxt3Os": {
+  "lat": 26.01052,
+  "lng": -80.14409,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1820 Harrison St, Hollywood, FL 33020"
+ },
+ "ChIJ6bUEtgm1woARB5FCnRmXe1Y": {
+  "lat": 33.83647,
+  "lng": -118.32188,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2209 Torrance Blvd, Torrance, CA 90501"
+ },
+ "ChIJ6f7qyWMB2YgRe7W_FyV8seY": {
+  "lat": 26.16852,
+  "lng": -80.10156,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3327 NE 32nd St, Fort Lauderdale, FL 33308"
+ },
+ "ChIJ6wMxDt_HwogRP5PkgWcrAo0": {
+  "lat": 28.05174,
+  "lng": -82.39361,
+  "src": "census",
+  "match": "Exact",
+  "addr": "11401 N 56th St #20, Temple Terrace, FL 33617"
+ },
+ "ChIJ6xQiBAA_24gRFYXtaWBwtz0": {
+  "lat": 26.56377,
+  "lng": -81.94845,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1307 SE 47th Terrace, Cape Coral, FL 33904"
+ },
+ "ChIJ6yQlqs8T3ogRfmaj9lMLiqk": {
+  "lat": 28.03177,
+  "lng": -80.62322,
+  "src": "nominatim",
+  "match": "amenity",
+  "addr": "4700 Babcock St NE #2, Palm Bay, FL 32905"
+ },
+ "ChIJ7-arjRsR3ogRMZffp2IqfCk": {
+  "lat": 28.08012,
+  "lng": -80.60717,
+  "src": "census",
+  "match": "Exact",
+  "addr": "809 Palmetto Ave, Melbourne, FL 32901"
+ },
+ "ChIJ73R9DAC35YgRpB1GfBtY3qA": {
+  "lat": 30.34493,
+  "lng": -81.65413,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1736 N Main St Ste b, Jacksonville, FL 32206"
+ },
+ "ChIJ75UkNUK55YgRdBk5pt8C9PY": {
+  "lat": 30.31121,
+  "lng": -81.69404,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1275 King St, Jacksonville, FL 32204"
+ },
+ "ChIJ7TqEFbgB3ogREACBuHsIkVw": {
+  "lat": 28.35312,
+  "lng": -80.73204,
+  "src": "census",
+  "match": "Exact",
+  "addr": "519 S Cocoa Blvd, Cocoa, FL 32922"
+ },
+ "ChIJ7UjnZDI53YgRyHDDlJJFUVw": {
+  "lat": 28.00456,
+  "lng": -81.95691,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "3238 Florida Ave S, Lakeland, FL 33803"
+ },
+ "ChIJ7_BcJCMl6IARNsW4-45o2ag": {
+  "lat": 34.17222,
+  "lng": -118.83997,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2711 E Thousand Oaks Blvd, Thousand Oaks, CA 91362"
+ },
+ "ChIJ818GsNtD24gRIciJ79wFpeQ": {
+  "lat": 26.68581,
+  "lng": -81.90437,
+  "src": "nominatim",
+  "match": "amenity",
+  "addr": "15201 N Cleveland Ave #611, North Fort Myers, FL 33903"
+ },
+ "ChIJ84c0csKTj4ARcud_xzv6sJo": {
+  "lat": 37.66381,
+  "lng": -122.07653,
+  "src": "nominatim",
+  "match": "place",
+  "addr": "24475 Mission Blvd, Hayward, CA 94544"
+ },
+ "ChIJ87Rq3L212YgRyvSzzw_tPtk": {
+  "lat": 25.77396,
+  "lng": -80.13214,
+  "src": "census",
+  "match": "Exact",
+  "addr": "448 Ocean Dr # Cu2, Miami Beach, FL 33139"
+ },
+ "ChIJ88Az9GZJ5IgRw_zXd8ttoHk": {
+  "lat": 30.27998,
+  "lng": -81.3892,
+  "src": "census",
+  "match": "Exact",
+  "addr": "223 9th Ave S, Jacksonville Beach, FL 32250"
+ },
+ "ChIJ88l9Bnhf3ogRfZx1NNzr3Ts": {
+  "lat": 27.61498,
+  "lng": -80.38735,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "730 S U.S. 1, Vero Beach, FL 32962"
+ },
+ "ChIJ95_NIF8_24gReLfGIvhP0Sc": {
+  "lat": 26.56362,
+  "lng": -81.94568,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4720 SE 15th Ave Suite 107, Cape Coral, FL 33904"
+ },
+ "ChIJ9ZxeZ0Lp3ogRkMBu1czoBRI": {
+  "lat": 27.27404,
+  "lng": -80.3516,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "256 SW Port St Lucie Blvd, Port St. Lucie, FL 34984"
+ },
+ "ChIJ9ensVgMD2YgRUXxHB8--8Co": {
+  "lat": 26.18244,
+  "lng": -80.11945,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4405 N Federal Hwy, Fort Lauderdale, FL 33308"
+ },
+ "ChIJA2tLSr1v54gRjM86VMxIVuE": {
+  "lat": 28.64747,
+  "lng": -81.27584,
+  "src": "census",
+  "match": "Exact",
+  "addr": "5285 Red Bug Lake Rd #139, Winter Springs, FL 32708"
+ },
+ "ChIJA3ZFrHTHwogRumv_hHuJSEo": {
+  "lat": 27.99978,
+  "lng": -82.45937,
+  "src": "census",
+  "match": "Exact",
+  "addr": "5803 N Florida Ave, Tampa, FL 33604"
+ },
+ "ChIJA53-8hM53YgRzCVcCg-VBig": {
+  "lat": 27.98147,
+  "lng": -81.94852,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4632 Cleveland Heights Blvd, Lakeland, FL 33813"
+ },
+ "ChIJA_G85gnn3ogRo8cPmplYldI": {
+  "lat": 27.24555,
+  "lng": -80.27214,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3253 NW Federal Hwy, Jensen Beach, FL 34957"
+ },
+ "ChIJAeg77qCtGYgR-ItJyfxywiw": {
+  "lat": 42.95948,
+  "lng": -85.64509,
+  "src": "census",
+  "match": "Exact",
+  "addr": "962 Cherry St SE, Grand Rapids, MI 49506"
+ },
+ "ChIJB8Fol4Wj6IgRznGyODB_g_4": {
+  "lat": 29.652,
+  "lng": -82.33515,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1007 W University Ave, Gainesville, FL 32601"
+ },
+ "ChIJBTiMeas73YgRRGS7HkLBsCI": {
+  "lat": 27.96873,
+  "lng": -81.96412,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "5333 Florida Ave S, Lakeland, FL 33813"
+ },
+ "ChIJBah0NS6NWYgRLjqLFPp78DU": {
+  "lat": 35.57839,
+  "lng": -82.58367,
+  "src": "census",
+  "match": "Exact",
+  "addr": "485 Haywood Rd, Asheville, NC 28806"
+ },
+ "ChIJBak7KAB754gRjPIwfF5lfBA": {
+  "lat": 28.49695,
+  "lng": -81.37543,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4401 S Orange Ave #102, Orlando, FL 32806"
+ },
+ "ChIJCSS42dbFwogRppnrbbOFzIE": {
+  "lat": 27.9947,
+  "lng": -82.45948,
+  "src": "census",
+  "match": "Exact",
+  "addr": "5248 N Florida Ave, Tampa, FL 33603"
+ },
+ "ChIJCVjARw0F2YgRszNCu35YY0Y": {
+  "lat": 26.25665,
+  "lng": -80.25086,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2055 N University Dr, Coral Springs, FL 33071"
+ },
+ "ChIJCxMXiw2nlVQRB8N20G5wsiY": {
+  "lat": 45.56038,
+  "lng": -122.67419,
+  "src": "census",
+  "match": "Exact",
+  "addr": "722 N Sumner St, Portland, OR 97217"
+ },
+ "ChIJD52npTt1V4gR6ACpeHVWRSM": {
+  "lat": 34.95001,
+  "lng": -81.92985,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "158 E Main St Unit a, Spartanburg, SC 29306"
+ },
+ "ChIJD5b_c6Ht3ogRw4m-i2Cmzlw": {
+  "lat": 27.31671,
+  "lng": -80.37758,
+  "src": "nominatim",
+  "match": "residential",
+  "addr": "1325 St Lucie W Blvd, Port St. Lucie, FL 34986"
+ },
+ "ChIJDQseKMEfqokRjdaCDBwb5Vs": {
+  "lat": 34.2389,
+  "lng": -77.94883,
+  "src": "census",
+  "match": "Exact",
+  "addr": "123 Grace St, Wilmington, NC 28401"
+ },
+ "ChIJDSJgFAt_bIcRjne17_t3ySo": {
+  "lat": 39.67718,
+  "lng": -104.9875,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2174 S Broadway, Denver, CO 80210"
+ },
+ "ChIJDYTgZKfRmoARD_8RE2cSVNs": {
+  "lat": 38.55135,
+  "lng": -121.46822,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "3519 Broadway, Sacramento, CA 95817"
+ },
+ "ChIJDx-EiBJ_hYARbmQHXN5LmQQ": {
+  "lat": 37.79671,
+  "lng": -122.27563,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "464 3rd St, Oakland, CA 94158"
+ },
+ "ChIJE02zMkt754gRpLOVzISjIgI": {
+  "lat": 28.51298,
+  "lng": -81.37523,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "227 E Michigan St Unit B, Orlando, FL 32806"
+ },
+ "ChIJE7erxaOr2YgR-aOv4Mgo0Bc": {
+  "lat": 26.0404,
+  "lng": -80.14329,
+  "src": "census",
+  "match": "Exact",
+  "addr": "801 S Federal Hwy Ste 811-813, Dania Beach, FL 33004"
+ },
+ "ChIJE8SJpB_p3ogRt6mr0AGSJP8": {
+  "lat": 27.27331,
+  "lng": -80.34187,
+  "src": "census",
+  "match": "Exact",
+  "addr": "303 SE Port St Lucie Blvd, Port St. Lucie, FL 34984"
+ },
+ "ChIJEXW0MbnxwogRs16b2j86CHc": {
+  "lat": 28.0057,
+  "lng": -82.77559,
+  "src": "census",
+  "match": "Exact",
+  "addr": "430 Patricia Ave, Dunedin, FL 34698"
+ },
+ "ChIJExga7hnX3ogR_QqwQ4dRy5Q": {
+  "lat": 26.93441,
+  "lng": -80.13528,
+  "src": "nominatim",
+  "match": "place",
+  "addr": "2562 W Indiantown Rd ste. B6, Jupiter, FL 33458"
+ },
+ "ChIJF-UfDgCx2YgRIQKBZpShrzs": {
+  "lat": 25.83071,
+  "lng": -80.18938,
+  "src": "census",
+  "match": "Exact",
+  "addr": "333 NE 59th Terrace, Miami, FL 33137"
+ },
+ "ChIJF-n6UvkH3ogRqNz5rdR6Bms": {
+  "lat": 28.23046,
+  "lng": -80.72492,
+  "src": "nominatim",
+  "match": "shop",
+  "addr": "8530 N Wickham Rd Ste 106, Melbourne, FL 32940"
+ },
+ "ChIJFRnJGna75YoRGg424ruklw8": {
+  "lat": 26.09201,
+  "lng": -80.156,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1021 W State Rd 84, Fort Lauderdale, FL 33315"
+ },
+ "ChIJFTEMdnkU6YARdd3pUhRxy_w": {
+  "lat": 34.41787,
+  "lng": -119.70106,
+  "src": "census",
+  "match": "Exact",
+  "addr": "117 W De La Guerra St, Santa Barbara, CA 93101"
+ },
+ "ChIJFW0emlRp3ogRuqiYabyRJrc": {
+  "lat": 27.81108,
+  "lng": -80.46631,
+  "src": "nominatim",
+  "match": "amenity",
+  "addr": "705A Cleveland St, Sebastian, FL 32958"
+ },
+ "ChIJFcKZliMZU4gRe2JkVnRrBoY": {
+  "lat": 36.06945,
+  "lng": -79.79185,
+  "src": "census",
+  "match": "Exact",
+  "addr": "202 Exchange Pl, Greensboro, NC 27401"
+ },
+ "ChIJFx0XbUMR24gRO4gptx0wYro": {
+  "lat": 26.43337,
+  "lng": -81.77607,
+  "src": "census",
+  "match": "Exact",
+  "addr": "10801 Corkscrew Rd Suite 327, Estero, FL 33928"
+ },
+ "ChIJG15NNgn6UIgRqP4b7Im1q2c": {
+  "lat": 36.21011,
+  "lng": -81.67416,
+  "src": "census",
+  "match": "Exact",
+  "addr": "114 Clement St #106, Boone, NC 28607"
+ },
+ "ChIJG6CxCABrq4kRy--wsxxytDY": {
+  "lat": 35.09305,
+  "lng": -78.98549,
+  "src": "census",
+  "match": "Exact",
+  "addr": "5855 Yadkin Rd, Fayetteville, NC 28303"
+ },
+ "ChIJG8bnF21x54gRA1OhBDtAoHQ": {
+  "lat": 28.60569,
+  "lng": -81.39617,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1084 Lee Rd Unit 1, Orlando, FL 32810"
+ },
+ "ChIJGSgpBOVp3ogROyjdQXmiEwY": {
+  "lat": 27.83623,
+  "lng": -80.48452,
+  "src": "census",
+  "match": "Exact",
+  "addr": "13529 US-1 #1f, Sebastian, FL 32958"
+ },
+ "ChIJGfS4Kfgp5IgR-K14NK-286c": {
+  "lat": 29.91628,
+  "lng": -81.34813,
+  "src": "census",
+  "match": "Exact",
+  "addr": "525 FL-16 #130, St. Augustine, FL 32084"
+ },
+ "ChIJH0G4tGxp54gRv-O2AM4rWhM": {
+  "lat": 28.59689,
+  "lng": -81.2108,
+  "src": "census",
+  "match": "Exact",
+  "addr": "12082 Collegiate Way, Orlando, FL 32817"
+ },
+ "ChIJH39D_cJPE4cRSnB2A4RC08Y": {
+  "lat": 38.8952,
+  "lng": -104.75894,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4337 N Academy Blvd #100, Colorado Springs, CO 80918"
+ },
+ "ChIJH9L01J8_24gRC16jFZT1lFw": {
+  "lat": 26.68806,
+  "lng": -81.86546,
+  "src": "census",
+  "match": "Exact",
+  "addr": "5781 Bayshore Rd #104, North Fort Myers, FL 33917"
+ },
+ "ChIJH9_lb28H2YgR6DU8j6E3XM4": {
+  "lat": 26.09158,
+  "lng": -80.25138,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2329 S University Dr, Davie, FL 33324"
+ },
+ "ChIJHWpyUAq1RIYR6C2pCd_C76I": {
+  "lat": 30.26465,
+  "lng": -97.73144,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1109 E 6th St, Austin, TX 78702"
+ },
+ "ChIJHc42fTyz2YgR1_KlYnb2l8o": {
+  "lat": 25.88948,
+  "lng": -80.15334,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2212 NE 123rd St, North Miami, FL 33181"
+ },
+ "ChIJHcaL2vMv6IARmrt_w7m3-X8": {
+  "lat": 34.21121,
+  "lng": -118.84197,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "2036 E Avenida De Los Arboles C, Thousand Oaks, CA 91362"
+ },
+ "ChIJHyd_mxMxUYgRgZYjAVENzSU": {
+  "lat": 35.76225,
+  "lng": -81.33273,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2296 N Center St, Hickory, NC 28601"
+ },
+ "ChIJI02zqQpV2YAR8XLiF3u_nlE": {
+  "lat": 32.74836,
+  "lng": -117.14752,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1731 University Ave, San Diego, CA 92103"
+ },
+ "ChIJI64WrM5tK4cRPF_3youfH_U": {
+  "lat": 33.57521,
+  "lng": -112.06523,
+  "src": "census",
+  "match": "Exact",
+  "addr": "9822 N 7th St #4, Phoenix, AZ 85020"
+ },
+ "ChIJIQvli9w53YgRYF7Fd3eesNI": {
+  "lat": 28.03157,
+  "lng": -81.95706,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "948 Florida Ave S, Lakeland, FL 33803"
+ },
+ "ChIJIcT-E8gR3ogRX766WvEXAfI": {
+  "lat": 28.08432,
+  "lng": -80.6216,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1518 S Babcock St C, Melbourne, FL 32901"
+ },
+ "ChIJIfcz0eO1j4ARSA9xoH6XYPg": {
+  "lat": 37.32555,
+  "lng": -122.01205,
+  "src": "census",
+  "match": "Exact",
+  "addr": "19700 Vallco Pkwy Unit 190, Cupertino, CA 95014"
+ },
+ "ChIJJ0N-v88F2YgRy-C9d4jGIg8": {
+  "lat": 26.27227,
+  "lng": -80.23109,
+  "src": "census",
+  "match": "Exact",
+  "addr": "7893 W Sample Rd, Coral Springs, FL 33065"
+ },
+ "ChIJJ1m89qQn5IgRRm6Xc4m4VWk": {
+  "lat": 29.89676,
+  "lng": -81.31394,
+  "src": "census",
+  "match": "Exact",
+  "addr": "21 Spanish St, St. Augustine, FL 32084"
+ },
+ "ChIJJ3UAIKIb3ogRvJbC3OU2q20": {
+  "lat": 28.18,
+  "lng": -80.6,
+  "src": "zip",
+  "match": "census No_Match",
+  "addr": "1024 Jimmy Buffett Mem Hwy #144, Satellite Beach, FL 32937"
+ },
+ "ChIJJ94O5ZnrJIgR345mWK98FKI": {
+  "lat": 42.68114,
+  "lng": -83.22125,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2600 N Squirrel Rd, Auburn Hills, MI 48326"
+ },
+ "ChIJJQlDQo_lwogRsJPKYq-spwo": {
+  "lat": 27.89373,
+  "lng": -82.72887,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "13601 66th St N, Largo, FL 33771"
+ },
+ "ChIJJYFeNwCp2YgRFLJXXa7gmRM": {
+  "lat": 26.06749,
+  "lng": -80.2321,
+  "src": "nominatim",
+  "match": "place",
+  "addr": "4300 Davie Rd, Davie, FL 33314"
+ },
+ "ChIJJZO7oN_zWYgREySfoI3Bsr4": {
+  "lat": 35.59519,
+  "lng": -82.5533,
+  "src": "census",
+  "match": "Exact",
+  "addr": "51 College St #1A, Asheville, NC 28801"
+ },
+ "ChIJJyA4GT3DwogROXk223-aY9g": {
+  "lat": 27.94865,
+  "lng": -82.50573,
+  "src": "census",
+  "match": "Exact",
+  "addr": "410 N Dale Mabry Hwy, Tampa, FL 33609"
+ },
+ "ChIJKWPcgdGz2YgR7FNnLW2wO44": {
+  "lat": 25.83899,
+  "lng": -80.18421,
+  "src": "census",
+  "match": "Exact",
+  "addr": "6909 Biscayne Blvd, Miami, FL 33138"
+ },
+ "ChIJKXgG7oyj6IgRTHMW_lmjbHA": {
+  "lat": 29.65192,
+  "lng": -82.32518,
+  "src": "census",
+  "match": "Exact",
+  "addr": "17 W University Ave, Gainesville, FL 32601"
+ },
+ "ChIJKfA8M0sFyIkR63LY4H1IbjU": {
+  "lat": 39.30052,
+  "lng": -76.61741,
+  "src": "census",
+  "match": "Exact",
+  "addr": "917 Cathedral St, Baltimore, MD 21201"
+ },
+ "ChIJL0wqhgxpAIkRvZGxisX6y8g": {
+  "lat": 33.69868,
+  "lng": -78.89831,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1744 US-501, Myrtle Beach, SC 29577"
+ },
+ "ChIJLUCTONSlwoARk5Kbk8XWMUc": {
+  "lat": 34.02728,
+  "lng": -118.50113,
+  "src": "census",
+  "match": "Exact",
+  "addr": "726 Montana Ave, Santa Monica, CA 90403"
+ },
+ "ChIJLV2k7yszjoARn5OBYQaQn-w": {
+  "lat": 37.31881,
+  "lng": -121.8226,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2569 S King Rd #8C, San Jose, CA 95122"
+ },
+ "ChIJLVF3jckR3ogRF9ITJ96n1y8": {
+  "lat": 28.12923,
+  "lng": -80.62652,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1372 Highland Ave, Melbourne, FL 32935"
+ },
+ "ChIJLzksvQwd2YgR2VhSEHfy8U4": {
+  "lat": 26.27558,
+  "lng": -80.09905,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1823 E Sample Rd, Pompano Beach, FL 33064"
+ },
+ "ChIJM7apg7nxwogRBq4qpzBBxgU": {
+  "lat": 27.96061,
+  "lng": -82.76966,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1627 Gulf To Bay Blvd, Clearwater, FL 33755"
+ },
+ "ChIJMU8tGQRLaYcRH2uGa9YbM8Q": {
+  "lat": 40.58838,
+  "lng": -105.07503,
+  "src": "census",
+  "match": "Exact",
+  "addr": "223 Linden St, Fort Collins, CO 80524"
+ },
+ "ChIJMVLmpwLd3ogRCIAnJoFwbBg": {
+  "lat": 27.15395,
+  "lng": -80.21943,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4245 SE Federal Hwy, Stuart, FL 34997"
+ },
+ "ChIJMVd4tLAP3ogRckq_Iu1th1c": {
+  "lat": 28.13731,
+  "lng": -80.6718,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1878 N Wickham Rd, Melbourne, FL 32935"
+ },
+ "ChIJMWuihwnBwoAR6QTIEtoJKGI": {
+  "lat": 34.1164,
+  "lng": -118.26286,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3111 Glendale Blvd #1, Los Angeles, CA 90039"
+ },
+ "ChIJMbJaVhaBhYARy42MFtlPiK8": {
+  "lat": 37.79963,
+  "lng": -122.43683,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2151 Lombard St, San Francisco, CA 94123"
+ },
+ "ChIJMcxKRAip4IgR19gw7nlFqbI": {
+  "lat": 28.37373,
+  "lng": -80.70072,
+  "src": "census",
+  "match": "Exact",
+  "addr": "975 N Courtenay Pkwy, Merritt Island, FL 32953"
+ },
+ "ChIJMdGuYLU_24gR51-tUl4Va5E": {
+  "lat": 26.50716,
+  "lng": -81.90679,
+  "src": "census",
+  "match": "Exact",
+  "addr": "16230 Summerlin Rd #209, Fort Myers, FL 33908"
+ },
+ "ChIJMe-3j1YB3ogRuzTaFRnmo_k": {
+  "lat": 28.33084,
+  "lng": -80.74006,
+  "src": "census",
+  "match": "Exact",
+  "addr": "910 Barton Blvd Unit 2, Rockledge, FL 32955"
+ },
+ "ChIJN1cIZuM_24gR1c1Q4rVm2sY": {
+  "lat": 26.51518,
+  "lng": -81.94789,
+  "src": "census",
+  "match": "Exact",
+  "addr": "15560 McGregor Blvd Suite 1, Fort Myers, FL 33908"
+ },
+ "ChIJN1k37xVo3ogRHBcf5-Xd5_k": {
+  "lat": 27.80537,
+  "lng": -80.47253,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "245 Sebastian Blvd Suite B, Sebastian, FL 32958"
+ },
+ "ChIJN2YRe6vxwogRHipEprVd77o": {
+  "lat": 27.95117,
+  "lng": -82.77521,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1246 S Highland Ave, Clearwater, FL 33756"
+ },
+ "ChIJN6NRMgBLW4YR7dTVEr7E-3M": {
+  "lat": 30.23552,
+  "lng": -97.85849,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "6266 US-290, Austin, TX 78735"
+ },
+ "ChIJN8QYLlGxwogRr0q4D4fmyGg": {
+  "lat": 28.19079,
+  "lng": -82.37763,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2320 Willow Oak Dr, Wesley Chapel, FL 33544"
+ },
+ "ChIJN_ZtcNrxwogRQQ0HWa34tIE": {
+  "lat": 27.96002,
+  "lng": -82.79989,
+  "src": "census",
+  "match": "Exact",
+  "addr": "551 S Fort Harrison Ave, Clearwater, FL 33756"
+ },
+ "ChIJNbRvfM5FE4cRRQHMYAMDMqE": {
+  "lat": 38.83375,
+  "lng": -104.82327,
+  "src": "census",
+  "match": "Exact",
+  "addr": "111 E Pikes Peak Ave, Colorado Springs, CO 80903"
+ },
+ "ChIJNxk7zg03UYgRlLWSRMOIoYE": {
+  "lat": 35.69562,
+  "lng": -81.23501,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "820 Conover Blvd W Ste E, Conover, NC 28613"
+ },
+ "ChIJO-ihChDX3ocRiCRqR2z9XWU": {
+  "lat": 38.77918,
+  "lng": -90.48787,
+  "src": "census",
+  "match": "Exact",
+  "addr": "512 S 5th St, St Charles, MO 63301"
+ },
+ "ChIJO1zBZKB754gRzgSlt0bZU_k": {
+  "lat": 28.54572,
+  "lng": -81.3784,
+  "src": "census",
+  "match": "Exact",
+  "addr": "33 E Robinson St Ste 100, Orlando, FL 32801"
+ },
+ "ChIJO5siO7UVkFQRkQGUV8BI7JY": {
+  "lat": 47.61854,
+  "lng": -122.35406,
+  "src": "census",
+  "match": "Exact",
+  "addr": "159 Denny Wy #105, Seattle, WA 98109"
+ },
+ "ChIJO9B5Ybf6AogRK6rzs5amwKE": {
+  "lat": 44.51714,
+  "lng": -88.02143,
+  "src": "census",
+  "match": "Exact",
+  "addr": "143 N Broadway, Green Bay, WI 54303"
+ },
+ "ChIJOSUjk0635YgRGpQ0csuc3L4": {
+  "lat": 30.24521,
+  "lng": -81.60105,
+  "src": "census",
+  "match": "Exact",
+  "addr": "7035 Philips Hwy Ste 8, Jacksonville, FL 32216"
+ },
+ "ChIJOShKUJEB2YgRNnaOXeIeZ38": {
+  "lat": 26.12863,
+  "lng": -80.14366,
+  "src": "census",
+  "match": "Exact",
+  "addr": "540 N Andrews Ave Unit 105, Fort Lauderdale, FL 33301"
+ },
+ "ChIJOwQXO1vv3ogR0tweAxEqo-Q": {
+  "lat": 27.29,
+  "lng": -80.3,
+  "src": "zip",
+  "match": "census No_Match",
+  "addr": "6841 S Federal Hwy, Port St. Lucie, FL 34952"
+ },
+ "ChIJOwXGcADr3ogRzMTPL82fx5Y": {
+  "lat": 27.25406,
+  "lng": -80.37674,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3003 SW Port St Lucie Blvd, Port St. Lucie, FL 34953"
+ },
+ "ChIJP329de6j6IgReVbqyN8wEyI": {
+  "lat": 29.65199,
+  "lng": -82.33099,
+  "src": "census",
+  "match": "Exact",
+  "addr": "615 W University Ave, Gainesville, FL 32601"
+ },
+ "ChIJP41GKLtH24gRJbwo_G4Bv0A": {
+  "lat": 26.64072,
+  "lng": -82.00056,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1242 SW Pine Island Rd #19, Cape Coral, FL 33991"
+ },
+ "ChIJP5UKHlyp3IgRCE7JYCaaq5Y": {
+  "lat": 26.97324,
+  "lng": -82.08626,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "3822 S Tamiami Trl, Port Charlotte, FL 33952"
+ },
+ "ChIJP6eX8VZrq4kRXNuV1qZ68-A": {
+  "lat": 35.09468,
+  "lng": -79.01008,
+  "src": "nominatim",
+  "match": "leisure",
+  "addr": "500 N Reilly Rd #106, Fayetteville, NC 28303"
+ },
+ "ChIJPQJ3IABv54gRAAnkf914d1k": {
+  "lat": 28.66,
+  "lng": -81.31,
+  "src": "zip",
+  "match": "census No_Match",
+  "addr": "953 FL-436, Casselberry, FL 32707"
+ },
+ "ChIJPZHwhb6dskwRN2QM2J7Bhnk": {
+  "lat": 43.6811,
+  "lng": -70.25932,
+  "src": "census",
+  "match": "Exact",
+  "addr": "550 Washington Ave, Portland, ME 04103"
+ },
+ "ChIJPf0Kl5UZBYgRPAuiS8A0KO8": {
+  "lat": 43.02381,
+  "lng": -87.91396,
+  "src": "census",
+  "match": "Exact",
+  "addr": "738 S 3rd St, Milwaukee, WI 53204"
+ },
+ "ChIJPfHxPP3o3ogRBgEc7Z2jcsM": {
+  "lat": 27.27167,
+  "lng": -80.3201,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1046 SE Port St Lucie Blvd, Port St. Lucie, FL 34952"
+ },
+ "ChIJQ-C-DR3d3ogRaIbBStWdnl4": {
+  "lat": 27.18458,
+  "lng": -80.24352,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1562 SE Federal Hwy, Stuart, FL 34994"
+ },
+ "ChIJQ1u0kxjJxokRFkxaXsX47X0": {
+  "lat": 39.94897,
+  "lng": -75.14403,
+  "src": "census",
+  "match": "Exact",
+  "addr": "40 S 2nd St, Philadelphia, PA 19106"
+ },
+ "ChIJQ5kBgu3orkwRBe54ZXBhnKA": {
+  "lat": 44.53132,
+  "lng": -68.23508,
+  "src": "census",
+  "match": "Exact",
+  "addr": "70 Taunton Dr, Sullivan, ME 04664"
+ },
+ "ChIJQ6so3vKr2YgRjpvIBQV2M3s": {
+  "lat": 26.05217,
+  "lng": -80.14374,
+  "src": "census",
+  "match": "Exact",
+  "addr": "6 S Federal Hwy, Dania Beach, FL 33004"
+ },
+ "ChIJQR2KOdq_VogReggLKgTXdJM": {
+  "lat": 35.26674,
+  "lng": -81.10093,
+  "src": "census",
+  "match": "Exact",
+  "addr": "118 N Main St, Lowell, NC 28098"
+ },
+ "ChIJQTYGHSe1NogRNfKgLHn1-fQ": {
+  "lat": 40.90198,
+  "lng": -81.144,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2213 W State St, Alliance, OH 44601"
+ },
+ "ChIJQV0LvXtw54gR7T_krNl3jwM": {
+  "lat": 28.59312,
+  "lng": -81.3766,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2020 W Fairbanks Ave #100, Winter Park, FL 32789"
+ },
+ "ChIJQcM9gYut6YARyCpVmxZTo3k": {
+  "lat": 34.26353,
+  "lng": -119.27304,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1124 S Seaward Ave, Ventura, CA 93001"
+ },
+ "ChIJQfXLB9NH3YgRLw66TRZTkR0": {
+  "lat": 28.15484,
+  "lng": -81.97354,
+  "src": "census",
+  "match": "Exact",
+  "addr": "8515 US Hwy 98 N, Lakeland, FL 33809"
+ },
+ "ChIJQyn3eMKawoARS-KxHMTGUbQ": {
+  "lat": 34.08924,
+  "lng": -118.37751,
+  "src": "census",
+  "match": "Exact",
+  "addr": "8605 Santa Monica Blvd, West Hollywood, CA 90069"
+ },
+ "ChIJQz6VfwQn3YAR-M0iMUsddI4": {
+  "lat": 33.69462,
+  "lng": -117.92492,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3313 Hyland Ave Unit A1B, Costa Mesa, CA 92626"
+ },
+ "ChIJR8Z9KsvjwogRvH5X0rn0B6M": {
+  "lat": 27.77733,
+  "lng": -82.66727,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2500 5th Ave N, St. Petersburg, FL 33713"
+ },
+ "ChIJR8wFUcIB3ogRXHFaYON3VaA": {
+  "lat": 28.31683,
+  "lng": -80.72209,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2025 Murrell Rd #160, Rockledge, FL 32955"
+ },
+ "ChIJRQfMBU8V24gRJectBLNVxFg": {
+  "lat": 26.55441,
+  "lng": -81.85275,
+  "src": "census",
+  "match": "Exact",
+  "addr": "12951 Metro Pkwy #15, Fort Myers, FL 33966"
+ },
+ "ChIJR_EHJOUV24gR8cNvQPqYqwg": {
+  "lat": 26.54498,
+  "lng": -81.84195,
+  "src": "nominatim",
+  "match": "shop",
+  "addr": "6900 Daniels Pkwy #24, Fort Myers, FL 33912"
+ },
+ "ChIJS0BNZyMV24gRgPOP9K3As1E": {
+  "lat": 26.5,
+  "lng": -81.93,
+  "src": "zip",
+  "match": "census No_Match",
+  "addr": "16964 Alico Mission Way #210, Fort Myers, FL 33908"
+ },
+ "ChIJS6ZgMgAB3ogRBmdCoButTKQ": {
+  "lat": 28.31683,
+  "lng": -80.72209,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2025 Murrell Rd #160, Rockledge, FL 32955"
+ },
+ "ChIJT5QwTmnzMIgRoND48YN-Gmw": {
+  "lat": 41.48498,
+  "lng": -81.80317,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "15319 Detroit Ave, Lakewood, OH 44107"
+ },
+ "ChIJTxXAP-hX24gRCjq8wMcyVEo": {
+  "lat": 26.94554,
+  "lng": -82.0572,
+  "src": "nominatim",
+  "match": "primary",
+  "addr": "318 S Tamiami Trl #111, Punta Gorda, FL 33950"
+ },
+ "ChIJTyWCAiL1qYkRQ0aU1ZCJgOQ": {
+  "lat": 34.23183,
+  "lng": -77.87588,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "415 College Rd #17, Wilmington, NC 28403"
+ },
+ "ChIJTzmFkkW0RIYRZhkrPHixqNA": {
+  "lat": 30.24162,
+  "lng": -97.7272,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1505 Town Creek Dr, Austin, TX 78741"
+ },
+ "ChIJU67pxlir2YgR7QTioS3uw4A": {
+  "lat": 26.05412,
+  "lng": -80.14463,
+  "src": "census",
+  "match": "Exact",
+  "addr": "110 NW 1st St, Dania Beach, FL 33004"
+ },
+ "ChIJU8Jrohfb5ogRVDX-P2Jghbc": {
+  "lat": 29.29058,
+  "lng": -81.04326,
+  "src": "census",
+  "match": "Exact",
+  "addr": "142 E Granada Blvd #213/214, Ormond Beach, FL 32176"
+ },
+ "ChIJUawVy40R3ogRzO2GHZ_U0b0": {
+  "lat": 28.07929,
+  "lng": -80.60613,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1900 Municipal Ln, Melbourne, FL 32901"
+ },
+ "ChIJUyE3MpGp2YgRR5aiHANPuQA": {
+  "lat": 26.04462,
+  "lng": -80.27301,
+  "src": "census",
+  "match": "Exact",
+  "addr": "9630 Stirling Rd Ste 104, Hollywood, FL 33024"
+ },
+ "ChIJVZ7b9P6p2YgRrm8crrH9lMI": {
+  "lat": 26.06084,
+  "lng": -80.20797,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "5011 S State Rd 7 Ste 501, Davie, FL 33314"
+ },
+ "ChIJVwYlbAG35YgR7QysJjnu0eg": {
+  "lat": 30.26474,
+  "lng": -81.6071,
+  "src": "census",
+  "match": "Exact",
+  "addr": "5711 Bowden Rd Unit 5, Jacksonville, FL 32216"
+ },
+ "ChIJW8UaZAAn5IgRAkx23_gfz20": {
+  "lat": 29.89154,
+  "lng": -81.29928,
+  "src": "census",
+  "match": "Exact",
+  "addr": "304 Anastasia Blvd, St. Augustine, FL 32080"
+ },
+ "ChIJWQRefx2_2YgR64h290IijGE": {
+  "lat": 25.76311,
+  "lng": -80.37262,
+  "src": "census",
+  "match": "Exact",
+  "addr": "628 SW 109th Ave, Miami, FL 33174"
+ },
+ "ChIJWXLRswg9TIYRmT3em_OMOnY": {
+  "lat": 33.13665,
+  "lng": -96.8062,
+  "src": "nominatim",
+  "match": "place",
+  "addr": "7151 Preston Rd #111a, Frisco, TX 75034"
+ },
+ "ChIJX7UIUBGHj4AR-QL_pKkGE1w": {
+  "lat": 37.8125,
+  "lng": -122.24733,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3264 Grand Ave, Oakland, CA 94610"
+ },
+ "ChIJXT69gMMFK4cRQEni-PyInp4": {
+  "lat": 33.30614,
+  "lng": -111.98027,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "15425 S 48th St St #116, Phoenix, AZ 85044"
+ },
+ "ChIJXwHVM04V24gRFHaBB0dA3wY": {
+  "lat": 26.51245,
+  "lng": -81.86295,
+  "src": "nominatim",
+  "match": "place",
+  "addr": "16339 S Tamiami Trl, Fort Myers, FL 33908"
+ },
+ "ChIJXwWE8lzlwogRqmwFu_VDO88": {
+  "lat": 27.82528,
+  "lng": -82.67963,
+  "src": "census",
+  "match": "Exact",
+  "addr": "5944 34th St N #20, St. Petersburg, FL 33714"
+ },
+ "ChIJY0tmV04B3ogRi5JDK9jcvvI": {
+  "lat": 28.29689,
+  "lng": -80.72159,
+  "src": "nominatim",
+  "match": "amenity",
+  "addr": "3695 Murrell Rd, Rockledge, FL 32955"
+ },
+ "ChIJY1uG22RL5IgRIi02fqQM0GA": {
+  "lat": 30.33338,
+  "lng": -81.6957,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2119 W Beaver St #1, Jacksonville, FL 32209"
+ },
+ "ChIJY2Yh7aMhTIYR9XkBQMBL_H0": {
+  "lat": 32.95147,
+  "lng": -96.8034,
+  "src": "census",
+  "match": "Exact",
+  "addr": "14856 Preston Rd #212, Dallas, TX 75254"
+ },
+ "ChIJY83JJIunlVQRoAe5fXn-VYc": {
+  "lat": 45.54839,
+  "lng": -122.65031,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3516 NE 15th Ave, Portland, OR 97212"
+ },
+ "ChIJYUQvwhTzwogRyxzJy4_jPao": {
+  "lat": 28.03299,
+  "lng": -82.73827,
+  "src": "census",
+  "match": "Exact",
+  "addr": "28778 US Hwy 19 N, Clearwater, FL 33761"
+ },
+ "ChIJYbE8dQpPE4cRaaPYtn0Vx_w": {
+  "lat": 38.9304,
+  "lng": -104.79503,
+  "src": "nominatim",
+  "match": "shop",
+  "addr": "6820 N Academy Blvd, Colorado Springs, CO 80918"
+ },
+ "ChIJYdtePI3jwogRKyWpe4WQzHU": {
+  "lat": 27.8147,
+  "lng": -82.67129,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4685 28th St N, St. Petersburg, FL 33714"
+ },
+ "ChIJZ06bOO1H3YgRDcPDjw7Z9iA": {
+  "lat": 28.09067,
+  "lng": -81.97391,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3800 US Hwy 98 N, Lakeland, FL 33809"
+ },
+ "ChIJZ0qahAir2YgRDenKvcK8_to": {
+  "lat": 25.99713,
+  "lng": -80.1483,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1649 S 21st Ave, Hollywood, FL 33020"
+ },
+ "ChIJZ1x11VYF3ogRjfEvf0IqOms": {
+  "lat": 28.23057,
+  "lng": -80.70456,
+  "src": "census",
+  "match": "Exact",
+  "addr": "7954 N Wickham Rd #115, Melbourne, FL 32940"
+ },
+ "ChIJZ6ZAP7UV24gRs-bg029BQ1Q": {
+  "lat": 26.48568,
+  "lng": -81.78468,
+  "src": "nominatim",
+  "match": "unclassified",
+  "addr": "9902 Gulf Coast Main St Unit D 145, Fort Myers, FL 33913"
+ },
+ "ChIJZ8_cRuGhVogR4vGbUCQr6jA": {
+  "lat": 35.232,
+  "lng": -80.84858,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "710 W Trade St h, Charlotte, NC 28202"
+ },
+ "ChIJZTipWbFBjoARfqcGzfM7XxI": {
+  "lat": 36.97174,
+  "lng": -122.02555,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1101 Pacific Ave Ste d, Santa Cruz, CA 95060"
+ },
+ "ChIJZUo0IgAN3ogRwfXV68xnVoM": {
+  "lat": 27.99844,
+  "lng": -80.6355,
+  "src": "nominatim",
+  "match": "place",
+  "addr": "1155 Malabar Rd SE, Palm Bay, FL 32907"
+ },
+ "ChIJZdj4MaWThAwR6ebsfiQzr4c": {
+  "lat": 34.03047,
+  "lng": -118.23896,
+  "src": "census",
+  "match": "Exact",
+  "addr": "777 S Alameda St, Los Angeles, CA 90021"
+ },
+ "ChIJZfbEavkT3ogR6ZhCqaEdkUo": {
+  "lat": 28.05691,
+  "lng": -80.6224,
+  "src": "census",
+  "match": "Exact",
+  "addr": "101 W Florida Ave unit 101, Melbourne, FL 32901"
+ },
+ "ChIJ_-AY9DS52YgRA9JzVfDTDt0": {
+  "lat": 25.73027,
+  "lng": -80.31264,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4376 SW 73rd Ave, Miami, FL 33155"
+ },
+ "ChIJ_2eVZwBr54gR1DwQA8kIszY": {
+  "lat": 28.66813,
+  "lng": -81.22644,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2200 Winter Springs Blvd #117, Oviedo, FL 32765"
+ },
+ "ChIJ_3T0Oz0P3ogRi-m85bfRskI": {
+  "lat": 28.12399,
+  "lng": -80.67164,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1070 N Wickham Rd, Melbourne, FL 32935"
+ },
+ "ChIJ_4Hm7SGgVogRNoZBXcKQn74": {
+  "lat": 35.22284,
+  "lng": -80.83372,
+  "src": "census",
+  "match": "Exact",
+  "addr": "312 N Myers St #109, Charlotte, NC 28202"
+ },
+ "ChIJ_8KjiIPd3ogRBklJJFMxJ2c": {
+  "lat": 27.14109,
+  "lng": -80.21177,
+  "src": "census",
+  "match": "Exact",
+  "addr": "5142 SE Federal Hwy, Stuart, FL 34997"
+ },
+ "ChIJ_T2KQkR73YgR0Y5Yp-b1kNQ": {
+  "lat": 28.31026,
+  "lng": -81.6679,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2406 Sand Mine Rd, Davenport, FL 33897"
+ },
+ "ChIJ_Wa99xUd3ogR-sguHCy9HDo": {
+  "lat": 28.32068,
+  "lng": -80.61009,
+  "src": "census",
+  "match": "Exact",
+  "addr": "124 N Orlando Ave, Cocoa Beach, FL 32931"
+ },
+ "ChIJ_b24lDkP3ogRg6hRdMA6YIc": {
+  "lat": 28.079,
+  "lng": -80.67092,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3002 W New Haven Ave, West Melbourne, FL 32904"
+ },
+ "ChIJ_yevEn4tO4gRzZG7r2bmVrw": {
+  "lat": 42.3293,
+  "lng": -83.04821,
+  "src": "census",
+  "match": "Exact",
+  "addr": "607 Shelby St, Detroit, MI 48226"
+ },
+ "ChIJ_zyPDAC12YgR_c3cSAI9Di0": {
+  "lat": 25.77768,
+  "lng": -80.13339,
+  "src": "census",
+  "match": "Exact",
+  "addr": "749 Washington Ave, Miami Beach, FL 33139"
+ },
+ "ChIJa8zpbIAP3ogReRa841xhJuA": {
+  "lat": 28.11957,
+  "lng": -80.63863,
+  "src": "census",
+  "match": "Exact",
+  "addr": "786 N Apollo Blvd, Melbourne, FL 32935"
+ },
+ "ChIJaUJBAO_b3IARv-AmHvwj2_0": {
+  "lat": 33.74561,
+  "lng": -117.81946,
+  "src": "census",
+  "match": "Exact",
+  "addr": "438 E 1st St, Tustin, CA 92780"
+ },
+ "ChIJaVuZ0IW32YgRDG2DGttXgWk": {
+  "lat": 25.77395,
+  "lng": -80.19793,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "340 W Flagler St CU #102, Miami, FL 33130"
+ },
+ "ChIJadlo5mbOwogRHcOhhPAmKRc": {
+  "lat": 27.93772,
+  "lng": -82.31916,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "2119 W Brandon Blvd G, Brandon, FL 33511"
+ },
+ "ChIJb4p9RakB2YgRzansNvRiqcg": {
+  "lat": 26.13363,
+  "lng": -80.13778,
+  "src": "census",
+  "match": "Exact",
+  "addr": "817 N Federal Hwy, Fort Lauderdale, FL 33304"
+ },
+ "ChIJbcM6xRbx3ogRvc2jpxvBI90": {
+  "lat": 27.44691,
+  "lng": -80.32809,
+  "src": "census",
+  "match": "Exact",
+  "addr": "603 Orange Ave, Fort Pierce, FL 34950"
+ },
+ "ChIJbcytcrVV2YARBVO4waf-5K8": {
+  "lat": 32.74753,
+  "lng": -117.12914,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3811 Ray St, San Diego, CA 92104"
+ },
+ "ChIJbxQc7G2Ba4cR5bOlUM9Db94": {
+  "lat": 39.68217,
+  "lng": -105.08022,
+  "src": "census",
+  "match": "Exact",
+  "addr": "7576 W Jewell Ave, Lakewood, CO 80232"
+ },
+ "ChIJc13my9B5j4ARCTYwdVuNeUs": {
+  "lat": 37.62696,
+  "lng": -122.41121,
+  "src": "census",
+  "match": "Exact",
+  "addr": "630 San Mateo Ave, San Bruno, CA 94066"
+ },
+ "ChIJc27SEw-72YgRfcBptFTiudY": {
+  "lat": 25.82432,
+  "lng": -80.32225,
+  "src": "census",
+  "match": "Exact",
+  "addr": "7700 NW 56th St, Doral, FL 33166"
+ },
+ "ChIJcb220RcD24gR3NqVNz6h-SU": {
+  "lat": 26.24735,
+  "lng": -81.69114,
+  "src": "census",
+  "match": "Exact",
+  "addr": "7550 Mission Hills Dr #310, Naples, FL 34119"
+ },
+ "ChIJcfel35Jp54gRvD2Q3M3_P2o": {
+  "lat": 28.60777,
+  "lng": -81.20958,
+  "src": "census",
+  "match": "Exact",
+  "addr": "12226 Corporate Blvd #136, Orlando, FL 32817"
+ },
+ "ChIJcx59hf9f3ogRivabXvgKgAk": {
+  "lat": 27.62315,
+  "lng": -80.39431,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1185 Old Dixie Hwy a3, Vero Beach, FL 32960"
+ },
+ "ChIJd2mMGeU9TIYRZCe4iUooTTg": {
+  "lat": 33.14986,
+  "lng": -96.82058,
+  "src": "census",
+  "match": "Exact",
+  "addr": "7511 Main St Ste 250, Frisco, TX 75034"
+ },
+ "ChIJdwBkfUk53YgREljB-9wJxQA": {
+  "lat": 28.05181,
+  "lng": -81.95415,
+  "src": "census",
+  "match": "Exact",
+  "addr": "839 N Massachusetts Ave Suite #101, Lakeland, FL 33801"
+ },
+ "ChIJdxKtED3DwogR_nv3frrYG2Q": {
+  "lat": 27.92992,
+  "lng": -82.5059,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1515 S Dale Mabry Hwy #103, Tampa, FL 33629"
+ },
+ "ChIJe2hdHWpp54gRLtF26-CaVCE": {
+  "lat": 28.65066,
+  "lng": -81.22929,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1954 W State Rd 426 #1118, Oviedo, FL 32765"
+ },
+ "ChIJe3SOAwAB2YgR1q4SCeUDbZc": {
+  "lat": 26.1209,
+  "lng": -80.14624,
+  "src": "nominatim",
+  "match": "place",
+  "addr": "110 SW 3rd Ave, Fort Lauderdale, FL 33312"
+ },
+ "ChIJeXioweJB24gRIBvAM3mWgSc": {
+  "lat": 26.64331,
+  "lng": -81.86909,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1615 Hendry St, Fort Myers, FL 33901"
+ },
+ "ChIJeatxg2mbwoARMSraq4gAIT8": {
+  "lat": 34.20349,
+  "lng": -118.53612,
+  "src": "census",
+  "match": "Exact",
+  "addr": "7329 Reseda Blvd, Reseda, CA 91335"
+ },
+ "ChIJf-HAPmom3YARd7gBoDtlXwc": {
+  "lat": 33.73396,
+  "lng": -117.9985,
+  "src": "census",
+  "match": "Exact",
+  "addr": "7561 Center Ave #6, Huntington Beach, CA 92647"
+ },
+ "ChIJf1LHfHMphYAR08fyWKWGPvA": {
+  "lat": 38.54359,
+  "lng": -121.74012,
+  "src": "census",
+  "match": "Exact",
+  "addr": "211 F St, Davis, CA 95616"
+ },
+ "ChIJf57kcRL7wogR-NJqWwVxXIg": {
+  "lat": 27.88061,
+  "lng": -82.8161,
+  "src": "nominatim",
+  "match": "place",
+  "addr": "12911 Walsingham Rd, Largo, FL 33774"
+ },
+ "ChIJf7vdA7zFwogRa1FJF-4cQos": {
+  "lat": 27.94856,
+  "lng": -82.45841,
+  "src": "census",
+  "match": "Exact",
+  "addr": "514 N Franklin St STE 102, Tampa, FL 33602"
+ },
+ "ChIJfQRl7mM33YgRylUXS5SxT9s": {
+  "lat": 28.0149,
+  "lng": -82.12404,
+  "src": "census",
+  "match": "Exact",
+  "addr": "107 S Evers St, Plant City, FL 33563"
+ },
+ "ChIJfVPuvnQ524gRrLupxnMejgI": {
+  "lat": 26.57723,
+  "lng": -81.88366,
+  "src": "nominatim",
+  "match": "primary",
+  "addr": "20351 Summerlin Rd #117, Fort Myers, FL 33908"
+ },
+ "ChIJf_F-_L4n5IgRZrCx_7mIcQ4": {
+  "lat": 29.88932,
+  "lng": -81.32473,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "314 S Ponce De Leon Blvd unit C, St. Augustine, FL 32084"
+ },
+ "ChIJg0Sm5hAP3IAR2evUpFhcqq0": {
+  "lat": 32.99138,
+  "lng": -117.27042,
+  "src": "census",
+  "match": "Exact",
+  "addr": "146 S Cedros Ave, Solana Beach, CA 92075"
+ },
+ "ChIJg0rOUS1J5IgRHGzKwt31X7A": {
+  "lat": 30.28817,
+  "lng": -81.40149,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1372 Beach Blvd, Jacksonville Beach, FL 32250"
+ },
+ "ChIJg2hsEh7d3ogR4B1mid_v2n4": {
+  "lat": 27.17403,
+  "lng": -80.23311,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2492 SE Federal Hwy, Stuart, FL 34994"
+ },
+ "ChIJg4qwGKeHhYARo41FFI_aOss": {
+  "lat": 37.77447,
+  "lng": -122.51005,
+  "src": "census",
+  "match": "Exact",
+  "addr": "734 La Playa St, San Francisco, CA 94121"
+ },
+ "ChIJgTW0nBchm4AR7AvvNnFhllw": {
+  "lat": 38.74964,
+  "lng": -121.28328,
+  "src": "census",
+  "match": "Exact",
+  "addr": "232 Vernon St, Roseville, CA 95678"
+ },
+ "ChIJgU4MZSOr2YgRcJ_T9yf5B04": {
+  "lat": 26.01146,
+  "lng": -80.14976,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2125 Hollywood Blvd, Hollywood, FL 33020"
+ },
+ "ChIJgWBBuMQB3ogRYAz9S2bu4WY": {
+  "lat": 28.31683,
+  "lng": -80.72209,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2025 Murrell Rd #160, Rockledge, FL 32955"
+ },
+ "ChIJg_o7OMrLTYYRNRi7RUR9Qrc": {
+  "lat": 33.21436,
+  "lng": -97.13019,
+  "src": "census",
+  "match": "Exact",
+  "addr": "109 Industrial St, Denton, TX 76201"
+ },
+ "ChIJgwL27vVL5IgRPv8KbryfVzY": {
+  "lat": 30.28558,
+  "lng": -81.48937,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3503 Kernan Blvd S Unit 7, Jacksonville, FL 32224"
+ },
+ "ChIJhVvHGBj7wogR_o0zP1qNCcQ": {
+  "lat": 27.91624,
+  "lng": -82.79643,
+  "src": "census",
+  "match": "Exact",
+  "addr": "80 Clearwater Largo Rd S, Largo, FL 33770"
+ },
+ "ChIJh_RJJje3woARp-2KgYs38-A": {
+  "lat": 33.96136,
+  "lng": -118.35337,
+  "src": "census",
+  "match": "Exact",
+  "addr": "231 S La Brea Ave, Inglewood, CA 90301"
+ },
+ "ChIJhd0DTg9x54gRt6F6HpBoaxE": {
+  "lat": 28.56422,
+  "lng": -81.36615,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1413 Haven Dr, Orlando, FL 32803"
+ },
+ "ChIJhfn4FgBL5IgR1VDkw_OhC0s": {
+  "lat": 30.32437,
+  "lng": -81.41464,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1505 Atlantic Blvd, Neptune Beach, FL 32266"
+ },
+ "ChIJi5_BTABzToYRYqq8XtflMaw": {
+  "lat": 32.7322,
+  "lng": -97.40823,
+  "src": "census",
+  "match": "Exact",
+  "addr": "5714 Locke Ave, Fort Worth, TX 76107"
+ },
+ "ChIJiY9UAbtB24gRW-n3bQ6M8_4": {
+  "lat": 26.60444,
+  "lng": -81.86783,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "2215 Winkler Ave H, Fort Myers, FL 33901"
+ },
+ "ChIJj-aJQNnRwogRhQ5oECV5PPo": {
+  "lat": 27.89372,
+  "lng": -82.33034,
+  "src": "census",
+  "match": "Exact",
+  "addr": "10312 Bloomingdale Ave #110, Riverview, FL 33578"
+ },
+ "ChIJj-qfF63dwogRC5pqWJyvMwg": {
+  "lat": 27.8942,
+  "lng": -82.52688,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4817 S Westshore Blvd, Tampa, FL 33611"
+ },
+ "ChIJj4HarKJt54gRYs_G-oSKsJg": {
+  "lat": 28.69791,
+  "lng": -81.32956,
+  "src": "census",
+  "match": "Exact",
+  "addr": "911 E State Rd 434, Longwood, FL 32750"
+ },
+ "ChIJjYa9Gui12YgRdgmnznd-1Eo": {
+  "lat": 25.76983,
+  "lng": -80.13409,
+  "src": "census",
+  "match": "Exact",
+  "addr": "100 Collins Ave # Cu-4, Miami Beach, FL 33139"
+ },
+ "ChIJjaheYAC35YgRfsxnXat5mmo": {
+  "lat": 30.32854,
+  "lng": -81.69004,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2385 Corbett St, Jacksonville, FL 32204"
+ },
+ "ChIJjckPTD8F2YgR-Z5FjKwLjrg": {
+  "lat": 26.23246,
+  "lng": -80.20456,
+  "src": "census",
+  "match": "Exact",
+  "addr": "238 FL-7, Margate, FL 33063"
+ },
+ "ChIJjwq5GdPjwogRXbZg6X4v6bc": {
+  "lat": 27.77114,
+  "lng": -82.66171,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2101 Central Ave, St. Petersburg, FL 33713"
+ },
+ "ChIJjz3CbiBt54gROS_zkwN3rxE": {
+  "lat": 28.7651,
+  "lng": -81.28319,
+  "src": "nominatim",
+  "match": "primary",
+  "addr": "4046 S Orlando Dr, Sanford, FL 32773"
+ },
+ "ChIJkQEJ0AlBjoAREQAI8LHORD0": {
+  "lat": 36.97497,
+  "lng": -122.02626,
+  "src": "census",
+  "match": "Exact",
+  "addr": "110 Cooper St Ste 100g, Santa Cruz, CA 95060"
+ },
+ "ChIJkQsSowzRUIgRWwM3w0TsY1Q": {
+  "lat": 35.72137,
+  "lng": -81.65443,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2308 S Sterling St, Morganton, NC 28655"
+ },
+ "ChIJl8bs30gD2YgReuPr3_pL7Fo": {
+  "lat": 26.32009,
+  "lng": -80.09985,
+  "src": "census",
+  "match": "Exact",
+  "addr": "155 NE 2nd Ave, Deerfield Beach, FL 33441"
+ },
+ "ChIJlQVczOoB2YgR12UBQMnwao4": {
+  "lat": 26.13378,
+  "lng": -80.13779,
+  "src": "census",
+  "match": "Exact",
+  "addr": "825 N Federal Hwy, Fort Lauderdale, FL 33304"
+ },
+ "ChIJlT0eqS0b2YgRMtAk1LlGITY": {
+  "lat": 26.3,
+  "lng": -80.24,
+  "src": "zip",
+  "match": "census No_Match",
+  "addr": "4651 FL-7 #8, Coral Springs, FL 33067"
+ },
+ "ChIJlTclCNMN3ogRDr3KKm-Tpo4": {
+  "lat": 28.03533,
+  "lng": -80.64261,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1105 Palm Bay Rd NE #103C, Melbourne, FL 32904"
+ },
+ "ChIJlV5TWPmp4IgRiOCT91SMuAg": {
+  "lat": 28.39407,
+  "lng": -80.70414,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2078 N Courtenay Pkwy, Merritt Island, FL 32953"
+ },
+ "ChIJlynP9IPD3ogRd1c3EHp36pk": {
+  "lat": 27.1724,
+  "lng": -80.29605,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3119 SW Martin Downs Blvd, Palm City, FL 34990"
+ },
+ "ChIJmWssNyxl54gRCsRsBezkWLI": {
+  "lat": 28.56529,
+  "lng": -81.31105,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1502 N Semoran Blvd #148, Orlando, FL 32807"
+ },
+ "ChIJmaPz5ZOfVogR9q_0UwR5yJM": {
+  "lat": 35.20191,
+  "lng": -80.84453,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1315 East Blvd Unit 110, Charlotte, NC 28203"
+ },
+ "ChIJmc8KvYU_24gREJbyu6l55_o": {
+  "lat": 26.55208,
+  "lng": -81.87151,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "12995 S Cleveland Ave #103A, Fort Myers, FL 33907"
+ },
+ "ChIJmcecEwOhlVQRNKlr-zude28": {
+  "lat": 45.52287,
+  "lng": -122.65936,
+  "src": "census",
+  "match": "Exact",
+  "addr": "616 E Burnside St, Portland, OR 97214"
+ },
+ "ChIJnyeeEkB1kVQRrf_xBsALWYw": {
+  "lat": 47.04704,
+  "lng": -122.94258,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "3225 Harrison Ave NW Ste d, Olympia, WA 98502"
+ },
+ "ChIJnzveOcS12YgRA7tP9dluEVw": {
+  "lat": 25.77381,
+  "lng": -80.13609,
+  "src": "census",
+  "match": "Exact",
+  "addr": "418 Meridian Ave, Miami Beach, FL 33139"
+ },
+ "ChIJo96e-0zZTYYRBuLuHEUpdsc": {
+  "lat": 32.91377,
+  "lng": -97.30531,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3529 Heritage Trace Pkwy Ste 155, Fort Worth, TX 76244"
+ },
+ "ChIJoWCS6hPjwogRPxBwMSYbMis": {
+  "lat": 27.91668,
+  "lng": -82.80568,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1661 W Bay Dr Ste b, Largo, FL 33770"
+ },
+ "ChIJoX-7Af2t2YgRIHlCT9Hyb40": {
+  "lat": 25.98704,
+  "lng": -80.1478,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "118 NE 1st Ave Ste g, Hallandale Beach, FL 33009"
+ },
+ "ChIJoYmsihmhVogRO2aSPgVZaI4": {
+  "lat": 35.21994,
+  "lng": -80.85673,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1320 S Church St, Charlotte, NC 28203"
+ },
+ "ChIJoe0TM_Lx3ogRO95yp6dgQJQ": {
+  "lat": 27.44637,
+  "lng": -80.32429,
+  "src": "census",
+  "match": "Exact",
+  "addr": "208 S Depot Dr, Fort Pierce, FL 34950"
+ },
+ "ChIJow-4K4wR54gRQJuyWHqO0L0": {
+  "lat": 28.90634,
+  "lng": -81.28918,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2751 Enterprise Rd Ste 115, Orange City, FL 32763"
+ },
+ "ChIJp0PiXyfRmoARxkJnqjdTHo0": {
+  "lat": 38.57209,
+  "lng": -121.49981,
+  "src": "census",
+  "match": "Exact",
+  "addr": "808 R St #101, Sacramento, CA 95811"
+ },
+ "ChIJp14P6D6p2YgRps3P0S5AOco": {
+  "lat": 26.04877,
+  "lng": -80.25188,
+  "src": "census",
+  "match": "Exact",
+  "addr": "5775 S University Dr, Davie, FL 33328"
+ },
+ "ChIJp32iCX_h2ogRDJ9hIME3yt4": {
+  "lat": 26.17671,
+  "lng": -81.79912,
+  "src": "nominatim",
+  "match": "shop",
+  "addr": "2500 Tamiami Trl N Ste 112, Naples, FL 34103"
+ },
+ "ChIJpxBNIgAb54gRKu6ew3LzAN8": {
+  "lat": 29.03057,
+  "lng": -81.30355,
+  "src": "census",
+  "match": "Exact",
+  "addr": "222 N Woodland Blvd, DeLand, FL 32720"
+ },
+ "ChIJq-C5VtYzW4YRUIKmLRyXLJQ": {
+  "lat": 30.46968,
+  "lng": -97.79145,
+  "src": "census",
+  "match": "Exact",
+  "addr": "13201 Ranch Rd 620 N Ste 103, Austin, TX 78717"
+ },
+ "ChIJq23pYQAN3ogRMMOSkCIcDdI": {
+  "lat": 27.99898,
+  "lng": -80.67439,
+  "src": "census",
+  "match": "Exact",
+  "addr": "160 Malabar Rd SW #115, Palm Bay, FL 32907"
+ },
+ "ChIJqXfmFWsB3ogRxXd3y37wK0A": {
+  "lat": 28.35033,
+  "lng": -80.74247,
+  "src": "census",
+  "match": "Exact",
+  "addr": "712 S Fiske Blvd, Cocoa, FL 32922"
+ },
+ "ChIJqZEe9xKp2YgRbi2qKFzm24I": {
+  "lat": 26.07323,
+  "lng": -80.23228,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3890 SW 64th Ave Ste 102, Davie, FL 33314"
+ },
+ "ChIJr5nCd3Xd3ogRqwulepvKIlM": {
+  "lat": 27.19149,
+  "lng": -80.25412,
+  "src": "census",
+  "match": "Exact",
+  "addr": "848 SW Federal Hwy #848, Stuart, FL 34994"
+ },
+ "ChIJrbz1t6yd5ogRoQ44A6pLNIM": {
+  "lat": 29.86696,
+  "lng": -81.32215,
+  "src": "census",
+  "match": "Exact",
+  "addr": "172 State Rte 312, St. Augustine, FL 32086"
+ },
+ "ChIJs42kRUfjwogRYK4fDPp_-04": {
+  "lat": 27.77098,
+  "lng": -82.66376,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2250 Central Ave, St. Petersburg, FL 33712"
+ },
+ "ChIJs4ehs2nd3ogRDmmXCoW4bmU": {
+  "lat": 27.19479,
+  "lng": -80.25278,
+  "src": "census",
+  "match": "Exact",
+  "addr": "603 S Colorado Ave, Stuart, FL 34994"
+ },
+ "ChIJs657zNZ_PIgRw_WNgZTtvic": {
+  "lat": 41.70034,
+  "lng": -83.64504,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4701 Talmadge Rd #110, Toledo, OH 43623"
+ },
+ "ChIJsYnwwYMP3ogR_1Y37TDmjAk": {
+  "lat": 28.1098,
+  "lng": -80.67269,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "268 N Wickham Rd, Melbourne, FL 32934"
+ },
+ "ChIJseVWfAsT3YgRHgObUrimJ38": {
+  "lat": 28.00396,
+  "lng": -81.71981,
+  "src": "census",
+  "match": "Exact",
+  "addr": "506 Cypress Gardens Blvd, Winter Haven, FL 33880"
+ },
+ "ChIJsfgkLdKZToYRRhVgDBwdE7M": {
+  "lat": 32.74317,
+  "lng": -96.82715,
+  "src": "census",
+  "match": "Exact",
+  "addr": "337 W Jefferson Blvd, Dallas, TX 75208"
+ },
+ "ChIJt5igbPv5a4cROXIRg-OxLrU": {
+  "lat": 40.15236,
+  "lng": -105.10281,
+  "src": "census",
+  "match": "Exact",
+  "addr": "615 Ken Pratt Blvd, Longmont, CO 80501"
+ },
+ "ChIJtQat2qvJwogR3V4iPUxj8II": {
+  "lat": 28.07003,
+  "lng": -82.36794,
+  "src": "census",
+  "match": "Exact",
+  "addr": "8229 Parkedge Dr, Tampa, FL 33637"
+ },
+ "ChIJtVRSBFMN54gRokdW11tcJu4": {
+  "lat": 28.79281,
+  "lng": -81.3406,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1169 Rinehart Rd, Sanford, FL 32771"
+ },
+ "ChIJu1oFY4TrwogRNZ62-krpwGI": {
+  "lat": 28.01295,
+  "lng": -82.5832,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "6911 Sheldon Rd Ste b, Tampa, FL 33615"
+ },
+ "ChIJu3V1MAClwoARod0m3rU1P6k": {
+  "lat": 34.00905,
+  "lng": -118.48802,
+  "src": "census",
+  "match": "Exact",
+  "addr": "306 Pico Blvd, Santa Monica, CA 90405"
+ },
+ "ChIJuQ0Cb8uJa4cR2dlCwUDhUrA": {
+  "lat": 39.86352,
+  "lng": -105.08271,
+  "src": "census",
+  "match": "Exact",
+  "addr": "7703 W 92nd Ave, Westminster, CO 80021"
+ },
+ "ChIJuxEmA9HNwogRXqkCpRWPRKo": {
+  "lat": 27.93571,
+  "lng": -82.294,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "210 S Kings Ave # J, Brandon, FL 33511"
+ },
+ "ChIJv08w15viwogR-eEGwgnpG3E": {
+  "lat": 27.74099,
+  "lng": -82.70776,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "2902A Beach Blvd S, Gulfport, FL 33707"
+ },
+ "ChIJv1KniOchm4ARoKBD69BCDvo": {
+  "lat": 38.7837,
+  "lng": -121.27005,
+  "src": "census",
+  "match": "Exact",
+  "addr": "9600 Fairway Dr #190, Roseville, CA 95678"
+ },
+ "ChIJv4iS_Hbn3ogRUukmpOyZF8A": {
+  "lat": 27.24433,
+  "lng": -80.22594,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1999 NE Jensen Beach Blvd, Jensen Beach, FL 34957"
+ },
+ "ChIJvQJIMQAd3ogRH0Brgrybbjo": {
+  "lat": 28.3282,
+  "lng": -80.61025,
+  "src": "census",
+  "match": "Exact",
+  "addr": "625 N Atlantic Ave, Cocoa Beach, FL 32931"
+ },
+ "ChIJvQSFBcXd3ogRjPSoJRxU1uw": {
+  "lat": 27.1919,
+  "lng": -80.25439,
+  "src": "census",
+  "match": "Exact",
+  "addr": "839 SW Federal Hwy, Stuart, FL 34994"
+ },
+ "ChIJvREgwsZ73YgRPcrNreEiHjI": {
+  "lat": 28.31,
+  "lng": -81.66,
+  "src": "zip",
+  "match": "census No_Match",
+  "addr": "1110 Champions Dr, Davenport, FL 33897"
+ },
+ "ChIJvdM9k2Z_bIcRwOd9RSq0mUI": {
+  "lat": 39.65333,
+  "lng": -105.01824,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "2601 W Hampden Ave Ste b, Sheridan, CO 80110"
+ },
+ "ChIJw2ESEf9z3IARur_1efBEJb0": {
+  "lat": 33.1594,
+  "lng": -117.34864,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3021 State St, Carlsbad, CA 92008"
+ },
+ "ChIJwTIjIfWp2YgRNXC7-E-XNcI": {
+  "lat": 26.06231,
+  "lng": -80.18919,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3418 Griffin Rd, Fort Lauderdale, FL 33312"
+ },
+ "ChIJwVb78D1FE4cR6JkMaO9E9X0": {
+  "lat": 38.83959,
+  "lng": -104.82294,
+  "src": "census",
+  "match": "Exact",
+  "addr": "112 E Boulder St, Colorado Springs, CO 80903"
+ },
+ "ChIJwc4vxEZv1oYRNTm397-CQp8": {
+  "lat": 32.23613,
+  "lng": -110.89938,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4376 E Speedway Blvd, Tucson, AZ 85712"
+ },
+ "ChIJwfNjcXLBwogRc5WjrTZKmUQ": {
+  "lat": 28.04944,
+  "lng": -82.50436,
+  "src": "census",
+  "match": "Exact",
+  "addr": "11127 N Dale Mabry Hwy, Tampa, FL 33618"
+ },
+ "ChIJwwJk6eX6wogR9temTDEDlys": {
+  "lat": 27.88705,
+  "lng": -82.76242,
+  "src": "census",
+  "match": "Exact",
+  "addr": "12514 Starkey Rd, Largo, FL 33773"
+ },
+ "ChIJwz7Osa-t2YgRLYXRXQ-18bg": {
+  "lat": 25.93233,
+  "lng": -80.15368,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "17010 W Dixie Hwy Ste E (2nd Floor, North Miami Beach, FL 33160"
+ },
+ "ChIJxXUhX12p4IgRb6W3mFCUFZQ": {
+  "lat": 28.36001,
+  "lng": -80.66498,
+  "src": "census",
+  "match": "Exact",
+  "addr": "205 N Banana River Dr Ste 102, Merritt Island, FL 32952"
+ },
+ "ChIJxZj_LJHNJIgRWXX7wXOEVJk": {
+  "lat": 42.36284,
+  "lng": -83.08257,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1331 Holden St #101, Detroit, MI 48202"
+ },
+ "ChIJxc2NebD7wogRkD_0hREDcNg": {
+  "lat": 27.91681,
+  "lng": -82.79836,
+  "src": "census",
+  "match": "Exact",
+  "addr": "910 W Bay Dr, Largo, FL 33770"
+ },
+ "ChIJxd0z6aZX24gRVI0KLl-cFSM": {
+  "lat": 26.92966,
+  "lng": -82.0457,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1009 Taylor St, Punta Gorda, FL 33950"
+ },
+ "ChIJxwlPNV8H2YgRbGNSQVZDfJ0": {
+  "lat": 26.10033,
+  "lng": -80.25727,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "8256 W State Rd 84, Davie, FL 33324"
+ },
+ "ChIJxzXokhLB2YgRZltp0OXy3Gc": {
+  "lat": 25.75052,
+  "lng": -80.23404,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2395 SW 22nd St, Coral Gables, FL 33145"
+ },
+ "ChIJy0L5G-QZBYgRs9W7dCPOTmI": {
+  "lat": 43.00642,
+  "lng": -87.91878,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2101 S 6th St, Milwaukee, WI 53215"
+ },
+ "ChIJy62QSV5TBogR1Gi3ey3OamQ": {
+  "lat": 43.08266,
+  "lng": -89.36528,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1148 Williamson St Ste R, Madison, WI 53703"
+ },
+ "ChIJyVujrCaBbIcRcN0XbqM07O8": {
+  "lat": 39.65511,
+  "lng": -104.98752,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3394 S Broadway, Englewood, CO 80113"
+ },
+ "ChIJyXHwNCXAwogRP8NOu6fXd9Y": {
+  "lat": 28.06397,
+  "lng": -82.55107,
+  "src": "census",
+  "match": "Exact",
+  "addr": "6166 Gunn Hwy, Tampa, FL 33625"
+ },
+ "ChIJy_abF-LxwogRuROwOMKjbQw": {
+  "lat": 27.9605,
+  "lng": -82.75265,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "2045 Gulf To Bay Blvd # D, Clearwater, FL 33765"
+ },
+ "ChIJybCjMSIB2YgR_r0sxderbeY": {
+  "lat": 26.13791,
+  "lng": -80.12111,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1027 N Federal Hwy, Fort Lauderdale, FL 33304"
+ },
+ "ChIJyeXLuI9x1oYRL8vs6CjqszY": {
+  "lat": 32.2232,
+  "lng": -110.9699,
+  "src": "census",
+  "match": "Exact",
+  "addr": "67 E Pennington St, Tucson, AZ 85701"
+ },
+ "ChIJz-W5A27p3ogR0xPC6LQ-sa4": {
+  "lat": 27.27155,
+  "lng": -80.36132,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "466 SW Port St Lucie Blvd #104, Port St. Lucie, FL 34953"
+ },
+ "ChIJz1LOsPnNj4ARsOE14qXH6v0": {
+  "lat": 37.33118,
+  "lng": -121.88693,
+  "src": "census",
+  "match": "Exact",
+  "addr": "315 S 1st St, San Jose, CA 95113"
+ },
+ "ChIJz5G3HwS35YgRPbQLHmebTWo": {
+  "lat": 30.31361,
+  "lng": -81.65384,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1216 Kings Ave, Jacksonville, FL 32207"
+ },
+ "ChIJzQfEhnZv54gR9u4A9YOaUTo": {
+  "lat": 28.60422,
+  "lng": -81.30779,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3092 Aloma Ave #225, Winter Park, FL 32792"
+ },
+ "ChIJzTVIQYi35YgRtk8weDuqL5Y": {
+  "lat": 30.31357,
+  "lng": -81.65384,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1224 Kings Ave, Jacksonville, FL 32207"
+ }
+}

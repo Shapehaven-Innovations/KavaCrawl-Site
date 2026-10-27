@@ -1,0 +1,784 @@
+{
+  "generated": "2026-10-27",
+  "totals": {
+    "venues": 322,
+    "cities": 142,
+    "states": 16,
+    "lead": {
+      "st": "FL",
+      "share": 0.671
+    }
+  },
+  "byState": [
+    {
+      "st": "FL",
+      "name": "Florida",
+      "venues": 216,
+      "cities": 71,
+      "per100k": 0.92
+    },
+    {
+      "st": "CA",
+      "name": "California",
+      "venues": 37,
+      "cities": 27,
+      "per100k": 0.09
+    },
+    {
+      "st": "NC",
+      "name": "North Carolina",
+      "venues": 17,
+      "cities": 10,
+      "per100k": 0.15
+    },
+    {
+      "st": "TX",
+      "name": "Texas",
+      "venues": 14,
+      "cities": 5,
+      "per100k": 0.04
+    },
+    {
+      "st": "CO",
+      "name": "Colorado",
+      "venues": 11,
+      "cities": 8,
+      "per100k": 0.18
+    },
+    {
+      "st": "AZ",
+      "name": "Arizona",
+      "venues": 4,
+      "cities": 2,
+      "per100k": 0.05
+    },
+    {
+      "st": "MI",
+      "name": "Michigan",
+      "venues": 4,
+      "cities": 3,
+      "per100k": 0.04
+    },
+    {
+      "st": "WI",
+      "name": "Wisconsin",
+      "venues": 4,
+      "cities": 3,
+      "per100k": 0.07
+    },
+    {
+      "st": "OH",
+      "name": "Ohio",
+      "venues": 3,
+      "cities": 3,
+      "per100k": 0.03
+    },
+    {
+      "st": "OR",
+      "name": "Oregon",
+      "venues": 3,
+      "cities": 1,
+      "per100k": 0.07
+    },
+    {
+      "st": "ME",
+      "name": "Maine",
+      "venues": 2,
+      "cities": 2,
+      "per100k": 0.14
+    },
+    {
+      "st": "SC",
+      "name": "South Carolina",
+      "venues": 2,
+      "cities": 2,
+      "per100k": 0.04
+    },
+    {
+      "st": "WA",
+      "name": "Washington",
+      "venues": 2,
+      "cities": 2,
+      "per100k": 0.02
+    },
+    {
+      "st": "MD",
+      "name": "Maryland",
+      "venues": 1,
+      "cities": 1,
+      "per100k": 0.02
+    },
+    {
+      "st": "MO",
+      "name": "Missouri",
+      "venues": 1,
+      "cities": 1,
+      "per100k": 0.02
+    },
+    {
+      "st": "PA",
+      "name": "Pennsylvania",
+      "venues": 1,
+      "cities": 1,
+      "per100k": 0.01
+    }
+  ],
+  "topCities": [
+    {
+      "city": "Fort Myers",
+      "st": "FL",
+      "venues": 12
+    },
+    {
+      "city": "Melbourne",
+      "st": "FL",
+      "venues": 12
+    },
+    {
+      "city": "Fort Lauderdale",
+      "st": "FL",
+      "venues": 10
+    },
+    {
+      "city": "Jacksonville",
+      "st": "FL",
+      "venues": 10
+    },
+    {
+      "city": "Tampa",
+      "st": "FL",
+      "venues": 10
+    },
+    {
+      "city": "Orlando",
+      "st": "FL",
+      "venues": 8
+    },
+    {
+      "city": "Port St. Lucie",
+      "st": "FL",
+      "venues": 8
+    },
+    {
+      "city": "Austin",
+      "st": "TX",
+      "venues": 7
+    },
+    {
+      "city": "Lakeland",
+      "st": "FL",
+      "venues": 7
+    },
+    {
+      "city": "Stuart",
+      "st": "FL",
+      "venues": 7
+    }
+  ],
+  "stateCities": {
+    "CA": [
+      {
+        "city": "Los Angeles",
+        "venues": 2
+      },
+      {
+        "city": "Oakland",
+        "venues": 2
+      },
+      {
+        "city": "Roseville",
+        "venues": 2
+      },
+      {
+        "city": "Sacramento",
+        "venues": 2
+      },
+      {
+        "city": "San Diego",
+        "venues": 2
+      },
+      {
+        "city": "San Francisco",
+        "venues": 2
+      },
+      {
+        "city": "San Jose",
+        "venues": 2
+      },
+      {
+        "city": "Santa Cruz",
+        "venues": 2
+      },
+      {
+        "city": "Santa Monica",
+        "venues": 2
+      },
+      {
+        "city": "Thousand Oaks",
+        "venues": 2
+      },
+      {
+        "city": "Carlsbad",
+        "venues": 1
+      },
+      {
+        "city": "Costa Mesa",
+        "venues": 1
+      },
+      {
+        "city": "Cupertino",
+        "venues": 1
+      },
+      {
+        "city": "Davis",
+        "venues": 1
+      },
+      {
+        "city": "Hayward",
+        "venues": 1
+      },
+      {
+        "city": "Huntington Beach",
+        "venues": 1
+      },
+      {
+        "city": "Inglewood",
+        "venues": 1
+      },
+      {
+        "city": "La Mesa",
+        "venues": 1
+      },
+      {
+        "city": "Rancho Cordova",
+        "venues": 1
+      },
+      {
+        "city": "Reseda",
+        "venues": 1
+      },
+      {
+        "city": "San Bruno",
+        "venues": 1
+      },
+      {
+        "city": "Santa Barbara",
+        "venues": 1
+      },
+      {
+        "city": "Solana Beach",
+        "venues": 1
+      },
+      {
+        "city": "Torrance",
+        "venues": 1
+      },
+      {
+        "city": "Tustin",
+        "venues": 1
+      },
+      {
+        "city": "Ventura",
+        "venues": 1
+      },
+      {
+        "city": "West Hollywood",
+        "venues": 1
+      }
+    ],
+    "FL": [
+      {
+        "city": "Fort Myers",
+        "venues": 12
+      },
+      {
+        "city": "Melbourne",
+        "venues": 12
+      },
+      {
+        "city": "Fort Lauderdale",
+        "venues": 10
+      },
+      {
+        "city": "Jacksonville",
+        "venues": 10
+      },
+      {
+        "city": "Tampa",
+        "venues": 10
+      },
+      {
+        "city": "Orlando",
+        "venues": 8
+      },
+      {
+        "city": "Port St. Lucie",
+        "venues": 8
+      },
+      {
+        "city": "Lakeland",
+        "venues": 7
+      },
+      {
+        "city": "Stuart",
+        "venues": 7
+      },
+      {
+        "city": "Davie",
+        "venues": 6
+      },
+      {
+        "city": "Largo",
+        "venues": 6
+      },
+      {
+        "city": "Miami",
+        "venues": 6
+      },
+      {
+        "city": "St. Petersburg",
+        "venues": 6
+      },
+      {
+        "city": "Clearwater",
+        "venues": 5
+      },
+      {
+        "city": "Hollywood",
+        "venues": 5
+      },
+      {
+        "city": "Rockledge",
+        "venues": 5
+      },
+      {
+        "city": "St. Augustine",
+        "venues": 5
+      },
+      {
+        "city": "Miami Beach",
+        "venues": 4
+      },
+      {
+        "city": "Sebastian",
+        "venues": 4
+      },
+      {
+        "city": "Cape Coral",
+        "venues": 3
+      },
+      {
+        "city": "Coral Springs",
+        "venues": 3
+      },
+      {
+        "city": "Dania Beach",
+        "venues": 3
+      },
+      {
+        "city": "Gainesville",
+        "venues": 3
+      },
+      {
+        "city": "Jensen Beach",
+        "venues": 3
+      },
+      {
+        "city": "Merritt Island",
+        "venues": 3
+      },
+      {
+        "city": "Palm Bay",
+        "venues": 3
+      },
+      {
+        "city": "Vero Beach",
+        "venues": 3
+      },
+      {
+        "city": "Brandon",
+        "venues": 2
+      },
+      {
+        "city": "Cocoa",
+        "venues": 2
+      },
+      {
+        "city": "Cocoa Beach",
+        "venues": 2
+      },
+      {
+        "city": "Davenport",
+        "venues": 2
+      },
+      {
+        "city": "Fort Pierce",
+        "venues": 2
+      },
+      {
+        "city": "Jacksonville Beach",
+        "venues": 2
+      },
+      {
+        "city": "Naples",
+        "venues": 2
+      },
+      {
+        "city": "North Fort Myers",
+        "venues": 2
+      },
+      {
+        "city": "Oviedo",
+        "venues": 2
+      },
+      {
+        "city": "Punta Gorda",
+        "venues": 2
+      },
+      {
+        "city": "Sanford",
+        "venues": 2
+      },
+      {
+        "city": "Winter Park",
+        "venues": 2
+      },
+      {
+        "city": "Casselberry",
+        "venues": 1
+      },
+      {
+        "city": "Coral Gables",
+        "venues": 1
+      },
+      {
+        "city": "Deerfield Beach",
+        "venues": 1
+      },
+      {
+        "city": "DeLand",
+        "venues": 1
+      },
+      {
+        "city": "Doral",
+        "venues": 1
+      },
+      {
+        "city": "Dunedin",
+        "venues": 1
+      },
+      {
+        "city": "Estero",
+        "venues": 1
+      },
+      {
+        "city": "Gulfport",
+        "venues": 1
+      },
+      {
+        "city": "Hallandale Beach",
+        "venues": 1
+      },
+      {
+        "city": "Jupiter",
+        "venues": 1
+      },
+      {
+        "city": "Lithia",
+        "venues": 1
+      },
+      {
+        "city": "Longwood",
+        "venues": 1
+      },
+      {
+        "city": "Maitland",
+        "venues": 1
+      },
+      {
+        "city": "Margate",
+        "venues": 1
+      },
+      {
+        "city": "Miramar",
+        "venues": 1
+      },
+      {
+        "city": "Neptune Beach",
+        "venues": 1
+      },
+      {
+        "city": "North Miami",
+        "venues": 1
+      },
+      {
+        "city": "North Miami Beach",
+        "venues": 1
+      },
+      {
+        "city": "Orange City",
+        "venues": 1
+      },
+      {
+        "city": "Orange Park",
+        "venues": 1
+      },
+      {
+        "city": "Ormond Beach",
+        "venues": 1
+      },
+      {
+        "city": "Palm City",
+        "venues": 1
+      },
+      {
+        "city": "Plant City",
+        "venues": 1
+      },
+      {
+        "city": "Pompano Beach",
+        "venues": 1
+      },
+      {
+        "city": "Port Charlotte",
+        "venues": 1
+      },
+      {
+        "city": "Riverview",
+        "venues": 1
+      },
+      {
+        "city": "Satellite Beach",
+        "venues": 1
+      },
+      {
+        "city": "Temple Terrace",
+        "venues": 1
+      },
+      {
+        "city": "Wesley Chapel",
+        "venues": 1
+      },
+      {
+        "city": "West Melbourne",
+        "venues": 1
+      },
+      {
+        "city": "Winter Haven",
+        "venues": 1
+      },
+      {
+        "city": "Winter Springs",
+        "venues": 1
+      }
+    ],
+    "TX": [
+      {
+        "city": "Austin",
+        "venues": 7
+      },
+      {
+        "city": "Dallas",
+        "venues": 2
+      },
+      {
+        "city": "Fort Worth",
+        "venues": 2
+      },
+      {
+        "city": "Frisco",
+        "venues": 2
+      },
+      {
+        "city": "Denton",
+        "venues": 1
+      }
+    ],
+    "AZ": [
+      {
+        "city": "Phoenix",
+        "venues": 2
+      },
+      {
+        "city": "Tucson",
+        "venues": 2
+      }
+    ],
+    "SC": [
+      {
+        "city": "Myrtle Beach",
+        "venues": 1
+      },
+      {
+        "city": "Spartanburg",
+        "venues": 1
+      }
+    ],
+    "NC": [
+      {
+        "city": "Charlotte",
+        "venues": 5
+      },
+      {
+        "city": "Asheville",
+        "venues": 2
+      },
+      {
+        "city": "Fayetteville",
+        "venues": 2
+      },
+      {
+        "city": "Wilmington",
+        "venues": 2
+      },
+      {
+        "city": "Boone",
+        "venues": 1
+      },
+      {
+        "city": "Conover",
+        "venues": 1
+      },
+      {
+        "city": "Greensboro",
+        "venues": 1
+      },
+      {
+        "city": "Hickory",
+        "venues": 1
+      },
+      {
+        "city": "Lowell",
+        "venues": 1
+      },
+      {
+        "city": "Morganton",
+        "venues": 1
+      }
+    ],
+    "MO": [
+      {
+        "city": "St Charles",
+        "venues": 1
+      }
+    ],
+    "CO": [
+      {
+        "city": "Colorado Springs",
+        "venues": 4
+      },
+      {
+        "city": "Denver",
+        "venues": 1
+      },
+      {
+        "city": "Englewood",
+        "venues": 1
+      },
+      {
+        "city": "Fort Collins",
+        "venues": 1
+      },
+      {
+        "city": "Lakewood",
+        "venues": 1
+      },
+      {
+        "city": "Longmont",
+        "venues": 1
+      },
+      {
+        "city": "Sheridan",
+        "venues": 1
+      },
+      {
+        "city": "Westminster",
+        "venues": 1
+      }
+    ],
+    "MD": [
+      {
+        "city": "Baltimore",
+        "venues": 1
+      }
+    ],
+    "PA": [
+      {
+        "city": "Philadelphia",
+        "venues": 1
+      }
+    ],
+    "OH": [
+      {
+        "city": "Alliance",
+        "venues": 1
+      },
+      {
+        "city": "Lakewood",
+        "venues": 1
+      },
+      {
+        "city": "Toledo",
+        "venues": 1
+      }
+    ],
+    "MI": [
+      {
+        "city": "Detroit",
+        "venues": 2
+      },
+      {
+        "city": "Auburn Hills",
+        "venues": 1
+      },
+      {
+        "city": "Grand Rapids",
+        "venues": 1
+      }
+    ],
+    "WI": [
+      {
+        "city": "Milwaukee",
+        "venues": 2
+      },
+      {
+        "city": "Green Bay",
+        "venues": 1
+      },
+      {
+        "city": "Madison",
+        "venues": 1
+      }
+    ],
+    "ME": [
+      {
+        "city": "Portland",
+        "venues": 1
+      },
+      {
+        "city": "Sullivan",
+        "venues": 1
+      }
+    ],
+    "OR": [
+      {
+        "city": "Portland",
+        "venues": 3
+      }
+    ],
+    "WA": [
+      {
+        "city": "Olympia",
+        "venues": 1
+      },
+      {
+        "city": "Seattle",
+        "venues": 1
+      }
+    ]
+  },
+  "vintage": "Vintage 2025 (July 1, 2025 resident population estimates)",
+  "excluded": {
+    "noLocation": 0
+  }
+}

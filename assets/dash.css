@@ -5,6 +5,7 @@
 /* theme */
 :root{--bg:#050e0c;--bg2:#0b1d19;--card:#102520;--line:#1f3f38;--line-soft:rgba(157,184,172,.12);--ink:#f2ece0;--muted:#9db8ac;--faint:#7d9a8c;--mint:#6ece8d;--sun:#e98a5b;--teal:#0e5959;--glass:rgba(11,29,25,.62);--hi:inset 0 1px 0 rgba(242,236,224,.05);--shadow:0 24px 60px -30px rgba(0,0,0,.8);--ease:cubic-bezier(.2,.7,.2,1)}
 *{box-sizing:border-box}
+html{overscroll-behavior-x:none}
 @view-transition{navigation:auto}
 ::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}
 @media (prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}

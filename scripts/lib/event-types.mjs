@@ -45,9 +45,10 @@ export function loadRules(path) {
 export function classify(title, rules) {
   const t = typeof title === 'string' ? title : ''
   if (t) {
-    // Schedule-listing rows are never events, so they win over every type rule.
-    if (rules.listingRe?.test(t)) return LISTING
+    // A row that names a type counts once toward it, even on a "weekly schedule" row.
     for (const r of rules.rules) if (r.re.test(t)) return r.type
+    // A bare listing ("Weekly Events") names nothing to group by, so it is not an event.
+    if (rules.listingRe?.test(t)) return LISTING
   }
   return FALLBACK
 }

@@ -85,10 +85,14 @@ test('rule order: Games beats Music, earlier rules beat weekday Specials', () =>
   assert.equal(classify('Open Mic Monday', rules), 'Open mic')
 })
 
-test('schedule listings are checked before type rules', () => {
-  assert.equal(classify('Weekly Schedule - Karaoke & Bingo', rules), 'Listing')
-  assert.equal(classify('This Week at Bula Bar: Trivia', rules), 'Listing')
+test('a schedule row that names a type counts once toward that type', () => {
+  assert.equal(classify('Weekly Schedule - Karaoke & Bingo', rules), 'Karaoke')
+  assert.equal(classify('This Week at Bula Bar: Trivia', rules), 'Trivia')
+})
+
+test('bare schedule listings stay listings', () => {
   assert.equal(classify('Weekly Events & Hours', rules), 'Listing')
+  assert.equal(classify('Weekly Schedule', rules), 'Listing')
 })
 
 test('weekly real events are not listings', () => {

@@ -1,44 +1,44 @@
 {
-  "generated": "2026-10-27",
+  "generated": "2026-10-28",
   "totals": {
-    "events": 285,
-    "bars": 82,
+    "events": 338,
+    "bars": 88,
     "states": 6,
-    "cities": 48
+    "cities": 53
   },
   "byWeekday": [
-    37,
-    51,
-    50,
-    47,
-    45,
-    32,
-    23
+    46,
+    61,
+    57,
+    55,
+    53,
+    38,
+    28
   ],
   "byType": [
     {
       "type": "Games",
-      "events": 85
+      "events": 106
     },
     {
       "type": "Specials",
-      "events": 82
+      "events": 91
     },
     {
       "type": "Community",
-      "events": 40
+      "events": 49
     },
     {
       "type": "Trivia",
-      "events": 27
+      "events": 32
     },
     {
       "type": "Open mic",
-      "events": 19
+      "events": 25
     },
     {
       "type": "Music",
-      "events": 8
+      "events": 10
     },
     {
       "type": "Karaoke",
@@ -46,7 +46,7 @@
     },
     {
       "type": "Movie night",
-      "events": 7
+      "events": 8
     },
     {
       "type": "Art",
@@ -57,8 +57,8 @@
     {
       "st": "FL",
       "name": "Florida",
-      "events": 266,
-      "bars": 74
+      "events": 319,
+      "bars": 80
     },
     {
       "st": "TX",
@@ -93,55 +93,55 @@
   ],
   "typeByWeekday": {
     "Games": [
-      10,
-      15,
-      17,
+      14,
+      19,
+      19,
+      16,
       12,
-      10,
-      15,
-      6
+      19,
+      7
     ],
     "Specials": [
-      7,
-      20,
-      12,
-      16,
-      21,
-      2,
-      4
-    ],
-    "Community": [
       9,
-      3,
-      8,
-      7,
-      5,
+      22,
+      13,
+      17,
+      22,
       2,
       6
+    ],
+    "Community": [
+      11,
+      5,
+      8,
+      8,
+      6,
+      4,
+      7
     ],
     "Trivia": [
       5,
-      4,
+      5,
+      8,
       5,
       5,
-      4,
       4,
       0
     ],
     "Open mic": [
-      2,
       3,
-      2,
-      4,
       3,
+      3,
+      5,
+      6,
       3,
       2
     ],
     "Music": [
       2,
-      0,
       1,
-      0,
+      1,
+      1,
       0,
       2,
       3
@@ -162,7 +162,7 @@
       0,
       2,
       0,
-      0
+      1
     ],
     "Art": [
       1,
@@ -176,8 +176,8 @@
   },
   "excluded": {
     "duplicates": 1,
-    "listings": 1,
-    "outsideMap": 99,
+    "listings": 2,
+    "outsideMap": 45,
     "invalid": 0
   },
   "vintage": "Vintage 2025 (July 1, 2025 resident population estimates)"

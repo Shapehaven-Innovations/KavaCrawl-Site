@@ -1,28 +1,28 @@
 {
-  "generated": "2026-10-27",
+  "generated": "2026-10-28",
   "totals": {
-    "venues": 322,
-    "cities": 142,
+    "venues": 340,
+    "cities": 150,
     "states": 16,
     "lead": {
       "st": "FL",
-      "share": 0.671
+      "share": 0.676
     }
   },
   "byState": [
     {
       "st": "FL",
       "name": "Florida",
-      "venues": 216,
-      "cities": 71,
-      "per100k": 0.92
+      "venues": 230,
+      "cities": 77,
+      "per100k": 0.98
     },
     {
       "st": "CA",
       "name": "California",
-      "venues": 37,
-      "cities": 27,
-      "per100k": 0.09
+      "venues": 41,
+      "cities": 29,
+      "per100k": 0.1
     },
     {
       "st": "NC",
@@ -135,17 +135,22 @@
       "venues": 12
     },
     {
+      "city": "St. Petersburg",
+      "st": "FL",
+      "venues": 11
+    },
+    {
+      "city": "Tampa",
+      "st": "FL",
+      "venues": 11
+    },
+    {
       "city": "Fort Lauderdale",
       "st": "FL",
       "venues": 10
     },
     {
       "city": "Jacksonville",
-      "st": "FL",
-      "venues": 10
-    },
-    {
-      "city": "Tampa",
       "st": "FL",
       "venues": 10
     },
@@ -168,25 +173,24 @@
       "city": "Lakeland",
       "st": "FL",
       "venues": 7
-    },
-    {
-      "city": "Stuart",
-      "st": "FL",
-      "venues": 7
     }
   ],
   "stateCities": {
     "CA": [
+      {
+        "city": "Roseville",
+        "venues": 3
+      },
+      {
+        "city": "Hayward",
+        "venues": 2
+      },
       {
         "city": "Los Angeles",
         "venues": 2
       },
       {
         "city": "Oakland",
-        "venues": 2
-      },
-      {
-        "city": "Roseville",
         "venues": 2
       },
       {
@@ -218,6 +222,10 @@
         "venues": 2
       },
       {
+        "city": "Auburn",
+        "venues": 1
+      },
+      {
         "city": "Carlsbad",
         "venues": 1
       },
@@ -234,7 +242,7 @@
         "venues": 1
       },
       {
-        "city": "Hayward",
+        "city": "Fairfax",
         "venues": 1
       },
       {
@@ -296,15 +304,19 @@
         "venues": 12
       },
       {
+        "city": "St. Petersburg",
+        "venues": 11
+      },
+      {
+        "city": "Tampa",
+        "venues": 11
+      },
+      {
         "city": "Fort Lauderdale",
         "venues": 10
       },
       {
         "city": "Jacksonville",
-        "venues": 10
-      },
-      {
-        "city": "Tampa",
         "venues": 10
       },
       {
@@ -324,6 +336,10 @@
         "venues": 7
       },
       {
+        "city": "Clearwater",
+        "venues": 6
+      },
+      {
         "city": "Davie",
         "venues": 6
       },
@@ -334,14 +350,6 @@
       {
         "city": "Miami",
         "venues": 6
-      },
-      {
-        "city": "St. Petersburg",
-        "venues": 6
-      },
-      {
-        "city": "Clearwater",
-        "venues": 5
       },
       {
         "city": "Hollywood",
@@ -412,6 +420,10 @@
         "venues": 2
       },
       {
+        "city": "Deerfield Beach",
+        "venues": 2
+      },
+      {
         "city": "Fort Pierce",
         "venues": 2
       },
@@ -444,6 +456,10 @@
         "venues": 2
       },
       {
+        "city": "Boynton Beach",
+        "venues": 1
+      },
+      {
         "city": "Casselberry",
         "venues": 1
       },
@@ -452,11 +468,11 @@
         "venues": 1
       },
       {
-        "city": "Deerfield Beach",
+        "city": "DeLand",
         "venues": 1
       },
       {
-        "city": "DeLand",
+        "city": "Delray Beach",
         "venues": 1
       },
       {
@@ -481,6 +497,14 @@
       },
       {
         "city": "Jupiter",
+        "venues": 1
+      },
+      {
+        "city": "Kenneth City",
+        "venues": 1
+      },
+      {
+        "city": "Lake Worth Beach",
         "venues": 1
       },
       {
@@ -548,6 +572,10 @@
         "venues": 1
       },
       {
+        "city": "Sarasota",
+        "venues": 1
+      },
+      {
         "city": "Satellite Beach",
         "venues": 1
       },
@@ -561,6 +589,10 @@
       },
       {
         "city": "West Melbourne",
+        "venues": 1
+      },
+      {
+        "city": "West Palm Beach",
         "venues": 1
       },
       {

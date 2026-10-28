@@ -730,6 +730,10 @@
       <small>Free for iPhone</small>
     </div>
   </section>
+
+  <details class="term" id="ext" hidden><summary><span class="tl">// DATA EXTRACT</span><span class="tv" id="ext-date">&mdash;</span><span class="hint"><span class="open">view data</span><span class="close">hide data</span></span><span class="cur" aria-hidden="true"></span></summary>
+    <div class="termbar"><span class="tm">kavacrawl.venues.aggregate</span><button id="dl" type="button">Download JSON</button></div>
+    <pre id="extract" tabindex="0"></pre></details>
 </div>
 
   <!-- footer:start -->
@@ -1105,6 +1109,45 @@
     $('more').onclick=function(){showAllRows=!showAllRows;render()};
     render();
   }).catch(function(){$('results').hidden=false;$('status').textContent='Could not load the data.'});
+})();
+</script>
+<script>
+/* data extract: aggregate counts only (mapdata/venue-stats.json). The strip stays hidden unless the data loads. */
+(function(){
+  var ext=document.getElementById('ext');if(!ext)return;
+  function isObj(v){return v!==null&&typeof v==='object'&&!Array.isArray(v)}
+  function isN(v){return typeof v==='number'&&isFinite(v)}
+  function valid(d){return isObj(d)&&typeof d.generated==='string'&&isObj(d.totals)&&['venues','cities','states'].every(function(k){return isN(d.totals[k])})&&Array.isArray(d.byState)&&Array.isArray(d.topCities)&&isObj(d.stateCities)}
+  function omit(o,key){var r={};Object.keys(o).forEach(function(k){if(k!==key)r[k]=o[k]});return r}
+  /* same display copy as the states guide: drops vintage and byState[].per100k */
+  function displayCopy(d){var r=omit(d,'vintage');r.byState=d.byState.map(function(s){return isObj(s)?omit(s,'per100k'):s});return r}
+  /* pretty-printed JSON with line numbers, keys and numbers coloured; built from DOM nodes */
+  function writeExtract(pre,txt){
+    pre.textContent='';
+    txt.split('\n').forEach(function(line,i){
+      if(i)pre.append('\n');
+      var ln=document.createElement('span');ln.className='ln';ln.textContent=String(i+1).padStart(2,'0');pre.append(ln);
+      var m=/^(\s*)(?:("(?:[^"\\]|\\.)*")(: ))?(.*)$/.exec(line);
+      pre.append(m[1]);
+      if(m[2]){var k=document.createElement('em');k.textContent=m[2];pre.append(k,m[3])}
+      var v=/^(-?\d+(?:\.\d+)?)(,?)$/.exec(m[4]);
+      if(v){var u=document.createElement('u');u.textContent=v[1];pre.append(u,v[2])}else pre.append(m[4]);
+    });
+  }
+  var stamp=import('/assets/dash-render.mjs').then(function(R){return R.stampText}).catch(function(){return null});
+  var data=fetch('mapdata/venue-stats.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()});
+  Promise.all([stamp,data]).then(function(a){
+    var d=a[1];if(!valid(d))throw new Error('unexpected data shape');
+    var txt=JSON.stringify(displayCopy(d),null,2),date=/^\d{4}-\d{2}-\d{2}/.test(d.generated)?d.generated.slice(0,10):'latest';
+    document.getElementById('ext-date').textContent=(a[0]&&a[0](d.generated))||'—';
+    writeExtract(document.getElementById('extract'),txt);
+    document.getElementById('dl').onclick=function(){
+      var url=URL.createObjectURL(new Blob([txt],{type:'application/json'})),el=document.createElement('a');
+      el.href=url;el.download='kavacrawl-venues-'+date+'.json';document.body.append(el);el.click();el.remove();
+      setTimeout(function(){URL.revokeObjectURL(url)},1000);
+    };
+    ext.hidden=false;
+  }).catch(function(){ext.hidden=true});
 })();
 </script>
   <!-- Cloudflare Web Analytics -->

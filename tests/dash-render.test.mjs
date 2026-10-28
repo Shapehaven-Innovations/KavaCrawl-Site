@@ -195,3 +195,12 @@ test('state-level helpers return the unavailable block for non-array input', () 
   assert.match(clean(R.densityHtml('x', 2)), /unavailable/)
   assert.match(clean(R.heatHtml(null, null)), /unavailable/)
 })
+
+test('stampText renders timestamps and dates, rejects junk', () => {
+  assert.match(R.stampText('2026-10-28T00:51:55Z'), /2026/)
+  assert.match(R.stampText('2026-10-28T00:51:55Z'), /\d{1,2}:\d{2}/)
+  assert.match(R.stampText('2026-10-28'), /28/)
+  assert.equal(R.stampText('latest'), null)
+  assert.equal(R.stampText(undefined), null)
+  assert.equal(R.stampText('2026-13-45T99:00:00Z'), null)
+})

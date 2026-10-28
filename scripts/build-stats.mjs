@@ -67,7 +67,7 @@ function parseArgs(argv) {
 async function main() {
   const opts = parseArgs(process.argv.slice(2))
   const at = (p) => join(opts.root, p)
-  const asOf = new Date().toISOString().slice(0, 10)
+  const asOf = new Date().toISOString().slice(0, 19) + 'Z'
 
   const venues = (await readJson(at('mapdata/venues.json')))?.venues
   if (!Array.isArray(venues)) throw new Error('mapdata/venues.json is missing or has no venues array')

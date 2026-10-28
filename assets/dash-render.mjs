@@ -46,6 +46,20 @@ export function fmt(n, decimals) {
   return n.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })
 }
 
+// "generated" as shown on the page: a full UTC timestamp renders in the viewer's
+// timezone, an older date-only value renders as that calendar day. Anything else is null.
+export function stampText(generated) {
+  if (typeof generated !== 'string') return null
+  if (/^\d{4}-\d{2}-\d{2}$/.test(generated)) {
+    const [y, m, d] = generated.split('-').map(Number)
+    return new Date(y, m - 1, d).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
+  }
+  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?(\.\d+)?Z$/.test(generated)) return null
+  const t = new Date(generated)
+  if (Number.isNaN(t.getTime())) return null
+  return t.toLocaleString(undefined, { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' })
+}
+
 export function pct(value, total, decimals = 1) {
   if (!isNum(value) || !isNum(total) || total === 0) return '—'
   return ((value / total) * 100).toFixed(decimals) + '%'

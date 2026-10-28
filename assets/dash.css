@@ -5,6 +5,9 @@
 /* theme */
 :root{--bg:#050e0c;--bg2:#0b1d19;--card:#102520;--line:#1f3f38;--line-soft:rgba(157,184,172,.12);--ink:#f2ece0;--muted:#9db8ac;--faint:#7d9a8c;--mint:#6ece8d;--sun:#e98a5b;--teal:#0e5959;--glass:rgba(11,29,25,.62);--hi:inset 0 1px 0 rgba(242,236,224,.05);--shadow:0 24px 60px -30px rgba(0,0,0,.8);--ease:cubic-bezier(.2,.7,.2,1)}
 *{box-sizing:border-box}
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}
+@media (prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
 html{color-scheme:dark;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 120% 90% at 50% 40%,transparent 55%,rgba(0,0,0,.55) 100%),radial-gradient(60% 50% at 8% -8%,rgba(14,89,89,.55),transparent 70%),radial-gradient(42% 38% at 96% 2%,rgba(233,138,91,.16),transparent 70%),radial-gradient(48% 42% at 72% 58%,rgba(110,206,141,.07),transparent 70%),radial-gradient(70% 55% at 15% 105%,rgba(14,89,89,.28),transparent 70%),var(--bg)}
@@ -232,3 +235,8 @@ nav .btn.go:hover svg{transform:translateX(2px)}
  nav .btn.go,.brand.wow .wm,.brand.wow img,.cur{animation:none}
  nav .btn.go,nav .btn.go::after,nav .btn.go svg,.sd-r,.sd-conc path{transition:none}
 }
+
+/* chart fill-in: data arrives after load, so ease it in rather than popping */
+.panel [id^="c-"]>*{animation:dashin .45s ease both}
+@keyframes dashin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.panel [id^="c-"]>*{animation:none}}

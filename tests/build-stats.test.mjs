@@ -47,7 +47,7 @@ test('writes both files, then reports unchanged without touching them', () => {
 
   const vs = JSON.parse(readFileSync(join(root, 'mapdata/venue-stats.json'), 'utf8'))
   const es = JSON.parse(readFileSync(join(root, 'mapdata/events-stats.json'), 'utf8'))
-  assert.match(vs.generated, /^\d{4}-\d{2}-\d{2}$/)
+  assert.match(vs.generated, /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/)
   assert.equal(vs.totals.venues, venues.length)
   assert.ok(vs.vintage)
   assert.deepEqual(vs.excluded, { noLocation: 0 })

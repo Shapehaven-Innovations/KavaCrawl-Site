@@ -474,8 +474,8 @@ function render(R, d) {
   put('c-dens', () => R.densityHtml(dens, T.cities > 0 ? T.venues / T.cities : null))
 
   // Data extract
-  const date = /^\d{4}-\d{2}-\d{2}$/.test(d.generated) ? d.generated : 'latest'
-  $('ext-date').textContent = /^\d{4}-\d{2}-\d{2}$/.test(d.generated) ? d.generated : '—'
+  const date = /^\d{4}-\d{2}-\d{2}/.test(d.generated) ? d.generated.slice(0, 10) : 'latest'
+  $('ext-date').textContent = R.stampText(d.generated) ?? '—'
   const txt = JSON.stringify(displayCopy(d), null, 2)
   writeExtract($('extract'), txt)
   $('dl').addEventListener('click', () => {

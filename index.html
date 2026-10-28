@@ -259,7 +259,6 @@
   .score{display:inline-block;min-width:44px;text-align:center;border:1px solid #2a5249;background:linear-gradient(180deg,rgba(110,206,141,.14),rgba(110,206,141,.05));color:var(--ink);border-radius:999px;padding:2px 10px;font-weight:700;font-variant-numeric:tabular-nums}
   .empty{padding:26px;color:var(--muted);text-align:center}
   .more{display:flex;width:fit-content;margin:16px auto 0}
-  .note{color:var(--faint);font-size:13px;margin:14px 2px 0;max-width:62em}
 
   /* ---------- CTA + footer ---------- */
   .cta-card{position:relative;overflow:hidden;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:48px 0 0;background:
@@ -716,7 +715,6 @@
     <div><b>No account, no map tracking</b><span>The map is drawn by this page, with no map tile servers, sign-in or profiles. Page views are counted with Cloudflare Web Analytics, which does not use cookies.</span></div>
   </div>
 
-  <p class="note" id="note"></p>
 
   <section class="cta-card">
     <div class="cta-copy">
@@ -1105,7 +1103,6 @@
   Promise.all([fetch('mapdata/venues.json').then(function(r){return r.json()}),fetch('vendor/states-albers-10m.json').then(function(r){return r.json()})]).then(function(a){
     V=a[0].venues;compute();kpis();initMap(a[1]);
     setStatus(V.length+' bars across '+Object.keys(byState).length+' states');
-    $('note').textContent='Snapshot of KavaCrawl data, '+a[0].generated+'. The Index scores a bar once it has a known price and enough other verified details. A missing price or score is left out of medians and rankings, never counted as zero.'+(function(n){return n?' Preview: '+(n===1?'one bar location is':n+' bar locations are')+' approximate (placed at the ZIP code center).':''})(V.filter(function(v){return v.approx}).length);
     $('more').onclick=function(){showAllRows=!showAllRows;render()};
     render();
   }).catch(function(){$('results').hidden=false;$('status').textContent='Could not load the data.'});

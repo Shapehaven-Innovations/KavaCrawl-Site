@@ -1,0 +1,198 @@
+# Site pipeline (bar pages)
+#
+# Once a day (11:00 UTC, after the worker's 10:30 scores recompute) and on manual
+# dispatch, this job runs the tests, rebuilds the bar pages (bars/), their hubs and
+# the sitemaps from the curated list (mapdata/venues.json) and read-only D1 queries,
+# validates the site, and commits only bars/, sitemap.xml, sitemap-pages.xml,
+# sitemap-hubs*.xml, sitemap-bars-*.xml, slugs.json and lastmod.json when they changed. After the push
+# it waits for GitHub Pages to finish building that commit (up to 10 minutes, then
+# it warns and goes on), then pings IndexNow with the changed URLs.
+# If a test fails, a pipeline guard refuses, or validation fails, the job stops,
+# nothing is pushed, and one issue titled "Site pipeline failed" is opened (or
+# commented on, if it is already open) with a link to the run.
+#
+# Manual dispatch inputs:
+#   - dry_run: build and print the plan; write, commit and notify nothing.
+#   - rebuild_all: re-render every page even when its inputs did not change.
+#   - max_new_pages: whole number; empty uses maxNewPages in scripts/site-config.json.
+#
+# Settings > Secrets and variables > Actions (no new secrets are needed):
+#   - Already set: secret CLOUDFLARE_API_TOKEN (read-only D1 token).
+#   - Already set: secret CLOUDFLARE_ACCOUNT_ID.
+#   - Already set: repository variable D1_DATABASE_ID.
+#   - TO ADD: repository VARIABLE (not a secret) INDEXNOW_KEY with the value
+#     3e92ce861682a1f7fdb5583b525aa7ee (public; it is also the name of the key file
+#     at the site root). Add it in KavaCrawl-Site > Settings > Secrets and variables >
+#     Actions > Variables > New repository variable. Without it, notify falls back to
+#     the {key}.txt file at the site root.
+
+name: site-pipeline
+
+on:
+  schedule:
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run: print the plan, write and push nothing'
+        type: boolean
+        default: false
+      rebuild_all:
+        description: 'Re-render every page'
+        type: boolean
+        default: false
+      max_new_pages:
+        description: 'Max newly admitted pages this run (digits; empty = site-config.json value)'
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+  issues: write
+  # Read access to the Pages build status, for the deploy wait below.
+  pages: read
+
+concurrency:
+  group: site-pipeline
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # Only main may push: a manual dispatch from another branch skips the job.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      # On schedule there are no inputs: these evaluate to 'false' / ''.
+      IS_DRY_RUN: ${{ inputs.dry_run == true }}
+      IS_REBUILD_ALL: ${{ inputs.rebuild_all == true }}
+      MAX_NEW_PAGES: ${{ inputs.max_new_pages }}
+      PIPELINE_LOG: ${{ runner.temp }}/site-pipeline.log
+    steps:
+      - name: Check out this repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run tests
+        run: node --test
+
+      - name: Build bar pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          D1_DATABASE_ID: ${{ vars.D1_DATABASE_ID }}
+        # Inputs arrive only through env and are never interpolated into the script.
+        run: |
+          set -euo pipefail
+          args=()
+          if [ "$IS_DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          if [ "$IS_REBUILD_ALL" = "true" ]; then args+=(--rebuild-all); fi
+          if [ -n "$MAX_NEW_PAGES" ]; then
+            if ! [[ "$MAX_NEW_PAGES" =~ ^[0-9]+$ ]]; then
+              echo "::error::max_new_pages must be digits only"
+              exit 1
+            fi
+            args+=(--max-new-pages "$MAX_NEW_PAGES")
+          fi
+          echo "node scripts/site-pipeline.mjs ${args[*]:-}"
+          node scripts/site-pipeline.mjs "${args[@]}" 2>&1 | tee "$PIPELINE_LOG"
+
+      - name: Validate site
+        if: env.IS_DRY_RUN != 'true'
+        run: node scripts/validate-site.mjs
+
+      - name: Commit and push bar pages if changed
+        id: commit
+        if: env.IS_DRY_RUN != 'true'
+        run: |
+          set -euo pipefail
+          paths=(bars sitemap.xml sitemap-pages.xml 'sitemap-hubs*.xml' 'sitemap-bars-*.xml' slugs.json lastmod.json)
+          changed=()
+          for p in "${paths[@]}"; do
+            # git status takes pathspecs (globs included) and is silent when nothing matches.
+            if [ -n "$(git status --porcelain -- "$p")" ]; then changed+=("$p"); fi
+          done
+          if [ "${#changed[@]}" -eq 0 ]; then
+            echo "Bar pages unchanged; nothing to commit."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- "${changed[@]}"
+          # N = pages written + removed, from the pipeline summary; else the number of staged files.
+          n="$(sed -nE 's/^pages: ([0-9]+) written, [0-9]+ unchanged, ([0-9]+) removed.*/\1 \2/p' "$PIPELINE_LOG" | awk '{print $1 + $2; exit}')"
+          if [ -z "$n" ]; then n="$(git diff --cached --name-only | wc -l | tr -d ' ')"; fi
+          git commit -m "$(date -u +%Y%d%m)-refresh bar pages (${n} changed)"
+          git pull --rebase origin main
+          # One retry when the push is rejected (main moved meanwhile); a second rejection fails the step.
+          if ! git push origin HEAD:main; then
+            echo "Push rejected; rebasing once more and retrying."
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for GitHub Pages to deploy the push
+        if: env.IS_DRY_RUN != 'true' && steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PUSHED_SHA: ${{ steps.commit.outputs.sha }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -uo pipefail
+          deadline=$(( $(date +%s) + 600 ))
+          while [ "$(date +%s)" -lt "$deadline" ]; do
+            build="$(gh api "repos/${REPO}/pages/builds/latest" --jq '[.status, .commit] | @tsv' 2>/dev/null || true)"
+            status="$(printf '%s' "$build" | cut -f1)"
+            commit="$(printf '%s' "$build" | cut -f2)"
+            echo "pages build: status=${status:-unknown} commit=${commit:-unknown}"
+            if [ "$status" = "built" ] && [ "$commit" = "$PUSHED_SHA" ]; then
+              echo "Pages built ${PUSHED_SHA}."
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "::warning::Pages did not report a build of ${PUSHED_SHA} within 10 minutes; notifying anyway."
+
+      - name: Notify IndexNow
+        if: env.IS_DRY_RUN != 'true' && steps.commit.outputs.pushed == 'true'
+        # notify exits 1 when IndexNow refuses; that must not fail the run.
+        continue-on-error: true
+        env:
+          INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY }}
+        run: node scripts/site-pipeline.mjs notify .site-changed-urls.txt
+
+      - name: Open or update the failure issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -uo pipefail
+          title="Site pipeline failed"
+          body_file="$RUNNER_TEMP/issue-body.md"
+          {
+            echo "The site pipeline run failed: ${RUN_URL}"
+            if [ -s "$PIPELINE_LOG" ]; then
+              echo
+              echo "Pipeline log tail:"
+              echo
+              echo '```'
+              tail -n 40 "$PIPELINE_LOG"
+              echo '```'
+            fi
+          } > "$body_file"
+          number="$(gh issue list --repo "$REPO" --state open --search "\"${title}\" in:title" --json number,title \
+            --jq "map(select(.title == \"${title}\")) | .[0].number // empty")"
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --repo "$REPO" --body-file "$body_file"
+          else
+            gh issue create --repo "$REPO" --title "$title" --body-file "$body_file"
+          fi

@@ -19,6 +19,15 @@ test('checkTotals refuses a drop of more than 30%', () => {
   assert.equal(checkTotals(100, 150).ok, true)
 })
 
+test('checkTotals takes a custom drop limit and can disable the rise limit', () => {
+  const opt = { maxDrop: 0.2, maxRise: Infinity }
+  assert.equal(checkTotals(100, 79, opt).ok, false)
+  assert.match(checkTotals(100, 79, opt).reason, /more than 20%/)
+  assert.equal(checkTotals(100, 80, opt).ok, true)
+  assert.equal(checkTotals(100, 1000, opt).ok, true)
+  assert.equal(checkTotals(100, 0, opt).ok, false)
+})
+
 test('checkTotals refuses a rise of more than 2x', () => {
   const r = checkTotals(100, 201)
   assert.equal(r.ok, false)

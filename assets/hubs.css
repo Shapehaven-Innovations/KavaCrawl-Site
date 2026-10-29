@@ -1,0 +1,115 @@
+/* Hub pages (/bars/, /bars/{st}/, /bars/{st}/{city}/). Copied from the approved hub mockups; extends
+   assets/bar.css (tokens, nav, pill, crumb, stat, panel, score, chips, cta-card). Inlined into hub pages only,
+   after bar.css. Dark only. */
+.hub{padding-bottom:6px}
+.hub-head{padding:16px 0 4px}
+.hub-head h1{font-size:clamp(34px,5.4vw,58px);line-height:1.02;letter-spacing:-.035em;margin:14px 0 10px;font-weight:800;text-wrap:balance;overflow-wrap:anywhere}
+.hub-head h1 .hl{color:var(--mint)}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .hub-head h1 .hl{background:linear-gradient(100deg,#6ece8d 10%,#e9d56b 55%,#e98a5b 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+}
+.lead{color:var(--muted);font-size:17px;line-height:1.55;max-width:36em;text-wrap:pretty}
+.hub-head .empty{margin-top:10px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:20px 0 0}
+.stats.n1,.stats.n2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.stats .stat{padding:12px 13px 11px}
+.stats .stat b{font-size:clamp(22px,6vw,30px)}
+.stats .stat b small{font-size:12px}
+.stats .stat span{font-size:12.5px}
+@media(min-width:761px){.stats{gap:12px;margin-top:26px}.stats .stat{padding:16px 18px 15px}.stats .stat span{font-size:13.5px}}
+
+/* section heads */
+.sec{margin:26px 0 0}
+.sech{display:flex;align-items:baseline;justify-content:space-between;gap:6px 12px;flex-wrap:wrap;margin:0 0 12px}
+.sech h2{font-size:22px;letter-spacing:-.02em;line-height:1.2}
+.sech p{color:var(--muted);font-size:14px;margin:0}
+
+/* card grids: state cards and city cards */
+.cards{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:620px){.cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}}
+@media(min-width:960px){.cards{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.card{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:3px;min-width:0;padding:14px 15px 13px;border:1px solid var(--line);border-radius:18px;background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:var(--hi),var(--shadow);transition:border-color .15s,transform .15s var(--ease)}
+.card::before{content:"";position:absolute;left:16px;right:16px;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(110,206,141,.5),transparent)}
+.card:hover{border-color:#3d7566;transform:translateY(-2px)}
+.card .ab{position:absolute;right:10px;top:4px;font-size:40px;font-weight:800;letter-spacing:-.05em;line-height:1;color:rgba(110,206,141,.09);pointer-events:none;font-variant-numeric:tabular-nums}
+.card .t{font-weight:700;font-size:16.5px;line-height:1.25;letter-spacing:-.01em;overflow-wrap:anywhere;position:relative}
+.card .k{color:var(--muted);font-size:13px;line-height:1.4}
+.card .k b{color:var(--ink);font-weight:600}
+.card .m{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-top:auto;padding-top:9px}
+.card .from{font-size:11.5px;color:var(--faint);letter-spacing:.3px}
+.card .from b{display:block;color:var(--mint);font-size:18px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
+.card .n{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right;margin-left:auto}
+.card .n b{display:block;color:var(--ink);font-size:16px;font-weight:700;line-height:1.1}
+
+/* featured band: the home page's CTA surface, holding a row of price-first cards */
+.band{position:relative;overflow:hidden;border:1px solid rgba(110,206,141,.28);border-radius:24px;padding:16px 14px 14px;background:
+  radial-gradient(55% 140% at 100% 110%,rgba(233,138,91,.2),transparent 62%),
+  radial-gradient(60% 130% at 8% -10%,rgba(110,206,141,.24),transparent 62%),
+  linear-gradient(135deg,#0a2b29 0%,#09211f 55%,#0b1d1b 100%);
+  box-shadow:inset 0 1px 0 rgba(242,236,224,.1),0 0 0 1px rgba(6,17,15,.6),0 24px 60px -24px rgba(110,206,141,.28),var(--shadow)}
+.band .sech{margin-bottom:12px}
+.band .sech h2{font-size:19px}
+.band .sech p{color:#cfe0d8}
+.fcards{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:760px){.fcards{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.fcard{position:relative;display:flex;flex-direction:column;gap:2px;min-width:0;padding:13px 14px 12px;border:1px solid rgba(110,206,141,.22);border-radius:16px;background:rgba(4,12,10,.62);box-shadow:var(--hi);transition:border-color .15s,transform .15s var(--ease)}
+.fcard:hover{border-color:rgba(110,206,141,.6);transform:translateY(-2px)}
+.fcard .tp{font-size:26px;font-weight:800;letter-spacing:-.03em;color:var(--mint);font-variant-numeric:tabular-nums;line-height:1.15}
+.fcard .tp small{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:0;margin-left:4px}
+.fcard .tn{font-weight:600;font-size:14.5px;line-height:1.3;overflow-wrap:anywhere}
+.fcard .ts{color:var(--muted);font-size:12.5px}
+.fcard .score{position:absolute;right:10px;top:10px;min-width:40px;padding:1px 8px;font-size:13px}
+.fcard.rk .tp{color:var(--ink);font-size:14.5px;font-weight:600;order:2;margin-top:2px;overflow-wrap:anywhere}
+.fcard.rk .score{position:static;align-self:flex-start;font-size:22px;padding:2px 14px;min-width:64px;order:1;margin-bottom:4px;color:var(--mint)}
+.fcard.rk .ts{order:3}
+
+/* chip rows as links */
+.chips li{padding:0}
+.chips li a{display:inline-flex;align-items:baseline;gap:6px;padding:6px 13px;border-radius:999px;transition:border-color .15s;overflow-wrap:anywhere}
+.chips li:hover{border-color:#3d7566}
+.chips li.hot:hover{border-color:var(--mint)}
+
+/* A-Z index inside a panel */
+.az{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px;list-style:none;padding:0;margin:0}
+@media(min-width:620px){.az{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:960px){.az{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.az a{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:7px 8px;border-radius:9px;font-size:14.5px;border-top:1px solid var(--line-soft);transition:background .15s}
+.az li:first-child a{border-top:0}
+.az a:hover{background:rgba(157,184,172,.06);color:var(--mint)}
+.az a small{color:var(--faint);font-size:12.5px;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* bar cards (city page) */
+.bars{list-style:none;padding:0;margin:0;display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:700px){.bars{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:1040px){.bars{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.bars li{position:relative;min-width:0}
+.bcard{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"head price" "sub price" "foot foot";gap:2px 12px;height:100%;padding:14px 16px 13px;border:1px solid var(--line);border-radius:18px;background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:var(--hi),var(--shadow);position:relative;overflow:hidden;transition:border-color .15s,transform .15s var(--ease)}
+.bcard::before{content:"";position:absolute;left:16px;right:16px;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(110,206,141,.5),transparent)}
+.bcard:hover{border-color:#3d7566;transform:translateY(-2px)}
+.bcard .t{grid-area:head;display:flex;align-items:baseline;gap:8px;font-weight:700;font-size:17px;line-height:1.25;letter-spacing:-.01em;overflow-wrap:anywhere;min-width:0}
+.bcard .rk{flex:none;color:var(--faint);font-size:11.5px;font-weight:700;letter-spacing:1px;font-variant-numeric:tabular-nums}
+.bcard .k{grid-area:sub;color:var(--muted);font-size:13.5px;line-height:1.4;overflow-wrap:anywhere}
+.bcard .pr{grid-area:price;text-align:right;align-self:start}
+.bcard .pr b{display:block;font-size:24px;font-weight:800;color:var(--mint);font-variant-numeric:tabular-nums;letter-spacing:-.03em;line-height:1.1}
+.bcard .pr small{display:block;color:var(--faint);font-size:11px;letter-spacing:.8px;text-transform:uppercase;margin-top:2px}
+.bcard .pr.na b{color:var(--faint);font-size:14px;font-weight:600;line-height:1.2;padding-top:4px}
+.bcard .foot{grid-area:foot;display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-height:27px;margin-top:8px;padding-top:10px;border-top:1px solid var(--line-soft)}
+.bars li.tel .bcard .foot{padding-right:86px}
+.bcard .foot .score{min-width:44px;padding:2px 10px;font-size:13.5px}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;padding:3px 10px 3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:rgba(242,236,224,.03);white-space:nowrap}
+.badge .sep{color:var(--faint);font-weight:500}
+.badge.open{color:var(--mint);border-color:rgba(110,206,141,.45);background:rgba(110,206,141,.1)}
+.badge.open .dot{width:6px;height:6px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(110,206,141,.6);animation:pulse 2.4s ease-out infinite}
+.call{position:absolute;right:14px;bottom:13px;display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;color:#06210f;background:var(--mint);padding:5px 12px;border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 6px 16px -10px rgba(110,206,141,.7);transition:background-color .15s,transform .15s var(--ease)}
+.call:hover{background:#82dba0;transform:translateY(-1px)}
+.call svg{width:13px;height:13px}
+
+/* bottom CTA (city page) */
+.hub .cta-card{margin-top:26px}
+.hub .cta-act{width:auto}
+.hub .cta-act .btn{width:auto}
+@media(max-width:480px){.hub .cta-act{width:100%}.hub .cta-act .btn{width:100%}}
+
+@media(prefers-reduced-motion:reduce){
+  .card:hover,.fcard:hover,.bcard:hover,.call:hover{transform:none}
+}

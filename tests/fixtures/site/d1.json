@@ -1,0 +1,49 @@
+{
+  "places": [
+    { "place_id": "ChIJAaaaaa111", "name": "Kava Haven", "formatted_address": "100 Franklin St, Tampa, FL 33602, USA", "lat": 27.9506, "lng": -82.4572, "phone": "(813) 555-0100", "website": "https://kavahaven.example", "business_status": "OPERATIONAL", "hours_json": "[{\"open\":{\"day\":1,\"time\":\"1700\"},\"close\":{\"day\":2,\"time\":\"0200\"}}]", "hidden": 0 },
+    { "place_id": "ChIJBbbbbb222", "name": "Kava Haven", "formatted_address": "2200 E 7th Ave, Tampa, FL 33605, USA", "lat": 27.9600, "lng": -82.4380, "phone": "+1 813-555-0101", "website": "javascript:alert(1)", "business_status": "OPERATIONAL", "hours_json": null, "hidden": 0 },
+    { "place_id": "ChIJCccccc333", "name": "Root Down Kava", "formatted_address": "300 Central Ave, St. Petersburg, FL 33701, USA", "lat": 27.7709, "lng": -82.6393, "phone": "727-555-0102", "website": null, "business_status": "OPERATIONAL", "hours_json": "", "hidden": 0 },
+    { "place_id": "ChIJDddddd444", "name": "Hidden Kava", "formatted_address": "400 Kennedy Blvd, Tampa, FL 33606, USA", "lat": 27.9440, "lng": -82.4700, "phone": "(813) 555-0103", "website": null, "business_status": "OPERATIONAL", "hours_json": null, "hidden": 1 },
+    { "place_id": "ChIJEeeeee555", "name": "No Phone Kava", "formatted_address": "500 Cleveland St, Clearwater, FL 33755, USA", "lat": 27.9659, "lng": -82.8001, "phone": null, "website": null, "business_status": "OPERATIONAL", "hours_json": null, "hidden": 0 },
+    { "place_id": "ChIJFfffff666", "name": "Not Curated Kava", "formatted_address": "600 Howard Ave, Tampa, FL 33606, USA", "lat": 27.9450, "lng": -82.4830, "phone": "(813) 555-0104", "website": null, "business_status": "OPERATIONAL", "hours_json": null, "hidden": 0 },
+    { "place_id": "ChIJGggggg777", "name": "Nowhere Kava", "formatted_address": "700 Main St, Somewhere", "lat": 28.1, "lng": -82.3, "phone": "(813) 555-0105", "website": null, "business_status": "OPERATIONAL", "hours_json": null, "hidden": 0 },
+    { "place_id": "ChIJHhhhhh888", "name": "Orlando Kava", "formatted_address": "800 Orange Ave, Orlando, FL 32801, USA", "lat": 28.5384, "lng": -81.3789, "phone": "(407) 555-0106", "website": "http://orlandokava.example", "business_status": "OPERATIONAL", "hours_json": null, "hidden": 0 }
+  ],
+  "scores": [
+    { "place_id": "ChIJAaaaaa111", "metro": "Tampa", "state": "FL", "total": 80.5, "components_json": "{\"price\":20,\"vibe\":30}" },
+    { "place_id": "ChIJBbbbbb222", "metro": "Tampa", "state": "FL", "total": 70, "components_json": "{}" },
+    { "place_id": "ChIJCccccc333", "metro": "Tampa", "state": "FL", "total": null, "components_json": null },
+    { "place_id": "ChIJHhhhhh888", "metro": "Orlando", "state": "FL", "total": 65, "components_json": "not json" }
+  ],
+  "latestPrices": [
+    { "place_id": "ChIJAaaaaa111", "category": "kava_shell", "item_name": "Shell", "price_usd": 5, "size_oz": null, "shell_equiv": null },
+    { "place_id": "ChIJAaaaaa111", "category": "kava_shell", "item_name": "Big Shell", "price_usd": 14, "size_oz": 16, "shell_equiv": 3.5 },
+    { "place_id": "ChIJAaaaaa111", "category": "kava_double", "item_name": "Double", "price_usd": 9, "size_oz": null, "shell_equiv": 4.5 },
+    { "place_id": "ChIJAaaaaa111", "category": "food", "item_name": "Chips", "price_usd": 2, "size_oz": null, "shell_equiv": null },
+    { "place_id": "ChIJBbbbbb222", "category": "kava_shell", "item_name": "Shell", "price_usd": 6, "size_oz": null, "shell_equiv": 6 },
+    { "place_id": "ChIJCccccc333", "category": "kava_shell", "item_name": "Shell", "price_usd": 6, "size_oz": null, "shell_equiv": null },
+    { "place_id": "ChIJFfffff666", "category": "kava_shell", "item_name": "Shell", "price_usd": 1, "size_oz": null, "shell_equiv": 1 },
+    { "place_id": "ChIJHhhhhh888", "category": "kava_shell", "item_name": "Shell", "price_usd": 7, "size_oz": null, "shell_equiv": 7 },
+    { "place_id": "ChIJHhhhhh888", "category": "kratom", "item_name": "Kratom Tea", "price_usd": 8, "size_oz": 12, "shell_equiv": null }
+  ],
+  "shellHistory": [
+    { "place_id": "ChIJAaaaaa111", "observed_on": "2026-10-20", "category": "kava_shell", "price_usd": 14, "size_oz": 16, "shell_equiv": null },
+    { "place_id": "ChIJAaaaaa111", "observed_on": "2026-10-05", "category": "kava_shell", "price_usd": 5, "size_oz": null, "shell_equiv": null },
+    { "place_id": "ChIJAaaaaa111", "observed_on": "2026-10-07", "category": "kava_shell", "price_usd": 6, "size_oz": null, "shell_equiv": 6 },
+    { "place_id": "ChIJAaaaaa111", "observed_on": "2026-10-08", "category": "kava_brew", "price_usd": 4, "size_oz": 2, "shell_equiv": null },
+    { "place_id": "ChIJAaaaaa111", "observed_on": "2026-10-12", "category": "kava_double", "price_usd": 10, "size_oz": null, "shell_equiv": null },
+    { "place_id": "ChIJAaaaaa111", "observed_on": "2026-10-18", "category": "kava_shell", "price_usd": 5.5, "size_oz": null, "shell_equiv": null },
+    { "place_id": "ChIJAaaaaa111", "observed_on": "2026-10-19", "category": "kava_shot", "price_usd": 3, "size_oz": null, "shell_equiv": null },
+    { "place_id": "ChIJAaaaaa111", "observed_on": "2026-03-01", "category": "kava_shell", "price_usd": 9, "size_oz": null, "shell_equiv": null },
+    { "place_id": "ChIJBbbbbb222", "observed_on": "2026-10-19", "category": "kava_shell", "price_usd": 6, "size_oz": null, "shell_equiv": 6 }
+  ],
+  "events": [
+    { "place_id": "ChIJAaaaaa111", "title": "Trivia Night", "day_of_week": 1, "start_time": "19:00", "end_time": "21:00", "is_recurring": 1, "start_date": null, "end_date": null },
+    { "place_id": "ChIJAaaaaa111", "title": "Old Recurring", "day_of_week": 0, "start_time": "18:00", "end_time": null, "is_recurring": 1, "start_date": "2025-01-01", "end_date": "2025-02-01" },
+    { "place_id": "ChIJAaaaaa111", "title": "Recent One-off", "day_of_week": 6, "start_time": "20:00", "end_time": "23:00", "is_recurring": 0, "start_date": "2026-10-24", "end_date": "2026-10-24" },
+    { "place_id": "ChIJAaaaaa111", "title": "Expired One-off", "day_of_week": 6, "start_time": "20:00", "end_time": null, "is_recurring": 0, "start_date": "2026-10-10", "end_date": "2026-10-10" },
+    { "place_id": "ChIJAaaaaa111", "title": "Undated One-off", "day_of_week": 5, "start_time": "20:00", "end_time": null, "is_recurring": 0, "start_date": null, "end_date": null },
+    { "place_id": "ChIJAaaaaa111", "title": "Edge One-off", "day_of_week": 3, "start_time": "20:00", "end_time": null, "is_recurring": 0, "start_date": "2026-10-21", "end_date": "2026-10-21" },
+    { "place_id": "ChIJHhhhhh888", "title": "Open Mic", "day_of_week": 4, "start_time": "20:00", "end_time": null, "is_recurring": 1, "start_date": null, "end_date": null }
+  ]
+}

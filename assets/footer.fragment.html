@@ -1,0 +1,269 @@
+    <!-- footer:start -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__top">
+          <div class="site-footer__brandcol">
+            <p class="site-footer__wordmark">ShapeHaven Innovations</p>
+            <p class="site-footer__about">A research and software lab. We chase good problems, then build iOS and web apps to solve them.</p>
+          </div>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Field Notes</h2>
+            <ul class="site-footer__list">
+              <li><a href="https://shapehaveninnovations.com/blog/">All Field Notes</a></li>
+              <li><a href="https://shapehaveninnovations.com/blog/php-critical-rce-patch" title="Two Critical PHP Flaws: What to Check and Patch Today">Two Critical PHP Flaws</a></li>
+              <li><a href="https://shapehaveninnovations.com/blog/mdnsshark-app" title="mDNSShark: See Everything on Your Wi-Fi, Without Sending a Byte Out">mDNSShark: Your Wi-Fi, Unseen</a></li>
+              <li><a href="https://shapehaveninnovations.com/blog/worldmonitor-app" title="World Monitor: An Open-Source Dashboard Built for AI Agents">World Monitor for AI Agents</a></li>
+              <li><a href="https://shapehaveninnovations.com/feed.xml" target="_blank" rel="noopener">RSS feed</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Guides</h2>
+            <ul class="site-footer__list">
+              <li><a href="/guides/kava-bar-events-what-to-expect/">Kava bar events, by the numbers</a></li>
+              <li><a href="/guides/kava-bars-by-state-and-city/">Kava bars by state and city</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Software</h2>
+            <ul class="site-footer__list">
+              <li><a href="https://kavacrawl.app/" target="_blank" rel="noopener">KavaCrawl</a></li>
+              <li><a href="https://returniq.shapehaveninnovations.com/" target="_blank" rel="noopener">ReturnIQ</a></li>
+              <li><a href="https://condoguard.app/" target="_blank" rel="noopener">CondoGuard</a></li>
+              <li><a href="https://mdnsshark.shapehaveninnovations.com/" target="_blank" rel="noopener">mDNSShark</a></li>
+              <li><a href="https://rhythmx.shapehaveninnovations.com/" target="_blank" rel="noopener">RhythmX</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Support</h2>
+            <ul class="site-footer__list">
+              <li><a href="https://shapehaveninnovations.com/support.html">Support page</a></li>
+              <li><a href="mailto:info@shapehaveninnovations.com">Email us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p class="site-footer__copyright">&copy; 2026 ShapeHaven Innovations LLC</p>
+          <ul class="site-footer__legal">
+            <li><a href="/">KavaCrawl home</a></li>
+            <li><a href="https://apps.apple.com/gb/app/kavacrawl/id6772610237" rel="noopener">App Store</a></li>
+            <li><a href="https://shapehaveninnovations.com/privacy.html">Privacy Policy</a></li>
+            <li><a class="site-footer__icon" href="https://github.com/Shapehaven-Innovations" target="_blank" rel="noopener" aria-label="ShapeHaven Innovations on GitHub (opens in a new tab)"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></li>
+          </ul>
+          <p class="site-footer__fine">City and ZIP data from <a href="https://www.geonames.org/">GeoNames</a> (CC BY 4.0). Some bar locations &copy; OpenStreetMap contributors. A <a href="https://shapehaveninnovations.com/">ShapeHaven Innovations</a> product</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer:end -->
+  <!-- footer-css:start -->
+  <style>
+/* Isolation so the footer looks the same inside any site's page CSS.
+   .site-footer :where(...) has class-level specificity, so it beats page rules like
+   "p, li { font-size }" but loses to the BEM rules below (same specificity, later). */
+:where(.site-footer),
+:where(.site-footer) *,
+:where(.site-footer) *::before,
+:where(.site-footer) *::after {
+  box-sizing: border-box;
+}
+
+.site-footer :where(p, ul, li, h2) {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Footer: takes its colours from the --sf-page-* tokens that each site maps in
+   footer/targets.json (stamped after this block), so it follows the page's palette
+   while staying a distinct band. */
+.site-footer {
+  --sf-bg: var(--sf-page-bg, #faf9f5);
+  --sf-line: var(--sf-page-line, #e8e6dc);
+  --sf-muted: var(--sf-page-muted, #5e5d59);
+  --sf-bright: var(--sf-page-text, #141413);
+  --sf-soft: var(--sf-page-soft, color-mix(in srgb, var(--sf-bright) 82%, var(--sf-bg)));
+  --sf-accent: var(--sf-page-accent, #c6613f);
+  background: var(--sf-bg);
+  border-top: 1px solid var(--sf-line);
+  color: var(--sf-muted);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 0.8125rem;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: left;
+  /* undo generic `footer { display:flex; margin; padding; gap }` rules in host pages */
+  display: block;
+  margin: var(--sf-page-gap, 0) 0 0;
+  padding: 0;
+  gap: 0;
+  width: auto;
+  max-width: none;
+}
+
+.site-footer a {
+  color: var(--sf-muted);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.15s ease;
+}
+
+.site-footer a:hover {
+  color: var(--sf-bright);
+}
+
+.site-footer a:focus-visible {
+  outline: 2px solid var(--sf-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.site-footer ul {
+  list-style: none;
+}
+
+.site-footer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 1.125rem;
+}
+
+/* Top: wordmark and blurb, then the link columns */
+.site-footer__top {
+  display: grid;
+  grid-template-columns: minmax(180px, 1.3fr);
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 1.5rem 1.75rem;
+}
+
+.site-footer__wordmark {
+  color: var(--sf-bright);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-bottom: 0.375rem;
+}
+
+.site-footer__about {
+  max-width: 26ch;
+  font-size: 0.78rem;
+  color: var(--sf-soft);
+}
+
+.site-footer__heading {
+  color: var(--sf-soft);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.site-footer__list li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-footer__list li + li {
+  margin-top: 0.3125rem;
+}
+
+/* Current page inside a footer list */
+.site-footer [aria-current="page"] {
+  color: var(--sf-bright);
+}
+
+/* Bottom: copyright and legal links on one line, then per-site fine print */
+.site-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.375rem 1.25rem;
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--sf-line);
+  font-size: 0.74rem;
+}
+
+.site-footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
+
+.site-footer__legal li {
+  display: flex;
+  align-items: center;
+}
+
+.site-footer__icon {
+  color: var(--sf-soft);
+}
+
+.site-footer__icon svg {
+  display: block;
+}
+
+.site-footer__fine {
+  flex-basis: 100%;
+  max-width: 90ch;
+  font-size: 0.72rem;
+}
+
+.site-footer__fine a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--sf-line);
+}
+
+@media (max-width: 760px) {
+  .site-footer__inner {
+    padding: 1.5rem 1.125rem 1rem;
+  }
+
+  .site-footer__top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+  }
+
+  .site-footer__brandcol {
+    grid-column: 1 / -1;
+  }
+
+  /* 24px+ touch spacing between stacked links */
+  .site-footer__list li + li {
+    margin-top: 0.5rem;
+  }
+
+  .site-footer__legal {
+    gap: 0.5rem 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-footer a {
+    transition: none;
+  }
+}
+
+:root {
+  --sf-page-bg: #0e2620;
+  --sf-page-line: #2c4a3f;
+  --sf-page-muted: #c4b99f;
+  --sf-page-text: #f5ede0;
+  --sf-page-soft: #e2d7c0;
+  --sf-page-accent: #c9a84c;
+}
+  </style>
+  <!-- footer-css:end -->

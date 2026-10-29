@@ -1,0 +1,13 @@
+{
+  "generated": "fixture",
+  "venues": [
+    { "id": "ChIJAaaaaa111", "name": "Kava Haven", "city": "Tampa", "metro": "Tampa", "addr": "100 Franklin St", "st": "FL" },
+    { "id": "ChIJBbbbbb222", "name": "Kava Haven", "city": "Tampa", "metro": "Tampa", "addr": "2200 E 7th Ave", "st": "FL" },
+    { "id": "ChIJCccccc333", "name": "Root Down Kava", "city": "St. Petersburg", "metro": "Tampa", "addr": "300 Central Ave", "st": "FL" },
+    { "id": "ChIJDddddd444", "name": "Hidden Kava", "city": "Tampa", "metro": "Tampa", "addr": "400 Kennedy Blvd", "st": "FL" },
+    { "id": "ChIJEeeeee555", "name": "No Phone Kava", "city": "Clearwater", "metro": "Tampa", "addr": "500 Cleveland St", "st": "FL" },
+    { "id": "ChIJGggggg777", "name": "Nowhere Kava", "city": "Somewhere", "metro": "Tampa", "addr": "700 Main St", "st": "FL" },
+    { "id": "ChIJHhhhhh888", "name": "Orlando Kava", "city": "Orlando", "metro": "Orlando", "addr": "800 Orange Ave", "st": "FL" },
+    { "id": "ChIJMissing999", "name": "Ghost Kava", "city": "Tampa", "metro": "Tampa", "addr": "900 Nowhere Rd", "st": "FL" }
+  ]
+}

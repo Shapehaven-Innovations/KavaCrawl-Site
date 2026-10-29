@@ -16,6 +16,7 @@ import { buildVenueStats } from './lib/venue-stats.mjs'
 import { buildEventStats } from './lib/event-stats.mjs'
 import { loadRules } from './lib/event-types.mjs'
 import { checkTotals, sameNumbers } from './lib/guard.mjs'
+import { queryD1 } from './lib/site/d1.mjs'
 
 export const SQL = 'SELECT place_id, title, day_of_week FROM venue_events WHERE place_id IN (SELECT place_id FROM places WHERE IFNULL(hidden, 0) = 0)'
 
@@ -24,21 +25,7 @@ const EVENTS_OUT = 'mapdata/events-stats.json'
 
 // The only network call: run SQL against D1 through the Cloudflare REST API.
 export async function fetchEventRows(env, fetchFn = fetch) {
-  const { CLOUDFLARE_API_TOKEN: token, CLOUDFLARE_ACCOUNT_ID: account, D1_DATABASE_ID: db } = env
-  if (!token || !account || !db) throw new Error('D1 query needs CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID and D1_DATABASE_ID')
-  const res = await fetchFn(`https://api.cloudflare.com/client/v4/accounts/${account}/d1/database/${db}/query`, {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ sql: SQL }),
-  })
-  let json = null
-  try { json = await res.json() } catch {}
-  const errors = (json?.errors ?? []).map((e) => e.message).join('; ')
-  if (!res.ok) throw new Error(`D1 query failed: HTTP ${res.status}${errors ? ` (${errors})` : ''}`)
-  if (!json || json.success === false) throw new Error(`D1 query failed${errors ? `: ${errors}` : ''}`)
-  const first = json.result?.[0]
-  if (!first || first.success === false || !Array.isArray(first.results)) throw new Error('D1 query failed: unexpected response shape')
-  return first.results
+  return (await queryD1(env, SQL, undefined, fetchFn)).rows
 }
 
 async function readJson(path) {

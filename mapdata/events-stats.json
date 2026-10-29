@@ -1,70 +1,82 @@
 {
-  "generated": "2026-10-29T11:21:05Z",
+  "generated": "2026-10-29T23:52:26Z",
   "totals": {
-    "events": 338,
-    "bars": 88,
-    "states": 6,
-    "cities": 53
+    "events": 400,
+    "bars": 100,
+    "states": 7,
+    "cities": 60
   },
   "byWeekday": [
-    46,
-    61,
-    57,
-    55,
-    53,
-    38,
-    28
+    56,
+    73,
+    68,
+    62,
+    64,
+    45,
+    32
   ],
   "byType": [
     {
       "type": "Games",
-      "events": 106
+      "events": 125
     },
     {
       "type": "Specials",
-      "events": 91
+      "events": 108
     },
     {
       "type": "Community",
-      "events": 49
+      "events": 58
     },
     {
       "type": "Trivia",
-      "events": 32
+      "events": 36
     },
     {
       "type": "Open mic",
-      "events": 25
+      "events": 30
     },
     {
       "type": "Music",
-      "events": 10
-    },
-    {
-      "type": "Karaoke",
       "events": 12
     },
     {
+      "type": "Karaoke",
+      "events": 14
+    },
+    {
       "type": "Movie night",
-      "events": 8
+      "events": 10
     },
     {
       "type": "Art",
-      "events": 5
+      "events": 7
     }
   ],
   "byState": [
     {
       "st": "FL",
       "name": "Florida",
-      "events": 319,
-      "bars": 80
+      "events": 367,
+      "bars": 89
     },
     {
       "st": "TX",
       "name": "Texas",
+      "events": 10,
+      "bars": 3
+    },
+    {
+      "st": "NC",
+      "name": "North Carolina",
+      "events": 7,
+      "bars": 3
+    },
+    {
+      "st": "GA",
+      "name": "GA",
       "events": 6,
-      "bars": 2
+      "bars": 1
     },
     {
       "st": "OR",
@@ -83,57 +95,51 @@
       "name": "Colorado",
       "events": 3,
       "bars": 2
-    },
-    {
-      "st": "NC",
-      "name": "North Carolina",
-      "events": 3,
-      "bars": 2
     }
   ],
   "typeByWeekday": {
     "Games": [
-      14,
-      19,
-      19,
-      16,
-      12,
-      19,
-      7
+      17,
+      21,
+      23,
+      20,
+      13,
+      20,
+      11
     ],
     "Specials": [
-      9,
-      22,
       13,
-      17,
-      22,
-      2,
+      27,
+      15,
+      18,
+      25,
+      4,
       6
     ],
     "Community": [
-      11,
-      5,
-      8,
-      8,
+      13,
       6,
-      4,
+      10,
+      8,
+      9,
+      5,
       7
     ],
     "Trivia": [
       5,
+      7,
+      9,
       5,
-      8,
-      5,
-      5,
+      6,
       4,
       0
     ],
     "Open mic": [
       3,
-      3,
-      3,
+      4,
       5,
-      6,
+      5,
+      8,
       3,
       2
     ],
@@ -141,25 +147,25 @@
       2,
       1,
       1,
+      2,
       1,
-      0,
       2,
       3
     ],
     "Karaoke": [
-      0,
+      1,
       2,
       2,
       2,
       0,
-      4,
+      5,
       2
     ],
     "Movie night": [
       1,
+      3,
       2,
-      2,
-      0,
+      1,
       2,
       0,
       1
@@ -170,14 +176,14 @@
       1,
       1,
       0,
-      0,
+      2,
       0
     ]
   },
   "excluded": {
     "duplicates": 1,
-    "listings": 2,
-    "outsideMap": 73,
+    "listings": 3,
+    "outsideMap": 10,
     "invalid": 0
   },
   "vintage": "Vintage 2025 (July 1, 2025 resident population estimates)"

@@ -34,6 +34,13 @@
   "match": "Exact",
   "addr": "179 College Dr #19, Orange Park, FL 32065"
  },
+ "ChIJ1SKsTbiMWYgRYp1lIRAhTmU": {
+  "lat": 35.6901,
+  "lng": -82.55799,
+  "src": "census",
+  "match": "Exact",
+  "addr": "141 Reems Creek Rd, Weaverville, NC 28787"
+ },
  "ChIJ1d_PewDn3ogRp_i8vmoIIoQ": {
   "lat": 27.24876,
   "lng": -80.27403,
@@ -131,6 +138,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "957 Central Ave, St. Petersburg, FL 33705"
+ },
+ "ChIJ4bYwK1cr34gRDIORRKX1J6Q": {
+  "lat": 26.8952,
+  "lng": -80.06081,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4050 U.S. Hwy 1 #306, Jupiter, FL 33477"
  },
  "ChIJ4wTamkNp3ogRAmJ_8kXLqss": {
   "lat": 27.81042,
@@ -426,6 +440,13 @@
   "match": "Non_Exact",
   "addr": "464 3rd St, Oakland, CA 94158"
  },
+ "ChIJDxotXaHf2IgRic0GWeq9DE8": {
+  "lat": 26.48981,
+  "lng": -80.06378,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2725 N Federal Hwy, Delray Beach, FL 33483"
+ },
  "ChIJE02zMkt754gRpLOVzISjIgI": {
   "lat": 28.51298,
   "lng": -81.37523,
@@ -628,6 +649,13 @@
   "src": "census",
   "match": "Non_Exact",
   "addr": "313 SE 15th Terrace Ste B, Deerfield Beach, FL 33441"
+ },
+ "ChIJIa8-vYDV3ogRa0Leqyai95s": {
+  "lat": 26.88968,
+  "lng": -80.11455,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1200 Town Center Dr Ste 110, Jupiter, FL 33458"
  },
  "ChIJIcT-E8gR3ogRX766WvEXAfI": {
   "lat": 28.08432,
@@ -965,6 +993,13 @@
   "match": "census No_Match",
   "addr": "953 FL-436, Casselberry, FL 32707"
  },
+ "ChIJPWtSA88B9YgRlJEH2zEprvg": {
+  "lat": 33.73693,
+  "lng": -84.40297,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "448 Ralph David Abernathy Blvd SW suite 6, Atlanta, GA 30312"
+ },
  "ChIJPZHwhb6dskwRN2QM2J7Bhnk": {
   "lat": 43.6811,
   "lng": -70.25932,
@@ -1006,6 +1041,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "70 Taunton Dr, Sullivan, ME 04664"
+ },
+ "ChIJQ5xYhT0p2YgR3Tuxr5AtHm4": {
+  "lat": 26.69633,
+  "lng": -80.1113,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1300 N Military Trl, West Palm Beach, FL 33409"
  },
  "ChIJQ6so3vKr2YgRjpvIBQV2M3s": {
   "lat": 26.05217,
@@ -1097,6 +1139,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "12951 Metro Pkwy #15, Fort Myers, FL 33966"
+ },
+ "ChIJRYUPGvzf2IgRfki06bmfwjU": {
+  "lat": 26.45896,
+  "lng": -80.09303,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1878 Dr. Andres Way, Delray Beach, FL 33445"
  },
  "ChIJR_EHJOUV24gR8cNvQPqYqwg": {
   "lat": 26.54498,
@@ -1286,6 +1335,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "3516 NE 15th Ave, Portland, OR 97212"
+ },
+ "ChIJYRJbv6BhXIYRUoDutvycfw4": {
+  "lat": 29.54875,
+  "lng": -98.50642,
+  "src": "census",
+  "match": "Exact",
+  "addr": "11813 West Ave, San Antonio, TX 78216"
  },
  "ChIJYUQvwhTzwogRyxzJy4_jPao": {
   "lat": 28.03299,
@@ -1602,6 +1658,13 @@
   "match": "Exact",
   "addr": "7329 Reseda Blvd, Reseda, CA 91335"
  },
+ "ChIJeyFkgt8F2YgRMlYwj4zYRC0": {
+  "lat": 26.18266,
+  "lng": -80.25167,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4646 N University Dr, Lauderhill, FL 33351"
+ },
  "ChIJf-HAPmom3YARd7gBoDtlXwc": {
   "lat": 33.73396,
   "lng": -117.9985,
@@ -1917,6 +1980,13 @@
   "match": "Exact",
   "addr": "2705 54th Ave N Ste 2, St. Petersburg, FL 33714"
  },
+ "ChIJnd5u8G8t54gRyby68-q4-Dg": {
+  "lat": 28.96627,
+  "lng": -80.89226,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2120 S Ridgewood Ave Ste 7B, Edgewater, FL 32141"
+ },
  "ChIJnyeeEkB1kVQRrf_xBsALWYw": {
   "lat": 47.04704,
   "lng": -122.94258,
@@ -2078,6 +2148,13 @@
   "match": "Non_Exact",
   "addr": "268 N Wickham Rd, Melbourne, FL 32934"
  },
+ "ChIJse3Blkgv2YgR0Aodz1hqFrs": {
+  "lat": 26.66257,
+  "lng": -80.26626,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "13833 Wellington Trace E15, Wellington, FL 33414"
+ },
  "ChIJseVWfAsT3YgRHgObUrimJ38": {
   "lat": 28.00396,
   "lng": -81.71981,
@@ -2217,6 +2294,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "3418 Griffin Rd, Fort Lauderdale, FL 33312"
+ },
+ "ChIJwUKwbtMD2YgRgXR3XsPdHUw": {
+  "lat": 26.25568,
+  "lng": -80.10037,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2001 N Federal Hwy Ste G105, Pompano Beach, FL 33062"
  },
  "ChIJwVb78D1FE4cR6JkMaO9E9X0": {
   "lat": 38.83959,

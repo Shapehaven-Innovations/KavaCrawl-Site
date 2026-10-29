@@ -1,21 +1,21 @@
 {
-  "generated": "2026-10-28T00:51:55Z",
+  "generated": "2026-10-29T23:52:26Z",
   "totals": {
-    "venues": 340,
-    "cities": 150,
-    "states": 16,
+    "venues": 352,
+    "cities": 156,
+    "states": 17,
     "lead": {
       "st": "FL",
-      "share": 0.676
+      "share": 0.679
     }
   },
   "byState": [
     {
       "st": "FL",
       "name": "Florida",
-      "venues": 230,
-      "cities": 77,
-      "per100k": 0.98
+      "venues": 239,
+      "cities": 80,
+      "per100k": 1.02
     },
     {
       "st": "CA",
@@ -27,16 +27,16 @@
     {
       "st": "NC",
       "name": "North Carolina",
-      "venues": 17,
-      "cities": 10,
-      "per100k": 0.15
+      "venues": 18,
+      "cities": 11,
+      "per100k": 0.16
     },
     {
       "st": "TX",
       "name": "Texas",
-      "venues": 14,
-      "cities": 5,
-      "per100k": 0.04
+      "venues": 15,
+      "cities": 6,
+      "per100k": 0.05
     },
     {
       "st": "CO",
@@ -100,6 +100,13 @@
       "venues": 2,
       "cities": 2,
       "per100k": 0.02
+    },
+    {
+      "st": "GA",
+      "name": "GA",
+      "venues": 1,
+      "cities": 1,
+      "per100k": null
     },
     {
       "st": "MD",
@@ -384,11 +391,19 @@
         "venues": 3
       },
       {
+        "city": "Delray Beach",
+        "venues": 3
+      },
+      {
         "city": "Gainesville",
         "venues": 3
       },
       {
         "city": "Jensen Beach",
+        "venues": 3
+      },
+      {
+        "city": "Jupiter",
         "venues": 3
       },
       {
@@ -444,11 +459,19 @@
         "venues": 2
       },
       {
+        "city": "Pompano Beach",
+        "venues": 2
+      },
+      {
         "city": "Punta Gorda",
         "venues": 2
       },
       {
         "city": "Sanford",
+        "venues": 2
+      },
+      {
+        "city": "West Palm Beach",
         "venues": 2
       },
       {
@@ -472,15 +495,15 @@
         "venues": 1
       },
       {
-        "city": "Delray Beach",
-        "venues": 1
-      },
-      {
         "city": "Doral",
         "venues": 1
       },
       {
         "city": "Dunedin",
+        "venues": 1
+      },
+      {
+        "city": "Edgewater",
         "venues": 1
       },
       {
@@ -496,15 +519,15 @@
         "venues": 1
       },
       {
-        "city": "Jupiter",
-        "venues": 1
-      },
-      {
         "city": "Kenneth City",
         "venues": 1
       },
       {
         "city": "Lake Worth Beach",
+        "venues": 1
+      },
+      {
+        "city": "Lauderhill",
         "venues": 1
       },
       {
@@ -560,10 +583,6 @@
         "venues": 1
       },
       {
-        "city": "Pompano Beach",
-        "venues": 1
-      },
-      {
         "city": "Port Charlotte",
         "venues": 1
       },
@@ -584,15 +603,15 @@
         "venues": 1
       },
       {
+        "city": "Wellington",
+        "venues": 1
+      },
+      {
         "city": "Wesley Chapel",
         "venues": 1
       },
       {
         "city": "West Melbourne",
-        "venues": 1
-      },
-      {
-        "city": "West Palm Beach",
         "venues": 1
       },
       {
@@ -623,6 +642,10 @@
       },
       {
         "city": "Denton",
+        "venues": 1
+      },
+      {
+        "city": "San Antonio",
         "venues": 1
       }
     ],
@@ -685,6 +708,10 @@
       },
       {
         "city": "Morganton",
+        "venues": 1
+      },
+      {
+        "city": "Weaverville",
         "venues": 1
       }
     ],
@@ -805,6 +832,12 @@
       },
       {
         "city": "Seattle",
+        "venues": 1
+      }
+    ],
+    "GA": [
+      {
+        "city": "Atlanta",
         "venues": 1
       }
     ]

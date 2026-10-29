@@ -67,10 +67,13 @@ jobs:
       IS_DRY_RUN: ${{ inputs.dry_run == true }}
       IS_REBUILD_ALL: ${{ inputs.rebuild_all == true }}
       MAX_NEW_PAGES: ${{ inputs.max_new_pages }}
-      PIPELINE_LOG: ${{ runner.temp }}/site-pipeline.log
     steps:
       - name: Check out this repo
         uses: actions/checkout@v4
+
+      # The runner context is not available in job-level env, so set the log path here.
+      - name: Set log path
+        run: echo "PIPELINE_LOG=$RUNNER_TEMP/site-pipeline.log" >> "$GITHUB_ENV"
 
       - name: Set up Node
         uses: actions/setup-node@v4

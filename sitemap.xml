@@ -19,10 +19,19 @@
     <loc>https://kavacrawl.app/sitemap-bars-md.xml</loc>
   </sitemap>
   <sitemap>
+    <loc>https://kavacrawl.app/sitemap-bars-me.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://kavacrawl.app/sitemap-bars-mi.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://kavacrawl.app/sitemap-bars-mo.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://kavacrawl.app/sitemap-bars-nc.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://kavacrawl.app/sitemap-bars-pa.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://kavacrawl.app/sitemap-bars-tx.xml</loc>

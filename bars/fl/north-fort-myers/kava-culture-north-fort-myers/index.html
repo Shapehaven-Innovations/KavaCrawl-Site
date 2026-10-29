@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kava Culture North Fort Myers in North Fort Myers, FL | KavaCrawl</title>
+<meta name="description" content="Kava Culture North Fort Myers is a kava bar at 15201 N Cleveland Ave #611, North Fort Myers, FL. Get directions and see nearby kava bars.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://kavacrawl.app/bars/fl/north-fort-myers/kava-culture-north-fort-myers/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KavaCrawl">
+<meta property="og:title" content="Kava Culture North Fort Myers in North Fort Myers, FL | KavaCrawl">
+<meta property="og:description" content="Kava Culture North Fort Myers is a kava bar at 15201 N Cleveland Ave #611, North Fort Myers, FL. Get directions and see nearby kava bars.">
+<meta property="og:url" content="https://kavacrawl.app/bars/fl/north-fort-myers/kava-culture-north-fort-myers/">
+<meta property="og:image" content="https://kavacrawl.app/assets/lifestyle.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kava Culture North Fort Myers in North Fort Myers, FL | KavaCrawl">
+<meta name="twitter:description" content="Kava Culture North Fort Myers is a kava bar at 15201 N Cleveland Ave #611, North Fort Myers, FL. Get directions and see nearby kava bars.">
+<meta name="twitter:image" content="https://kavacrawl.app/assets/lifestyle.png">
+<style>
+/* Bar pages (/bars/{st}/{city}/{slug}/). Copied from the approved mockup, which copies the tokens and
+   components of index.html / assets/dash.css. Dark only, like the rest of the site. Inlined per page. */
+:root{
+  --bg:#050e0c; --bg2:#0b1d19; --card:#102520; --line:#1f3f38; --line-soft:rgba(157,184,172,.12);
+  --ink:#f2ece0; --muted:#9db8ac; --faint:#7d9a8c; --mint:#6ece8d; --sun:#e98a5b; --gold:#e9d56b; --teal:#0e5959;
+  --glass:rgba(11,29,25,.62); --glass-strong:rgba(9,24,21,.86);
+  --hi:inset 0 1px 0 rgba(242,236,224,.05);
+  --shadow:0 24px 60px -30px rgba(0,0,0,.8);
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  --sf-page-gap:40px;
+}
+
+*{box-sizing:border-box;margin:0}
+[hidden]{display:none!important}
+html{color-scheme:dark;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none}
+body::before{background:
+  radial-gradient(ellipse 120% 90% at 50% 40%,transparent 55%,rgba(0,0,0,.55) 100%),
+  radial-gradient(60% 50% at 8% -8%,rgba(14,89,89,.55),transparent 70%),
+  radial-gradient(42% 38% at 96% 2%,rgba(233,138,91,.16),transparent 70%),
+  radial-gradient(48% 42% at 72% 58%,rgba(110,206,141,.07),transparent 70%),
+  radial-gradient(70% 55% at 15% 105%,rgba(14,89,89,.28),transparent 70%),
+  var(--bg)}
+body::after{opacity:.9;background:
+  linear-gradient(rgba(157,184,172,.035) 1px,transparent 1px) 0 0/56px 56px,
+  linear-gradient(90deg,rgba(157,184,172,.035) 1px,transparent 1px) 0 0/56px 56px;
+  -webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,#000 30%,transparent 100%);
+  mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,#000 30%,transparent 100%)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--mint);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.bar{max-width:720px;margin:0 auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--mint);color:#06210f;font-weight:700;padding:10px 18px;border-radius:999px;font-size:15px;border:1px solid transparent;cursor:pointer;font-family:inherit;line-height:1.3;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 8px 24px -12px rgba(110,206,141,.7);transition:transform .18s var(--ease),background-color .18s,box-shadow .18s,border-color .18s}
+.btn:hover{background:#82dba0;transform:translateY(-1px)}
+.btn:active{transform:none}
+.btn.ghost{background:rgba(242,236,224,.03);color:var(--ink);border-color:var(--line);box-shadow:var(--hi)}
+.btn.ghost:hover{background:rgba(110,206,141,.08);border-color:#2f5d52}
+.btn svg{width:14px;height:14px;flex:none}
+.btn.go{background:linear-gradient(135deg,#8be6a8,#5fcf8f 55%,#3fb98f);color:#04210f;border-color:rgba(255,255,255,.25);
+  box-shadow:0 0 0 1px rgba(110,206,141,.5),0 8px 26px -6px rgba(110,206,141,.65),inset 0 1px 0 rgba(255,255,255,.45);position:relative;overflow:hidden;animation:breathe 3.6s ease-in-out infinite}
+.btn.go::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-120%);transition:transform .7s ease}
+.btn.go:hover{background:linear-gradient(135deg,#9ff0b8,#6ede9d 55%,#4ccaa0);transform:translateY(-1px)}
+.btn.go:hover::after{transform:translateX(120%)}
+.btn.go svg{transition:transform .2s}
+.btn.go:hover svg{transform:translateX(3px)}
+.btn.big{padding:11px 22px;font-size:15px}
+@keyframes breathe{0%,100%{box-shadow:0 0 0 1px rgba(110,206,141,.5),0 8px 24px -8px rgba(110,206,141,.5),inset 0 1px 0 rgba(255,255,255,.45)}50%{box-shadow:0 0 0 1px rgba(110,206,141,.7),0 10px 34px -4px rgba(110,206,141,.85),inset 0 1px 0 rgba(255,255,255,.45)}}
+
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0}
+.brand{display:inline-flex;align-items:center;gap:11px;font-weight:800;font-size:23px;line-height:1;letter-spacing:-.4px;min-width:0;color:var(--ink)}
+.brand img{width:40px;height:40px;flex:none;border-radius:11px;box-shadow:0 0 0 1px var(--line-soft),0 6px 18px -8px rgba(110,206,141,.5)}
+.wm{background:linear-gradient(100deg,transparent 42%,rgba(255,255,255,.95) 50%,transparent 58%) no-repeat 160% 0/250% 100%,linear-gradient(90deg,#f6efe2,#f6efe2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+nav .btn.go{flex:none;white-space:nowrap;gap:5px;padding:7px 14px;font-size:14px;line-height:1.25;
+  box-shadow:0 0 0 1px rgba(110,206,141,.45),0 4px 14px -6px rgba(110,206,141,.5),inset 0 1px 0 rgba(255,255,255,.4);animation:breathe-sm 3.6s ease-in-out infinite}
+nav .btn.go svg{width:12px;height:12px}
+@keyframes breathe-sm{0%,100%{box-shadow:0 0 0 1px rgba(110,206,141,.45),0 4px 14px -6px rgba(110,206,141,.45),inset 0 1px 0 rgba(255,255,255,.4)}50%{box-shadow:0 0 0 1px rgba(110,206,141,.6),0 5px 18px -6px rgba(110,206,141,.6),inset 0 1px 0 rgba(255,255,255,.4)}}
+
+.pill,.crumb{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:5px 12px 5px 10px;color:var(--mint);font-size:12px;letter-spacing:1.6px;font-weight:700;text-transform:uppercase;background:var(--glass);box-shadow:var(--hi)}
+.crumb{flex-wrap:wrap;max-width:100%}
+.crumb a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(110,206,141,.4)}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(110,206,141,.6);animation:pulse 2.4s ease-out infinite}
+.pill .sep{color:var(--faint);font-weight:500;letter-spacing:.4px;text-transform:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(110,206,141,.55)}70%,100%{box-shadow:0 0 0 7px rgba(110,206,141,0)}}
+
+.stat{border:1px solid var(--line);border-radius:18px;padding:14px 16px;background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:var(--hi),var(--shadow);position:relative;overflow:hidden;min-width:0}
+.stat::before{content:"";position:absolute;left:18px;right:18px;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(110,206,141,.55),transparent)}
+.stat b{display:block;font-size:28px;font-weight:800;letter-spacing:-.03em;color:var(--mint);line-height:1.15;font-variant-numeric:tabular-nums}
+.stat b small{font-size:14px;font-weight:600;color:var(--muted);letter-spacing:0;margin-left:3px}
+.stat span{color:var(--muted);font-size:13px;line-height:1.4;display:block;margin-top:3px}
+.stat span strong{color:var(--mint);font-weight:600}
+.panel{border:1px solid var(--line);border-radius:22px;background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);padding:16px 18px 14px;box-shadow:var(--hi),var(--shadow);position:relative;overflow:hidden;min-width:0}
+.panel::before{content:"";position:absolute;left:20px;right:20px;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(110,206,141,.55),transparent)}
+.panel header{display:flex;justify-content:space-between;align-items:baseline;gap:6px 12px;flex-wrap:wrap;margin-bottom:10px}
+.panel h2{margin:0;font-size:1.05rem;letter-spacing:-.01em;font-weight:800}
+.panel header p{margin:0;color:var(--faint);font-size:.82rem}
+.unavail{margin:0;padding:16px 14px;border:1px dashed var(--line);border-radius:12px;color:var(--faint);font-size:.9rem;text-align:center}
+.score{display:inline-block;min-width:44px;text-align:center;border:1px solid #2a5249;background:linear-gradient(180deg,rgba(110,206,141,.14),rgba(110,206,141,.05));color:var(--ink);border-radius:999px;padding:2px 10px;font-weight:700;font-variant-numeric:tabular-nums}
+.rbox{padding:7px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(242,236,224,.04);font-size:13.5px;font-weight:600;display:inline-flex;align-items:center;gap:8px}
+.rbox.na{border-style:dashed;color:var(--muted)}
+.rbox .sep{color:var(--faint);font-weight:500}
+.price{font-weight:800;font-variant-numeric:tabular-nums}
+.nm{font-weight:600}
+.sub{color:var(--muted);font-size:13px}
+.cta-tag,.mono{font-family:var(--mono)}
+.cta-tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.4px;font-weight:600;color:var(--mint);border:1px solid rgba(110,206,141,.35);background:rgba(6,17,15,.55);border-radius:8px;padding:5px 11px}
+.cta-card{position:relative;overflow:hidden;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:
+  radial-gradient(55% 140% at 100% 110%,rgba(233,138,91,.22),transparent 62%),
+  radial-gradient(60% 130% at 8% -10%,rgba(110,206,141,.26),transparent 62%),
+  linear-gradient(135deg,#0a2b29 0%,#09211f 55%,#0b1d1b 100%);
+  border:1px solid rgba(110,206,141,.28);border-radius:24px;padding:22px 20px;margin-top:18px;box-shadow:inset 0 1px 0 rgba(242,236,224,.1),0 0 0 1px rgba(6,17,15,.6),0 24px 60px -24px rgba(110,206,141,.28),var(--shadow)}
+.cta-copy,.cta-act{position:relative}
+.cta-card b{display:block;font-size:22px;line-height:1.15;letter-spacing:-.03em;margin:10px 0 6px;overflow-wrap:anywhere}
+.cta-card p{color:#dbe9e2;font-size:15px;margin:0}
+.cta-act{display:flex;flex-direction:column;align-items:center;gap:8px;width:100%}
+.cta-act .btn{width:100%}
+.cta-act small{color:#cfe0d8;font-size:13px}
+.chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{display:inline-flex;align-items:baseline;gap:6px;padding:6px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(242,236,224,.03);font-size:14px}
+.chips li small{font-size:11.5px;color:var(--faint)}
+.chips li.hot{border-color:rgba(110,206,141,.55);background:rgba(110,206,141,.14)}
+.chips li.hot b{color:var(--mint)}
+.chips li.hot small{color:#a8dcb9}
+
+.bar-head{padding:14px 0 4px}
+.bar-head h1{font-size:30px;line-height:1.06;letter-spacing:-.03em;margin:12px 0 10px;font-weight:800;text-wrap:balance;overflow-wrap:anywhere}
+.status{display:flex;align-items:center;flex-wrap:wrap;gap:8px 10px;margin-bottom:8px;font-size:14px}
+.status .pill{letter-spacing:.2px;text-transform:none;font-size:13.5px;font-weight:700;padding:5px 12px 5px 10px}
+.status .pill .sep{letter-spacing:0;font-size:13px}
+.addr{color:var(--muted);font-size:15px;line-height:1.45;overflow-wrap:anywhere}
+.addr b{color:var(--ink);font-weight:600}
+.actions{display:flex;gap:8px;margin:14px 0 16px}
+.actions .btn{flex:1;min-width:0;padding:10px 8px;font-size:14.5px;gap:5px}
+.actions .btn svg{width:15px;height:15px}
+.stack{display:grid;gap:10px}
+.today-chip{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--mint);font-weight:700;border:1px solid rgba(110,206,141,.35);border-radius:6px;padding:1px 6px;margin-left:8px;vertical-align:1px}
+.hours{list-style:none;padding:0;margin:0;display:grid;gap:1px}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:5px 8px;margin:0 -8px;border-radius:9px;font-size:14.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.hours li b{font-weight:600;color:var(--muted)}
+.hours li span{text-align:right}
+.hours li.today{background:rgba(110,206,141,.11);color:var(--ink);box-shadow:inset 3px 0 0 var(--mint)}
+.hours li.today b{color:var(--ink)}
+.hours li .closed{color:var(--faint)}
+.events{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:2px}
+.chips+.events{margin-top:10px}
+.panel header+.events{margin-top:0}
+.events li{display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:baseline;gap:10px;padding:6px 8px;margin:0 -8px;border-radius:9px;font-size:14.5px}
+.events li:hover{background:rgba(157,184,172,.06)}
+.events .d{color:var(--mint);font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase}
+.events .t{color:var(--muted);font-variant-numeric:tabular-nums;font-size:13.5px}
+.events li .nm{overflow-wrap:anywhere}
+.events li .sub{display:block}
+.menu{list-style:none;padding:0;margin:0;display:grid;gap:1px}
+.menu li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:8px 8px;margin:0 -8px;border-radius:9px;border-top:1px solid var(--line-soft);font-size:15px}
+.menu li>span:first-child{min-width:0;overflow-wrap:anywhere}
+.menu li:first-child{border-top:0}
+.menu li.sel{background:rgba(110,206,141,.11);box-shadow:inset 3px 0 0 var(--mint);border-top-color:transparent}
+.menu li.sel+li{border-top-color:transparent}
+.menu li.sel .price{color:var(--mint);font-size:17px}
+.menu li .sub{display:block;font-size:12.5px}
+.divider{display:flex;align-items:center;gap:12px;margin:22px 0 12px}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--line))}
+.divider::after{background:linear-gradient(90deg,var(--line),transparent)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cmp .stat.span2{grid-column:1/-1}
+.spark{display:flex;align-items:center;gap:14px}
+.spark svg{width:150px;max-width:100%;height:44px;flex:none;overflow:visible}
+.near-panel{margin-top:10px}
+.near{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.near a{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:4px 12px;padding:11px 14px;border:1px solid var(--line);border-radius:14px;background:rgba(5,14,12,.35);transition:border-color .15s,transform .15s}
+.near a:hover{border-color:#3d7566;transform:translateY(-1px)}
+.near .nm{font-size:15px;color:var(--mint);overflow-wrap:anywhere}
+.near .meta{display:flex;align-items:center;gap:8px;justify-content:flex-end}
+.near .price{font-size:15px}
+.near .score{min-width:40px;padding:1px 8px;font-size:13px}
+.near .sub{grid-column:1/-1}
+.thin .unavail{text-align:left;padding:14px 14px 12px;display:grid;gap:8px}
+.thin .unavail b{color:var(--ink);font-size:.95rem;font-weight:700}
+.thin .unavail p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.thin .unavail .chips{margin-top:2px}
+.thin .unavail .chips li{font-size:13px;padding:4px 11px;color:var(--muted)}
+
+@media(max-width:480px){
+  .wrap{padding:0 16px}
+  nav{padding:14px 0}
+  .brand{gap:10px;font-size:21px}
+  .brand img{width:36px;height:36px;border-radius:10px}
+  nav .btn.go{padding:7px 12px;font-size:13.5px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .wm{background:linear-gradient(90deg,#f6efe2,#f6efe2);-webkit-background-clip:text;background-clip:text}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BarOrPub","@id":"https://kavacrawl.app/bars/fl/north-fort-myers/kava-culture-north-fort-myers/#bar","name":"Kava Culture North Fort Myers","url":"https://kavacrawl.app/bars/fl/north-fort-myers/kava-culture-north-fort-myers/","address":{"@type":"PostalAddress","streetAddress":"15201 N Cleveland Ave #611","addressLocality":"North Fort Myers","addressRegion":"FL","postalCode":"33903","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.685128100000004,"longitude":-81.9038545}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Florida","item":"https://kavacrawl.app/bars/fl/"},{"@type":"ListItem","position":2,"name":"North Fort Myers","item":"https://kavacrawl.app/bars/fl/north-fort-myers/"},{"@type":"ListItem","position":3,"name":"Kava Culture North Fort Myers","item":"https://kavacrawl.app/bars/fl/north-fort-myers/kava-culture-north-fort-myers/"}]}]}</script>
+</head>
+<body>
+<div class="wrap">
+  <nav><a class="brand" href="/"><img src="/assets/icon.webp" alt="" width="40" height="40"><span class="wm">KavaCrawl</span></a><a class="btn go" href="https://apps.apple.com/us/app/kavacrawl/id6772610237">Get the app <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></nav>
+  <main class="bar thin">
+  <header class="bar-head">
+    <p class="crumb"><a href="/bars/fl/">Florida</a> &rsaquo; <a href="/bars/fl/north-fort-myers/">North Fort Myers</a></p>
+    <h1>Kava Culture North Fort Myers</h1>
+    <div class="status"><span class="rbox na">Hours not listed yet</span></div>
+    <p class="addr"><b>15201 N Cleveland Ave #611</b><br>North Fort Myers, FL 33903</p>
+    <div class="actions">
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Kava+Culture+North+Fort+Myers%2C+15201+N+Cleveland+Ave+%23611%2C+North+Fort+Myers%2C+FL+33903&amp;query_place_id=ChIJ818GsNtD24gRIciJ79wFpeQ" rel="noopener"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.5 14.5 8 8 14.5 1.5 8z"/><path d="M6 9.5V7h3.5L8 5.5M9.5 7 8 8.5"/></svg>Directions</a>
+    </div>
+  </header>
+  <div class="stack">
+  <section class="panel" id="known" aria-labelledby="known-h">
+    <header><h2 id="known-h">What we know</h2></header>
+    <div class="unavail">
+      <b>Hours, events and menu aren't listed yet</b>
+      <p>We list only what we've checked. Check the bar's own listing before you go.</p>
+      <ul class="chips" aria-label="Missing details"><li>Hours</li><li>Events</li><li>Shell price</li><li>Menu</li></ul>
+      <div><span class="rbox na">Not yet scored</span></div>
+    </div>
+  </section>
+  </div>
+  <section class="panel near-panel" id="nearby" aria-labelledby="nearby-h">
+    <header><h2 id="nearby-h">Nearby bars</h2><p>Closest, in a straight line</p></header>
+    <ul class="near">
+      <li><a href="/bars/fl/north-fort-myers/island-vibes-kava-north-fort-myers/"><span class="nm">Island Vibes Kava - North Fort Myers</span><span class="sub">2.6 mi</span></a></li>
+      <li><a href="/bars/fl/fort-myers/kava-culture-fort-myers/"><span class="nm">Kava Culture Fort Myers</span><span class="sub">3.6 mi</span></a></li>
+      <li><a href="/bars/fl/fort-myers/ohana-kava-bar/"><span class="nm">Ohana Kava Bar</span><span class="sub">6 mi</span></a></li>
+    </ul>
+  </section>
+  <section class="cta-card">
+    <div class="cta-copy">
+      <div class="cta-tag">// help build the map</div>
+      <b>Been to Kava Culture North Fort Myers? Add the shell price</b>
+      <p>One price lights this bar up on the map for the next person.</p>
+    </div>
+    <div class="cta-act">
+      <a class="btn go big" href="https://apps.apple.com/us/app/kavacrawl/id6772610237">Open in KavaCrawl <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      <small>Free for iPhone</small>
+    </div>
+  </section>
+  </main>
+</div>
+    <!-- footer:start -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__top">
+          <div class="site-footer__brandcol">
+            <p class="site-footer__wordmark">ShapeHaven Innovations</p>
+            <p class="site-footer__about">A research and software lab. We chase good problems, then build iOS and web apps to solve them.</p>
+          </div>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Field Notes</h2>
+            <ul class="site-footer__list">
+              <li><a href="https://shapehaveninnovations.com/blog/">All Field Notes</a></li>
+              <li><a href="https://shapehaveninnovations.com/blog/php-critical-rce-patch" title="Two Critical PHP Flaws: What to Check and Patch Today">Two Critical PHP Flaws</a></li>
+              <li><a href="https://shapehaveninnovations.com/blog/mdnsshark-app" title="mDNSShark: See Everything on Your Wi-Fi, Without Sending a Byte Out">mDNSShark: Your Wi-Fi, Unseen</a></li>
+              <li><a href="https://shapehaveninnovations.com/blog/worldmonitor-app" title="World Monitor: An Open-Source Dashboard Built for AI Agents">World Monitor for AI Agents</a></li>
+              <li><a href="https://shapehaveninnovations.com/feed.xml" target="_blank" rel="noopener">RSS feed</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Guides</h2>
+            <ul class="site-footer__list">
+              <li><a href="/guides/kava-bar-events-what-to-expect/">Kava bar events, by the numbers</a></li>
+              <li><a href="/guides/kava-bars-by-state-and-city/">Kava bars by state and city</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Software</h2>
+            <ul class="site-footer__list">
+              <li><a href="https://kavacrawl.app/" target="_blank" rel="noopener">KavaCrawl</a></li>
+              <li><a href="https://returniq.shapehaveninnovations.com/" target="_blank" rel="noopener">ReturnIQ</a></li>
+              <li><a href="https://condoguard.app/" target="_blank" rel="noopener">CondoGuard</a></li>
+              <li><a href="https://mdnsshark.shapehaveninnovations.com/" target="_blank" rel="noopener">mDNSShark</a></li>
+              <li><a href="https://rhythmx.shapehaveninnovations.com/" target="_blank" rel="noopener">RhythmX</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">Support</h2>
+            <ul class="site-footer__list">
+              <li><a href="https://shapehaveninnovations.com/support.html">Support page</a></li>
+              <li><a href="mailto:info@shapehaveninnovations.com">Email us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p class="site-footer__copyright">&copy; 2026 ShapeHaven Innovations LLC</p>
+          <ul class="site-footer__legal">
+            <li><a href="/">KavaCrawl home</a></li>
+            <li><a href="https://apps.apple.com/gb/app/kavacrawl/id6772610237" rel="noopener">App Store</a></li>
+            <li><a href="https://shapehaveninnovations.com/privacy.html">Privacy Policy</a></li>
+            <li><a class="site-footer__icon" href="https://github.com/Shapehaven-Innovations" target="_blank" rel="noopener" aria-label="ShapeHaven Innovations on GitHub (opens in a new tab)"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></li>
+          </ul>
+          <p class="site-footer__fine">City and ZIP data from <a href="https://www.geonames.org/">GeoNames</a> (CC BY 4.0). Some bar locations &copy; OpenStreetMap contributors. A <a href="https://shapehaveninnovations.com/">ShapeHaven Innovations</a> product</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer:end -->
+  <!-- footer-css:start -->
+  <style>
+/* Isolation so the footer looks the same inside any site's page CSS.
+   .site-footer :where(...) has class-level specificity, so it beats page rules like
+   "p, li { font-size }" but loses to the BEM rules below (same specificity, later). */
+:where(.site-footer),
+:where(.site-footer) *,
+:where(.site-footer) *::before,
+:where(.site-footer) *::after {
+  box-sizing: border-box;
+}
+
+.site-footer :where(p, ul, li, h2) {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Footer: takes its colours from the --sf-page-* tokens that each site maps in
+   footer/targets.json (stamped after this block), so it follows the page's palette
+   while staying a distinct band. */
+.site-footer {
+  --sf-bg: var(--sf-page-bg, #faf9f5);
+  --sf-line: var(--sf-page-line, #e8e6dc);
+  --sf-muted: var(--sf-page-muted, #5e5d59);
+  --sf-bright: var(--sf-page-text, #141413);
+  --sf-soft: var(--sf-page-soft, color-mix(in srgb, var(--sf-bright) 82%, var(--sf-bg)));
+  --sf-accent: var(--sf-page-accent, #c6613f);
+  background: var(--sf-bg);
+  border-top: 1px solid var(--sf-line);
+  color: var(--sf-muted);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 0.8125rem;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: left;
+  /* undo generic `footer { display:flex; margin; padding; gap }` rules in host pages */
+  display: block;
+  margin: var(--sf-page-gap, 0) 0 0;
+  padding: 0;
+  gap: 0;
+  width: auto;
+  max-width: none;
+}
+
+.site-footer a {
+  color: var(--sf-muted);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.15s ease;
+}
+
+.site-footer a:hover {
+  color: var(--sf-bright);
+}
+
+.site-footer a:focus-visible {
+  outline: 2px solid var(--sf-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.site-footer ul {
+  list-style: none;
+}
+
+.site-footer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 1.125rem;
+}
+
+/* Top: wordmark and blurb, then the link columns */
+.site-footer__top {
+  display: grid;
+  grid-template-columns: minmax(180px, 1.3fr);
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 1.5rem 1.75rem;
+}
+
+.site-footer__wordmark {
+  color: var(--sf-bright);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-bottom: 0.375rem;
+}
+
+.site-footer__about {
+  max-width: 26ch;
+  font-size: 0.78rem;
+  color: var(--sf-soft);
+}
+
+.site-footer__heading {
+  color: var(--sf-soft);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.site-footer__list li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-footer__list li + li {
+  margin-top: 0.3125rem;
+}
+
+/* Current page inside a footer list */
+.site-footer [aria-current="page"] {
+  color: var(--sf-bright);
+}
+
+/* Bottom: copyright and legal links on one line, then per-site fine print */
+.site-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.375rem 1.25rem;
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--sf-line);
+  font-size: 0.74rem;
+}
+
+.site-footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
+
+.site-footer__legal li {
+  display: flex;
+  align-items: center;
+}
+
+.site-footer__icon {
+  color: var(--sf-soft);
+}
+
+.site-footer__icon svg {
+  display: block;
+}
+
+.site-footer__fine {
+  flex-basis: 100%;
+  max-width: 90ch;
+  font-size: 0.72rem;
+}
+
+.site-footer__fine a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--sf-line);
+}
+
+@media (max-width: 760px) {
+  .site-footer__inner {
+    padding: 1.5rem 1.125rem 1rem;
+  }
+
+  .site-footer__top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+  }
+
+  .site-footer__brandcol {
+    grid-column: 1 / -1;
+  }
+
+  /* 24px+ touch spacing between stacked links */
+  .site-footer__list li + li {
+    margin-top: 0.5rem;
+  }
+
+  .site-footer__legal {
+    gap: 0.5rem 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-footer a {
+    transition: none;
+  }
+}
+
+:root {
+  --sf-page-bg: #0e2620;
+  --sf-page-line: #2c4a3f;
+  --sf-page-muted: #c4b99f;
+  --sf-page-text: #f5ede0;
+  --sf-page-soft: #e2d7c0;
+  --sf-page-accent: #c9a84c;
+}
+  </style>
+  <!-- footer-css:end -->
+<script type="application/json" id="bar-data">{"tz":"America/New_York","hours":null,"events":[]}</script>
+<script type="module">
+// Bar page client: inlined into each /bars/.../ page as a module script (exports stripped by the renderer).
+// Reads the page's JSON data element (id "bar-data") { tz, hours, events } and, in the
+// bar's own time zone: fills the open-now pill, marks today's hours row, shows "Tonight" chips and hides
+// one-off events whose date has passed. No network, no cookies, no storage. The pure functions below take
+// `now` as a parameter so they are testable in Node; init() is the thin DOM wiring.
+
+const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+const WEEK = 7 * 1440
+
+/** "17:00" -> "5:00 PM" (short: "5 PM", "7:30 PM"). "" for anything else. */
+function fmtTime(t, short = false) {
+  const m = typeof t === 'string' ? /^(\d{2}):(\d{2})$/.exec(t) : null
+  if (!m) return ''
+  const h = Number(m[1]) % 24
+  const ap = h < 12 ? 'AM' : 'PM'
+  const h12 = h % 12 || 12
+  return short && m[2] === '00' ? `${h12} ${ap}` : `${h12}:${m[2]} ${ap}`
+}
+
+const toMin = (t) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3))
+const fromMin = (n) => `${String(Math.floor(n / 60)).padStart(2, '0')}:${String(n % 60).padStart(2, '0')}`
+
+/** Weekday (0 = Sunday), minutes since midnight and YYYY-MM-DD of `now` in `tz` (visitor's zone if tz is null). */
+function localParts(now, tz) {
+  const opts = { weekday: 'short', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }
+  if (tz) opts.timeZone = tz
+  const p = {}
+  for (const { type, value } of new Intl.DateTimeFormat('en-US', opts).formatToParts(now)) p[type] = value
+  return { day: DAYS.indexOf(p.weekday), minutes: (Number(p.hour) % 24) * 60 + Number(p.minute), date: `${p.year}-${p.month}-${p.day}` }
+}
+
+/** Week-minute intervals [start, end) from [{day, open, close}]; overnight periods run past their day. */
+function intervals(hours) {
+  return hours.map(({ day, open, close }) => {
+    const s = day * 1440 + toMin(open)
+    let e = day * 1440 + toMin(close)
+    if (e <= s) e += 1440
+    return [s, e]
+  })
+}
+
+/**
+ * Open/closed state now, in the bar's zone. Null when tz or hours are missing (no pill is shown).
+ * Open: { open: true, closes: 'HH:MM' } or { open: true, allDay: true }.
+ * Closed: { open: false, opens: 'HH:MM', opensDay, today }.
+ */
+function openState(hours, tz, now) {
+  if (!tz || !Array.isArray(hours) || hours.length === 0) return null
+  const { day, minutes } = localParts(now, tz)
+  const w = day * 1440 + minutes
+  const iv = intervals(hours)
+  const inside = (x) => iv.find(([s, e]) => (s <= x && x < e) || (s <= x + WEEK && x + WEEK < e))
+  const cur = inside(w)
+  if (cur) {
+    // Follow back-to-back periods (16:00-24:00 then 00:00-02:00) to the real closing time.
+    let end = cur[1]
+    for (let n = 0; n < 14; n++) {
+      const next = iv.find(([s]) => s % WEEK === end % WEEK)
+      if (!next) break
+      end = end + (next[1] - next[0])
+      if (end - w >= WEEK) return { open: true, allDay: true }
+    }
+    return { open: true, closes: fromMin(end % 1440) }
+  }
+  let best = null
+  for (const [s] of iv) {
+    const ahead = (s - w + WEEK) % WEEK
+    if (best == null || ahead < best[0]) best = [ahead, s]
+  }
+  const s = best[1] % WEEK
+  return { open: false, opens: fromMin(s % 1440), opensDay: Math.floor(s / 1440), today: day }
+}
+
+/** Pill wording for an openState result. */
+function pillText(state) {
+  if (state.open) return { open: true, text: 'Open now', sep: state.allDay ? 'open 24 hours' : `closes ${fmtTime(state.closes, true)}` }
+  const when = state.opensDay === state.today ? '' : `${DAYS[state.opensDay]} `
+  return { open: false, text: 'Closed', sep: `opens ${when}${fmtTime(state.opens, true)}` }
+}
+
+/** A one-off whose end_date (or start_date) is before today in the bar's zone. Recurring events never are. */
+function isPastOneOff(ev, tz, now) {
+  if (ev.is_recurring) return false
+  const last = ev.end_date || ev.start_date
+  if (!last) return false
+  return localParts(now, tz).date > last
+}
+
+/** Indexes of today's events: recurring ones on today's weekday, and one-offs dated today. [] without tz. */
+function tonightEvents(events, tz, now) {
+  if (!tz || !Array.isArray(events)) return []
+  const { day, date } = localParts(now, tz)
+  const out = []
+  events.forEach((ev, i) => {
+    if (ev.is_recurring ? ev.day === day : ev.start_date === date) out.push(i)
+  })
+  return out
+}
+
+function span(doc, cls, text) {
+  const el = doc.createElement('span')
+  if (cls) el.className = cls
+  el.textContent = text
+  return el
+}
+
+/** DOM wiring. Everything it writes is built with textContent; the static page is complete without it. */
+function init(doc, now) {
+  const node = doc.getElementById('bar-data')
+  if (!node) return
+  let data
+  try { data = JSON.parse(node.textContent) } catch { return }
+  const tz = data.tz || null
+
+  const pill = doc.getElementById('open-now')
+  const state = pill ? openState(data.hours, tz, now) : null
+  if (state) {
+    const t = pillText(state)
+    pill.className = t.open ? 'pill' : 'rbox na'
+    const kids = [t.text, ' ', span(doc, 'sep', t.sep)]
+    if (t.open) kids.unshift(span(doc, 'dot', ''))
+    pill.replaceChildren(...kids)
+    pill.hidden = false
+  }
+
+  const hours = doc.getElementById('hours')
+  if (hours && tz) {
+    const today = String(localParts(now, tz).day)
+    for (const li of hours.querySelectorAll('li')) {
+      if (li.getAttribute('data-day') !== today) continue
+      li.classList.add('today')
+      const b = li.querySelector('b')
+      if (b) b.append(span(doc, 'today-chip', 'Today'))
+    }
+  }
+
+  const events = doc.getElementById('events')
+  if (events && Array.isArray(data.events)) {
+    const byIndex = new Map()
+    for (const li of events.querySelectorAll('li')) {
+      const i = li.getAttribute('data-i')
+      if (i != null) byIndex.set(Number(i), li)
+    }
+    let shown = 0
+    data.events.forEach((ev, i) => {
+      const li = byIndex.get(i)
+      if (!li) return
+      if (isPastOneOff(ev, tz, now)) li.hidden = true
+      else shown++
+    })
+    const tonight = doc.getElementById('tonight')
+    const picks = tonightEvents(data.events, tz, now).filter((i) => byIndex.has(i) && !byIndex.get(i).hidden)
+    if (tonight && picks.length) {
+      tonight.replaceChildren(...picks.map((i) => {
+        const row = byIndex.get(i)
+        const name = row.querySelector('span.nm')
+        const time = row.querySelector('span.t')
+        const li = doc.createElement('li')
+        li.className = 'hot'
+        const b = doc.createElement('b')
+        b.textContent = 'Tonight'
+        li.append(b, ' ', name ? name.textContent : '', ' ')
+        if (time && time.textContent) {
+          const small = doc.createElement('small')
+          small.textContent = time.textContent
+          li.append(small)
+        }
+        return li
+      }))
+      tonight.hidden = false
+    }
+    if (shown === 0) events.hidden = true
+  }
+}
+
+if (typeof document !== 'undefined') init(document, new Date())
+</script>
+</body>
+</html>

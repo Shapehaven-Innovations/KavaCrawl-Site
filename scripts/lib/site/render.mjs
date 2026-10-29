@@ -116,9 +116,8 @@ ${rows.join('\n')}
 }
 
 function menuPanel(menu, shell) {
-  const valueOf = (it) => (isNum(it.shell_equiv) ? it.shell_equiv : it.price)
   const selIdx = shell == null ? -1
-    : menu.items.findIndex((it) => it.category === 'kava_shell' && isNum(valueOf(it)) && Math.round(valueOf(it) * 100) === Math.round(shell * 100))
+    : menu.items.findIndex((it) => it.category === 'kava_shell' && isNum(it.price) && Math.round(it.price * 100) === Math.round(shell * 100))
   const items = selIdx < 0 ? menu.items : [menu.items[selIdx], ...menu.items.filter((_, i) => i !== selIdx)]
   const rows = items.map((it, i) => {
     const sel = selIdx >= 0 && i === 0
@@ -126,7 +125,6 @@ function menuPanel(menu, shell) {
     if (isNum(it.size_oz) && it.size_oz > 0) subs.push(`${e(it.size_oz)} oz`)
     if (sel) {
       subs.push('The price the map uses')
-      if (isNum(it.price) && Math.round(it.price * 100) !== Math.round(shell * 100)) subs.push(`${money(shell)} a shell`)
     }
     const name = `<span class="nm">${e(it.name)}</span>`
     const label = subs.length ? `<span>${name}<span class="sub">${subs.join(' &middot; ')}</span></span>` : name
@@ -182,7 +180,7 @@ function comparePanel(bar) {
     stats.push(`<div class="stat"><b>${e(bar.compare.rank)} <small>of ${e(bar.compare.total)}</small></b><span>Shell price rank in ${metro}, cheapest first</span></div>`)
   }
   if (isNum(bar.shell)) {
-    let line = 'Lowest shell price'
+    let line = 'Lowest shell price on the menu'
     if (bar.compare) {
       const p = bar.compare.pctVsMetro
       const rel = p === 0 ? 'right at' : `${e(Math.abs(p))}% ${p < 0 ? 'under' : 'over'}`

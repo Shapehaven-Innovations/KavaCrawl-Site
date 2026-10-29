@@ -223,10 +223,10 @@ test('buildBars computes shell, metroMedianShell, pctVsMetro and rank on a fixtu
   const a = barOf(out, 'ChIJAaaaaa111')
   const b = barOf(out, 'ChIJBbbbbb222')
   const c = barOf(out, 'ChIJCccccc333')
-  assert.equal(a.shell, 3.5)
+  assert.equal(a.shell, 5)
   assert.equal(b.shell, 6)
   assert.equal(c.shell, 6)
-  assert.deepEqual(a.compare, { metroMedianShell: 6, pctVsMetro: -41.7, rank: 1, total: 3 })
+  assert.deepEqual(a.compare, { metroMedianShell: 6, pctVsMetro: -16.7, rank: 1, total: 3 })
   assert.deepEqual(b.compare, { metroMedianShell: 6, pctVsMetro: 0, rank: 2, total: 3 })
   assert.deepEqual(c.compare, { metroMedianShell: 6, pctVsMetro: 0, rank: 2, total: 3 })
 })
@@ -242,14 +242,14 @@ test('buildBars leaves compare null when the metro has fewer than 3 shells', () 
   assert.equal(barOf(fewer, 'ChIJCccccc333').menu, null)
 })
 
-test('buildBars history matches worker weekly medians on a fixture', () => {
+test('buildBars history is the weekly lowest listed kava_shell price on a fixture', () => {
   const out = build()
-  // Worker rule: obsValue per row (shell_equiv, else shellEquiv(category, price, size)), unconvertible rows skipped,
-  // grouped by Monday-start UTC week, median rounded to 2 decimals, rows older than 182 days dropped.
+  // Rule: kava_shell rows only, listed price_usd (no per-oz conversion), lowest per Monday-start UTC week,
+  // rows older than 182 days dropped. The point field is still named `median`.
   assert.deepEqual(barOf(out, 'ChIJAaaaaa111').history, [
-    { week: '2026-10-05', median: 6 }, // 5, 6, brew 4/2oz*4 = 8
-    { week: '2026-10-12', median: 5.25 }, // double 10/2 = 5, shell 5.5 (Sunday belongs to the Monday before)
-    { week: '2026-10-19', median: 3.5 }, // 14/16oz*4 = 3.5; the sizeless shot is skipped
+    { week: '2026-10-05', median: 5 }, // shells 5 and 6; the brew is not a shell
+    { week: '2026-10-12', median: 5.5 }, // shell 5.5 (Sunday belongs to the Monday before); the double is not a shell
+    { week: '2026-10-19', median: 14 }, // the 16oz shell at its listed 14
   ])
   assert.deepEqual(barOf(out, 'ChIJBbbbbb222').history, [{ week: '2026-10-19', median: 6 }])
   assert.deepEqual(barOf(out, 'ChIJHhhhhh888').history, [])

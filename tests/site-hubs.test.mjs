@@ -36,10 +36,10 @@ test('stateStats / cityStats / nationalStats count and rank only admitted bars',
   const some = new Set(['ChIJAaaaaa111', 'ChIJHhhhhh888'])
   const live = bars.filter((b) => some.has(b.place_id))
   assert.deepEqual(nationalStats(live), { bars: 2, states: 1, cities: 2 })
-  assert.deepEqual(stateStats(live), [{ key: 'fl', code: 'FL', name: 'Florida', count: 2, cities: 2, topCity: 'Orlando', cheapestShell: 3.5 }])
+  assert.deepEqual(stateStats(live), [{ key: 'fl', code: 'FL', name: 'Florida', count: 2, cities: 2, topCity: 'Orlando', cheapestShell: 5 }])
   assert.deepEqual(cityStats(live), [
     { key: 'orlando', stateKey: 'fl', name: 'Orlando', state: 'FL', count: 1, cheapestShell: 7, medianShell: 7 },
-    { key: 'tampa', stateKey: 'fl', name: 'Tampa', state: 'FL', count: 1, cheapestShell: 3.5, medianShell: 3.5 },
+    { key: 'tampa', stateKey: 'fl', name: 'Tampa', state: 'FL', count: 1, cheapestShell: 5, medianShell: 5 },
   ])
   assert.deepEqual(nationalStats(bars), { bars: 5, states: 1, cities: 4 })
   assert.deepEqual(nationalStats([]), { bars: 0, states: 0, cities: 0 })
@@ -118,7 +118,7 @@ test('landing lists every state with any rendered bar, including noindex ones, i
   // State cards only for states with admitted bars, busiest first.
   const cards = [...html.matchAll(/<a class="card" href="([^"]+)">/g)].map((m) => m[1])
   assert.deepEqual(cards, ['/bars/fl/', '/bars/ga/'])
-  assert.match(text(linkInner(html, '/bars/fl/')), /Florida Most bars in Tampa shells from \$3\.50 5 bars/)
+  assert.match(text(linkInner(html, '/bars/fl/')), /Florida Most bars in Tampa shells from \$5\.00 5 bars/)
   assert.match(text(linkInner(html, '/bars/ga/')), /1 bar$/)
   assert.match(html, /<p class="crumb"><a href="\/">Home<\/a> &rsaquo; Bars<\/p>/)
 })
@@ -155,7 +155,7 @@ test('state hub lists its cities with bar counts', () => {
   const html = byPath(hubs, '/bars/fl/index.html').html
   assert.match(text(linkInner(html, '/bars/fl/tampa/')), /Tampa/)
   assert.match(text(linkInner(html, '/bars/fl/tampa/')), /2 bars/)
-  assert.match(text(linkInner(html, '/bars/fl/tampa/')), /Median shell \$4\.75 shells from \$3\.50/)
+  assert.match(text(linkInner(html, '/bars/fl/tampa/')), /Median shell \$5\.50 shells from \$5\.00/)
   assert.match(text(linkInner(html, '/bars/fl/orlando/')), /1 bar\b/)
   assert.ok(byPath(hubs, '/bars/index.html'), 'all-states hub')
   assert.match(byPath(hubs, '/bars/index.html').html, /<a href="\/bars\/fl\/">/)

@@ -75,12 +75,12 @@ function httpUrl(v) {
   return /^https?:\/\/[^\s]+$/i.test(s) ? s : null
 }
 
-/** Lowest `shell_equiv ?? price_usd` among a bar's latest kava_shell rows; null if none. */
+/** Lowest listed `price_usd` among a bar's latest kava_shell rows (the menu's own price, not a per-4oz equivalent); null if none. */
 function shellOf(latest) {
   let best = null
   for (const r of latest ?? []) {
     if (r.category !== 'kava_shell') continue
-    const v = num(r.shell_equiv) ?? num(r.price_usd)
+    const v = num(r.price_usd)
     if (v != null && (best == null || v < best)) best = v
   }
   return best == null ? null : r2(best)
@@ -95,18 +95,18 @@ function menuOf(latest) {
   return { items }
 }
 
-/** Weekly medians as the worker's handlePriceHistory, pooled over the four shell categories. */
+/** Weekly lowest listed kava_shell price (the same measure as the headline shell price), Monday-start UTC weeks. */
 function historyOf(rows, cutoff) {
   const weeks = new Map()
   for (const r of rows ?? []) {
-    if (!SHELL_CATS.has(r.category) || typeof r.observed_on !== 'string' || r.observed_on < cutoff) continue
-    const v = obsValue(r)
+    if (r.category !== 'kava_shell' || typeof r.observed_on !== 'string' || r.observed_on < cutoff) continue
+    const v = num(r.price_usd)
     if (v == null) continue
     const w = weekStart(r.observed_on)
     if (!weeks.has(w)) weeks.set(w, [])
     weeks.get(w).push(v)
   }
-  return [...weeks].sort((a, b) => cmp(a[0], b[0])).map(([week, vals]) => ({ week, median: r2(median(vals)) }))
+  return [...weeks].sort((a, b) => cmp(a[0], b[0])).map(([week, vals]) => ({ week, median: r2(Math.min(...vals)) }))
 }
 
 function eventsOf(rows, dropBefore) {

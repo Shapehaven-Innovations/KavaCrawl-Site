@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://kavacrawl.app/bars/nc/asheville/asheville-kava-x-coffee/</loc>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/nc/boone/noble-kava/</loc>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/nc/charlotte/the-peace-pipe/</loc>
     <lastmod>2026-10-30</lastmod>
   </url>
   <url>
+    <loc>https://kavacrawl.app/bars/nc/fayetteville/bulavard-kava-lounge/</loc>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/nc/greensboro/krave-kava-bar/</loc>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/nc/weaverville/vintage-kava/</loc>
     <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/nc/wilmington/kat-5-kava/</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
 </urlset>

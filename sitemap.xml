@@ -13,6 +13,9 @@
     <loc>https://kavacrawl.app/sitemap-bars-ca.xml</loc>
   </sitemap>
   <sitemap>
+    <loc>https://kavacrawl.app/sitemap-bars-co.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://kavacrawl.app/sitemap-bars-fl.xml</loc>
   </sitemap>
   <sitemap>
@@ -31,7 +34,13 @@
     <loc>https://kavacrawl.app/sitemap-bars-nc.xml</loc>
   </sitemap>
   <sitemap>
+    <loc>https://kavacrawl.app/sitemap-bars-or.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://kavacrawl.app/sitemap-bars-pa.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://kavacrawl.app/sitemap-bars-sc.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://kavacrawl.app/sitemap-bars-tx.xml</loc>

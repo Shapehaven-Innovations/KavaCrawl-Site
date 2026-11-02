@@ -62,6 +62,13 @@
   "match": "Non_Exact",
   "addr": "204 W Woodlawn Rd H, Charlotte, NC 28217"
  },
+ "ChIJ2T2TK4SglVQRwLOscwXoGAc": {
+  "lat": 45.50486,
+  "lng": -122.63337,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3115 SE Division St, Portland, OR 97202"
+ },
  "ChIJ2d_fFufJ5YgR7hTCwErvk6k": {
   "lat": 30.17456,
   "lng": -81.60398,
@@ -152,6 +159,20 @@
   "src": "census",
   "match": "Exact",
   "addr": "807 Indian River Dr, Sebastian, FL 32958"
+ },
+ "ChIJ5zMFgbUf24gRbNAf96MUTWM": {
+  "lat": 26.25105,
+  "lng": -81.80129,
+  "src": "census",
+  "match": "Exact",
+  "addr": "8925 Tamiami Trl N, Naples, FL 34108"
+ },
+ "ChIJ64Z2aCTV2IgRzbUqDdpMsxU": {
+  "lat": 26.80726,
+  "lng": -80.06057,
+  "src": "census",
+  "match": "Exact",
+  "addr": "450 Northlake Blvd #5, North Palm Beach, FL 33408"
  },
  "ChIJ654tiE4v2YgRtbqbw4GNxPk": {
   "lat": 26.67993,
@@ -286,6 +307,13 @@
   "match": "Non_Exact",
   "addr": "730 S U.S. 1, Vero Beach, FL 32962"
  },
+ "ChIJ8zeXzVOHa4cRSTVDYqdssnQ": {
+  "lat": 39.74014,
+  "lng": -105.09085,
+  "src": "census",
+  "match": "Exact",
+  "addr": "8402 W Colfax Ave, Lakewood, CO 80215"
+ },
  "ChIJ95_NIF8_24gReLfGIvhP0Sc": {
   "lat": 26.56362,
   "lng": -81.94568,
@@ -341,6 +369,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "962 Cherry St SE, Grand Rapids, MI 49506"
+ },
+ "ChIJB6pGKM1-bIcRmr-MThkfCqo": {
+  "lat": 39.73997,
+  "lng": -104.97148,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1232 E Colfax Ave, Denver, CO 80218"
  },
  "ChIJB8Fol4Wj6IgRznGyODB_g_4": {
   "lat": 29.652,
@@ -748,6 +783,13 @@
   "match": "Exact",
   "addr": "917 Cathedral St, Baltimore, MD 21201"
  },
+ "ChIJKzjZ1M_V54gRbJgtKZj6loI": {
+  "lat": 29.15928,
+  "lng": -82.17607,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3131 SW College Rd #207, Ocala, FL 34474"
+ },
  "ChIJL0wqhgxpAIkRvZGxisX6y8g": {
   "lat": 33.69868,
   "lng": -78.89831,
@@ -1028,6 +1070,13 @@
   "match": "Exact",
   "addr": "1562 SE Federal Hwy, Stuart, FL 34994"
  },
+ "ChIJQ07AQozHwogRH51ZSyrGX_E": {
+  "lat": 28.08305,
+  "lng": -82.41291,
+  "src": "census",
+  "match": "Exact",
+  "addr": "14937 Bruce B Downs Blvd, Tampa, FL 33613"
+ },
  "ChIJQ1u0kxjJxokRFkxaXsX47X0": {
   "lat": 39.94897,
   "lng": -75.14403,
@@ -1105,6 +1154,13 @@
   "match": "Exact",
   "addr": "3313 Hyland Ave Unit A1B, Costa Mesa, CA 92626"
  },
+ "ChIJR5irtkZB6IkRzmSNc7-Eatk": {
+  "lat": 40.94546,
+  "lng": -73.06733,
+  "src": "census",
+  "match": "Exact",
+  "addr": "250 E Main St, Port Jefferson, NY 11777"
+ },
  "ChIJR7crLCM-w4gRNzBRe789XCY": {
   "lat": 27.41824,
   "lng": -82.55097,
@@ -1153,6 +1209,13 @@
   "src": "nominatim",
   "match": "shop",
   "addr": "6900 Daniels Pkwy #24, Fort Myers, FL 33912"
+ },
+ "ChIJRdxbkynhwogRDRsbJy3js_c": {
+  "lat": 27.77111,
+  "lng": -82.64419,
+  "src": "census",
+  "match": "Exact",
+  "addr": "740 Central Ave, St. Petersburg, FL 33701"
  },
  "ChIJS0BNZyMV24gRgPOP9K3As1E": {
   "lat": 26.5,
@@ -1819,6 +1882,13 @@
   "match": "Exact",
   "addr": "5714 Locke Ave, Fort Worth, TX 76107"
  },
+ "ChIJiXzUVnnE2YgRCj5L4e7K7Zc": {
+  "lat": 25.58526,
+  "lng": -80.36312,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "19401 S Dixie Hwy, Cutler Bay, FL 33157"
+ },
  "ChIJiY9UAbtB24gRW-n3bQ6M8_4": {
   "lat": 26.60444,
   "lng": -81.86783,
@@ -1973,6 +2043,13 @@
   "match": "Exact",
   "addr": "616 E Burnside St, Portland, OR 97214"
  },
+ "ChIJmfuk3QRcwokRNaU4kA6DXtM": {
+  "lat": 40.70006,
+  "lng": -73.92584,
+  "src": "census",
+  "match": "Exact",
+  "addr": "191 Suydam St, Brooklyn, NY 11221"
+ },
  "ChIJnZInGFjjwogR1WGwOBla5W0": {
   "lat": 27.82114,
   "lng": -82.6701,
@@ -2119,6 +2196,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "172 State Rte 312, St. Augustine, FL 32086"
+ },
+ "ChIJrcBXzMoNK4cRqckkYpuT-xE": {
+  "lat": 33.48036,
+  "lng": -111.99461,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4041 E Thomas Rd #104, Phoenix, AZ 85018"
  },
  "ChIJs42kRUfjwogRYK4fDPp_-04": {
   "lat": 27.77098,
@@ -2455,6 +2539,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "3092 Aloma Ave #225, Winter Park, FL 32792"
+ },
+ "ChIJzQugclWx2YgRp2VofCO0r7Y": {
+  "lat": 25.88478,
+  "lng": -80.21055,
+  "src": "census",
+  "match": "Exact",
+  "addr": "12009 NW 7th Ave, North Miami, FL 33168"
  },
  "ChIJzTVIQYi35YgRtk8weDuqL5Y": {
   "lat": 30.31357,

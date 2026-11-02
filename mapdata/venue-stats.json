@@ -1,21 +1,21 @@
 {
-  "generated": "2026-10-29T23:52:26Z",
+  "generated": "2026-11-02T13:10:42Z",
   "totals": {
-    "venues": 352,
-    "cities": 156,
-    "states": 17,
+    "venues": 365,
+    "cities": 161,
+    "states": 18,
     "lead": {
       "st": "FL",
-      "share": 0.679
+      "share": 0.674
     }
   },
   "byState": [
     {
       "st": "FL",
       "name": "Florida",
-      "venues": 239,
-      "cities": 80,
-      "per100k": 1.02
+      "venues": 246,
+      "cities": 83,
+      "per100k": 1.05
     },
     {
       "st": "CA",
@@ -41,16 +41,16 @@
     {
       "st": "CO",
       "name": "Colorado",
-      "venues": 11,
+      "venues": 13,
       "cities": 8,
-      "per100k": 0.18
+      "per100k": 0.22
     },
     {
       "st": "AZ",
       "name": "Arizona",
-      "venues": 4,
+      "venues": 5,
       "cities": 2,
-      "per100k": 0.05
+      "per100k": 0.07
     },
     {
       "st": "MI",
@@ -58,6 +58,13 @@
       "venues": 4,
       "cities": 3,
       "per100k": 0.04
+    },
+    {
+      "st": "OR",
+      "name": "Oregon",
+      "venues": 4,
+      "cities": 1,
+      "per100k": 0.09
     },
     {
       "st": "WI",
@@ -74,18 +81,18 @@
       "per100k": 0.03
     },
     {
-      "st": "OR",
-      "name": "Oregon",
-      "venues": 3,
-      "cities": 1,
-      "per100k": 0.07
-    },
-    {
       "st": "ME",
       "name": "Maine",
       "venues": 2,
       "cities": 2,
       "per100k": 0.14
+    },
+    {
+      "st": "NY",
+      "name": "NY",
+      "venues": 2,
+      "cities": 2,
+      "per100k": null
     },
     {
       "st": "SC",
@@ -144,12 +151,12 @@
     {
       "city": "St. Petersburg",
       "st": "FL",
-      "venues": 11
+      "venues": 12
     },
     {
       "city": "Tampa",
       "st": "FL",
-      "venues": 11
+      "venues": 12
     },
     {
       "city": "Fort Lauderdale",
@@ -183,6 +190,16 @@
     }
   ],
   "stateCities": {
+    "AZ": [
+      {
+        "city": "Phoenix",
+        "venues": 3
+      },
+      {
+        "city": "Tucson",
+        "venues": 2
+      }
+    ],
     "CA": [
       {
         "city": "Roseville",
@@ -301,6 +318,40 @@
         "venues": 1
       }
     ],
+    "CO": [
+      {
+        "city": "Colorado Springs",
+        "venues": 4
+      },
+      {
+        "city": "Denver",
+        "venues": 2
+      },
+      {
+        "city": "Lakewood",
+        "venues": 2
+      },
+      {
+        "city": "Englewood",
+        "venues": 1
+      },
+      {
+        "city": "Fort Collins",
+        "venues": 1
+      },
+      {
+        "city": "Longmont",
+        "venues": 1
+      },
+      {
+        "city": "Sheridan",
+        "venues": 1
+      },
+      {
+        "city": "Westminster",
+        "venues": 1
+      }
+    ],
     "FL": [
       {
         "city": "Fort Myers",
@@ -312,11 +363,11 @@
       },
       {
         "city": "St. Petersburg",
-        "venues": 11
+        "venues": 12
       },
       {
         "city": "Tampa",
-        "venues": 11
+        "venues": 12
       },
       {
         "city": "Fort Lauderdale",
@@ -411,6 +462,10 @@
         "venues": 3
       },
       {
+        "city": "Naples",
+        "venues": 3
+      },
+      {
         "city": "Palm Bay",
         "venues": 3
       },
@@ -447,11 +502,11 @@
         "venues": 2
       },
       {
-        "city": "Naples",
+        "city": "North Fort Myers",
         "venues": 2
       },
       {
-        "city": "North Fort Myers",
+        "city": "North Miami",
         "venues": 2
       },
       {
@@ -488,6 +543,10 @@
       },
       {
         "city": "Coral Gables",
+        "venues": 1
+      },
+      {
+        "city": "Cutler Bay",
         "venues": 1
       },
       {
@@ -555,11 +614,15 @@
         "venues": 1
       },
       {
-        "city": "North Miami",
+        "city": "North Miami Beach",
         "venues": 1
       },
       {
-        "city": "North Miami Beach",
+        "city": "North Palm Beach",
+        "venues": 1
+      },
+      {
+        "city": "Ocala",
         "venues": 1
       },
       {
@@ -649,16 +712,6 @@
         "venues": 1
       }
     ],
-    "AZ": [
-      {
-        "city": "Phoenix",
-        "venues": 2
-      },
-      {
-        "city": "Tucson",
-        "venues": 2
-      }
-    ],
     "SC": [
       {
         "city": "Myrtle Beach",
@@ -718,40 +771,6 @@
     "MO": [
       {
         "city": "St Charles",
-        "venues": 1
-      }
-    ],
-    "CO": [
-      {
-        "city": "Colorado Springs",
-        "venues": 4
-      },
-      {
-        "city": "Denver",
-        "venues": 1
-      },
-      {
-        "city": "Englewood",
-        "venues": 1
-      },
-      {
-        "city": "Fort Collins",
-        "venues": 1
-      },
-      {
-        "city": "Lakewood",
-        "venues": 1
-      },
-      {
-        "city": "Longmont",
-        "venues": 1
-      },
-      {
-        "city": "Sheridan",
-        "venues": 1
-      },
-      {
-        "city": "Westminster",
         "venues": 1
       }
     ],
@@ -822,7 +841,7 @@
     "OR": [
       {
         "city": "Portland",
-        "venues": 3
+        "venues": 4
       }
     ],
     "WA": [
@@ -838,6 +857,16 @@
     "GA": [
       {
         "city": "Atlanta",
+        "venues": 1
+      }
+    ],
+    "NY": [
+      {
+        "city": "Brooklyn",
+        "venues": 1
+      },
+      {
+        "city": "Port Jefferson",
         "venues": 1
       }
     ]

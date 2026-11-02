@@ -1,40 +1,40 @@
 {
-  "generated": "2026-11-01T11:44:14Z",
+  "generated": "2026-11-02T13:10:42Z",
   "totals": {
-    "events": 400,
-    "bars": 100,
-    "states": 7,
-    "cities": 60
+    "events": 433,
+    "bars": 109,
+    "states": 8,
+    "cities": 67
   },
   "byWeekday": [
-    56,
-    73,
-    68,
-    62,
-    64,
-    45,
-    32
+    61,
+    79,
+    69,
+    69,
+    70,
+    51,
+    34
   ],
   "byType": [
     {
       "type": "Games",
-      "events": 125
+      "events": 132
     },
     {
       "type": "Specials",
-      "events": 108
+      "events": 114
     },
     {
       "type": "Community",
-      "events": 58
+      "events": 64
     },
     {
       "type": "Trivia",
-      "events": 36
+      "events": 42
     },
     {
       "type": "Open mic",
-      "events": 30
+      "events": 31
     },
     {
       "type": "Music",
@@ -42,23 +42,23 @@
     },
     {
       "type": "Karaoke",
-      "events": 14
+      "events": 19
     },
     {
       "type": "Movie night",
-      "events": 10
+      "events": 11
     },
     {
       "type": "Art",
-      "events": 7
+      "events": 8
     }
   ],
   "byState": [
     {
       "st": "FL",
       "name": "Florida",
-      "events": 367,
-      "bars": 89
+      "events": 393,
+      "bars": 96
     },
     {
       "st": "TX",
@@ -73,9 +73,21 @@
       "bars": 3
     },
     {
+      "st": "CO",
+      "name": "Colorado",
+      "events": 6,
+      "bars": 3
+    },
+    {
       "st": "GA",
       "name": "GA",
       "events": 6,
+      "bars": 1
+    },
+    {
+      "st": "AZ",
+      "name": "Arizona",
+      "events": 4,
       "bars": 1
     },
     {
@@ -89,49 +101,43 @@
       "name": "California",
       "events": 3,
       "bars": 1
-    },
-    {
-      "st": "CO",
-      "name": "Colorado",
-      "events": 3,
-      "bars": 2
     }
   ],
   "typeByWeekday": {
     "Games": [
-      17,
-      21,
+      18,
       23,
+      23,
+      22,
+      14,
       20,
-      13,
-      20,
-      11
+      12
     ],
     "Specials": [
-      13,
-      27,
+      14,
+      29,
       15,
-      18,
-      25,
+      20,
+      26,
       4,
       6
     ],
     "Community": [
-      13,
-      6,
+      15,
+      7,
       10,
-      8,
+      10,
       9,
       5,
-      7
+      8
     ],
     "Trivia": [
       5,
-      7,
-      9,
+      8,
+      10,
       5,
+      8,
       6,
-      4,
       0
     ],
     "Open mic": [
@@ -140,7 +146,7 @@
       5,
       5,
       8,
-      3,
+      4,
       2
     ],
     "Music": [
@@ -157,12 +163,12 @@
       2,
       2,
       2,
-      0,
-      5,
+      2,
+      8,
       2
     ],
     "Movie night": [
-      1,
+      2,
       3,
       2,
       1,
@@ -174,7 +180,7 @@
       1,
       2,
       1,
-      1,
+      2,
       0,
       2,
       0
@@ -183,7 +189,7 @@
   "excluded": {
     "duplicates": 1,
     "listings": 3,
-    "outsideMap": 43,
+    "outsideMap": 19,
     "invalid": 0
   },
   "vintage": "Vintage 2025 (July 1, 2025 resident population estimates)"

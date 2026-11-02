@@ -19,6 +19,9 @@
     <loc>https://kavacrawl.app/sitemap-bars-fl.xml</loc>
   </sitemap>
   <sitemap>
+    <loc>https://kavacrawl.app/sitemap-bars-ga.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://kavacrawl.app/sitemap-bars-md.xml</loc>
   </sitemap>
   <sitemap>
@@ -47,5 +50,8 @@
   </sitemap>
   <sitemap>
     <loc>https://kavacrawl.app/sitemap-bars-wa.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://kavacrawl.app/sitemap-bars-wi.xml</loc>
   </sitemap>
 </sitemapindex>

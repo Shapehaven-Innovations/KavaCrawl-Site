@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://kavacrawl.app/bars/co/colorado-springs/kava-works/</loc>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/co/colorado-springs/ohana-kava-bar/</loc>
     <lastmod>2026-10-31</lastmod>
   </url>
@@ -11,5 +15,9 @@
   <url>
     <loc>https://kavacrawl.app/bars/co/fort-collins/roots-and-leaves-old-town-kava-bar/</loc>
     <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/co/lakewood/the-karma-house-kava-bar/</loc>
+    <lastmod>2026-11-02</lastmod>
   </url>
 </urlset>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://kavacrawl.app/bars/ca/costa-mesa/kratom-kava-bar/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/ca/cupertino/nirvana-soul-coffee/</loc>
     <lastmod>2026-11-01</lastmod>
   </url>
@@ -75,5 +79,13 @@
   <url>
     <loc>https://kavacrawl.app/bars/ca/torrance/ketum-llc/</loc>
     <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/ca/ventura/mystic-water-kava-bar-ventura/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/ca/west-hollywood/the-daily-dose-wellness/</loc>
+    <lastmod>2026-11-03</lastmod>
   </url>
 </urlset>

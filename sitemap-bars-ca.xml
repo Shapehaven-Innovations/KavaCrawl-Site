@@ -2,11 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kavacrawl.app/bars/ca/costa-mesa/kratom-kava-bar/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/ca/cupertino/nirvana-soul-coffee/</loc>
     <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/ca/hayward/pacific-island-kava/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/ca/hayward/pasifika-islander-kava-lounges-bula-bar/</loc>
@@ -14,7 +18,7 @@
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/ca/huntington-beach/mystic-water-kava-bar-huntington-beach/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/ca/inglewood/awakening/</loc>
@@ -33,12 +37,20 @@
     <lastmod>2026-11-02</lastmod>
   </url>
   <url>
+    <loc>https://kavacrawl.app/bars/ca/oakland/melomelo-kava-bar/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/ca/oakland/rootwater-kava-bar/</loc>
     <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/ca/rancho-cordova/root-of-happiness-kava-bar-rancho-cordova/</loc>
     <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/ca/roseville/kava-kulture/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/ca/sacramento/pila-kava/</loc>
@@ -61,6 +73,10 @@
     <lastmod>2026-10-31</lastmod>
   </url>
   <url>
+    <loc>https://kavacrawl.app/bars/ca/santa-cruz/melomelo-kava-bar/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/ca/santa-monica/buena-vida-tea-bar-and-garden/</loc>
     <lastmod>2026-10-30</lastmod>
   </url>
@@ -70,11 +86,11 @@
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/ca/thousand-oaks/five07-coffee-bar-and-eatery/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/ca/thousand-oaks/the-healing-tree/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/ca/torrance/ketum-llc/</loc>

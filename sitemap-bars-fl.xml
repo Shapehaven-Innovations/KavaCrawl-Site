@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kavacrawl.app/bars/fl/brandon/moon-mountain/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/cape-coral/kava-nirvana-speakeasy-kava-bar/</loc>
@@ -33,6 +33,10 @@
     <lastmod>2026-11-02</lastmod>
   </url>
   <url>
+    <loc>https://kavacrawl.app/bars/fl/clearwater/kava-culture-clearwater/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/fl/cocoa-beach/bula-kava-bar-and-coffeehouse-cocoa-beach/</loc>
     <lastmod>2026-11-03</lastmod>
   </url>
@@ -49,12 +53,20 @@
     <lastmod>2026-11-02</lastmod>
   </url>
   <url>
+    <loc>https://kavacrawl.app/bars/fl/dania-beach/cupcan-kava-and-coffee-bar/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/fl/dania-beach/dnd-kava-bar/</loc>
     <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/dania-beach/kavana-kava-bar-dania-beach/</loc>
     <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/fl/davie/kamp-kava/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/davie/kava-point-kava-bar-and-smoke-shop/</loc>
@@ -125,8 +137,16 @@
     <lastmod>2026-11-01</lastmod>
   </url>
   <url>
+    <loc>https://kavacrawl.app/bars/fl/fort-myers/nectar-lab-kava-bar/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/fl/fort-myers/sincerely-me-kava-lounge/</loc>
     <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/fl/fort-myers/southern-roots-kava-bar/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/fort-myers/the-soundgarden-kava-bar/</loc>
@@ -147,6 +167,14 @@
   <url>
     <loc>https://kavacrawl.app/bars/fl/gainesville/mai-kai-kava-bar/</loc>
     <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/fl/hollywood/ascension-kava-bar-and-lounge/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/fl/hollywood/club-kava-hollywood/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/hollywood/elixir-kava-bar-hollywood/</loc>
@@ -190,15 +218,15 @@
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/jensen-beach/island-root-jensen-beach/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/jensen-beach/island-vibes-kava-bar-jensen-beach/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/jensen-beach/kava-me-krazy/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/jupiter/island-root-abacoa-kava-bar/</loc>
@@ -222,19 +250,23 @@
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/lakeland/pana-kava-java/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/lakeland/tea-largo-beverage-and-bowls/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/fl/lakeland/umkava-lakeland-mall/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/lakeland/umkava-x-vaperior-smokeshop/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/lakeland/zs-teas-botanicals-kava-coffee/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/largo/java-kava-cafe/</loc>
@@ -242,7 +274,7 @@
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/lithia/quigs-kava-lounge/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/maitland/elevate-kava-bar-and-lounge/</loc>
@@ -250,11 +282,11 @@
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/melbourne/beach-side-vapors-thc-vape-smoke-kratom-mushrooms-adult-21/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/melbourne/blok-07-kava-lounge/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/melbourne/island-root-kava-bar-egad/</loc>
@@ -266,11 +298,11 @@
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/melbourne/island-root-kava-bar/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/melbourne/kava-t-club-and-after-hours-vape-shop/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/melbourne/kavasutra-kava-bar-_3t0oz/</loc>
@@ -278,7 +310,7 @@
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/melbourne/kavasutra-kava-bar-ltclcn/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/melbourne/kavasutra-kava-bar/</loc>
@@ -309,8 +341,16 @@
     <lastmod>2026-10-30</lastmod>
   </url>
   <url>
+    <loc>https://kavacrawl.app/bars/fl/miami/kozi-matcha-and-kava-bar/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/fl/miami/vice-city-kava-little-river/</loc>
     <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/fl/miami/votanik-kava-bar/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/miramar/kavana-kava-bar-miramar/</loc>
@@ -381,20 +421,28 @@
     <lastmod>2026-11-02</lastmod>
   </url>
   <url>
+    <loc>https://kavacrawl.app/bars/fl/ormond-beach/kava-kula-kava-bar-and-lounge/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/fl/oviedo/noveltea-kava-bar/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/fl/palm-bay/kraken-kava/</loc>
     <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/palm-bay/nocturne-teas-kava-bar/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/palm-city/island-root-kava-bar-palm-city/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/plant-city/yerb-labs-kava-lounge-and-smoke-shop/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/pompano-beach/black-klover-kava-bar-pompano-beach/</loc>
@@ -406,27 +454,27 @@
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/port-charlotte/kava-culture-kava-bar/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/port-st-lucie/island-root-kava-bar-port-saint-lucie/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/port-st-lucie/island-root-kava-bar-st-lucie-west/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/port-st-lucie/kava-kat/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/port-st-lucie/kavasutra-kava-bar-port-saint-lucie/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/port-st-lucie/mr-smoke-port-st-lucie/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/port-st-lucie/shaka-kava-772/</loc>
@@ -434,15 +482,19 @@
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/port-st-lucie/the-brass-rabbit/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/punta-gorda/the-bay-kava-cafe/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/rockledge/calm-collective-kava-bar-rockledge/</loc>
     <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/fl/rockledge/flamingo-kava-and-acai-bar/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/rockledge/imperial-kava-bar-rockledge/</loc>
@@ -489,6 +541,10 @@
     <lastmod>2026-11-02</lastmod>
   </url>
   <url>
+    <loc>https://kavacrawl.app/bars/fl/st-augustine/kava-joy-bar/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/fl/st-augustine/shanti-kava-bar/</loc>
     <lastmod>2026-11-02</lastmod>
   </url>
@@ -505,8 +561,16 @@
     <lastmod>2026-11-02</lastmod>
   </url>
   <url>
+    <loc>https://kavacrawl.app/bars/fl/st-petersburg/johnnys-kava-bar-and-hookah-lounge/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
     <loc>https://kavacrawl.app/bars/fl/st-petersburg/lucid-coffee-and-kava/</loc>
     <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://kavacrawl.app/bars/fl/st-petersburg/mad-hatters-kava-bar/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/st-petersburg/steep-station-kava-bar/</loc>
@@ -522,15 +586,15 @@
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/stuart/hava-kava/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/stuart/island-root-kava-bar-stuart/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/stuart/kavasutra-kava-bar-stuart-downtown/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://kavacrawl.app/bars/fl/stuart/kavasutra-kava-bar-stuart/</loc>

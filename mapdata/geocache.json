@@ -6,6 +6,20 @@
   "match": "Exact",
   "addr": "701 NW 5th Ave Unit 1040, Fort Lauderdale, FL 33311"
  },
+ "ChIJ-7UUuffZZIgR0YsioxSR3YE": {
+  "lat": 36.5296,
+  "lng": -87.35333,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "138 University Ave, Clarksville, TN 37040"
+ },
+ "ChIJ-TbCSdDb5ogR8KO_pCpATKE": {
+  "lat": 29.21427,
+  "lng": -81.02043,
+  "src": "census",
+  "match": "Exact",
+  "addr": "204 N Beach St, Daytona Beach, FL 32114"
+ },
  "ChIJ04ZNOt3RwogRVFWAQ_ojHpU": {
   "lat": 27.86122,
   "lng": -82.20259,
@@ -26,6 +40,13 @@
   "src": "nominatim",
   "match": "primary",
   "addr": "5445 20th St #108, Vero Beach, FL 32966"
+ },
+ "ChIJ0VTYWwij6IgR7shea8P7KdQ": {
+  "lat": 29.6519,
+  "lng": -82.32328,
+  "src": "census",
+  "match": "Exact",
+  "addr": "185 E University Ave, Gainesville, FL 32601"
  },
  "ChIJ0X4nfQDF5YgRQZ5wpQSBou4": {
   "lat": 30.12598,
@@ -160,6 +181,20 @@
   "match": "Exact",
   "addr": "807 Indian River Dr, Sebastian, FL 32958"
  },
+ "ChIJ57aPM81GZIgR2nQjGdbaqPw": {
+  "lat": 36.30247,
+  "lng": -86.63144,
+  "src": "census",
+  "match": "Exact",
+  "addr": "500 W Main St Ste 400, Hendersonville, TN 37075"
+ },
+ "ChIJ5QCSZ9HkwogRtkuIIHA4UXY": {
+  "lat": 27.86588,
+  "lng": -82.72881,
+  "src": "census",
+  "match": "Exact",
+  "addr": "10341 66th St N, Pinellas Park, FL 33782"
+ },
  "ChIJ5zMFgbUf24gRbNAf96MUTWM": {
   "lat": 26.25105,
   "lng": -81.80129,
@@ -187,6 +222,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "3200 Merrie Lynn Ave, Austin, TX 78722"
+ },
+ "ChIJ6YAS_w7j2ogReYo7-pHjbTM": {
+  "lat": 26.11645,
+  "lng": -81.75617,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4121 Tamiami Trl E, Naples, FL 34112"
  },
  "ChIJ6Z3f9xKr2YgRyRAlmHxt3Os": {
   "lat": 26.01052,
@@ -250,6 +292,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "1275 King St, Jacksonville, FL 32204"
+ },
+ "ChIJ7QVjUK_FwogRaTLY8uxOico": {
+  "lat": 27.9611,
+  "lng": -82.4429,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1909 N 15th St, Tampa, FL 33605"
  },
  "ChIJ7TqEFbgB3ogREACBuHsIkVw": {
   "lat": 28.35312,
@@ -370,6 +419,13 @@
   "match": "Exact",
   "addr": "962 Cherry St SE, Grand Rapids, MI 49506"
  },
+ "ChIJB0CVVnX7wogR0NppaY31QWg": {
+  "lat": 27.83964,
+  "lng": -82.78803,
+  "src": "census",
+  "match": "Exact",
+  "addr": "10767 Park Blvd, Seminole, FL 33772"
+ },
  "ChIJB6pGKM1-bIcRmr-MThkfCqo": {
   "lat": 39.73997,
   "lng": -104.97148,
@@ -412,6 +468,13 @@
   "match": "Exact",
   "addr": "723 W Columbus Dr, Tampa, FL 33602"
  },
+ "ChIJBzkkN0MD24gRG_ThhXZoMZI": {
+  "lat": 26.20926,
+  "lng": -81.68742,
+  "src": "census",
+  "match": "Exact",
+  "addr": "12975 Collier Blvd Suite 100, Naples, FL 34116"
+ },
  "ChIJCSS42dbFwogRppnrbbOFzIE": {
   "lat": 27.9947,
   "lng": -82.45948,
@@ -432,6 +495,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "722 N Sumner St, Portland, OR 97217"
+ },
+ "ChIJD0sLgkWpK4cRZNWfXY0ge0k": {
+  "lat": 33.34809,
+  "lng": -111.82429,
+  "src": "census",
+  "match": "Exact",
+  "addr": "81 S McQueen Rd #107, Gilbert, AZ 85233"
  },
  "ChIJD52npTt1V4gR6ACpeHVWRSM": {
   "lat": 34.95001,
@@ -510,6 +580,13 @@
   "match": "Exact",
   "addr": "430 Patricia Ave, Dunedin, FL 34698"
  },
+ "ChIJEag_xExnZIgRKzkxsPXR-0o": {
+  "lat": 36.17581,
+  "lng": -86.75078,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1021 Russell St #102, Nashville, TN 37206"
+ },
  "ChIJExga7hnX3ogR_QqwQ4dRy5Q": {
   "lat": 26.93441,
   "lng": -80.13528,
@@ -530,6 +607,13 @@
   "src": "nominatim",
   "match": "shop",
   "addr": "8530 N Wickham Rd Ste 106, Melbourne, FL 32940"
+ },
+ "ChIJF29dr55dYIgRHxFOriaLrJw": {
+  "lat": 35.02996,
+  "lng": -85.29109,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1132 E Main St, Chattanooga, TN 37408"
  },
  "ChIJFRnJGna75YoRGg424ruklw8": {
   "lat": 26.09201,
@@ -558,6 +642,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "202 Exchange Pl, Greensboro, NC 27401"
+ },
+ "ChIJFe_zmzQp2YgRh1ooSVUot9Y": {
+  "lat": 26.66601,
+  "lng": -80.11239,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "770 S Military Trl A1, West Palm Beach, FL 33415"
  },
  "ChIJFx0XbUMR24gRO4gptx0wYro": {
   "lat": 26.43337,
@@ -649,6 +740,13 @@
   "src": "census",
   "match": "Non_Exact",
   "addr": "2036 E Avenida De Los Arboles C, Thousand Oaks, CA 91362"
+ },
+ "ChIJHwrwX4JmZIgRE8pyWTpvne8": {
+  "lat": 36.1348,
+  "lng": -86.78903,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1831 12th Ave S, Nashville, TN 37203"
  },
  "ChIJHyd_mxMxUYgRgZYjAVENzSU": {
   "lat": 35.76225,
@@ -797,6 +895,13 @@
   "match": "Exact",
   "addr": "1744 US-501, Myrtle Beach, SC 29577"
  },
+ "ChIJLQk5qVFnZIgR7hUYy5WKdmI": {
+  "lat": 36.16044,
+  "lng": -86.77867,
+  "src": "census",
+  "match": "Exact",
+  "addr": "5010 Broadway Ste 200, Nashville, TN 37203"
+ },
  "ChIJLUCTONSlwoARk5Kbk8XWMUc": {
   "lat": 34.02728,
   "lng": -118.50113,
@@ -888,6 +993,13 @@
   "match": "Exact",
   "addr": "910 Barton Blvd Unit 2, Rockledge, FL 32955"
  },
+ "ChIJN0WzKEI7ZIgRBOKyyg7dZ54": {
+  "lat": 36.35669,
+  "lng": -86.4994,
+  "src": "census",
+  "match": "Exact",
+  "addr": "879 GreenLea Blvd, Gallatin, TN 37066"
+ },
  "ChIJN1cIZuM_24gR1c1Q4rVm2sY": {
   "lat": 26.51518,
   "lng": -81.94789,
@@ -964,6 +1076,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "159 Denny Wy #105, Seattle, WA 98109"
+ },
+ "ChIJO7LqJADBwogR9wGzqwmr2dA": {
+  "lat": 28.04005,
+  "lng": -82.48087,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2317 W Linebaugh Ave, Tampa, FL 33612"
  },
  "ChIJO9B5Ybf6AogRK6rzs5amwKE": {
   "lat": 44.51714,
@@ -1294,6 +1413,13 @@
   "match": "Exact",
   "addr": "9630 Stirling Rd Ste 104, Hollywood, FL 33024"
  },
+ "ChIJV1Pba14LK4cRfyGtO3UZyCs": {
+  "lat": 33.48611,
+  "lng": -111.90897,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "3310 Hayden Rd #106, Scottsdale, AZ 85251"
+ },
  "ChIJVVXlxGmUj4ARz0q_L9sDWsc": {
   "lat": 37.63599,
   "lng": -122.05373,
@@ -1322,6 +1448,13 @@
   "match": "Exact",
   "addr": "5711 Bowden Rd Unit 5, Jacksonville, FL 32216"
  },
+ "ChIJW8I8DWIr2YgR43vpE8lCHac": {
+  "lat": 26.81044,
+  "lng": -80.10651,
+  "src": "census",
+  "match": "Exact",
+  "addr": "9091 N Military Trl Ste 9, Palm Beach Gardens, FL 33410"
+ },
  "ChIJW8UaZAAn5IgRAkx23_gfz20": {
   "lat": 29.89154,
   "lng": -81.29928,
@@ -1335,6 +1468,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "628 SW 109th Ave, Miami, FL 33174"
+ },
+ "ChIJWQsCK88_24gRAnwHNlIldmA": {
+  "lat": 26.48005,
+  "lng": -81.95068,
+  "src": "census",
+  "match": "Exact",
+  "addr": "17979 San Carlos Blvd, Fort Myers Beach, FL 33931"
  },
  "ChIJWXLRswg9TIYRmT3em_OMOnY": {
   "lat": 33.13665,
@@ -1595,12 +1735,26 @@
   "match": "Non_Exact",
   "addr": "2119 W Brandon Blvd G, Brandon, FL 33511"
  },
+ "ChIJb24QhR_b5ogR5rzFd7U0su0": {
+  "lat": 29.21207,
+  "lng": -81.01962,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "113 W International Speedway Blvd, Daytona Beach, FL 32114"
+ },
  "ChIJb4p9RakB2YgRzansNvRiqcg": {
   "lat": 26.13363,
   "lng": -80.13778,
   "src": "census",
   "match": "Exact",
   "addr": "817 N Federal Hwy, Fort Lauderdale, FL 33304"
+ },
+ "ChIJb7MJ98fDwogRJuevMzE27to": {
+  "lat": 27.95879,
+  "lng": -82.48283,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1919 N Howard Ave, Tampa, FL 33607"
  },
  "ChIJbTqWXvgFm4AR5QUGmQra3yc": {
   "lat": 38.89785,
@@ -1693,6 +1847,13 @@
   "match": "Non_Exact",
   "addr": "3301 Boynton Beach Blvd, Boynton Beach, FL 33436"
  },
+ "ChIJe-86x-vvwogREucOXHXPvHs": {
+  "lat": 27.93117,
+  "lng": -82.7307,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "17952 US Hwy 19 N, Clearwater, FL 33764"
+ },
  "ChIJe2hdHWpp54gRLtF26-CaVCE": {
   "lat": 28.65066,
   "lng": -81.22929,
@@ -1707,6 +1868,13 @@
   "match": "place",
   "addr": "110 SW 3rd Ave, Fort Lauderdale, FL 33312"
  },
+ "ChIJeTc_i_vV2IgRLaFxaS09J1E": {
+  "lat": 26.73494,
+  "lng": -80.05516,
+  "src": "census",
+  "match": "Exact",
+  "addr": "512 Northwood Rd, West Palm Beach, FL 33407"
+ },
  "ChIJeXioweJB24gRIBvAM3mWgSc": {
   "lat": 26.64331,
   "lng": -81.86909,
@@ -1720,6 +1888,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "7329 Reseda Blvd, Reseda, CA 91335"
+ },
+ "ChIJecYFwy5nZIgRhTPSzADvKCY": {
+  "lat": 36.15676,
+  "lng": -86.80645,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "422 21st Ave S, Nashville, TN 37203"
  },
  "ChIJeyFkgt8F2YgRMlYwj4zYRC0": {
   "lat": 26.18266,
@@ -1861,6 +2036,13 @@
   "match": "Exact",
   "addr": "231 S La Brea Ave, Inglewood, CA 90301"
  },
+ "ChIJhcPba_ZlZIgR68pRJB0_13o": {
+  "lat": 36.17407,
+  "lng": -86.75031,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1100 Fatherland St Unit 107, Nashville, TN 37206"
+ },
  "ChIJhd0DTg9x54gRt6F6HpBoaxE": {
   "lat": 28.56422,
   "lng": -81.36615,
@@ -1874,6 +2056,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "1505 Atlantic Blvd, Neptune Beach, FL 32266"
+ },
+ "ChIJi27ivFDzWYgRcJl5t5vUpwc": {
+  "lat": 35.58562,
+  "lng": -82.55146,
+  "src": "census",
+  "match": "Exact",
+  "addr": "268 Biltmore Ave, Asheville, NC 28801"
  },
  "ChIJi5_BTABzToYRYqq8XtflMaw": {
   "lat": 32.7322,
@@ -1895,6 +2084,27 @@
   "src": "census",
   "match": "Non_Exact",
   "addr": "2215 Winkler Ave H, Fort Myers, FL 33901"
+ },
+ "ChIJidszEAsB2YgRrqIhYA1MkaU": {
+  "lat": 26.16652,
+  "lng": -80.14978,
+  "src": "census",
+  "match": "Exact",
+  "addr": "515 W Oakland Park Blvd, Wilton Manors, FL 33311"
+ },
+ "ChIJiyOciP8D2YgRfaXXAWonptM": {
+  "lat": 26.23354,
+  "lng": -80.12497,
+  "src": "census",
+  "match": "Exact",
+  "addr": "216 N Flagler Ave, Pompano Beach, FL 33060"
+ },
+ "ChIJj-Q3NspnZIgRaLJz96ccQMU": {
+  "lat": 36.15072,
+  "lng": -86.79448,
+  "src": "census",
+  "match": "Exact",
+  "addr": "707 18th Ave S Ste 202, Nashville, TN 37203"
  },
  "ChIJj-aJQNnRwogRhQ5oECV5PPo": {
   "lat": 27.89372,
@@ -2008,12 +2218,33 @@
   "match": "Exact",
   "addr": "2078 N Courtenay Pkwy, Merritt Island, FL 32953"
  },
+ "ChIJlfDTTQBtK4cRoh8HeTmEosw": {
+  "lat": 33.52406,
+  "lng": -112.10169,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2007 W Bethany Home Rd, Phoenix, AZ 85015"
+ },
  "ChIJlynP9IPD3ogRd1c3EHp36pk": {
   "lat": 27.1724,
   "lng": -80.29605,
   "src": "census",
   "match": "Exact",
   "addr": "3119 SW Martin Downs Blvd, Palm City, FL 34990"
+ },
+ "ChIJm0ZTzuXZ2IgR9AmbsNYvDaY": {
+  "lat": 26.58424,
+  "lng": -80.05253,
+  "src": "census",
+  "match": "Exact",
+  "addr": "123 S 3rd St, Lantana, FL 33462"
+ },
+ "ChIJm6TDX0hDZIgRuowALBo-ZpA": {
+  "lat": 36.24041,
+  "lng": -86.72362,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1504B Gallatin Pike S, Madison, TN 37115"
  },
  "ChIJmWssNyxl54gRCsRsBezkWLI": {
   "lat": 28.56529,
@@ -2099,6 +2330,13 @@
   "match": "Non_Exact",
   "addr": "118 NE 1st Ave Ste g, Hallandale Beach, FL 33009"
  },
+ "ChIJoXx2DEnFwogRAQNuEvZKv_s": {
+  "lat": 27.96034,
+  "lng": -82.44265,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1522 E 7th Ave, Tampa, FL 33605"
+ },
  "ChIJoYmsihmhVogRO2aSPgVZaI4": {
   "lat": 35.21994,
   "lng": -80.85673,
@@ -2140,6 +2378,13 @@
   "src": "nominatim",
   "match": "shop",
   "addr": "2500 Tamiami Trl N Ste 112, Naples, FL 34103"
+ },
+ "ChIJpSkhHoGNWYgRjm48DNQUqLA": {
+  "lat": 35.57802,
+  "lng": -82.59332,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "747 Haywood Rd Upstairs 200, Asheville, NC 28806"
  },
  "ChIJpxBNIgAb54gRKu6ew3LzAN8": {
   "lat": 29.03057,
@@ -2232,6 +2477,13 @@
   "match": "Non_Exact",
   "addr": "268 N Wickham Rd, Melbourne, FL 32934"
  },
+ "ChIJsboIbAPX2IgRmyd3xZnH1QQ": {
+  "lat": 26.70627,
+  "lng": -80.08397,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2128 Okeechobee Blvd, West Palm Beach, FL 33409"
+ },
  "ChIJse3Blkgv2YgR0Aodz1hqFrs": {
   "lat": 26.66257,
   "lng": -80.26626,
@@ -2266,6 +2518,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "8229 Parkedge Dr, Tampa, FL 33637"
+ },
+ "ChIJtUivhZwC2YgRix_pptYYRx8": {
+  "lat": 26.23173,
+  "lng": -80.11741,
+  "src": "census",
+  "match": "Exact",
+  "addr": "619 E Atlantic Blvd, Pompano Beach, FL 33060"
  },
  "ChIJtVRSBFMN54gRokdW11tcJu4": {
   "lat": 28.79281,
@@ -2308,6 +2567,13 @@
   "src": "census",
   "match": "Non_Exact",
   "addr": "210 S Kings Ave # J, Brandon, FL 33511"
+ },
+ "ChIJv-zNSBhtK4cRm4YSt29rCVw": {
+  "lat": 33.60758,
+  "lng": -112.06349,
+  "src": "census",
+  "match": "Exact",
+  "addr": "777 E Thunderbird Rd #105, Phoenix, AZ 85022"
  },
  "ChIJv08w15viwogR-eEGwgnpG3E": {
   "lat": 27.74099,
@@ -2504,6 +2770,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "1027 N Federal Hwy, Fort Lauderdale, FL 33304"
+ },
+ "ChIJyeI5Kbor34gRz24fsMnQZxM": {
+  "lat": 26.8454,
+  "lng": -80.06099,
+  "src": "census",
+  "match": "Exact",
+  "addr": "11585 US-1 #306, North Palm Beach, FL 33408"
  },
  "ChIJyeXLuI9x1oYRL8vs6CjqszY": {
   "lat": 32.2232,

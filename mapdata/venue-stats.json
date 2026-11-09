@@ -1,21 +1,21 @@
 {
-  "generated": "2026-11-02T13:10:42Z",
+  "generated": "2026-11-09T13:40:53Z",
   "totals": {
-    "venues": 365,
-    "cities": 161,
-    "states": 18,
+    "venues": 404,
+    "cities": 176,
+    "states": 19,
     "lead": {
       "st": "FL",
-      "share": 0.674
+      "share": 0.663
     }
   },
   "byState": [
     {
       "st": "FL",
       "name": "Florida",
-      "venues": 246,
-      "cities": 83,
-      "per100k": 1.05
+      "venues": 268,
+      "cities": 90,
+      "per100k": 1.14
     },
     {
       "st": "CA",
@@ -27,9 +27,9 @@
     {
       "st": "NC",
       "name": "North Carolina",
-      "venues": 18,
+      "venues": 20,
       "cities": 11,
-      "per100k": 0.16
+      "per100k": 0.18
     },
     {
       "st": "TX",
@@ -46,11 +46,18 @@
       "per100k": 0.22
     },
     {
+      "st": "TN",
+      "name": "TN",
+      "venues": 11,
+      "cities": 6,
+      "per100k": null
+    },
+    {
       "st": "AZ",
       "name": "Arizona",
-      "venues": 5,
-      "cities": 2,
-      "per100k": 0.07
+      "venues": 9,
+      "cities": 4,
+      "per100k": 0.12
     },
     {
       "st": "MI",
@@ -139,6 +146,11 @@
   ],
   "topCities": [
     {
+      "city": "Tampa",
+      "st": "FL",
+      "venues": 16
+    },
+    {
       "city": "Fort Myers",
       "st": "FL",
       "venues": 12
@@ -150,11 +162,6 @@
     },
     {
       "city": "St. Petersburg",
-      "st": "FL",
-      "venues": 12
-    },
-    {
-      "city": "Tampa",
       "st": "FL",
       "venues": 12
     },
@@ -184,7 +191,7 @@
       "venues": 7
     },
     {
-      "city": "Lakeland",
+      "city": "Clearwater",
       "st": "FL",
       "venues": 7
     }
@@ -193,11 +200,19 @@
     "AZ": [
       {
         "city": "Phoenix",
-        "venues": 3
+        "venues": 5
       },
       {
         "city": "Tucson",
         "venues": 2
+      },
+      {
+        "city": "Gilbert",
+        "venues": 1
+      },
+      {
+        "city": "Scottsdale",
+        "venues": 1
       }
     ],
     "CA": [
@@ -354,6 +369,10 @@
     ],
     "FL": [
       {
+        "city": "Tampa",
+        "venues": 16
+      },
+      {
         "city": "Fort Myers",
         "venues": 12
       },
@@ -363,10 +382,6 @@
       },
       {
         "city": "St. Petersburg",
-        "venues": 12
-      },
-      {
-        "city": "Tampa",
         "venues": 12
       },
       {
@@ -386,16 +401,16 @@
         "venues": 8
       },
       {
+        "city": "Clearwater",
+        "venues": 7
+      },
+      {
         "city": "Lakeland",
         "venues": 7
       },
       {
         "city": "Stuart",
         "venues": 7
-      },
-      {
-        "city": "Clearwater",
-        "venues": 6
       },
       {
         "city": "Davie",
@@ -414,6 +429,10 @@
         "venues": 5
       },
       {
+        "city": "Naples",
+        "venues": 5
+      },
+      {
         "city": "Rockledge",
         "venues": 5
       },
@@ -422,7 +441,19 @@
         "venues": 5
       },
       {
+        "city": "West Palm Beach",
+        "venues": 5
+      },
+      {
+        "city": "Gainesville",
+        "venues": 4
+      },
+      {
         "city": "Miami Beach",
+        "venues": 4
+      },
+      {
+        "city": "Pompano Beach",
         "venues": 4
       },
       {
@@ -446,10 +477,6 @@
         "venues": 3
       },
       {
-        "city": "Gainesville",
-        "venues": 3
-      },
-      {
         "city": "Jensen Beach",
         "venues": 3
       },
@@ -459,10 +486,6 @@
       },
       {
         "city": "Merritt Island",
-        "venues": 3
-      },
-      {
-        "city": "Naples",
         "venues": 3
       },
       {
@@ -490,6 +513,10 @@
         "venues": 2
       },
       {
+        "city": "Daytona Beach",
+        "venues": 2
+      },
+      {
         "city": "Deerfield Beach",
         "venues": 2
       },
@@ -510,11 +537,11 @@
         "venues": 2
       },
       {
-        "city": "Oviedo",
+        "city": "North Palm Beach",
         "venues": 2
       },
       {
-        "city": "Pompano Beach",
+        "city": "Oviedo",
         "venues": 2
       },
       {
@@ -523,10 +550,6 @@
       },
       {
         "city": "Sanford",
-        "venues": 2
-      },
-      {
-        "city": "West Palm Beach",
         "venues": 2
       },
       {
@@ -570,6 +593,10 @@
         "venues": 1
       },
       {
+        "city": "Fort Myers Beach",
+        "venues": 1
+      },
+      {
         "city": "Gulfport",
         "venues": 1
       },
@@ -583,6 +610,10 @@
       },
       {
         "city": "Lake Worth Beach",
+        "venues": 1
+      },
+      {
+        "city": "Lantana",
         "venues": 1
       },
       {
@@ -618,10 +649,6 @@
         "venues": 1
       },
       {
-        "city": "North Palm Beach",
-        "venues": 1
-      },
-      {
         "city": "Ocala",
         "venues": 1
       },
@@ -638,7 +665,15 @@
         "venues": 1
       },
       {
+        "city": "Palm Beach Gardens",
+        "venues": 1
+      },
+      {
         "city": "Palm City",
+        "venues": 1
+      },
+      {
+        "city": "Pinellas Park",
         "venues": 1
       },
       {
@@ -662,6 +697,10 @@
         "venues": 1
       },
       {
+        "city": "Seminole",
+        "venues": 1
+      },
+      {
         "city": "Temple Terrace",
         "venues": 1
       },
@@ -678,11 +717,61 @@
         "venues": 1
       },
       {
+        "city": "Wilton Manors",
+        "venues": 1
+      },
+      {
         "city": "Winter Haven",
         "venues": 1
       },
       {
         "city": "Winter Springs",
+        "venues": 1
+      }
+    ],
+    "NC": [
+      {
+        "city": "Charlotte",
+        "venues": 5
+      },
+      {
+        "city": "Asheville",
+        "venues": 4
+      },
+      {
+        "city": "Fayetteville",
+        "venues": 2
+      },
+      {
+        "city": "Wilmington",
+        "venues": 2
+      },
+      {
+        "city": "Boone",
+        "venues": 1
+      },
+      {
+        "city": "Conover",
+        "venues": 1
+      },
+      {
+        "city": "Greensboro",
+        "venues": 1
+      },
+      {
+        "city": "Hickory",
+        "venues": 1
+      },
+      {
+        "city": "Lowell",
+        "venues": 1
+      },
+      {
+        "city": "Morganton",
+        "venues": 1
+      },
+      {
+        "city": "Weaverville",
         "venues": 1
       }
     ],
@@ -719,52 +808,6 @@
       },
       {
         "city": "Spartanburg",
-        "venues": 1
-      }
-    ],
-    "NC": [
-      {
-        "city": "Charlotte",
-        "venues": 5
-      },
-      {
-        "city": "Asheville",
-        "venues": 2
-      },
-      {
-        "city": "Fayetteville",
-        "venues": 2
-      },
-      {
-        "city": "Wilmington",
-        "venues": 2
-      },
-      {
-        "city": "Boone",
-        "venues": 1
-      },
-      {
-        "city": "Conover",
-        "venues": 1
-      },
-      {
-        "city": "Greensboro",
-        "venues": 1
-      },
-      {
-        "city": "Hickory",
-        "venues": 1
-      },
-      {
-        "city": "Lowell",
-        "venues": 1
-      },
-      {
-        "city": "Morganton",
-        "venues": 1
-      },
-      {
-        "city": "Weaverville",
         "venues": 1
       }
     ],
@@ -867,6 +910,32 @@
       },
       {
         "city": "Port Jefferson",
+        "venues": 1
+      }
+    ],
+    "TN": [
+      {
+        "city": "Nashville",
+        "venues": 6
+      },
+      {
+        "city": "Chattanooga",
+        "venues": 1
+      },
+      {
+        "city": "Clarksville",
+        "venues": 1
+      },
+      {
+        "city": "Gallatin",
+        "venues": 1
+      },
+      {
+        "city": "Hendersonville",
+        "venues": 1
+      },
+      {
+        "city": "Madison",
         "venues": 1
       }
     ]

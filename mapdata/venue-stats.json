@@ -1,21 +1,21 @@
 {
-  "generated": "2026-11-09T13:40:53Z",
+  "generated": "2026-11-16T13:25:27Z",
   "totals": {
-    "venues": 404,
-    "cities": 176,
-    "states": 19,
+    "venues": 428,
+    "cities": 185,
+    "states": 20,
     "lead": {
       "st": "FL",
-      "share": 0.663
+      "share": 0.671
     }
   },
   "byState": [
     {
       "st": "FL",
       "name": "Florida",
-      "venues": 268,
-      "cities": 90,
-      "per100k": 1.14
+      "venues": 287,
+      "cities": 94,
+      "per100k": 1.22
     },
     {
       "st": "CA",
@@ -34,8 +34,8 @@
     {
       "st": "TX",
       "name": "Texas",
-      "venues": 15,
-      "cities": 6,
+      "venues": 16,
+      "cities": 7,
       "per100k": 0.05
     },
     {
@@ -55,9 +55,9 @@
     {
       "st": "AZ",
       "name": "Arizona",
-      "venues": 9,
-      "cities": 4,
-      "per100k": 0.12
+      "venues": 10,
+      "cities": 5,
+      "per100k": 0.13
     },
     {
       "st": "MI",
@@ -81,6 +81,13 @@
       "per100k": 0.07
     },
     {
+      "st": "NY",
+      "name": "NY",
+      "venues": 3,
+      "cities": 3,
+      "per100k": null
+    },
+    {
       "st": "OH",
       "name": "Ohio",
       "venues": 3,
@@ -88,25 +95,18 @@
       "per100k": 0.03
     },
     {
+      "st": "SC",
+      "name": "South Carolina",
+      "venues": 3,
+      "cities": 3,
+      "per100k": 0.05
+    },
+    {
       "st": "ME",
       "name": "Maine",
       "venues": 2,
       "cities": 2,
       "per100k": 0.14
-    },
-    {
-      "st": "NY",
-      "name": "NY",
-      "venues": 2,
-      "cities": 2,
-      "per100k": null
-    },
-    {
-      "st": "SC",
-      "name": "South Carolina",
-      "venues": 2,
-      "cities": 2,
-      "per100k": 0.04
     },
     {
       "st": "WA",
@@ -118,6 +118,13 @@
     {
       "st": "GA",
       "name": "GA",
+      "venues": 1,
+      "cities": 1,
+      "per100k": null
+    },
+    {
+      "st": "HI",
+      "name": "HI",
       "venues": 1,
       "cities": 1,
       "per100k": null
@@ -151,6 +158,11 @@
       "venues": 16
     },
     {
+      "city": "Fort Lauderdale",
+      "st": "FL",
+      "venues": 12
+    },
+    {
       "city": "Fort Myers",
       "st": "FL",
       "venues": 12
@@ -164,11 +176,6 @@
       "city": "St. Petersburg",
       "st": "FL",
       "venues": 12
-    },
-    {
-      "city": "Fort Lauderdale",
-      "st": "FL",
-      "venues": 10
     },
     {
       "city": "Jacksonville",
@@ -205,6 +212,10 @@
       {
         "city": "Tucson",
         "venues": 2
+      },
+      {
+        "city": "Chandler",
+        "venues": 1
       },
       {
         "city": "Gilbert",
@@ -373,6 +384,10 @@
         "venues": 16
       },
       {
+        "city": "Fort Lauderdale",
+        "venues": 12
+      },
+      {
         "city": "Fort Myers",
         "venues": 12
       },
@@ -383,10 +398,6 @@
       {
         "city": "St. Petersburg",
         "venues": 12
-      },
-      {
-        "city": "Fort Lauderdale",
-        "venues": 10
       },
       {
         "city": "Jacksonville",
@@ -425,11 +436,19 @@
         "venues": 6
       },
       {
+        "city": "Naples",
+        "venues": 6
+      },
+      {
+        "city": "Pompano Beach",
+        "venues": 6
+      },
+      {
         "city": "Hollywood",
         "venues": 5
       },
       {
-        "city": "Naples",
+        "city": "Miami Beach",
         "venues": 5
       },
       {
@@ -445,20 +464,24 @@
         "venues": 5
       },
       {
+        "city": "Dania Beach",
+        "venues": 4
+      },
+      {
+        "city": "Delray Beach",
+        "venues": 4
+      },
+      {
         "city": "Gainesville",
-        "venues": 4
-      },
-      {
-        "city": "Miami Beach",
-        "venues": 4
-      },
-      {
-        "city": "Pompano Beach",
         "venues": 4
       },
       {
         "city": "Sebastian",
         "venues": 4
+      },
+      {
+        "city": "Boynton Beach",
+        "venues": 3
       },
       {
         "city": "Cape Coral",
@@ -469,19 +492,15 @@
         "venues": 3
       },
       {
-        "city": "Dania Beach",
-        "venues": 3
-      },
-      {
-        "city": "Delray Beach",
-        "venues": 3
-      },
-      {
         "city": "Jensen Beach",
         "venues": 3
       },
       {
         "city": "Jupiter",
+        "venues": 3
+      },
+      {
+        "city": "Margate",
         "venues": 3
       },
       {
@@ -495,6 +514,10 @@
       {
         "city": "Vero Beach",
         "venues": 3
+      },
+      {
+        "city": "Bradenton",
+        "venues": 2
       },
       {
         "city": "Brandon",
@@ -529,6 +552,10 @@
         "venues": 2
       },
       {
+        "city": "Lake Worth Beach",
+        "venues": 2
+      },
+      {
         "city": "North Fort Myers",
         "venues": 2
       },
@@ -538,6 +565,10 @@
       },
       {
         "city": "North Palm Beach",
+        "venues": 2
+      },
+      {
+        "city": "Ormond Beach",
         "venues": 2
       },
       {
@@ -555,10 +586,6 @@
       {
         "city": "Winter Park",
         "venues": 2
-      },
-      {
-        "city": "Boynton Beach",
-        "venues": 1
       },
       {
         "city": "Casselberry",
@@ -597,6 +624,10 @@
         "venues": 1
       },
       {
+        "city": "Greenacres",
+        "venues": 1
+      },
+      {
         "city": "Gulfport",
         "venues": 1
       },
@@ -606,10 +637,6 @@
       },
       {
         "city": "Kenneth City",
-        "venues": 1
-      },
-      {
-        "city": "Lake Worth Beach",
         "venues": 1
       },
       {
@@ -633,7 +660,7 @@
         "venues": 1
       },
       {
-        "city": "Margate",
+        "city": "Marco Island",
         "venues": 1
       },
       {
@@ -661,15 +688,15 @@
         "venues": 1
       },
       {
-        "city": "Ormond Beach",
-        "venues": 1
-      },
-      {
         "city": "Palm Beach Gardens",
         "venues": 1
       },
       {
         "city": "Palm City",
+        "venues": 1
+      },
+      {
+        "city": "Palm Harbor",
         "venues": 1
       },
       {
@@ -797,11 +824,19 @@
         "venues": 1
       },
       {
+        "city": "Lewisville",
+        "venues": 1
+      },
+      {
         "city": "San Antonio",
         "venues": 1
       }
     ],
     "SC": [
+      {
+        "city": "Greenville",
+        "venues": 1
+      },
       {
         "city": "Myrtle Beach",
         "venues": 1
@@ -909,6 +944,10 @@
         "venues": 1
       },
       {
+        "city": "Lindenhurst",
+        "venues": 1
+      },
+      {
         "city": "Port Jefferson",
         "venues": 1
       }
@@ -936,6 +975,12 @@
       },
       {
         "city": "Madison",
+        "venues": 1
+      }
+    ],
+    "HI": [
+      {
+        "city": "Kihei",
         "venues": 1
       }
     ]

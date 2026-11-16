@@ -13,6 +13,20 @@
   "match": "Non_Exact",
   "addr": "138 University Ave, Clarksville, TN 37040"
  },
+ "ChIJ-9JlKfWr2YgRpKAQaF0ushQ": {
+  "lat": 26.0528,
+  "lng": -80.14375,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "27 N Federal Hwy Ste A, B, C, Dania Beach, FL 33004"
+ },
+ "ChIJ-RvXjAnf2IgRZ87SSAQfeA0": {
+  "lat": 26.5137,
+  "lng": -80.08098,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1869 Woolbright Rd, Boynton Beach, FL 33426"
+ },
  "ChIJ-TbCSdDb5ogR8KO_pCpATKE": {
   "lat": 29.21427,
   "lng": -81.02043,
@@ -125,6 +139,13 @@
   "match": "Exact",
   "addr": "400 N Orlando Ave Unit 109A, Maitland, FL 32751"
  },
+ "ChIJ3XdNt7Dd5ogRVQtBimm2TgY": {
+  "lat": 29.25833,
+  "lng": -81.11135,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1474 W Granada Blvd #410, Ormond Beach, FL 32174"
+ },
  "ChIJ3YLM-g1X2YARBqMRytnxUFo": {
   "lat": 32.76333,
   "lng": -117.02386,
@@ -201,6 +222,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "8925 Tamiami Trl N, Naples, FL 34108"
+ },
+ "ChIJ61vCCzrv2ogR52ViZSbFArY": {
+  "lat": 25.95492,
+  "lng": -81.72261,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1069 N Collier Blvd #214, Marco Island, FL 34145"
  },
  "ChIJ64Z2aCTV2IgRzbUqDdpMsxU": {
   "lat": 26.80726,
@@ -300,6 +328,13 @@
   "match": "Exact",
   "addr": "1909 N 15th St, Tampa, FL 33605"
  },
+ "ChIJ7R1j7rwf24gRn4Mij-haFH4": {
+  "lat": 26.21141,
+  "lng": -81.78758,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1575 Pine Ridge Rd Ste 5, Naples, FL 34109"
+ },
  "ChIJ7TqEFbgB3ogREACBuHsIkVw": {
   "lat": 28.35312,
   "lng": -80.73204,
@@ -356,6 +391,13 @@
   "match": "Non_Exact",
   "addr": "730 S U.S. 1, Vero Beach, FL 32962"
  },
+ "ChIJ8UrE0zTY2IgRrP3UmA8Z6ds": {
+  "lat": 26.61586,
+  "lng": -80.05354,
+  "src": "census",
+  "match": "Exact",
+  "addr": "508 Lake Ave, Lake Worth Beach, FL 33460"
+ },
  "ChIJ8zeXzVOHa4cRSTVDYqdssnQ": {
   "lat": 39.74014,
   "lng": -105.09085,
@@ -369,6 +411,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "4720 SE 15th Ave Suite 107, Cape Coral, FL 33904"
+ },
+ "ChIJ9V7kq28H2YgR4qrsdQT6A44": {
+  "lat": 26.16852,
+  "lng": -80.27081,
+  "src": "census",
+  "match": "Exact",
+  "addr": "8927 W Oakland Park Blvd, Fort Lauderdale, FL 33351"
  },
  "ChIJ9ZxeZ0Lp3ogRkMBu1czoBRI": {
   "lat": 27.27404,
@@ -488,6 +537,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "2055 N University Dr, Coral Springs, FL 33071"
+ },
+ "ChIJCYKKYRMn2YgRMro7qmwD314": {
+  "lat": 26.54866,
+  "lng": -80.12179,
+  "src": "census",
+  "match": "Exact",
+  "addr": "4895 Windward Passage Dr Ste 10, Boynton Beach, FL 33436"
  },
  "ChIJCxMXiw2nlVQRB8N20G5wsiY": {
   "lat": 45.56038,
@@ -635,6 +691,13 @@
   "src": "nominatim",
   "match": "amenity",
   "addr": "705A Cleveland St, Sebastian, FL 32958"
+ },
+ "ChIJFc0Bu68BK4cR8WUMPnVUv_o": {
+  "lat": 33.23344,
+  "lng": -111.8237,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1010 W Chandler Heights Rd #2, Chandler, AZ 85248"
  },
  "ChIJFcKZliMZU4gRe2JkVnRrBoY": {
   "lat": 36.06945,
@@ -853,6 +916,13 @@
   "match": "Exact",
   "addr": "51 College St #1A, Asheville, NC 28801"
  },
+ "ChIJJ_JIjM8Xw4gRq5iQ1IqexXM": {
+  "lat": 27.49492,
+  "lng": -82.57428,
+  "src": "census",
+  "match": "Exact",
+  "addr": "540 13th St W, Bradenton, FL 34205"
+ },
  "ChIJJyA4GT3DwogROXk223-aY9g": {
   "lat": 27.94865,
   "lng": -82.50573,
@@ -887,6 +957,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "3131 SW College Rd #207, Ocala, FL 34474"
+ },
+ "ChIJKzkXBsTV6YkRAbrMqax3eAg": {
+  "lat": 40.68596,
+  "lng": -73.37611,
+  "src": "census",
+  "match": "Exact",
+  "addr": "83 W Hoffman Ave, Lindenhurst, NY 11757"
  },
  "ChIJL0wqhgxpAIkRvZGxisX6y8g": {
   "lat": 33.69868,
@@ -929,6 +1006,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "1823 E Sample Rd, Pompano Beach, FL 33064"
+ },
+ "ChIJM5EURT0Xw4gRkFs3a9b3K3A": {
+  "lat": 27.48823,
+  "lng": -82.574,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1302 13th Ave W, Bradenton, FL 34205"
  },
  "ChIJM7apg7nxwogRBq4qpzBBxgU": {
   "lat": 27.96061,
@@ -1154,6 +1238,13 @@
   "match": "census No_Match",
   "addr": "953 FL-436, Casselberry, FL 32707"
  },
+ "ChIJPU8LGRMuWIgRInjDnT28xMQ": {
+  "lat": 34.8732,
+  "lng": -82.36917,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1540 Wade Hampton Blvd Ste H, Greenville, SC 29609"
+ },
  "ChIJPWtSA88B9YgRlJEH2zEprvg": {
   "lat": 33.73693,
   "lng": -84.40297,
@@ -1329,6 +1420,20 @@
   "match": "shop",
   "addr": "6900 Daniels Pkwy #24, Fort Myers, FL 33912"
  },
+ "ChIJR_Tl_r3RVHkR0ylFKcGWxNg": {
+  "lat": 20.73555,
+  "lng": -156.45341,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1794 S Kihei Rd Ste 20, Kihei, HI 96753"
+ },
+ "ChIJRdLNU6O12YgRgB9QPaeLF5Y": {
+  "lat": 25.79265,
+  "lng": -80.14123,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1755 Alton Rd #2495, Miami Beach, FL 33139"
+ },
  "ChIJRdxbkynhwogRDRsbJy3js_c": {
   "lat": 27.77111,
   "lng": -82.64419,
@@ -1384,6 +1489,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "1505 Town Creek Dr, Austin, TX 78741"
+ },
+ "ChIJU5RC6C7twogR8ShOwkxjhIg": {
+  "lat": 28.06749,
+  "lng": -82.72489,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3301 Tampa Rd, Palm Harbor, FL 34684"
  },
  "ChIJU67pxlir2YgR7QTioS3uw4A": {
   "lat": 26.05412,
@@ -1510,6 +1622,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "5944 34th St N #20, St. Petersburg, FL 33714"
+ },
+ "ChIJXzoCChMF2YgRIcDyaXp94Sk": {
+  "lat": 26.24752,
+  "lng": -80.20127,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1448 N State Rd 7, Margate, FL 33063"
  },
  "ChIJY0tmV04B3ogRi5JDK9jcvvI": {
   "lat": 28.29689,
@@ -1868,6 +1987,13 @@
   "match": "place",
   "addr": "110 SW 3rd Ave, Fort Lauderdale, FL 33312"
  },
+ "ChIJeSVhnOgF2YgR1ZFf8NAAmNk": {
+  "lat": 26.2261,
+  "lng": -80.22061,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "378 N Rock Island Rd, Margate, FL 33068"
+ },
  "ChIJeTc_i_vV2IgRLaFxaS09J1E": {
   "lat": 26.73494,
   "lng": -80.05516,
@@ -2021,6 +2147,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "1820 Sir Francis Drake Blvd, Fairfax, CA 94930"
+ },
+ "ChIJh-piAvMC2YgREUUc_xauUC4": {
+  "lat": 26.22868,
+  "lng": -80.12314,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "230 S Cypress Rd Ste c, Pompano Beach, FL 33060"
  },
  "ChIJhVvHGBj7wogR_o0zP1qNCcQ": {
   "lat": 27.91624,
@@ -2260,6 +2393,13 @@
   "match": "Exact",
   "addr": "1315 East Blvd Unit 110, Charlotte, NC 28203"
  },
+ "ChIJmc0S_m8B2YgREYay8x7UZjc": {
+  "lat": 26.13515,
+  "lng": -80.13992,
+  "src": "census",
+  "match": "Exact",
+  "addr": "900 N Flagler Dr, Fort Lauderdale, FL 33304"
+ },
  "ChIJmc8KvYU_24gREJbyu6l55_o": {
   "lat": 26.55208,
   "lng": -81.87151,
@@ -2386,6 +2526,13 @@
   "match": "Non_Exact",
   "addr": "747 Haywood Rd Upstairs 200, Asheville, NC 28806"
  },
+ "ChIJpTAuw_jf2IgRhttUpTTU3ws": {
+  "lat": 26.45949,
+  "lng": -80.09543,
+  "src": "census",
+  "match": "Exact",
+  "addr": "2186 W Atlantic Ave, Delray Beach, FL 33445"
+ },
  "ChIJpxBNIgAb54gRKu6ew3LzAN8": {
   "lat": 29.03057,
   "lng": -81.30355,
@@ -2413,6 +2560,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "9345 4th St N, St. Petersburg, FL 33702"
+ },
+ "ChIJq6qqxUAm2YgRfHApIiBFPB8": {
+  "lat": 26.61749,
+  "lng": -80.16362,
+  "src": "census",
+  "match": "Exact",
+  "addr": "7392 Lake Worth Rd, Greenacres, FL 33467"
  },
  "ChIJqXfmFWsB3ogRxXd3y37wK0A": {
   "lat": 28.35033,
@@ -2687,6 +2841,13 @@
   "match": "Non_Exact",
   "addr": "17010 W Dixie Hwy Ste E (2nd Floor, North Miami Beach, FL 33160"
  },
+ "ChIJx5BGADIvTIYRWXWwQ0eIqKE": {
+  "lat": 33.04636,
+  "lng": -96.99623,
+  "src": "census",
+  "match": "Exact",
+  "addr": "191 W Main St, Lewisville, TX 75057"
+ },
  "ChIJxXUhX12p4IgRb6W3mFCUFZQ": {
   "lat": 28.36001,
   "lng": -80.66498,
@@ -2749,6 +2910,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "3394 S Broadway, Englewood, CO 80113"
+ },
+ "ChIJyWs8i9sD2YgRsHYKiA__t9o": {
+  "lat": 26.21099,
+  "lng": -80.1241,
+  "src": "census",
+  "match": "Exact",
+  "addr": "120 SW 15th St, Pompano Beach, FL 33060"
  },
  "ChIJyXHwNCXAwogRP8NOu6fXd9Y": {
   "lat": 28.06397,

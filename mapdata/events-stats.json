@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T13:25:27Z",
+  "generated": "2026-11-17T14:11:02Z",
   "totals": {
     "events": 513,
     "bars": 151,
@@ -207,7 +207,7 @@
   "excluded": {
     "duplicates": 1,
     "listings": 4,
-    "outsideMap": 3,
+    "outsideMap": 6,
     "invalid": 0
   },
   "vintage": "Vintage 2025 (July 1, 2025 resident population estimates)"

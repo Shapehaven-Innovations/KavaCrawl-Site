@@ -1,15 +1,15 @@
 {
-  "generated": "2026-11-19T16:48:38Z",
+  "generated": "2026-11-20T13:52:41Z",
   "totals": {
-    "events": 513,
-    "bars": 151,
+    "events": 514,
+    "bars": 152,
     "states": 11,
     "cities": 88
   },
   "byWeekday": [
     70,
     94,
-    80,
+    81,
     81,
     87,
     59,
@@ -18,7 +18,7 @@
   "byType": [
     {
       "type": "Games",
-      "events": 157
+      "events": 158
     },
     {
       "type": "Specials",
@@ -57,8 +57,8 @@
     {
       "st": "FL",
       "name": "Florida",
-      "events": 454,
-      "bars": 127
+      "events": 455,
+      "bars": 128
     },
     {
       "st": "AZ",
@@ -125,7 +125,7 @@
     "Games": [
       18,
       27,
-      28,
+      29,
       27,
       20,
       22,
@@ -207,7 +207,7 @@
   "excluded": {
     "duplicates": 1,
     "listings": 4,
-    "outsideMap": 10,
+    "outsideMap": 12,
     "invalid": 0
   },
   "vintage": "Vintage 2025 (July 1, 2025 resident population estimates)"

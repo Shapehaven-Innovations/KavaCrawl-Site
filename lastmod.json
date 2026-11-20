@@ -1,6 +1,6 @@
 {
   "meta": {
-    "eligible": 424
+    "eligible": 425
   },
   "files": {
     "/bars/az/chandler/index.html": {
@@ -22,8 +22,8 @@
       "admitted": true
     },
     "/bars/az/index.html": {
-      "hash": "47a7f9a6438902747f3d1e7e4076c6fe1ba67f7cf2ff85dd572e83e0cc768333",
-      "lastmod": "2026-11-19"
+      "hash": "52d068a001e1bf79c10e0c6a69c9a946e90b1bcabf1d32bdc262277951e4d199",
+      "lastmod": "2026-11-20"
     },
     "/bars/az/phoenix/index.html": {
       "hash": "d07c18792bb82578f87252bbfd695c5148dc3eb21b206f5149e7b53bc12a798b",
@@ -100,8 +100,8 @@
       "lastmod": "2026-11-10"
     },
     "/bars/ca/costa-mesa/kratom-kava-bar/index.html": {
-      "hash": "17edb7927d83db6b1c26602f46ab9310db2c77417e43f8985d216d63ec6051a1",
-      "lastmod": "2026-11-16",
+      "hash": "a7dd90f2bf6d96077f8bd77e7830ce98f14e0c2da7e85fea0a00d7e3a8a741cf",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/cupertino/index.html": {
@@ -146,21 +146,21 @@
       "admitted": true
     },
     "/bars/ca/huntington-beach/index.html": {
-      "hash": "ff5bc6ae78bc8a8b5a881468587bd38e40723413d88d4c88c90471b0bac4d375",
-      "lastmod": "2026-11-16"
+      "hash": "efaec35166c9ac0bb9f6f7b837ca9b64b68189e8f09541425894e8c41b6cf732",
+      "lastmod": "2026-11-20"
     },
     "/bars/ca/huntington-beach/mystic-water-kava-bar-huntington-beach/index.html": {
-      "hash": "bb9682d6e9b12fae63d19ba41455b835cf2767dc2b094eb01afc0cd2afc96e56",
-      "lastmod": "2026-11-16",
+      "hash": "16e9ed5dc3c2296c2f5755de991797201327685a601d9e1b9b5891938473aae3",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/index.html": {
-      "hash": "34c31b8175e93320cd20327bc08676bd55030efdf8087867dc70a3c427d14373",
-      "lastmod": "2026-11-18"
+      "hash": "159755e071d4f0e59c53f92027fd2b7bf100add5840c1a30c55e8be3f71d776b",
+      "lastmod": "2026-11-20"
     },
     "/bars/ca/inglewood/awakening/index.html": {
-      "hash": "06fd7d26126606d24ae66a00dcb8c5459e33557c2cbdc48d17508c04b7798ec0",
-      "lastmod": "2026-11-14",
+      "hash": "e8138227bb3c701793099c80d5bce9240ed6810791fdf93a345a21ff58d9082c",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/inglewood/index.html": {
@@ -177,17 +177,17 @@
       "admitted": true
     },
     "/bars/ca/los-angeles/index.html": {
-      "hash": "1fb4889ed569b6172e579ec84c00b412d02a09a3e07eae69d562825e7137aeec",
-      "lastmod": "2026-11-16"
+      "hash": "58d8a09946403c101a675a66a755328798601e853f528887ba2015853a33b289",
+      "lastmod": "2026-11-20"
     },
     "/bars/ca/los-angeles/kava-kulture-la/index.html": {
-      "hash": "2134caf2b3bef54ce0e66e801fbbd1e53d6115aa64c6a1b427d6b279ca3685aa",
-      "lastmod": "2026-11-16",
+      "hash": "2eb2ecbd061bc94e5928478c55f1ad724cfe0577ac820487affe63269ab05b43",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/los-angeles/kavahana-at-smorgasburg-los-angeles/index.html": {
-      "hash": "9c3bb4364f07632bc1ec50b25f84ef0a4871384bbf90be8e0a6fefd4e448641b",
-      "lastmod": "2026-11-16",
+      "hash": "14914bf2b93b0c36487d9dc286cbdf93939e18a2e427dd1567189b82b994452d",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/oakland/index.html": {
@@ -218,8 +218,8 @@
       "lastmod": "2026-11-10"
     },
     "/bars/ca/reseda/kava-lounge-la/index.html": {
-      "hash": "2c257f7d2ef75326a12b8de78c88660d01a918c49419d1b9ee4aeb5c9d324d1e",
-      "lastmod": "2026-11-18",
+      "hash": "f8866f9734d86ab4c3c062b6a1fa9330b63c728b7b0cd4bcb1c0eb5dc47b81b8",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/roseville/aladdin-cafe-hookah-and-kava-bar/index.html": {
@@ -330,17 +330,17 @@
       "admitted": true
     },
     "/bars/ca/santa-monica/buena-vida-tea-bar-and-garden/index.html": {
-      "hash": "8144391355f4c5336c287cb06d52ec59fb5d9909c79e097a6039d15b1d1b6b18",
-      "lastmod": "2026-11-18",
+      "hash": "e967e618218992c2c2be8bede024043e449745ee9e614629fcb305439d4e6f36",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/santa-monica/index.html": {
-      "hash": "af8b0259b8ecd2957538837b1231eb4b544629c203c5dd39011d3533ed0c6989",
-      "lastmod": "2026-11-18"
+      "hash": "5d8c815e800d854993591277c7553ea108b819476607f6c404223e449b265b41",
+      "lastmod": "2026-11-20"
     },
     "/bars/ca/santa-monica/kavahana/index.html": {
-      "hash": "65c5baf9e90239a4cb9809ede3fdead500816956f8eecf6d4fbc90a603a98414",
-      "lastmod": "2026-11-18",
+      "hash": "7b7eb708060a31194cea25b28467c0433cc6bc319aa95c89122107cdee03dea3",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/solana-beach/index.html": {
@@ -353,17 +353,17 @@
       "admitted": true
     },
     "/bars/ca/thousand-oaks/five07-coffee-bar-and-eatery/index.html": {
-      "hash": "686cc667dcae8431bd408b69e25e675b1e12bbf72086254a36e6ff2fb1389a4a",
-      "lastmod": "2026-11-18",
+      "hash": "8b5308a5d7df93a425308dcfd55c3667d826680f627342f4da4a3bde798a0cd0",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/thousand-oaks/index.html": {
-      "hash": "3a5970f2f98a6740bd9a540b44d65cea88e1f335ea7375dfd9d8df1a5f6a5cbb",
-      "lastmod": "2026-11-18"
+      "hash": "bf8607ecdd3a7fa41b33ebe0444f9853a20c32bf145c1b291a87424d091f8e84",
+      "lastmod": "2026-11-20"
     },
     "/bars/ca/thousand-oaks/the-healing-tree/index.html": {
-      "hash": "6984dc212369d03a1593463d6186546e2b86836d1c03c2d6fbb69aae1090b789",
-      "lastmod": "2026-11-18",
+      "hash": "68fd837aa0724a7ad72a9874fad2b731bd8b7e575037ce4aecb5d73960c2b27f",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/torrance/index.html": {
@@ -371,8 +371,8 @@
       "lastmod": "2026-11-10"
     },
     "/bars/ca/torrance/ketum-llc/index.html": {
-      "hash": "5bceb186365160053e806dfdc9dfeefd7832119e79e00523b46df8e576952d76",
-      "lastmod": "2026-11-14",
+      "hash": "d953e79f2bdd6f83581ff63d6deb86e01342b558a844ac27b7b804a29cc54fb1",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/tustin/index.html": {
@@ -380,8 +380,8 @@
       "lastmod": "2026-11-10"
     },
     "/bars/ca/tustin/krunk-fusion-kava-bar/index.html": {
-      "hash": "7a5c33829d36e50c74fc7afbf60c61d91c590b38f1deb94e038f73e9818d5ef8",
-      "lastmod": "2026-11-16",
+      "hash": "bf412f660146581ca0b5a94bc990ad229a61b0a57b9f633f6fe05036fa8e4fd2",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/ca/ventura/index.html": {
@@ -398,8 +398,8 @@
       "lastmod": "2026-11-10"
     },
     "/bars/ca/west-hollywood/the-daily-dose-wellness/index.html": {
-      "hash": "09ac78ec66303d6620f2c1cd6bbf8ee04cadd221a41ad9df7b1b5af468fc7436",
-      "lastmod": "2026-11-18",
+      "hash": "ccc359cf757b5a16f6b9a86adbf5e168dc8baf264667cadbff5e43f82baf5146",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/co/colorado-springs/index.html": {
@@ -454,8 +454,8 @@
       "admitted": true
     },
     "/bars/co/index.html": {
-      "hash": "1d84c48dad97aad15092ecf699f9aae7c8c9ee0d601530e8769f277e9e6a26ad",
-      "lastmod": "2026-11-16"
+      "hash": "ccf9c650d0e8f320bccefa7d1259da08a98b8971e87637df9d99aa82b847b11a",
+      "lastmod": "2026-11-20"
     },
     "/bars/co/lakewood/index.html": {
       "hash": "b8fefcd0e336aaf69ffadd77b0da88c758302f4e67691ea5f9330071249cb45c",
@@ -499,8 +499,8 @@
       "admitted": true
     },
     "/bars/fl/boynton-beach/index.html": {
-      "hash": "cb4e9c2a097462a42ecc0788a0c19adea427c4fb6a26e593ad63f1371b852464",
-      "lastmod": "2026-11-16"
+      "hash": "74f0437614955b8dbf8968cdf6dd045d282e86aa7cc99091520e20d88eeef50e",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/boynton-beach/kavasutra-kava-bar/index.html": {
       "hash": "1c274e8518c87557aa0a28f618b43b67c7b34107d5ab1e1209e0d6ebcd685bd8",
@@ -523,8 +523,8 @@
       "admitted": true
     },
     "/bars/fl/bradenton/index.html": {
-      "hash": "067b986c788ff794045db8809c7188815683fee93de2982a6b7abd0c9f957e09",
-      "lastmod": "2026-11-16"
+      "hash": "befe740a66adcf6b9efb1434e645576d66aa5e5fb44f43c3c7dcd75a95d20a52",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/bradenton/kava-social-club/index.html": {
       "hash": "beb6f36369f58df095285022e7960d0ca6054f6762f4d3a5cf0b040aea8e8a57",
@@ -532,22 +532,22 @@
       "admitted": true
     },
     "/bars/fl/brandon/index.html": {
-      "hash": "a7086e6e2ca2bfe76ee3a3b543c3596a67fae4687c2de5c71379110235ece990",
-      "lastmod": "2026-11-17"
+      "hash": "76086d96b2b6ffc5d9ff853f04d8bf3f7d36f3ebe3c7e367c24cd68916d3b2f9",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/brandon/moon-mountain/index.html": {
-      "hash": "6a40af4ab5405d8e74f76df6c3d7d5856601dbdeda27072071166faa7d69e7f8",
-      "lastmod": "2026-11-17",
+      "hash": "da2ba671b16d2d874442fab1d61f684657963f01f990042fe983e6e0c6b9c333",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/brandon/the-bay-kava-lounge/index.html": {
-      "hash": "1920316018cac87b7ff2d6cd7e9c3ef4aed5d01e446fd93c945282ea47f6abf7",
-      "lastmod": "2026-11-17",
+      "hash": "88be04ee1fef1da88bc79af89b25a2431b158a3308340b32b6975aba292f650a",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/cape-coral/index.html": {
-      "hash": "e563c3ff93fd4d6ef9bb83fcbe4b3966408757afbae6bdcd4afafd15c0163106",
-      "lastmod": "2026-11-16"
+      "hash": "3659fb14fe181c718d3ccb21a61929fbb975813d9ca6c871e8f0f710ba4467fa",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/cape-coral/kava-nirvana-speakeasy-kava-bar/index.html": {
       "hash": "4fa4692f3f648a28cb09b46e279a495cd4edbe53d2169a5eeb02794881fe779a",
@@ -565,8 +565,8 @@
       "admitted": true
     },
     "/bars/fl/casselberry/index.html": {
-      "hash": "e0f345870adbfb1ebf32f521fada98b32cd9bfc48ea3221213a407938a290ea1",
-      "lastmod": "2026-11-16"
+      "hash": "39fb4aa172033c2095d1ab8b10768b2f5f676185617af87a1cf894a091fcb561",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/casselberry/kavasutra-kava-bar/index.html": {
       "hash": "ff4e1a1f8ab88468e5bb2b6b6f336bb6b177e0a9d9b306bebe3ec7f1934c044d",
@@ -589,8 +589,8 @@
       "admitted": true
     },
     "/bars/fl/clearwater/index.html": {
-      "hash": "aaeb739933adc392722cc86052396b6fa7b2e97f714ef3f6f7b60b5e5068c335",
-      "lastmod": "2026-11-16"
+      "hash": "3fd6e203fb611fd98407d32924483c144c1e945aed0584d50e95f882d9216c08",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/clearwater/kava-culture-clearwater/index.html": {
       "hash": "1e3bf7edddda53480ebce73efa25b2bf4a811bfe737cb7179e30f05f3f8ee1fc",
@@ -623,8 +623,8 @@
       "admitted": true
     },
     "/bars/fl/cocoa-beach/index.html": {
-      "hash": "bbf1098761b8d89a72b1c463bdf8ee18b39dd158b7459e28014c9af9affb5ac1",
-      "lastmod": "2026-11-19"
+      "hash": "85b807012cfc0453b59324a2b80898260d7ed3d8df42d7493a16cf7baccc36ef",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/cocoa/chameleon-kava-lounge/index.html": {
       "hash": "30a82ad19e11dce435754b4246f0fdb9c7774cc2b0d8b40085cd6af3223ccfe7",
@@ -632,8 +632,8 @@
       "admitted": true
     },
     "/bars/fl/cocoa/index.html": {
-      "hash": "20b3da166bd6f29eb1c874309cd4944d0977e34c93127b2187c2be2dd487e818",
-      "lastmod": "2026-11-16"
+      "hash": "08e971e9a4923cb493a9804626f8263069ffd939b6304de9a74db596ccc2f36e",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/cocoa/tyeds-teahouse/index.html": {
       "hash": "258ebe8982cd21be9d16505c4b484d763af8c63bc8c78c76f92ece34272e6cd8",
@@ -641,8 +641,8 @@
       "admitted": true
     },
     "/bars/fl/coral-gables/index.html": {
-      "hash": "ae1a9f4f6c99521ede3a5128d5066b4f4650b949c7deb64a6933c3fbb750406b",
-      "lastmod": "2026-11-16"
+      "hash": "532f8d1e10dc009ed63047ca4a4db14780fa1e77414d673dba2120bef54e3bfb",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/coral-gables/the-sound-library-miami-kava-tea-and-live-music/index.html": {
       "hash": "1093ce25c9d9109d3653b15ce535b30d142429922449f0d9c45399a349de707c",
@@ -650,8 +650,8 @@
       "admitted": true
     },
     "/bars/fl/coral-springs/index.html": {
-      "hash": "eeba4f8b9fb40d355289527b85c141ede4a4473eeb9a6d0f782756cf87807a44",
-      "lastmod": "2026-11-16"
+      "hash": "13dd415db11adbc5a515f328307f4cf6ae37f04cf70f936057fdf0e768eb9e33",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/coral-springs/island-root-kava-bar-coral-springs/index.html": {
       "hash": "ae59feae901332a5629c6367ca5069026a2e006eb93ded740dfc1441f59e5dea",
@@ -669,8 +669,8 @@
       "admitted": true
     },
     "/bars/fl/cutler-bay/index.html": {
-      "hash": "cc5c7718d20fc533390bf3244240db251dfefbdfb372d94dda9c6de2f04a77cb",
-      "lastmod": "2026-11-16"
+      "hash": "fc0f85ff600c2a3b766221b9b9c6e1d1bc5cf20bc907eebee5aeb9805b9c0be1",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/cutler-bay/mystic-joint-kava-and-coffee/index.html": {
       "hash": "a4480d470b366c155974c59a84f3607e89f76b8e6e2c2ddccc71c2e7ce69dc14",
@@ -693,8 +693,8 @@
       "admitted": true
     },
     "/bars/fl/dania-beach/index.html": {
-      "hash": "072261798dc019fb7c4815e067528352d6e0e7552bfe98fc48629aeabf67da4d",
-      "lastmod": "2026-11-16"
+      "hash": "a0e8bf0bf67d9fd555cd528a563d11e0dc5b1f7de540e21b4fef384fcddc5c29",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/dania-beach/kavana-kava-bar-dania-beach/index.html": {
       "hash": "d593932d57ff2034624be5d468ed3db37eb2d23f2984ed7320d7251676c6a4ab",
@@ -702,8 +702,8 @@
       "admitted": true
     },
     "/bars/fl/davenport/index.html": {
-      "hash": "84e617f8c3cdd6cb383d814f1c406f6411dbc79f37a860bcb18c76c8f55c6fc0",
-      "lastmod": "2026-11-16"
+      "hash": "45c7bffb0b00c851164fde14b566d18c96b1c763a569b8a90bb6c45d4fc9a647",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/davenport/vaperior-cigars-and-kava-bar/index.html": {
       "hash": "6552c6644b205e1d4d10d5a8be8cf2d1320f0c97774f5715d43f8b586a0e08c4",
@@ -726,8 +726,8 @@
       "admitted": true
     },
     "/bars/fl/davie/index.html": {
-      "hash": "70b33595b950424f03d7959d02dd57d7ca91a17afee327e9ba05ef5b14d648a4",
-      "lastmod": "2026-11-16"
+      "hash": "f91cd92dce2e3b9967ca3e92e273eb36d6fadd39c3d9f706af2247974e980f56",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/davie/kamp-kava/index.html": {
       "hash": "9f1e232023465fb560d5aafe7b70da7644cf12012cd75606b57a22148cf05776",
@@ -755,8 +755,8 @@
       "admitted": true
     },
     "/bars/fl/daytona-beach/index.html": {
-      "hash": "1a4ca28ea4e2a904c4b7f9ffb1f094857426c0b31925570339e91bb9f3e39d10",
-      "lastmod": "2026-11-16"
+      "hash": "39f5647961ec0b3c6f9cb7ebc6145bf3bf7249b6b799e6422e4ebc4b87712f5e",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/daytona-beach/rad-kava-bar-rooting-around-downtown/index.html": {
       "hash": "4cb1000310964b2652bc1fae9e12bb3aa60f670b4607846f028e3f0e53ed7592",
@@ -764,8 +764,8 @@
       "admitted": true
     },
     "/bars/fl/deerfield-beach/index.html": {
-      "hash": "ea4949efe2f75c589dcc54d86428e59e80dcd7c059728a85af5b5eb45d049ec5",
-      "lastmod": "2026-11-16"
+      "hash": "dff5d893a63e3d780a7b554f28dc6f6e29f303be0dde1f81745111d3e4120d66",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/deerfield-beach/kavasutra-kava-bar-deerfield/index.html": {
       "hash": "0579e5ccbb53bdc891d7759d8826c06a037feb6da88dd23323c9001b9066f62c",
@@ -778,8 +778,8 @@
       "admitted": true
     },
     "/bars/fl/deland/index.html": {
-      "hash": "c7c03ea669bdb9a733db0cdf7a0310c16c3a64408336937b0427bb88856f7dae",
-      "lastmod": "2026-11-16"
+      "hash": "6c7c43bec8523a13d7e62b6eaaec7bb155060bd615f7fa528d97f40b603dcd7e",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/deland/sunset-kava-bar/index.html": {
       "hash": "f115b23251c483f4a14df89a9eae57bc2bd7074d9f9c617b140b2a35d981ed60",
@@ -792,8 +792,8 @@
       "admitted": true
     },
     "/bars/fl/delray-beach/index.html": {
-      "hash": "9d6b15beec0d1e2dea36f251f1b4d93f5774149944a300beda26e2420df99f73",
-      "lastmod": "2026-11-16"
+      "hash": "65d4347e320ce15ba517737da09ba337ce3cbcfa265b28fa2b7f8b8ba60dd870",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/delray-beach/riptidez-kava-bar-delray/index.html": {
       "hash": "61d63de11cf09f723bb57a3a582705521ad963c628d8f14741de0cece3a1f4af",
@@ -806,8 +806,8 @@
       "admitted": true
     },
     "/bars/fl/doral/index.html": {
-      "hash": "2734b83a76e0e5a8255ac4193fde19fd7436d691de66e26909abaa673219d4b5",
-      "lastmod": "2026-11-16"
+      "hash": "18f0e3217c5660ce6553cfb377660cd5c58090b73e269683239a7e4413f21634",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/doral/love-kava-bar/index.html": {
       "hash": "8baf5b5fb07c76426b373ad0f8e7aebd9631aa8d6054522e2796f10e333dc8f4",
@@ -815,8 +815,8 @@
       "admitted": true
     },
     "/bars/fl/dunedin/index.html": {
-      "hash": "56f00c457dd94680cb2c09dcc98c5ab213f519216b931881bc49d13e952af169",
-      "lastmod": "2026-11-16"
+      "hash": "41e5074df2321113c8c45db2341e860aa3a3e894cac1f5f93a44c6491f2f1433",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/dunedin/n7-nitro-kava-bar-dunedin/index.html": {
       "hash": "13283f17a08f0aa30a7d788a427af5fc06e3f6a81aef982ccec44c7482c96072",
@@ -824,8 +824,8 @@
       "admitted": true
     },
     "/bars/fl/edgewater/index.html": {
-      "hash": "109f93cb27813975f6c51c6e0a39f4daf6544830c6e4236fe81d025d52fa8f38",
-      "lastmod": "2026-11-16"
+      "hash": "b78f7fb61ad9d01fa3b1a33a638f61dac925628c799f566b025e6432e8171102",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/edgewater/rock-and-root-tea-kava-house-and-wellness-lounge/index.html": {
       "hash": "6815ea1975579fa60a685a7519518c072ed04f295adfe875c8045820ea339fbf",
@@ -833,8 +833,8 @@
       "admitted": true
     },
     "/bars/fl/estero/index.html": {
-      "hash": "9d074f1b1b1073cb86a6895fff6dbcca620aee34d4f4a7be947948d9b3c4ca86",
-      "lastmod": "2026-11-16"
+      "hash": "f79cf544766271c7ef6f929ee420cd858720cf2701e4230b208231e13c63cbc6",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/estero/kava-culture-estero/index.html": {
       "hash": "b8c065d862090578ad0cf2636278126d060cd5fe7a88ea422af53b30a96bef75",
@@ -842,8 +842,8 @@
       "admitted": true
     },
     "/bars/fl/fort-lauderdale/ascension-kava-bar-and-lounge/index.html": {
-      "hash": "a2f792ca47eac600d16e3dbd3612b36e0af32245985cc2d934a7261b652150c7",
-      "lastmod": "2026-11-10",
+      "hash": "166605e94893b409a17cbd3ade828d6e78006ff885ae0eedc79d66069841cca3",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/fort-lauderdale/black-klover-kava-bar-fort-lauderdale/index.html": {
@@ -852,18 +852,23 @@
       "admitted": true
     },
     "/bars/fl/fort-lauderdale/casa-de-kava-fort-lauderdale-kava-bar/index.html": {
-      "hash": "2ab4b9ce80ca47acaa86caf1c34dcb3c4f3b857227a0d9858395661eddd3fb7f",
-      "lastmod": "2026-11-11",
+      "hash": "68dbc90bfb3ff6bbcf09ba2b0ac1ce2a21c12708dbc370f2bb08d890f516b2eb",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/fort-lauderdale/hideout-kava-fort-lauderdale/index.html": {
-      "hash": "ad99252e49ee1a7bc566b163dc5824f301f7db3e13e26d1b92e0e951dbacd4d7",
-      "lastmod": "2026-11-11",
+      "hash": "beaed3ff7b65d0cf94ce84b1c2d5408149522db39caa494a4c0a6dfd88bfd396",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/fort-lauderdale/index.html": {
-      "hash": "05645555d338d8cd20ed13f35c2fe61ccdc2efd05610b780ab355d8867c0f949",
-      "lastmod": "2026-11-16"
+      "hash": "ad23641b270080241ad600c5a16d8f15512b9ca6d1db2d1fd77778e64c2bfcf2",
+      "lastmod": "2026-11-20"
+    },
+    "/bars/fl/fort-lauderdale/karma-kava/index.html": {
+      "hash": "d59d02c7be5c1ec6379269092730ba80948f51023c8f9b439be70f942d21dfc5",
+      "lastmod": "2026-11-20",
+      "admitted": true
     },
     "/bars/fl/fort-lauderdale/kavasutra-kava-bar/index.html": {
       "hash": "1ef4548249fe54e961e9d32922d49026721ec664b84738c4e35ffb811f62a4c4",
@@ -871,8 +876,8 @@
       "admitted": true
     },
     "/bars/fl/fort-lauderdale/nectar-lab-kava-bar/index.html": {
-      "hash": "7d937a0e23b36f1c6b4e69599d0aa41c1e238da99b3f978d4b5ad78e8570a6e5",
-      "lastmod": "2026-11-02",
+      "hash": "f735320e4ba1c38618a0c273764a532d00c9f57b4d2008452f709fb0af9a6b2b",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/fort-lauderdale/offshore-kava/index.html": {
@@ -886,8 +891,8 @@
       "admitted": true
     },
     "/bars/fl/fort-lauderdale/rooted-spirits-kava-co/index.html": {
-      "hash": "c20674feed78bc2c5deefc8ca4c4a700c4639d4ce28a9a3bc6e73417d2a5becd",
-      "lastmod": "2026-11-10",
+      "hash": "a1b640257e4c7c1dc2ed2f38c774e2de25d373590ebb753eb9dab91ad69272cd",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/fort-lauderdale/sunbelt-kava-co/index.html": {
@@ -901,8 +906,8 @@
       "admitted": true
     },
     "/bars/fl/fort-myers-beach/index.html": {
-      "hash": "1dd995813a69270472e195cf727a8ac5ca53a46f9b62014e64bd5ef5cebc13e4",
-      "lastmod": "2026-11-16"
+      "hash": "513ecb383aa57113dd4180856a4564a6e0ef93262ffd6f03fa26108d4efe4ac2",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/fort-myers-beach/reefer-beach/index.html": {
       "hash": "79d65c0c082d97ff90d18166d2beb4d09884395b226e9c0b8ccb368bf3a30077",
@@ -920,8 +925,8 @@
       "admitted": true
     },
     "/bars/fl/fort-myers/index.html": {
-      "hash": "5b3d34061ea1ad9e79c09426b2b8c4c6d27858fc1747754d437c132e938f3ddc",
-      "lastmod": "2026-11-16"
+      "hash": "ee883d0b8bf6dfea1979ff4d2ec0c23a5d062f2672358122da1d5194f4d52739",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/fort-myers/island-vibes-kava-bar/index.html": {
       "hash": "6a7eceacfe51c161ff4dd6b802f8c9a14e22a4ec9155e9c7228161534dc0eb6a",
@@ -979,8 +984,8 @@
       "admitted": true
     },
     "/bars/fl/fort-pierce/index.html": {
-      "hash": "fcff0f62fd42650e2ac11f884a40b27ce820f6f7c6c1bb6d4219fc0b1317818a",
-      "lastmod": "2026-11-16"
+      "hash": "02afba6c331755171ea31edcf70bf59f06b8efde2d3097a8b58e329337069e9b",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/fort-pierce/rooted-reef-kava-bar/index.html": {
       "hash": "88ef05ae532b32644bc494c991a9f458e45d6510c140897199fc8daf625a3c28",
@@ -993,8 +998,8 @@
       "admitted": true
     },
     "/bars/fl/gainesville/index.html": {
-      "hash": "93eb6ad01ed30fdda2eeb688e1d698775904afba59c300d1d93112534f68b8e1",
-      "lastmod": "2026-11-16"
+      "hash": "3e986cb0b56a11488356d6cc6b8b1ad0128563d5a5e485a36491732430fd277c",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/gainesville/kava-gator-coffee-shop/index.html": {
       "hash": "3a2e14a82ffbec4dfa21f52be564529a812378e5d3c1c7206c56e78294b27194",
@@ -1012,8 +1017,8 @@
       "admitted": true
     },
     "/bars/fl/greenacres/index.html": {
-      "hash": "309b96ce3bb25b0a0f0bbb55b5fd907ccdaff6f205852c695d92d0d9074f2ea7",
-      "lastmod": "2026-11-16"
+      "hash": "aeb33fa8a63e8bab358ccc10fd6dd7ee88f5e8f50957de888417c790022ae6aa",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/greenacres/the-chill-room-kava-bar-of-lake-worth-original-location/index.html": {
       "hash": "8f7745fee8fc2dde7c886da6f4d99c5162ba8f065e0c56a30257ade716d6dcec",
@@ -1021,8 +1026,8 @@
       "admitted": true
     },
     "/bars/fl/gulfport/index.html": {
-      "hash": "985db1e165340e0e4609332520a4f7c31993ccc4e5d72d607e13ab9295e1e188",
-      "lastmod": "2026-11-16"
+      "hash": "ca9204a63316158058192efb873b9dc26f34e4544f1245c78ed36383f2b290c9",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/gulfport/low-tide-kava-bar/index.html": {
       "hash": "dfaf647b8d0b47b9bb0d4fce6180e80cb0aea90aa79fc609cec8cd6e7cf9fdc2",
@@ -1030,8 +1035,8 @@
       "admitted": true
     },
     "/bars/fl/hallandale-beach/index.html": {
-      "hash": "3fbed430ac35bb97ed17e0433285763c7252565eb3b9b3d35e9a1fc14f7e8c2e",
-      "lastmod": "2026-11-16"
+      "hash": "3550dd0922e7e640101af9e58f88210bea00ec0c134a6b5c6685a2a95fcd936b",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/hallandale-beach/vibehaus-kava-bar-and-lounge/index.html": {
       "hash": "4206c6b0007d9094493027d94b0aef9ac58cfa9b33c290572121e9d5174e78cc",
@@ -1059,8 +1064,8 @@
       "admitted": true
     },
     "/bars/fl/hollywood/index.html": {
-      "hash": "fe538479eeab0b11a54351b84a9c92744e230ba26809ab8e9f39c31550b5b9ae",
-      "lastmod": "2026-11-16"
+      "hash": "49f2f9ca2468a0c96c42002b4d5a96e9c8e7a252cb35f5169bd535aa8e9c2fe5",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/hollywood/twisted-roots-kava-brewery/index.html": {
       "hash": "ff9939779a0ff8314b6bbdc2196aba0b5f2bcd5ffb4ac142ee5f2f0879a61346",
@@ -1068,12 +1073,12 @@
       "admitted": true
     },
     "/bars/fl/index.html": {
-      "hash": "6d4d894b0c9b7324e20e4d581808f9a60f099fefa54ec88fb6698edfef915c9f",
-      "lastmod": "2026-11-17"
+      "hash": "7c1c06a06a359900a8cc9f85606cd928b9bcf2cd3d5445d45632eac6e23e12ba",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/jacksonville-beach/index.html": {
-      "hash": "2d5b300c7fc19c83ef7aad588f9faf0bac48726a330e3ae090aec253537e2916",
-      "lastmod": "2026-11-16"
+      "hash": "33c932c088acfb52c9756e5f293ca46b140c1521b7c9aaff3b65609144cee3d5",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/jacksonville-beach/jax-beach-kava-bar/index.html": {
       "hash": "414d6b7441fbe689bdb799edbcc994bccf09cb1dcf4d1aaa90d6f1a2cc2a0eaf",
@@ -1106,8 +1111,8 @@
       "admitted": true
     },
     "/bars/fl/jacksonville/index.html": {
-      "hash": "e3528ac1d8b963f9ec49359f0519e4fc8b6dae3ed8cad9e43742be2c1b67e2b2",
-      "lastmod": "2026-11-18"
+      "hash": "104370d02d291307a5c1cf2e2e39907658db53f9e1904f0e5dfb0c6849515871",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/jacksonville/kava-and-company-mandarin/index.html": {
       "hash": "96ba11a724472924d9c914f86b0b00c4ab2ef89feca2f1ca9477d45bc6fa77f0",
@@ -1140,27 +1145,27 @@
       "admitted": true
     },
     "/bars/fl/jensen-beach/index.html": {
-      "hash": "39926f8355bfe403cc14dc440f32812ec57c1113b3b3c4c2ffb60906268ad0d8",
-      "lastmod": "2026-11-19"
+      "hash": "c94da8e4001736693e79cba7850b48584572fc7dd4e9912fb81391d63dbe5b50",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/jensen-beach/island-root-jensen-beach/index.html": {
-      "hash": "f4ef1963457806d5ddb14fbcfd9599ee1213b927f2caf860bf9eaf3de5c0f347",
-      "lastmod": "2026-11-19",
+      "hash": "f57659f90fc19983014daadc2a940cf9173c4239e372537ce31441ababd5cfeb",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/jensen-beach/island-vibes-kava-bar-jensen-beach/index.html": {
-      "hash": "cfbdbe2d67aa8efefec264a97d7812e468b0e6b768b60545281e93ef88812981",
-      "lastmod": "2026-11-19",
+      "hash": "f5858c06f2fa23a9bd1a5bf6dcfff04b94fecba88c3644bf5a32ae87fd0b7c2d",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/jensen-beach/kava-me-krazy/index.html": {
-      "hash": "7027f7a80a92a84511e606a4ccfae19e619e8fbb9f5b68e481de6deb676df7e9",
-      "lastmod": "2026-11-19",
+      "hash": "bb05ac0ec15d97186995e07ff313d6447d43ffd66fe4943a593d86b5c5aed56c",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/jupiter/index.html": {
-      "hash": "3d256997aba696053828ad7dc544482041edfb29bea65889d493673880104988",
-      "lastmod": "2026-11-16"
+      "hash": "5533e430216918fbb91eace02f1502b19d5649a664f5036d9d3bf1276579ef8d",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/jupiter/island-root-abacoa-kava-bar/index.html": {
       "hash": "029cf81015cb139c6601b1f990041ab3d64234e2cb22254c9c90ed58c38612d1",
@@ -1178,8 +1183,8 @@
       "admitted": true
     },
     "/bars/fl/kenneth-city/index.html": {
-      "hash": "e14bb9944e1ca6e917e25ca2ebeb0c9d48f5823f3dd270042bab5185ecbade1c",
-      "lastmod": "2026-11-16"
+      "hash": "8407c5dca956698d0343f6f5712c0806cc5211799f6dd964ed3d8bf7ebb2a6dd",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/kenneth-city/tribe-tea-house-and-kava-bar/index.html": {
       "hash": "d6053a492f76ff548a5d0362c4ba48eca751ae2d83822e8c596b97c526af7ff3",
@@ -1187,8 +1192,8 @@
       "admitted": true
     },
     "/bars/fl/lake-worth-beach/index.html": {
-      "hash": "62919efe384d2f4a62084db2a3817792814ed2a69b16d59eacb715a1806a1134",
-      "lastmod": "2026-11-16"
+      "hash": "3720946633dba19c5c1f67635c16c3b96893d504b87007d630d12e38ebe73f9f",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/lake-worth-beach/kavasutra-kava-bar/index.html": {
       "hash": "ee1406eb65a0e0dd693ab5ca31da26c90c4076fafd05e1c77ef0e038eead1115",
@@ -1206,8 +1211,8 @@
       "admitted": true
     },
     "/bars/fl/lakeland/index.html": {
-      "hash": "dbbf474bb3819edebbfef1eba1850ff40f2ecb072a5f9ce310212f40ecd0c10f",
-      "lastmod": "2026-11-16"
+      "hash": "3cd7b399d49259013bda117262af7bda4a5e77b40c87334e35003047ec9bb255",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/lakeland/pana-kava-java/index.html": {
       "hash": "bd380b3fbf81e31b687b6991aa46eb82b1669041c03a803b79eb334209329467",
@@ -1240,8 +1245,8 @@
       "admitted": true
     },
     "/bars/fl/lantana/index.html": {
-      "hash": "8bc7c0a194fb0ce133689ff0fcdfe00de1d4564ee1e0749a1c89bb290b9db8f6",
-      "lastmod": "2026-11-16"
+      "hash": "3ba69d9afbd4395d19c4ff23112c420870ac3ce2e46a592a26e55944e68dc1f0",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/lantana/rooted-kava/index.html": {
       "hash": "c6420fe2b10e9d484faad202a31ffd899df3e91f1fee3e73458a74e6732f6deb",
@@ -1249,8 +1254,8 @@
       "admitted": true
     },
     "/bars/fl/largo/index.html": {
-      "hash": "6cccb4b3bce307b84c2832e1046501c4d91eee9c970ff80c94adda439481fa19",
-      "lastmod": "2026-11-16"
+      "hash": "f52228b8c30b1da376b4b96161b046b3dbbde680dff225d51717fe8415b60f29",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/largo/java-kava-cafe/index.html": {
       "hash": "6b6c059d9397eca067ab227ebe70625674c4dcb5284dc8b8ca2eab1214b9955e",
@@ -1283,8 +1288,8 @@
       "admitted": true
     },
     "/bars/fl/lauderhill/index.html": {
-      "hash": "26900ce79e33b9ff18386a2f73cdd8853a465bcc3569da019ff8996efcb58cfe",
-      "lastmod": "2026-11-16"
+      "hash": "23cd07eba43b80ecf07c424d82a9e5a455cbb73492332c59d5ffd31b9dcd6780",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/lauderhill/shells-kava-bar/index.html": {
       "hash": "640e3b0024a5952f2abbc33195ff24f686c65f700da9850fce2a938009d72987",
@@ -1292,17 +1297,17 @@
       "admitted": true
     },
     "/bars/fl/lithia/index.html": {
-      "hash": "e2472c5d497c91d8928526f841e8c52f2b1237521f4e09ce370b3db3d4d5fa29",
-      "lastmod": "2026-11-16"
+      "hash": "14aa861dc407a59a94d285d4dabd09bb62731bb02b48528287f45e70285be513",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/lithia/quigs-kava-lounge/index.html": {
-      "hash": "0d121edf11ddf43ff9b8f6d41bb513d0c99e74935749350877052b98920e1248",
-      "lastmod": "2026-11-17",
+      "hash": "9b43fc2d5d1fb002755ff6afe864af7481af7db05c38d55ab2092b9b939d6459",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/longwood/index.html": {
-      "hash": "16119a80891dd974a0b0863b3062ae325606d12d35649d39ac0122b23bc2ccd2",
-      "lastmod": "2026-11-16"
+      "hash": "d658f48ffc4498c26a5f6c42be8cc39f2548dcbe130a7d301a13c6f03521ab17",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/longwood/sodo-kava-longwood/index.html": {
       "hash": "ad36eaeb7f914423836f7aff1d598473b2a297ee412e366e113d4ef1fa04d397",
@@ -1315,12 +1320,12 @@
       "admitted": true
     },
     "/bars/fl/maitland/index.html": {
-      "hash": "129cd2c96cf03e8154efe82d7c200580b0ef64a65edc7e5049ef71c7e333a35a",
-      "lastmod": "2026-11-16"
+      "hash": "498e8d31021dbf05ad29b37b79986210857b259c2d7b9aab16740dfe94ee8540",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/marco-island/index.html": {
-      "hash": "6713dd2a017233e2bcec0aaa26af30be389a25ac4e52a2c98ad18ae2fa90b406",
-      "lastmod": "2026-11-16"
+      "hash": "fecce885a3d0670d4fb46b6f509b7798bb24e3eb379ab979b047000d4c9557dc",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/marco-island/kava-culture-marco-island/index.html": {
       "hash": "c5e473043e9996dd9a124b2c81adb88cc43dac9ce7fcad5e6b6112e79e3803ab",
@@ -1328,8 +1333,8 @@
       "admitted": true
     },
     "/bars/fl/margate/index.html": {
-      "hash": "48e18848a6d631c9cf325c3cb6f61d1c1c13e49b4d7827607abffe90c9b7f457",
-      "lastmod": "2026-11-16"
+      "hash": "a81a9fc651a521d27b7df3ecfb18312a5d7ed816c7a09c09f90958b124f0f872",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/margate/kavana-kava-bar-margate/index.html": {
       "hash": "67611c5c955fbf5ce42f9e0d68f3be427e0fb5263d9033be85b62ad9ba8ffaa0",
@@ -1357,8 +1362,8 @@
       "admitted": true
     },
     "/bars/fl/melbourne/index.html": {
-      "hash": "83584ac60062f99065512ff6e814f4b8a909cd55c6948d47210582981f3384d9",
-      "lastmod": "2026-11-19"
+      "hash": "a5eb426baa065050c35232b31b714d7fccdf9c1bec75d78b671acc9f4c5e508e",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/melbourne/island-root-kava-bar-egad/index.html": {
       "hash": "e255b2aa725a28d36840d0d2a1e4c2736dc85845e8bab9c764429816dac7ba8f",
@@ -1416,8 +1421,8 @@
       "admitted": true
     },
     "/bars/fl/merritt-island/index.html": {
-      "hash": "8ed2614edba72996db05639f81c399aacec51ca759301ab35bd14c48f218a965",
-      "lastmod": "2026-11-16"
+      "hash": "84e27b89c24b53a988fc3b6e8d3e4cff4b89bdfa0f29621061e57e5a1847d372",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/merritt-island/kavasutra-kava-bar/index.html": {
       "hash": "17f1514e75b181e61081e1330647cc38ce771fec2787672aff35ba8fd864cd08",
@@ -1445,8 +1450,8 @@
       "admitted": true
     },
     "/bars/fl/miami-beach/index.html": {
-      "hash": "2c24f0add9e9362f879cb2732da86623d791e0031d146cc1cfdc0f28a2094762",
-      "lastmod": "2026-11-16"
+      "hash": "b89b227563519d56b9e5ea64d77c6343a0acaebdddf977c03add297c24761796",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/miami-beach/kava-garden-south-of-fifth/index.html": {
       "hash": "188fb85f4bd7573789b86e27c40cbd6a23b10e6275a44e500411652ad89860e5",
@@ -1459,8 +1464,8 @@
       "admitted": true
     },
     "/bars/fl/miami/index.html": {
-      "hash": "f5d19b38138506fadf6a4fc0e863668b4dea13eb3d95d8cca4ed34a96a500d3c",
-      "lastmod": "2026-11-16"
+      "hash": "ca4997e869f098aacb9532af1a438a17014d888c7ac288433033b12e6db38025",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/miami/kava-kavern/index.html": {
       "hash": "d41ef0e6207f6b7e2ae12d1262c0814bee5780dddcb2fc23728cee390ac14a49",
@@ -1493,8 +1498,8 @@
       "admitted": true
     },
     "/bars/fl/miramar/index.html": {
-      "hash": "d90440a342651038308fcea88c81ab3be1ea906fe979e11821e20bb5fe98fcfc",
-      "lastmod": "2026-11-16"
+      "hash": "912f5ae8f1229c8cfdd30fc10d6180bc96fcf5f774d094f27d071fbbd10614ef",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/miramar/kavana-kava-bar-miramar/index.html": {
       "hash": "597c6a1d90849a39ff5a970a0acb13ad3aed883432722c85f191dd89c98b0eb7",
@@ -1507,17 +1512,17 @@
       "admitted": true
     },
     "/bars/fl/naples/index.html": {
-      "hash": "75bcd5147d2ef08476a83823c280160a25e6d39d7055ea155d9db78fa88d5009",
-      "lastmod": "2026-11-17"
+      "hash": "8afc989b1e6815089c9487e5384e21b25573931d68d855bcdbae350dd3b194cb",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/naples/kava-culture-golden-gate/index.html": {
-      "hash": "5474a78408bef0def123b4bdf0a103df601d597db276a5df742fa00dfa2e744a",
-      "lastmod": "2026-11-16",
+      "hash": "fbeb09f17d0bf8649348e52df4b04e389baeeb4805d1b0a9d9a42d8854a66b8c",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/naples/kava-culture-naples/index.html": {
-      "hash": "2773fe74a48f44d0bd9dbd5d84dfafd0a0864b98db7151b7462a4a6fe770f118",
-      "lastmod": "2026-11-17",
+      "hash": "5410d27c7eedc500b2ec8b3ac7fe7567349873c360dc0a700eb42d23896254fb",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/naples/kava-luv-social-lounge-7r1j7r/index.html": {
@@ -1526,8 +1531,8 @@
       "admitted": true
     },
     "/bars/fl/naples/kava-luv-social-lounge/index.html": {
-      "hash": "996274834cb8ae950a0ea01792b33f8fdcb099f5106710fa6f0bf2901bb46de8",
-      "lastmod": "2026-11-17",
+      "hash": "96479fcb5f74bd6c7a8381f7d9afb36ddac898f72c90d1afd91f5a782b421616",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/naples/nectar-lab-kava-bar/index.html": {
@@ -1541,12 +1546,12 @@
       "admitted": true
     },
     "/bars/fl/neptune-beach/index.html": {
-      "hash": "bd15ae02604be805145fb53578287972739744022ec02859e4b188b3bdde98b8",
-      "lastmod": "2026-11-16"
+      "hash": "547cce100071ec46e715aeb69676f169da2fbbc54b391c19e27b4b7cafbffd1b",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/north-fort-myers/index.html": {
-      "hash": "c563f8812ccad6b563efc7a44a62b93cd777e2d0cf532c0cf949441dad0cf7d0",
-      "lastmod": "2026-11-16"
+      "hash": "5df3660bc51cfdd22bcd73cdb83aa2206cd86a7e30baeb43682d7d660edbcccb",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/north-fort-myers/island-vibes-kava-north-fort-myers/index.html": {
       "hash": "a7ce03ef1382d554deef785e800b13b3377b251789f478712a5ad1141b032313",
@@ -1559,8 +1564,8 @@
       "admitted": true
     },
     "/bars/fl/north-miami-beach/index.html": {
-      "hash": "7f3cfe4084c493c2b95053a4043520e5b3b1e9376e9ab534993d5a2b26401b22",
-      "lastmod": "2026-11-16"
+      "hash": "c88d485c04bd5eb08458a681d8fda7cc4319f3eb2c48996dd0e1729ec157bb34",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/north-miami-beach/kayf-kava-bar-and-hookah-lounge-llc/index.html": {
       "hash": "aa6914bb654756f7af154989cb0b9ed35b6e6df3ffa81720509040cf0e1aee7d",
@@ -1573,8 +1578,8 @@
       "admitted": true
     },
     "/bars/fl/north-miami/index.html": {
-      "hash": "aa87b2915cb7a7970b24a0797587cf1ee5d9977b92f7762e9ac3d2008456c926",
-      "lastmod": "2026-11-18"
+      "hash": "b9da168a3adebe2f955840fd737d46ca0f6b04df8e23ce0bce85acdca90b55df",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/north-miami/makana-kava-bar-and-hawaiian-kitchen/index.html": {
       "hash": "24d60d01ee3032d40d24257e7f0c723a50df076c7a84bcb5d4b9affe32affb82",
@@ -1582,8 +1587,8 @@
       "admitted": true
     },
     "/bars/fl/north-palm-beach/index.html": {
-      "hash": "e97966e1041d7f5d5943f5006ace591e375633cb6c5ffa5e05bdf5dcf3b3a3dd",
-      "lastmod": "2026-11-16"
+      "hash": "d95fb7975f92da6c17a9bb413d27e4e107c69e1353fbe3d6e8e924242981439e",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/north-palm-beach/kavasutra-kava-bar/index.html": {
       "hash": "a948721cf006e865d20afdbb9a2087ac4d113f32616c165d103c9d64dc8ea37b",
@@ -1596,8 +1601,8 @@
       "admitted": true
     },
     "/bars/fl/ocala/index.html": {
-      "hash": "1ca53b7c9728382f441eb47ba734a369c0d4e8d91ebf448dab0230a72ebef058",
-      "lastmod": "2026-11-16"
+      "hash": "78326c6ff7f7d616fba7927db0aad6097eeb2f0d9d12947b0b0a004835ffbfed",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/ocala/lava-hookah-lounge/index.html": {
       "hash": "cf11afa65f91341b172b758943f308b34be571dba53e0d0d2aa26770a4cb119a",
@@ -1610,8 +1615,8 @@
       "admitted": true
     },
     "/bars/fl/orange-city/index.html": {
-      "hash": "0e86e5f5fd1558955b08d5fecba0f184b3c19421ae8aa668e90e3cddcd94d769",
-      "lastmod": "2026-11-16"
+      "hash": "f1b3a21bf745c793d48cf37487164b53c12539cee7a064f746a331be2e3d2c06",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/orange-park/green-room-kava-lounge-cafe/index.html": {
       "hash": "6376a5ef5d3d0cb963e0d35b6d244acc414a718d398ad3421b92916577a78606",
@@ -1619,8 +1624,8 @@
       "admitted": true
     },
     "/bars/fl/orange-park/index.html": {
-      "hash": "aa379cc423f8aa6090e7b4241d7f3988f71da4d6b9c2ba25bc7e01fe328df264",
-      "lastmod": "2026-11-16"
+      "hash": "796b3cbc0186a6a6a94972778f81903910cb16a7d177273a7e94f9d4ed73d3c5",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/orlando/flamingo-kava-and-acai-bar-orlando/index.html": {
       "hash": "832533c8144c8ff21c594c6461dcdcff12cf336611518db86032b3a7b66c7358",
@@ -1633,8 +1638,8 @@
       "admitted": true
     },
     "/bars/fl/orlando/index.html": {
-      "hash": "7d8cbcb8229d80646f03fbaf868a7902e54cdcf543c9511b6fc794a08e8f5bd2",
-      "lastmod": "2026-11-17"
+      "hash": "04ed3854c07373012c654a1831d6294a396702914c6246494ff7208dd2dd7bfe",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/orlando/kava-culture-orlando/index.html": {
       "hash": "574b8b6236a07b28af5fb71527cdbf021379b6ed327a5f36cd0c280807324fd7",
@@ -1672,8 +1677,8 @@
       "admitted": true
     },
     "/bars/fl/ormond-beach/index.html": {
-      "hash": "7efa2bc36a153e137265fdd2542b61c54e0f5ad19e00952e08a67481537eea0b",
-      "lastmod": "2026-11-16"
+      "hash": "10b4d560410c79efedb1adb27c80697affe2f6c1c3126a2e8ac464f385120bf4",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/ormond-beach/kava-kula-kava-bar-and-lounge/index.html": {
       "hash": "c30a4081074b5162128a7747edd5676547da642c2344bb758109e31732db112c",
@@ -1681,8 +1686,8 @@
       "admitted": true
     },
     "/bars/fl/oviedo/index.html": {
-      "hash": "fd451a41d4caaa113ce129f12165e17310317aed152112b50047b898097fa5b8",
-      "lastmod": "2026-11-16"
+      "hash": "40fd1ea084f09ae798a65c7716f0edad0eed82ad70f3d775b95cbeac7986b974",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/oviedo/legacy-kava/index.html": {
       "hash": "93b4b8e8fa6346f1cc3fbe9a8c1ce37b59f3169150cac121a7b6e9478f10bff1",
@@ -1695,8 +1700,8 @@
       "admitted": true
     },
     "/bars/fl/palm-bay/index.html": {
-      "hash": "49cc494d4039ce3885af120e56bc99d6338ace92e03605de9ba110f07942cb9a",
-      "lastmod": "2026-11-16"
+      "hash": "fc07fbc9d81b0c580d0a6be2a1128d24316350685c84af79a48aaaed8579afbd",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/palm-bay/kalea-kava-house/index.html": {
       "hash": "5ab0e19f64325b1c0ea6d2c2558b1a10b3464ccefffc04c9944d28a10bb293a7",
@@ -1714,8 +1719,8 @@
       "admitted": true
     },
     "/bars/fl/palm-beach-gardens/index.html": {
-      "hash": "eb65ea4b2f2f0d2d7c4c8a9984bb3f8dc9fc855a06f98436a7c88816fc88fe48",
-      "lastmod": "2026-11-16"
+      "hash": "3a5901760e9b9602491ee0c32c54186408fa0c230c4c32e829868b141180e536",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/palm-beach-gardens/kava-daddy/index.html": {
       "hash": "f6eb8e0c45c3513a66358080922b4313b73bb13cfafe889fb13390bb9f2a96a1",
@@ -1723,8 +1728,8 @@
       "admitted": true
     },
     "/bars/fl/palm-city/index.html": {
-      "hash": "193602014a7002d724f3d4ec513b384fe34b4f422856b1dc61adc13bc9a63767",
-      "lastmod": "2026-11-19"
+      "hash": "7ce6b5638eca78c032a40827f1d5814a3150d8b9586fa35489da9e6b2e653da8",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/palm-city/island-root-kava-bar-palm-city/index.html": {
       "hash": "5e087b7272fbeaa000d8dc49468da890e011c088c8f6c5b1704b3ad90c608c0c",
@@ -1732,8 +1737,8 @@
       "admitted": true
     },
     "/bars/fl/palm-harbor/index.html": {
-      "hash": "d2e47800d6733aba5370aeeac0cdf7ef97c81ac337c6059dee3abc79d5507bed",
-      "lastmod": "2026-11-16"
+      "hash": "cffc4880536c62f9e59c91a51ca79e640b45983f40b950b035ba215188a018e0",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/palm-harbor/the-vantage-kava-and-wellness/index.html": {
       "hash": "63b64d5c34a89a913ab2518b47ee48a1ec7dfe783163565643322a229c454fd6",
@@ -1741,8 +1746,8 @@
       "admitted": true
     },
     "/bars/fl/pinellas-park/index.html": {
-      "hash": "a3ae9e655203387d159fd8e7e4d7e5d13ce195199a254a216fb6cdd5c6a2fdc6",
-      "lastmod": "2026-11-16"
+      "hash": "5a34407c5b939e9468b344969893e5246b41c6dad093aeee205c814f245a1182",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/pinellas-park/pana-kava-java/index.html": {
       "hash": "fd8024fe5bfa33d88ea3c12066b8bf9350635f83d2ec0b5c14f603d306c700bb",
@@ -1750,8 +1755,8 @@
       "admitted": true
     },
     "/bars/fl/plant-city/index.html": {
-      "hash": "259961c8d5db6ef3fed6507437a772052f9336c94a0f02af0d5ff72ed4989ebf",
-      "lastmod": "2026-11-16"
+      "hash": "1cbf0bb31dbaa08f66f208266c3ea4838c317dbd001cda56680440cfe7cd2d21",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/plant-city/yerb-labs-kava-lounge-and-smoke-shop/index.html": {
       "hash": "b161f5a237d15dd01bdbc70b036cf3c841049406002ab37bad26817039508f54",
@@ -1774,8 +1779,8 @@
       "admitted": true
     },
     "/bars/fl/pompano-beach/index.html": {
-      "hash": "05fcb3e96951dd1f7e17215fb5eafb9c5849fdd0493623559adb2107ddd1b695",
-      "lastmod": "2026-11-16"
+      "hash": "83fc577bd041cd07d4ff94e27bbf02926f522522d91f304d8652c68855ea572a",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/pompano-beach/island-vibes-kava-bar-pompano/index.html": {
       "hash": "e48a2449e6d86df156557ec53a33bf4a751b8bd9a8d13d4216c162e0408eaf59",
@@ -1793,17 +1798,17 @@
       "admitted": true
     },
     "/bars/fl/port-charlotte/index.html": {
-      "hash": "29bca8fbc15d48e36e374cf590c8d5cfc686cbc2723010a9457f25f5218ff75b",
-      "lastmod": "2026-11-17"
+      "hash": "80a31b82933629bb54db3f3acf65a0bd82f682874a04812bd49e61b230fe602b",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/port-charlotte/kava-culture-kava-bar/index.html": {
-      "hash": "b334961787b3cfd70b1103dfae0209a5684a667b4f349ee8d9550a397b4a0f07",
-      "lastmod": "2026-11-17",
+      "hash": "ca31c4b04773e100501c5f751942ff189763f665e558dc78e63ce7f8cc018311",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/port-st-lucie/index.html": {
-      "hash": "7f986ca08fd949e97b6db9d0534bea7c7bda6e6feb5c759f7d592a68fe2516b1",
-      "lastmod": "2026-11-19"
+      "hash": "cdcf61d2b955ebbe797b01a1f1ed68cae1fa1dfe46bbd75ccc3ead46863d32cb",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/port-st-lucie/island-root-kava-bar-port-saint-lucie/index.html": {
       "hash": "d6f22bffab481bf0342dae9ab7e0f00780f5cfc51ea4d15670352652f6e5577c",
@@ -1821,8 +1826,8 @@
       "admitted": true
     },
     "/bars/fl/port-st-lucie/kavasutra-kava-bar-port-saint-lucie/index.html": {
-      "hash": "b60831f64483cf138daed9a54aaca94ed9f742718ef338aea16094a22a2c9a18",
-      "lastmod": "2026-11-17",
+      "hash": "3d099b3d7d5da97711f8d4f48c06cad6dc60cb0265fbc3d50ac5aeb4600e7b94",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/port-st-lucie/mr-smoke-port-st-lucie/index.html": {
@@ -1846,26 +1851,26 @@
       "admitted": true
     },
     "/bars/fl/punta-gorda/downtown-kava/index.html": {
-      "hash": "8ba641f9d41f9dbda4a466953d69086afc1885a6f42d859182e615aa4d0f70eb",
-      "lastmod": "2026-11-17",
+      "hash": "ed621cf0359831d2e4451adace591317a555d623639251417ec2abfcfecb3e0a",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/punta-gorda/index.html": {
-      "hash": "8d120bc4fef09576e0d32e453c843651c1fd523191071272d25de0aba94b569b",
-      "lastmod": "2026-11-16"
+      "hash": "023897befb6e67de83c797cac2214b810a7da194c8962f06bb1085290033e0ab",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/punta-gorda/the-bay-kava-cafe/index.html": {
-      "hash": "f96036ee237267acfb43e828fa51a227cdcdd37d2ffb7abce47e667d118815b8",
-      "lastmod": "2026-11-17",
+      "hash": "f9f9bee832baa7ea348bffafc7a51d5455cc0a8cb2bbb8df9e8dd7d09a297216",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/riverview/index.html": {
-      "hash": "13944e3596690ac5095b451ef055b722b3bbd271bf0218d5efcd609b143532c3",
-      "lastmod": "2026-11-16"
+      "hash": "a98460b6ca119f65a0c31d3912323fb898a5bc4f3e4f8d203c504932fb002d24",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/riverview/tampa-vapor-and-kava-bar-brandon/index.html": {
-      "hash": "61063f13548c47c1c2a45350be30be61267627b35d6cdcfdd39fdbabe63e7769",
-      "lastmod": "2026-11-17",
+      "hash": "09cc65edadae935682607034f59d875073ea273f98c10d3b254d268b52add79e",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/rockledge/calm-collective-kava-bar-rockledge/index.html": {
@@ -1884,8 +1889,8 @@
       "admitted": true
     },
     "/bars/fl/rockledge/index.html": {
-      "hash": "e2ff9ddb8ba10c16a99b9f28abf7a23d8b2a36b529fe105bfe3286d8793909df",
-      "lastmod": "2026-11-16"
+      "hash": "adc099930c5b88b8a1d728657c2848e6d5b167ef2adb2adf7e9f86e6d9e152c7",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/rockledge/manitou-kava-and-coffee/index.html": {
       "hash": "da876dea646f577c396f3fb9fd1bc5aec14d6a4322f9df740834c204b30651ab",
@@ -1903,8 +1908,8 @@
       "admitted": true
     },
     "/bars/fl/sanford/index.html": {
-      "hash": "356c7d36085c631693d2887e6ef04acacd3ffa841c6124f508a903c0bfa456f9",
-      "lastmod": "2026-11-16"
+      "hash": "9a6cce3df87232678616a52d84e991fbe9da0af94c33283ad9e7f707f9ebf20f",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/sanford/piper-pit-kava-lounge/index.html": {
       "hash": "70f7595f13b013b86318a1fc5c9c740c25d5c8427a20814f4aaacac69b6010b1",
@@ -1912,8 +1917,8 @@
       "admitted": true
     },
     "/bars/fl/sarasota/index.html": {
-      "hash": "e3596619d33e08ff5923fb76bba2f2011972d56cae5f11bbf24d1c08b01561d2",
-      "lastmod": "2026-11-16"
+      "hash": "832dea7316ac094f00660cf3df85a539577ccc30468cd8944c2922739de689e0",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/sarasota/manna-tea-and-kava-bar/index.html": {
       "hash": "ceba9660b108dfd9f0f5f89565879d21f3f90ba4d2624098cba45f6a93545fb0",
@@ -1921,8 +1926,8 @@
       "admitted": true
     },
     "/bars/fl/satellite-beach/index.html": {
-      "hash": "4760f5588008f833b3cd66244b90fc87104ee4dedf96f2c2c1de62e4fdbbd890",
-      "lastmod": "2026-11-16"
+      "hash": "2c4f1b0804ce8760b042a843dee94717711dc94c51c8fa895c6700110f150023",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/satellite-beach/island-root-kava-bar-satellite-beach/index.html": {
       "hash": "ac8153bc4e3f12edd8f23e80ae894da296e925b0d5ee8e6a1c0613441152d20e",
@@ -1935,8 +1940,8 @@
       "admitted": true
     },
     "/bars/fl/sebastian/index.html": {
-      "hash": "53268a6de6b6961d6b4bb6f037deacdede835d14c4652b518c1e76e421f77839",
-      "lastmod": "2026-11-16"
+      "hash": "82a638fec56c2d07755521e3dca44b7de2498ce09ac22af711148405a90ad119",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/sebastian/island-root-kava-bar-sebastian/index.html": {
       "hash": "093eec84879aacec1e8f0f9737501d406cd90bfa42880471350c4262f1320f8f",
@@ -1959,8 +1964,8 @@
       "admitted": true
     },
     "/bars/fl/seminole/index.html": {
-      "hash": "a69e06ad7c9fc5200b5e0883b147ee9fed3a2c75bad94af97f313e71a0de236e",
-      "lastmod": "2026-11-16"
+      "hash": "5bd463bb56dab12cbccc04f9015264894bb40e0c35da42f3124f0438ae162548",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/st-augustine/green-turtle-kava-bar-st-augustine/index.html": {
       "hash": "7da7894b8fbbf69cd42b031f22538d5edbe238dc1e7a16555b5ce910b450906a",
@@ -1968,8 +1973,8 @@
       "admitted": true
     },
     "/bars/fl/st-augustine/index.html": {
-      "hash": "fd439abc4b50ef1b4777ee0263ac87b483bcd14a0cea2cc118446cb32e83957b",
-      "lastmod": "2026-11-17"
+      "hash": "bd512c59155a64aeedd841b506a4f067397e72f4caa973a54c911a836a2ac0fe",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/st-augustine/kafe-kava-st-augustine-kava-bar/index.html": {
       "hash": "52f470e06253234797e381499739b8838ef2020ed1a4869a6c300de6b37cf0bb",
@@ -2007,8 +2012,8 @@
       "admitted": true
     },
     "/bars/fl/st-petersburg/index.html": {
-      "hash": "d46e428c2bec988fe9b9ef9d65c5f5ce72d24057f9a2933bf68fc5b649122ef6",
-      "lastmod": "2026-11-18"
+      "hash": "b3eb10de761028230281b71be7cd0ee6d2660daf00e9d144945029907ef62465",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/st-petersburg/johnnys-kava-bar-and-hookah-lounge/index.html": {
       "hash": "5423ddba5cb71abadb7775ed6c16628916d428758aa21e338d8f483ec24db6b5",
@@ -2071,8 +2076,8 @@
       "admitted": true
     },
     "/bars/fl/stuart/index.html": {
-      "hash": "96709b0bac69d8ae68987d96014f32e8c358332b14df29da871bd068bf8d5853",
-      "lastmod": "2026-11-18"
+      "hash": "32e0097758966e8add8b6967b0ce7b7b552ef01f0e0e42b783b2e2e30fd3bfd9",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/stuart/island-root-kava-bar-stuart/index.html": {
       "hash": "65e45c798bdc3f3922754e26143311f33112c2496210a975324991a9e5c06dd7",
@@ -2105,8 +2110,8 @@
       "admitted": true
     },
     "/bars/fl/tampa/drip-tampa-botanical-tea-kava-bar-and-more/index.html": {
-      "hash": "134823cc430e3d9089911e807e0b5617cbaf43c23309497ff89701c45b87fc94",
-      "lastmod": "2026-11-17",
+      "hash": "4a2b0f01ddea2ddb2125705458c9a104835017b56c3ed792b27f36c7511ad92a",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/tampa/grassroots-kava-house/index.html": {
@@ -2130,12 +2135,12 @@
       "admitted": true
     },
     "/bars/fl/tampa/index.html": {
-      "hash": "c61f97d2dcad27dc68b3f6c91b0aeec5bcda8a4f8aa5610aa5cb0f85f7edb7ea",
-      "lastmod": "2026-11-18"
+      "hash": "20a31a9a43d4cd2ce1439b5528fc5f6316bc36ea779a22a04e4634dc19b66264",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/tampa/indica-cafe-kava-bar/index.html": {
-      "hash": "fcd6a7f4c3555ea112bde8b790bf954107e56ff03f0c5028cb83a3f4c17eca15",
-      "lastmod": "2026-11-17",
+      "hash": "3f55e86e97c0309d1b978fe6c4b6cb3f2c1d5f90fa3c76ee1391fa06a22176df",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/tampa/kava-culture-tampa/index.html": {
@@ -2149,8 +2154,8 @@
       "admitted": true
     },
     "/bars/fl/tampa/ritual-kava-lounge/index.html": {
-      "hash": "88623362d35b66b0554e354fe2cdabbae04a9475b579e98ed437d304b6f8592f",
-      "lastmod": "2026-11-15",
+      "hash": "b51c97dd7f02c700ed0d0bb459f43aa8688ecccbeedbcf7701ec31d7d3e6989f",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/tampa/spookeasy-lounge/index.html": {
@@ -2174,8 +2179,8 @@
       "admitted": true
     },
     "/bars/fl/temple-terrace/index.html": {
-      "hash": "e878bf4687d295c7eb74f9499f47415be03136537f017880ab2bc5bd013e1b9c",
-      "lastmod": "2026-11-16"
+      "hash": "f1536ad0739b807263ec32b13b1318db6baab5d00b4ccde0f41dd2f02cdf57b1",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/temple-terrace/insomnia-isg-kava-bar-and-lounge/index.html": {
       "hash": "62a39b21e90d5dc64ebe647166128e98808f733064204ed374d6aa23cab286b3",
@@ -2188,8 +2193,8 @@
       "admitted": true
     },
     "/bars/fl/vero-beach/index.html": {
-      "hash": "c100f90ba81bab474caa93c44accbebf76c2737fe6b054150ba2b1390fed070d",
-      "lastmod": "2026-11-16"
+      "hash": "4ab0c6400a5e3fe1ac73ffb6db21ceb0ed2cd294a93bc34d9d6ad9ccd9f54f3e",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/vero-beach/island-vibes-kava-bar-vero-beach/index.html": {
       "hash": "11ef3ee6e2e1f409e941479ee87c9b36fd7a329eb709ab410c693e5bef14a45d",
@@ -2202,8 +2207,8 @@
       "admitted": true
     },
     "/bars/fl/wellington/index.html": {
-      "hash": "9f04e70dd1e0ed12865cac8369df2f9eabb29edc06fcb169476871cb4a81b224",
-      "lastmod": "2026-11-16"
+      "hash": "e3483e931fa69aa9f32f432a26e4e7daa9e38527780ff73521ee31582ed6559e",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/wellington/riptidez-kava-bar-of-wellington/index.html": {
       "hash": "831b503d2d556e53608838d09d7ac0e9b41ae7ef8003b99b69c0217dd491e2e5",
@@ -2211,8 +2216,8 @@
       "admitted": true
     },
     "/bars/fl/wesley-chapel/index.html": {
-      "hash": "45c398fc3c2e4bd6d26aae29f26df0269f80ca903ace56db26df71e9f9c1b91e",
-      "lastmod": "2026-11-16"
+      "hash": "7e00130788da52e1ba0e91d80be04088495f1fc09ebb33d65e6c8451c0a37372",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/wesley-chapel/xpress-smoke-shop-and-kava-bar/index.html": {
       "hash": "6e544193aaf18688eec5ab9d806c802241a9695af5b81b7a837aeafb48a065c7",
@@ -2220,8 +2225,8 @@
       "admitted": true
     },
     "/bars/fl/west-melbourne/index.html": {
-      "hash": "3ee21e8713140d21654bc396f8147a829120d6737cb0a0c83f3cf3b9d9a66556",
-      "lastmod": "2026-11-18"
+      "hash": "044cfa5c3f3fee3e34a8a44f212bc66e1de0603e67df18a9242ffdfb6254855f",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/west-melbourne/pau-hana-kava-bar/index.html": {
       "hash": "3f6abad8f7e4d06b981e6f10c315777a42e6a71e972d9ad82db05a254d4c29fc",
@@ -2239,8 +2244,8 @@
       "admitted": true
     },
     "/bars/fl/west-palm-beach/index.html": {
-      "hash": "8ee4441e8ef36d6ede7f54c022d1dbca766ead4c052da67e097f245a2d5fa023",
-      "lastmod": "2026-11-16"
+      "hash": "eb4c74c55190c99f985c4a5e67b205fd1de3de7c50d3a669fc5ffeab83e12c21",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/west-palm-beach/island-root-kava-bar-royal-palm/index.html": {
       "hash": "9254226d192a6cf9f07d55a13182227f7a8d1a3a9b027b4c78886452137256dd",
@@ -2258,17 +2263,17 @@
       "admitted": true
     },
     "/bars/fl/wilton-manors/index.html": {
-      "hash": "69ddc579f3e66cdfc70436cff87e54e28890d6c8aa0e1a1a3d0f1307738477b0",
-      "lastmod": "2026-11-16"
+      "hash": "8bea8a075887c2403bf1ef624a630f97bbfa34081fd4782480adec37eddc1cee",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/wilton-manors/kavasutra-kava-bar/index.html": {
-      "hash": "cc10e08e3b6a2fbd1baaa034486f92c553e304f9cb0931c482f95ba5ef1571f5",
-      "lastmod": "2026-11-10",
+      "hash": "2a7511b32aff5bacfc3f417ed0a051df7e54eba57f4459d72c88e3984a25fa5c",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/fl/winter-haven/index.html": {
-      "hash": "2a020365e7d1a87db084395cad48178e8af025c452b9f8a28107c32331888e08",
-      "lastmod": "2026-11-16"
+      "hash": "2c39fec29844e9bbd790223f5613648b49a17a13d482664ea8e92f58f157fb47",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/winter-haven/smoke-and-brews-smokeshop-and-kratom-kava-bar/index.html": {
       "hash": "f7d7417f7187ea622cddce57867f54252fb08860b6acf0f0c7ccbb30cd0ad4b0",
@@ -2281,8 +2286,8 @@
       "admitted": true
     },
     "/bars/fl/winter-park/index.html": {
-      "hash": "de21a2d1edd2cd6196dea4c474844103c4e39c4a83dd4c4270c539eae36b8778",
-      "lastmod": "2026-11-16"
+      "hash": "cff1a1991e920712ed161a1c032cbc5bffa5a25a58d08a256d305ec27573c1bd",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/winter-park/kava-cove-lounge/index.html": {
       "hash": "44bd1887662a254cee8c68a433598e7155438df6063acb0b7566bdf655332938",
@@ -2290,8 +2295,8 @@
       "admitted": true
     },
     "/bars/fl/winter-springs/index.html": {
-      "hash": "7d1d9370aac5d4f3493b1e5e4b73010bc3f73390cbd362b002d09536cd40202b",
-      "lastmod": "2026-11-16"
+      "hash": "a127576153fb962150dcf487596f3284462f88c5234b9ece4be342abfc94407c",
+      "lastmod": "2026-11-20"
     },
     "/bars/fl/winter-springs/lei-kava/index.html": {
       "hash": "e0fcb5dcbafe26188941f272bb26604cf430db57a02bab4b6cbbf0a7a742f900",
@@ -2308,12 +2313,12 @@
       "admitted": true
     },
     "/bars/ga/index.html": {
-      "hash": "cc47bb11fad2056aa7df3d6f0464a743401f8e6ee3a7d63a43f0595b64417aa1",
-      "lastmod": "2026-11-16"
+      "hash": "f99e0fd72d08295d27d40882b06e6539f53b3f9740e3ff44d691653840a43435",
+      "lastmod": "2026-11-20"
     },
     "/bars/hi/index.html": {
-      "hash": "0e50e6c55cbca217aaeefc5f336d5adf6a35633ede043bfe2359d7e9dd99cb82",
-      "lastmod": "2026-11-16"
+      "hash": "0d74ce22fcff9bb384a5a75a14dedf9e1583016f27b29980ef1ded38438e7ce7",
+      "lastmod": "2026-11-20"
     },
     "/bars/hi/kihei/haleakava/index.html": {
       "hash": "303d31b200ccb29dc17c91727fa516fb9b1cef704fe29f49f832127ed44dae35",
@@ -2325,8 +2330,8 @@
       "lastmod": "2026-11-16"
     },
     "/bars/index.html": {
-      "hash": "9bef0b0fd36878e6977e7bcdd9c925d85dfb223d44cbd4a3d82e877fc7615b69",
-      "lastmod": "2026-11-18"
+      "hash": "a3506454b510656bf8bf88272be25fcd537c5b987fa4c49e3e1762bfbf80ac54",
+      "lastmod": "2026-11-20"
     },
     "/bars/md/baltimore/index.html": {
       "hash": "de7d035c81af38d5cd1d15c8389df164a2aea3afb2c8d4498f9af80f256c9c75",
@@ -2338,12 +2343,12 @@
       "admitted": true
     },
     "/bars/md/index.html": {
-      "hash": "8b6856c6a596355e9b0c8a1b0adefb726db8c98ff8b7e462c4afe491ee753af1",
-      "lastmod": "2026-11-16"
+      "hash": "8aed501273bf1b546ce6ce61b0fe61495da9e960fba3b236dabf4007b94951cf",
+      "lastmod": "2026-11-20"
     },
     "/bars/me/index.html": {
-      "hash": "44bd90b2e86f6809d2b5b12fa8c6196c4cfa64ebe4ad3b56130457fd445a04db",
-      "lastmod": "2026-11-16"
+      "hash": "4171d53d3db7c73907465a6414904c42f94db593830616c998e0e473bb84a469",
+      "lastmod": "2026-11-20"
     },
     "/bars/me/portland/index.html": {
       "hash": "b94a471359c242eecf72765bec51cd86a5e7a78d1283d6936dfbfc5059bbae42",
@@ -2396,12 +2401,12 @@
       "admitted": true
     },
     "/bars/mi/index.html": {
-      "hash": "b2a5656eb50a9fbed9b593f824c92aed79a9c4375bc86047133e01b64b3f4021",
-      "lastmod": "2026-11-18"
+      "hash": "430738762e90e22a9f6b711a1a587d2b28cadae15f47ba279c440ba9901a08e5",
+      "lastmod": "2026-11-20"
     },
     "/bars/mo/index.html": {
-      "hash": "4d875284bccb9629dc64184a53e61dc7c879ab4abcebb2eb9468e4b63223fb9a",
-      "lastmod": "2026-11-16"
+      "hash": "dd8768e27491db7309339f02d34b49b34137128a4eaf208095de874a19c389e0",
+      "lastmod": "2026-11-20"
     },
     "/bars/mo/st-charles/index.html": {
       "hash": "eae2b626910b8163ea1cbe227a3d615406ccaa26bc190eb5d6e2df9932ae7e29",
@@ -2516,8 +2521,8 @@
       "admitted": true
     },
     "/bars/nc/index.html": {
-      "hash": "7dfc27cffd0f2d160d2eb53a8200980dbdcf9309db97700b0e75adde693b08db",
-      "lastmod": "2026-11-16"
+      "hash": "1c52d833a9cbea74e26016cf593ac57a6d901c07bb1bf50f24492e5d9b537832",
+      "lastmod": "2026-11-20"
     },
     "/bars/nc/lowell/index.html": {
       "hash": "68f4ca72408f52a25b17a4bcbd4f8a325ef2c6858657a5a6557d9e7da669ce68",
@@ -2570,8 +2575,8 @@
       "lastmod": "2026-11-16"
     },
     "/bars/ny/index.html": {
-      "hash": "750ab9ccfbadcf4f977e31d1f0ffc691450f59ac06b71026094e14052df68c5c",
-      "lastmod": "2026-11-16"
+      "hash": "94bf48ac793a1e532da2b849082305944e45da7e1e75da1c388fe908d9e9155c",
+      "lastmod": "2026-11-20"
     },
     "/bars/ny/lindenhurst/index.html": {
       "hash": "21dc409804d6689dc97bf8344e5dc2312d3fbddc0353cbd7de0df7f083ed0c11",
@@ -2601,8 +2606,8 @@
       "admitted": true
     },
     "/bars/oh/index.html": {
-      "hash": "820bd4a591053d40fc744cbb8c37702a5fdea09e78933a2aa7a0a5e37e43b833",
-      "lastmod": "2026-11-16"
+      "hash": "2e9cd8d34d3960e2a0cad0539894db74770d157246d730d5b1f19b0400625cb3",
+      "lastmod": "2026-11-20"
     },
     "/bars/oh/lakewood/index.html": {
       "hash": "a6ca19777cd6fa7a4554042c84e0f887266f12a9a787a075cb9ae7bc1d34a27d",
@@ -2623,8 +2628,8 @@
       "admitted": true
     },
     "/bars/or/index.html": {
-      "hash": "446a1891981f8483dfe12f5a1d8c458a4ecea3a1bebf6284bf878c090d81b2d2",
-      "lastmod": "2026-11-16"
+      "hash": "6e4136737b61f54fe4a24303fe22a1e3b1a72aa6259f3a79838319e153bb25d1",
+      "lastmod": "2026-11-20"
     },
     "/bars/or/portland/bula-kava-house/index.html": {
       "hash": "465d13d1f116e67e1d7b057e3ecf1586da3cb0c2170dea3dcc329b92a63c8011",
@@ -2651,8 +2656,8 @@
       "admitted": true
     },
     "/bars/pa/index.html": {
-      "hash": "f81ecca59f57fe40186c4ae9c227735f752cb3c0699c4bda2a046c05040c4e42",
-      "lastmod": "2026-11-17"
+      "hash": "a0953f4ed7966e49e9d3baa8cc93825ab9f12af68f4307c3e96a892f88741716",
+      "lastmod": "2026-11-20"
     },
     "/bars/pa/philadelphia/index.html": {
       "hash": "a60a964dcd0ef93c5136f8737b3835b1c7a2a5e49927d954efd8d499044b09aa",
@@ -2673,8 +2678,8 @@
       "admitted": true
     },
     "/bars/sc/index.html": {
-      "hash": "9d3b410fdcbafd406a95ba8b2e0edff009eed27c4c008e89c776fee28d38799b",
-      "lastmod": "2026-11-16"
+      "hash": "802f48b64fbdac56674db5f3082f3b4d1564241267df6637247e9164f99802d3",
+      "lastmod": "2026-11-20"
     },
     "/bars/sc/myrtle-beach/index.html": {
       "hash": "d064ea3bf56a59460e1c8ca2cf365569f7403b7cddefa07ba5116b62cd91d6de",
@@ -2731,8 +2736,8 @@
       "admitted": true
     },
     "/bars/tn/index.html": {
-      "hash": "3a18e188cd344f7bf9593e89850950f74db2273dcba63c7cdf1b6900537766c5",
-      "lastmod": "2026-11-16"
+      "hash": "5d91ec6fcb6d6637ac6714975a20c86cbd7b1a58167f87982712dc2f814df82e",
+      "lastmod": "2026-11-20"
     },
     "/bars/tn/madison/index.html": {
       "hash": "c164da8f26e4ea7ef6f493fb38357b3727325a5a983a34e577588cbe1f2f694a",
@@ -2778,8 +2783,8 @@
       "admitted": true
     },
     "/bars/tx/austin/index.html": {
-      "hash": "093f39a937718a14ddc6d75e368f0fe7057225ef2c6745f3ba5ac5f71d22ae73",
-      "lastmod": "2026-11-16"
+      "hash": "326fbe112fac30171ba1616be19e1da1f67e1f10e43948c09268f98efd29cb93",
+      "lastmod": "2026-11-20"
     },
     "/bars/tx/austin/lazy-bones-kava/index.html": {
       "hash": "b43cf1a77e88fdba7150cc05541a0195b74d463150db2fe5000a11aec1dad506",
@@ -2787,8 +2792,8 @@
       "admitted": true
     },
     "/bars/tx/austin/squarerut-kava-bar/index.html": {
-      "hash": "00f5c5b5e9942bc3a4febb0c13fc8dee5af030cd4f7dc2aeb9df200714610e9c",
-      "lastmod": "2026-11-10",
+      "hash": "e62d788d87bf9507c0bb97c7b28bfd1edee95a721ff31c8c34c7de21cd7cd058",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/tx/austin/taano-house/index.html": {
@@ -2868,8 +2873,8 @@
       "admitted": true
     },
     "/bars/tx/index.html": {
-      "hash": "e84654042b59d04cbf6524e6b34c621597a4cd2f091fe98addf6f0d0d7d57c33",
-      "lastmod": "2026-11-18"
+      "hash": "2004f631cf970c48cb863cb8a97f844da0d9cc286b5bac851289b5947ee28eda",
+      "lastmod": "2026-11-20"
     },
     "/bars/tx/lewisville/index.html": {
       "hash": "dc0836fe7a65e4a19998ca9d9c8af00a28dd3e31201089ed6af39546e38aadc4",
@@ -2890,8 +2895,8 @@
       "admitted": true
     },
     "/bars/wa/index.html": {
-      "hash": "9b1d745691b629fdc07173037bca88f0d4a99dbfa2b7b74ff470def22d8a2888",
-      "lastmod": "2026-11-19"
+      "hash": "c160a0ad4b3a53fd0f2552e4a16134134e119c477d0438e074a75ea3b83ff721",
+      "lastmod": "2026-11-20"
     },
     "/bars/wa/olympia/bula-bar/index.html": {
       "hash": "e563314bfd78f807cdef02a7347e28eb7cdb1974335ea37f521fde582e2d74fc",
@@ -2903,12 +2908,12 @@
       "lastmod": "2026-11-19"
     },
     "/bars/wa/seattle/index.html": {
-      "hash": "21383c40c547d6452bc49e0064846edf2d86953f8baf1a62514227ddf16f2fb4",
-      "lastmod": "2026-11-15"
+      "hash": "dc76fad523386f4b83f8a62d08a81172551f4dc6d9b4b3b2005284d60b4e2d7d",
+      "lastmod": "2026-11-20"
     },
     "/bars/wa/seattle/swamp-cow-kava-lounge/index.html": {
-      "hash": "cf5f51f5759174a502986483758d0e3e6b6b5d311911dd1cf3ad136d145313a3",
-      "lastmod": "2026-11-15",
+      "hash": "c749b0da7bea3e48adc71ba659a32c58ed72b29be175cbd0df9015ddf7add52b",
+      "lastmod": "2026-11-20",
       "admitted": true
     },
     "/bars/wi/green-bay/index.html": {
@@ -2921,8 +2926,8 @@
       "admitted": true
     },
     "/bars/wi/index.html": {
-      "hash": "f155d0f020ff15c8d17bee1a29d6cf187bfadc65042bee650c2bd11747848f29",
-      "lastmod": "2026-11-16"
+      "hash": "2d12b98f2f36060997fd16045b879e20a2ab6ecdbf4b5ec4c58b411ed4c2cbd3",
+      "lastmod": "2026-11-20"
     },
     "/bars/wi/madison/index.html": {
       "hash": "c98fcbc52f037e0d0aa264e847e5579273fff356faa3b3316f03c7e1d875097f",

@@ -1,21 +1,21 @@
 {
-  "generated": "2026-11-16T13:25:27Z",
+  "generated": "2026-11-23T15:45:49Z",
   "totals": {
-    "venues": 428,
-    "cities": 185,
-    "states": 20,
+    "venues": 455,
+    "cities": 194,
+    "states": 22,
     "lead": {
       "st": "FL",
-      "share": 0.671
+      "share": 0.662
     }
   },
   "byState": [
     {
       "st": "FL",
       "name": "Florida",
-      "venues": 287,
-      "cities": 94,
-      "per100k": 1.22
+      "venues": 301,
+      "cities": 97,
+      "per100k": 1.28
     },
     {
       "st": "CA",
@@ -32,6 +32,20 @@
       "per100k": 0.18
     },
     {
+      "st": "AZ",
+      "name": "Arizona",
+      "venues": 17,
+      "cities": 7,
+      "per100k": 0.22
+    },
+    {
+      "st": "CO",
+      "name": "Colorado",
+      "venues": 16,
+      "cities": 9,
+      "per100k": 0.27
+    },
+    {
       "st": "TX",
       "name": "Texas",
       "venues": 16,
@@ -39,25 +53,11 @@
       "per100k": 0.05
     },
     {
-      "st": "CO",
-      "name": "Colorado",
-      "venues": 13,
-      "cities": 8,
-      "per100k": 0.22
-    },
-    {
       "st": "TN",
       "name": "TN",
       "venues": 11,
       "cities": 6,
       "per100k": null
-    },
-    {
-      "st": "AZ",
-      "name": "Arizona",
-      "venues": 10,
-      "cities": 5,
-      "per100k": 0.13
     },
     {
       "st": "MI",
@@ -102,6 +102,13 @@
       "per100k": 0.05
     },
     {
+      "st": "GA",
+      "name": "GA",
+      "venues": 2,
+      "cities": 2,
+      "per100k": null
+    },
+    {
       "st": "ME",
       "name": "Maine",
       "venues": 2,
@@ -116,15 +123,15 @@
       "per100k": 0.02
     },
     {
-      "st": "GA",
-      "name": "GA",
+      "st": "HI",
+      "name": "HI",
       "venues": 1,
       "cities": 1,
       "per100k": null
     },
     {
-      "st": "HI",
-      "name": "HI",
+      "st": "ID",
+      "name": "ID",
       "venues": 1,
       "cities": 1,
       "per100k": null
@@ -144,6 +151,13 @@
       "per100k": 0.02
     },
     {
+      "st": "NM",
+      "name": "NM",
+      "venues": 1,
+      "cities": 1,
+      "per100k": null
+    },
+    {
       "st": "PA",
       "name": "Pennsylvania",
       "venues": 1,
@@ -158,22 +172,22 @@
       "venues": 16
     },
     {
+      "city": "St. Petersburg",
+      "st": "FL",
+      "venues": 14
+    },
+    {
       "city": "Fort Lauderdale",
       "st": "FL",
-      "venues": 12
+      "venues": 13
     },
     {
       "city": "Fort Myers",
       "st": "FL",
-      "venues": 12
+      "venues": 13
     },
     {
       "city": "Melbourne",
-      "st": "FL",
-      "venues": 12
-    },
-    {
-      "city": "St. Petersburg",
       "st": "FL",
       "venues": 12
     },
@@ -207,10 +221,18 @@
     "AZ": [
       {
         "city": "Phoenix",
-        "venues": 5
+        "venues": 7
       },
       {
         "city": "Tucson",
+        "venues": 3
+      },
+      {
+        "city": "Mesa",
+        "venues": 2
+      },
+      {
+        "city": "Tempe",
         "venues": 2
       },
       {
@@ -347,14 +369,14 @@
     "CO": [
       {
         "city": "Colorado Springs",
-        "venues": 4
-      },
-      {
-        "city": "Denver",
-        "venues": 2
+        "venues": 5
       },
       {
         "city": "Lakewood",
+        "venues": 3
+      },
+      {
+        "city": "Denver",
         "venues": 2
       },
       {
@@ -363,6 +385,10 @@
       },
       {
         "city": "Fort Collins",
+        "venues": 1
+      },
+      {
+        "city": "Greeley",
         "venues": 1
       },
       {
@@ -384,19 +410,19 @@
         "venues": 16
       },
       {
+        "city": "St. Petersburg",
+        "venues": 14
+      },
+      {
         "city": "Fort Lauderdale",
-        "venues": 12
+        "venues": 13
       },
       {
         "city": "Fort Myers",
-        "venues": 12
+        "venues": 13
       },
       {
         "city": "Melbourne",
-        "venues": 12
-      },
-      {
-        "city": "St. Petersburg",
         "venues": 12
       },
       {
@@ -420,15 +446,15 @@
         "venues": 7
       },
       {
+        "city": "Largo",
+        "venues": 7
+      },
+      {
         "city": "Stuart",
         "venues": 7
       },
       {
         "city": "Davie",
-        "venues": 6
-      },
-      {
-        "city": "Largo",
         "venues": 6
       },
       {
@@ -442,6 +468,10 @@
       {
         "city": "Pompano Beach",
         "venues": 6
+      },
+      {
+        "city": "Delray Beach",
+        "venues": 5
       },
       {
         "city": "Hollywood",
@@ -464,11 +494,11 @@
         "venues": 5
       },
       {
-        "city": "Dania Beach",
+        "city": "Boynton Beach",
         "venues": 4
       },
       {
-        "city": "Delray Beach",
+        "city": "Dania Beach",
         "venues": 4
       },
       {
@@ -480,7 +510,7 @@
         "venues": 4
       },
       {
-        "city": "Boynton Beach",
+        "city": "Bradenton",
         "venues": 3
       },
       {
@@ -489,6 +519,10 @@
       },
       {
         "city": "Coral Springs",
+        "venues": 3
+      },
+      {
+        "city": "Daytona Beach",
         "venues": 3
       },
       {
@@ -516,10 +550,6 @@
         "venues": 3
       },
       {
-        "city": "Bradenton",
-        "venues": 2
-      },
-      {
         "city": "Brandon",
         "venues": 2
       },
@@ -536,11 +566,11 @@
         "venues": 2
       },
       {
-        "city": "Daytona Beach",
+        "city": "Deerfield Beach",
         "venues": 2
       },
       {
-        "city": "Deerfield Beach",
+        "city": "Dunedin",
         "venues": 2
       },
       {
@@ -553,6 +583,10 @@
       },
       {
         "city": "Lake Worth Beach",
+        "venues": 2
+      },
+      {
+        "city": "Lantana",
         "venues": 2
       },
       {
@@ -588,6 +622,10 @@
         "venues": 2
       },
       {
+        "city": "Boca Raton",
+        "venues": 1
+      },
+      {
         "city": "Casselberry",
         "venues": 1
       },
@@ -605,10 +643,6 @@
       },
       {
         "city": "Doral",
-        "venues": 1
-      },
-      {
-        "city": "Dunedin",
         "venues": 1
       },
       {
@@ -640,7 +674,7 @@
         "venues": 1
       },
       {
-        "city": "Lantana",
+        "city": "Lakewood Ranch",
         "venues": 1
       },
       {
@@ -729,6 +763,10 @@
       },
       {
         "city": "Temple Terrace",
+        "venues": 1
+      },
+      {
+        "city": "Titusville",
         "venues": 1
       },
       {
@@ -936,6 +974,10 @@
       {
         "city": "Atlanta",
         "venues": 1
+      },
+      {
+        "city": "Savannah",
+        "venues": 1
       }
     ],
     "NY": [
@@ -981,6 +1023,18 @@
     "HI": [
       {
         "city": "Kihei",
+        "venues": 1
+      }
+    ],
+    "NM": [
+      {
+        "city": "Santa Fe",
+        "venues": 1
+      }
+    ],
+    "ID": [
+      {
+        "city": "Boise",
         "venues": 1
       }
     ]

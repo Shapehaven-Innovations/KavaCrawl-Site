@@ -1,32 +1,32 @@
 {
-  "generated": "2026-11-22T13:08:39Z",
+  "generated": "2026-11-23T15:45:49Z",
   "totals": {
-    "events": 515,
-    "bars": 153,
-    "states": 11,
-    "cities": 88
+    "events": 532,
+    "bars": 170,
+    "states": 13,
+    "cities": 97
   },
   "byWeekday": [
-    70,
-    94,
-    81,
-    81,
+    73,
+    96,
     88,
-    59,
+    85,
+    88,
+    60,
     42
   ],
   "byType": [
     {
       "type": "Games",
-      "events": 159
+      "events": 165
     },
     {
       "type": "Specials",
-      "events": 131
+      "events": 133
     },
     {
       "type": "Community",
-      "events": 73
+      "events": 77
     },
     {
       "type": "Trivia",
@@ -34,7 +34,7 @@
     },
     {
       "type": "Open mic",
-      "events": 40
+      "events": 44
     },
     {
       "type": "Music",
@@ -46,7 +46,7 @@
     },
     {
       "type": "Movie night",
-      "events": 15
+      "events": 16
     },
     {
       "type": "Art",
@@ -57,8 +57,8 @@
     {
       "st": "FL",
       "name": "Florida",
-      "events": 456,
-      "bars": 129
+      "events": 467,
+      "bars": 140
     },
     {
       "st": "AZ",
@@ -81,14 +81,14 @@
     {
       "st": "CO",
       "name": "Colorado",
-      "events": 6,
-      "bars": 3
+      "events": 9,
+      "bars": 6
     },
     {
       "st": "GA",
       "name": "GA",
-      "events": 6,
-      "bars": 1
+      "events": 7,
+      "bars": 2
     },
     {
       "st": "OR",
@@ -109,6 +109,18 @@
       "bars": 1
     },
     {
+      "st": "ID",
+      "name": "ID",
+      "events": 1,
+      "bars": 1
+    },
+    {
+      "st": "NM",
+      "name": "NM",
+      "events": 1,
+      "bars": 1
+    },
+    {
       "st": "NY",
       "name": "NY",
       "events": 1,
@@ -123,28 +135,28 @@
   ],
   "typeByWeekday": {
     "Games": [
-      18,
+      19,
       27,
-      29,
-      27,
+      32,
+      28,
       21,
-      22,
+      23,
       15
     ],
     "Specials": [
       17,
-      34,
+      35,
       17,
-      21,
+      22,
       29,
       4,
       9
     ],
     "Community": [
-      16,
+      18,
       8,
-      10,
-      12,
+      11,
+      13,
       11,
       6,
       10
@@ -160,8 +172,8 @@
     ],
     "Open mic": [
       4,
-      5,
-      7,
+      6,
+      10,
       7,
       9,
       6,
@@ -189,7 +201,7 @@
       4,
       5,
       2,
-      1,
+      2,
       2,
       0,
       1
@@ -207,7 +219,7 @@
   "excluded": {
     "duplicates": 1,
     "listings": 4,
-    "outsideMap": 17,
+    "outsideMap": 0,
     "invalid": 0
   },
   "vintage": "Vintage 2025 (July 1, 2025 resident population estimates)"

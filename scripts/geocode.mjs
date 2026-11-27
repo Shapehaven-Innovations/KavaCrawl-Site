@@ -78,7 +78,7 @@ async function censusBatch(entries) {
   fd.append('benchmark', 'Public_AR_Current')
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const res = await fetch(CENSUS, { method: 'POST', body: fd, headers: { 'User-Agent': UA } })
+      const res = await fetch(CENSUS, { method: 'POST', body: fd, headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(120000) })
       if (!res.ok) throw new Error('HTTP ' + res.status)
       const out = new Map()
       for (const line of (await res.text()).split(/\r?\n/)) {
@@ -110,7 +110,7 @@ async function nominatim(params) {
   lastNominatim = Date.now()
   const q = new URLSearchParams({ ...params, country: 'United States', countrycodes: 'us', format: 'jsonv2', addressdetails: '1', limit: '1' })
   try {
-    const res = await fetch(`${NOMINATIM}?${q}`, { headers: { 'User-Agent': UA } })
+    const res = await fetch(`${NOMINATIM}?${q}`, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(30000) })
     if (!res.ok) { console.log('nominatim HTTP', res.status); return null }
     const j = await res.json()
     if (!j[0]) return null

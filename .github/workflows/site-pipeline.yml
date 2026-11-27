@@ -51,6 +51,8 @@ permissions:
   issues: write
   # Read access to the Pages build status, for the deploy wait below.
   pages: read
+  # Read when refresh-stats last ran on schedule.
+  actions: read
 
 concurrency:
   group: site-pipeline
@@ -171,6 +173,22 @@ jobs:
           INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY }}
         run: node scripts/site-pipeline.mjs notify .site-changed-urls.txt
 
+      # A workflow that stops being scheduled raises no failure of its own, so this one watches it.
+      - name: Check the dashboard refresh is still scheduled
+        timeout-minutes: 3
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          hours="$(gh api "repos/${REPO}/actions/workflows/refresh-stats.yml/runs?event=schedule&per_page=1" \
+            --jq '(now - (.workflow_runs[0].created_at | fromdateiso8601)) / 3600 | floor')"
+          echo "Last scheduled run of refresh-stats.yml: ${hours} hours ago."
+          if [ "$hours" -gt 72 ]; then
+            echo "::error::refresh-stats.yml has not run on schedule for ${hours} hours; check that it is still enabled."
+            exit 1
+          fi
+
       - name: Open or update the failure issue
         if: failure()
         env:
@@ -193,7 +211,7 @@ jobs:
             fi
           } > "$body_file"
           number="$(gh issue list --repo "$REPO" --state open --search "\"${title}\" in:title" --json number,title \
-            --jq "map(select(.title == \"${title}\")) | .[0].number // empty")"
+            --jq "map(select(.title == \"${title}\")) | .[0].number // empty")" || number=""
           if [ -n "$number" ]; then
             gh issue comment "$number" --repo "$REPO" --body-file "$body_file"
           else

@@ -3,17 +3,18 @@
 # Once a day (05:00 UTC) and on manual dispatch, this job rebuilds the guide
 # dashboard numbers in mapdata/ (venue-stats.json, events-stats.json) from the
 # KavaCrawl D1 database, runs the test suite, and commits mapdata/ only when it
-# changed. When the private KavaCrawl repo can be read, it first refreshes the
-# venue list (mapdata/venues.json) too. If the total guard refuses, a query
-# fails, or a test fails, the job stops with an error and nothing is pushed.
+# changed. It first refreshes the venue list (mapdata/venues.json) from the public
+# list the KavaCrawl repository publishes; no credential is needed for that.
+# If that refresh fails, the committed list is used, the stats are still built and
+# pushed, and the run then fails so the problem is seen.
+# If the total guard refuses, a query fails, or a test fails, the job stops with an
+# error and nothing is pushed. Every failed run opens one issue titled "Dashboard
+# refresh failed" (or comments on it, if it is already open).
 #
 # The repository owner must set up, under Settings > Secrets and variables > Actions:
 #   - Secret CLOUDFLARE_API_TOKEN (create this): a read-only D1 token,
-#     scope Account > D1 > Read, on the KavaCrawl Cloudflare account only.
-#   - Secret KAVACRAWL_REPO_TOKEN (optional, create this): a fine-grained PAT with
-#     Contents: Read-only on the repository Shapehaven-Innovations/KavaCrawl only,
-#     so the venue list also refreshes. Without it, the committed
-#     mapdata/venues.json is used as is.
+#     scope Account > D1 > Read, on the KavaCrawl Cloudflare account only, with no
+#     expiry date.
 #   - Already set: secret CLOUDFLARE_ACCOUNT_ID and repository variable D1_DATABASE_ID.
 
 name: Refresh dashboard data
@@ -25,6 +26,8 @@ on:
 
 permissions:
   contents: write
+  issues: write
+  actions: read
 
 concurrency:
   group: refresh-stats
@@ -35,10 +38,8 @@ jobs:
     # Only main may push: a manual dispatch from another branch skips the job.
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    env:
-      # Secrets cannot be tested directly in `if`, so expose only whether the token exists.
-      HAS_KC_TOKEN: ${{ secrets.KAVACRAWL_REPO_TOKEN != '' }}
+    # Longer than the step timeouts together: a job timeout would cancel the run and open no issue.
+    timeout-minutes: 40
     steps:
       - name: Check out this repo
         uses: actions/checkout@v4
@@ -48,27 +49,22 @@ jobs:
         with:
           node-version: 24
 
-      - name: Check out KavaCrawl (optional)
-        if: env.HAS_KC_TOKEN == 'true'
-        uses: actions/checkout@v4
-        with:
-          repository: Shapehaven-Innovations/KavaCrawl
-          token: ${{ secrets.KAVACRAWL_REPO_TOKEN }}
-          path: kc
-          persist-credentials: false
-
-      - name: Refresh venue list (optional)
-        if: env.HAS_KC_TOKEN == 'true'
-        # kc/ is removed afterwards so `node --test` does not pick up the other repo's tests.
+      - name: Refresh venue list
+        id: venues
+        # A failure here must not stop the stats; it is reported by a later step.
+        continue-on-error: true
+        timeout-minutes: 10
         run: |
-          node scripts/build-data.mjs kc/menu_pipeline/venues.json
-          rm -rf kc
+          set -o pipefail
+          node scripts/build-data.mjs 2>&1 | tee "$RUNNER_TEMP/venues.log"
 
-      - name: Note committed venue list in use
-        if: env.HAS_KC_TOKEN != 'true'
-        run: echo "::notice::KAVACRAWL_REPO_TOKEN is not set; using the committed mapdata/venues.json as is."
+      - name: Keep the committed venue list
+        if: steps.venues.outcome == 'failure'
+        # Drop anything the failed refresh half wrote.
+        run: git checkout -- mapdata/venues.json mapdata/geocache.json
 
       - name: Build dashboard stats
+        timeout-minutes: 8
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -76,10 +72,13 @@ jobs:
         run: node scripts/build-stats.mjs
 
       - name: Run tests
+        timeout-minutes: 5
         run: node --test
 
       - name: Commit and push mapdata if changed
+        timeout-minutes: 5
         run: |
+          set -euo pipefail
           if [ -z "$(git status --porcelain -- mapdata)" ]; then
             echo "mapdata unchanged; nothing to commit."
             exit 0
@@ -88,5 +87,65 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add mapdata
           git commit -m "$(date -u +%Y%d%m)-refresh dashboard data"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          # main can move meanwhile (site-pipeline pushes too): rebase and retry.
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin HEAD:main; then exit 0; fi
+            echo "Pull or push failed (attempt ${attempt})."
+            git rebase --abort 2>/dev/null || true
+            sleep 10
+          done
+          exit 1
+
+      - name: Report a venue list failure
+        if: steps.venues.outcome == 'failure'
+        run: |
+          echo "::error::The venue list refresh failed; the committed mapdata/venues.json is still in use."
+          exit 1
+
+      # A workflow that stops being scheduled raises no failure of its own, so this one watches it.
+      - name: Check the site pipeline is still scheduled
+        # Also after "Report a venue list failure" has failed the job.
+        if: ${{ !cancelled() }}
+        timeout-minutes: 3
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          hours="$(gh api "repos/${REPO}/actions/workflows/site-pipeline.yml/runs?event=schedule&per_page=1" \
+            --jq '(now - (.workflow_runs[0].created_at | fromdateiso8601)) / 3600 | floor')"
+          echo "Last scheduled run of site-pipeline.yml: ${hours} hours ago."
+          if [ "$hours" -gt 72 ]; then
+            echo "::error::site-pipeline.yml has not run on schedule for ${hours} hours; check that it is still enabled."
+            exit 1
+          fi
+
+      - name: Open or update the failure issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          VENUES_OUTCOME: ${{ steps.venues.outcome }}
+        run: |
+          set -uo pipefail
+          title="Dashboard refresh failed"
+          body_file="$RUNNER_TEMP/issue-body.md"
+          {
+            echo "The dashboard refresh run failed: ${RUN_URL}"
+            if [ "$VENUES_OUTCOME" = "failure" ] && [ -s "$RUNNER_TEMP/venues.log" ]; then
+              echo
+              echo "Venue list log tail:"
+              echo
+              echo '```'
+              tail -n 30 "$RUNNER_TEMP/venues.log"
+              echo '```'
+            fi
+          } > "$body_file"
+          number="$(gh issue list --repo "$REPO" --state open --search "\"${title}\" in:title" --json number,title \
+            --jq "map(select(.title == \"${title}\")) | .[0].number // empty")" || number=""
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --repo "$REPO" --body-file "$body_file"
+          else
+            gh issue create --repo "$REPO" --title "$title" --body-file "$body_file"
+          fi

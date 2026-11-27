@@ -1,6 +1,12 @@
 // Snapshots public KavaCrawl data into mapdata/venues.json for the landing page map.
-// Usage: node scripts/build-data.mjs <path to menu_pipeline/venues.json>
+// Usage: node scripts/build-data.mjs [url or path of the venue list]
+//   Default: the public list the KavaCrawl repository publishes (scripts/lib/venue-source.mjs).
+//   A local menu_pipeline/venues.json path also works.
 //
+// - A stale, malformed or much smaller venue list, or a rankings call that still fails after retries,
+//   exits non-zero and leaves mapdata/venues.json alone.
+// - Up to MAX_LOOKUP_FAILURES single-bar lookups may fail: those bars keep their committed score and
+//   price, with a warning. More than that exits non-zero in the same way.
 // - Ranked bars come from /rankings (Index score, shell price). Every other bar in the pipeline list
 //   is read from /venues/:id (shell price only).
 // - Every bar is placed by geocoding its street address at build time (scripts/geocode.mjs, cached in
@@ -14,23 +20,21 @@ import { readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import { geocodeAll, parseAddress } from './geocode.mjs'
 import { planVenuesWrite } from './lib/venues-file.mjs'
+import { loadVenueList, statesIn, VENUE_LIST_URL } from './lib/venue-source.mjs'
+import { getApiJson } from './lib/http.mjs'
 
 const API = 'https://api.kavacrawl.shapehaveninnovations.com'
-const STATES = 'AZ,CA,CO,FL,MD,ME,MI,MO,NC,OH,OR,PA,SC,TX,WA,WI'.split(',')
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 const here = (p) => new URL(p, import.meta.url)
 
-async function get(path) {
-  for (let i = 0; i < 4; i++) {
-    const res = await fetch(API + path, { headers: { 'User-Agent': 'KavaCrawl-build/1.0' } })
-    if (res.ok) return res.json()
-    if (res.status === 429) { await sleep(5000); continue }
-    return null
-  }
-  return null
-}
+// null only for 404; an outage or rate limit that outlasts the retries throws.
+const get = (path) => getApiJson(API + path)
 
-const pipeline = JSON.parse(await readFile(process.argv[2], 'utf8'))
+let prev = null
+try { prev = JSON.parse(await readFile(here('../mapdata/venues.json'), 'utf8')) } catch (e) { if (e.code !== 'ENOENT') throw e }
+// Only rows with a street address came from the venue list; the rest came from rankings alone.
+const listed = (prev?.venues ?? []).filter((v) => v.addr).length
+const pipeline = await loadVenueList(process.argv[2] ?? VENUE_LIST_URL, { prevCount: listed })
 const zj = JSON.parse(await readFile(here('../mapdata/zips.json'), 'utf8'))
 const zip = new Map(zj.z.map((r) => [r[0], [r[1] / 100, r[2] / 100]]))
 
@@ -52,9 +56,12 @@ const addrCity = (p) => /,\s*([^,]+),\s*[A-Z]{2}\s+\d{5}/.exec(p?.formatted_addr
 const street = (p) => (p?.formatted_address || '').split(',')[0].trim() || null
 
 const pipeById = new Map(pipeline.map((p) => [p.place_id, p]))
+const prevById = new Map((prev?.venues ?? []).map((v) => [v.id, v]))
+const MAX_LOOKUP_FAILURES = 5
+let lookupFailures = 0
 
 const ranked = []
-for (const st of STATES) {
+for (const st of statesIn(pipeline, prev?.venues)) {
   const j = await get(`/rankings?state=${st}`)
   for (const v of j?.venues ?? []) if (v.lat_r != null) ranked.push(v)
   await sleep(300)
@@ -92,7 +99,14 @@ for (const p of pipeline) {
   const m = /,\s*([A-Z]{2})\s+(\d{5})/.exec(p.formatted_address || '')
   const g = geo.get(p.place_id)
   if (!m || !g || g.lat == null) { skipped++; continue }
-  const d = await get(`/venues/${p.place_id}`)
+  let d = null, kept = null
+  try {
+    d = await get(`/venues/${p.place_id}`)
+  } catch (err) {
+    if (++lookupFailures > MAX_LOOKUP_FAILURES) throw err
+    kept = prevById.get(p.place_id)
+    console.log(`::warning::${err.message}; keeping the committed values for ${p.name}`)
+  }
   // Only real prices: a null, missing or non-numeric price must not become 0 in Math.min.
   const shells = (d?.prices?.items ?? []).filter((i) => i.category === 'kava_shell' && i.price != null)
     .map((i) => Number(i.price)).filter((p) => Number.isFinite(p) && p > 0)
@@ -106,13 +120,12 @@ for (const p of pipeline) {
     price: shells.length ? Math.min(...shells) : null,
     updated: shells.length ? d.prices.observed_on : null,
   })
+  if (kept) Object.assign(row, { metro: kept.metro ?? null, idx: kept.idx ?? null, price: kept.price ?? null, updated: kept.updated ?? null })
   byId.set(p.place_id, row)
   await sleep(250)
 }
 const venues = [...byId.values()]
 const next = { generated: new Date().toISOString().slice(0, 10), venues }
-let prev = null
-try { prev = JSON.parse(await readFile(here('../mapdata/venues.json'), 'utf8')) } catch (e) { if (e.code !== 'ENOENT') throw e }
 const plan = planVenuesWrite(ranked.length, prev, next)
 if (plan.action === 'refuse') {
   console.error(`refused: mapdata/venues.json not written: ${plan.reason}`)

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "eligible": 453
+    "eligible": 451
   },
   "files": {
     "/bars/az/chandler/index.html": {
@@ -22,8 +22,8 @@
       "admitted": true
     },
     "/bars/az/index.html": {
-      "hash": "14e2804e1b617250f8de2b88e6c6b143d850045afa4c9870d6fe1361fd6336d0",
-      "lastmod": "2026-11-26"
+      "hash": "b1f952774f0b55cd1028dc1279d93c1978b93949a195ccda5ce2cea81e16352a",
+      "lastmod": "2026-11-27"
     },
     "/bars/az/mesa/all-n-one-kava-lounge/index.html": {
       "hash": "006d348936b0d0d46772dbe4782103b964ba03e83f0db8f9f00f00d7fa51c2fc",
@@ -198,7 +198,7 @@
       "admitted": true
     },
     "/bars/ca/index.html": {
-      "hash": "437d7b92d8fabb6791aa4e9392cab7440543896c5a38575eb17e5ccb33830b61",
+      "hash": "f834698fdc4e70c039703aa99e3382101cbdbcef7cc177b32f60af6d56692e66",
       "lastmod": "2026-11-27"
     },
     "/bars/ca/inglewood/awakening/index.html": {
@@ -511,8 +511,8 @@
       "admitted": true
     },
     "/bars/co/index.html": {
-      "hash": "b3c47b11627d7d8c20052b9070d48a32528243955d5674a65229f4efe29aa101",
-      "lastmod": "2026-11-24"
+      "hash": "975b981ccec1fe0c61a3f91839210075b66c728fbb81493eddb3047ff263011e",
+      "lastmod": "2026-11-27"
     },
     "/bars/co/lakewood/index.html": {
       "hash": "7322cb9067e152c6b4f3c7aba78120c81501782e5650777e956d578966b8f565",
@@ -1184,8 +1184,8 @@
       "admitted": true
     },
     "/bars/fl/index.html": {
-      "hash": "c33970ff880f66abb56a2f22678f817bf2953d69c7d3d5e6485c45d2acc7e284",
-      "lastmod": "2026-11-25"
+      "hash": "2fb63d14ed7afaf13f2b9618b992b6780258604ddde488d01d91951c64497cd0",
+      "lastmod": "2026-11-27"
     },
     "/bars/fl/jacksonville-beach/index.html": {
       "hash": "5b8a76a9ebb0842e45c752074fd40f0bed5848c6be17fb3c7556277fbb2d6635",
@@ -2462,8 +2462,8 @@
       "admitted": true
     },
     "/bars/ga/index.html": {
-      "hash": "da96d996c25c2aaaeacbbda5caa751c14d935661b042bf5a793b015f92366483",
-      "lastmod": "2026-11-24"
+      "hash": "65bfda7428765c63d726247af458bff977fb1ca10dad83e4e198a027fc3d1f2e",
+      "lastmod": "2026-11-27"
     },
     "/bars/ga/savannah/index.html": {
       "hash": "e22a7adf3d21c5662448e48cb72d8a7357b43f18ff42557c59553dba43cc68bb",
@@ -2475,8 +2475,8 @@
       "admitted": true
     },
     "/bars/hi/index.html": {
-      "hash": "93f942997bcd17c1b01b9fd47b1bdd1af7b6eb2cc4092c89d6130db551bc2c1a",
-      "lastmod": "2026-11-24"
+      "hash": "4a9da9a9842771d6a5b80cee7df88a7f92624a9a6564dd3532b4fbab33b9f034",
+      "lastmod": "2026-11-27"
     },
     "/bars/hi/kihei/haleakava/index.html": {
       "hash": "303d31b200ccb29dc17c91727fa516fb9b1cef704fe29f49f832127ed44dae35",
@@ -2497,12 +2497,12 @@
       "admitted": true
     },
     "/bars/id/index.html": {
-      "hash": "34cb90443696cf1eee504f6323d38035da691417501fd42f20d87fd81c08ed5e",
-      "lastmod": "2026-11-24"
+      "hash": "104c879c662dd2b81ccc80b30ce42517431d8e72e4433a373f739c15028528b0",
+      "lastmod": "2026-11-27"
     },
     "/bars/index.html": {
-      "hash": "fd0a4fa1b902b0d3d41985b5f111fce3a8a041623ea68a01ebc423a78f056f02",
-      "lastmod": "2026-11-26"
+      "hash": "3b72b9a67d5034c94a701486590d883588ec71a4d997af4a6df8d2cfac9e954b",
+      "lastmod": "2026-11-27"
     },
     "/bars/md/baltimore/index.html": {
       "hash": "de7d035c81af38d5cd1d15c8389df164a2aea3afb2c8d4498f9af80f256c9c75",
@@ -2514,12 +2514,12 @@
       "admitted": true
     },
     "/bars/md/index.html": {
-      "hash": "3a3f2c1fdd895b74c57b0d1995b6424ab1698d1412fb023fc362a78697b52679",
-      "lastmod": "2026-11-24"
+      "hash": "d0a221ab3e04d6bd40eebac3aaf1efcd2499451f8a28d8e5b901cd8cdd0b6d9c",
+      "lastmod": "2026-11-27"
     },
     "/bars/me/index.html": {
-      "hash": "0189ce6023f7308695fadba105353603077c499d9f1a3d2e5631457ad9b6a69c",
-      "lastmod": "2026-11-24"
+      "hash": "29a930c1b5f25aa55002ca61061507524693b6baff676399e0ee5f480e55a9dc",
+      "lastmod": "2026-11-27"
     },
     "/bars/me/portland/index.html": {
       "hash": "b94a471359c242eecf72765bec51cd86a5e7a78d1283d6936dfbfc5059bbae42",
@@ -2572,12 +2572,12 @@
       "admitted": true
     },
     "/bars/mi/index.html": {
-      "hash": "8f77f404442fed2f639c0079c4cb96509b2b35fc55ec24671d9c8d4185887a06",
+      "hash": "30b23aabd8ebcf7e3ab258df2582351ba03078c9b1288a0753de6def80fb518e",
       "lastmod": "2026-11-27"
     },
     "/bars/mo/index.html": {
-      "hash": "ea0b53675d26e6d6636e1673c94f1a1139de5074466df0e804f5fd4b9692cacf",
-      "lastmod": "2026-11-24"
+      "hash": "c2328d2692896748053b8ece91d77c5f47aaff31a86948aa84a403a827d356d5",
+      "lastmod": "2026-11-27"
     },
     "/bars/mo/st-charles/index.html": {
       "hash": "6d2c29f9b4cda805eac769a46d7d259439b1b1c2d8c55cb79370abd0ccef202f",
@@ -2692,7 +2692,7 @@
       "admitted": true
     },
     "/bars/nc/index.html": {
-      "hash": "037758e9c23257bbe25281a51f8e0f439f95d5ca36be35490623225261dab9fd",
+      "hash": "6160647e5ece1a9eaf8a22ceeb95deaf98651da9c2c127e75821b426d21213f1",
       "lastmod": "2026-11-27"
     },
     "/bars/nc/lowell/index.html": {
@@ -2737,8 +2737,8 @@
       "admitted": true
     },
     "/bars/nm/index.html": {
-      "hash": "c6694e13aa94185d6d5f5d8337a04be4fe63b8d9459d44b9d93e9541a428c49b",
-      "lastmod": "2026-11-24"
+      "hash": "9ff25412c2984e1613477d50812694b007f0893e1f8bdce7e2608b99c42ae8ec",
+      "lastmod": "2026-11-27"
     },
     "/bars/nm/santa-fe/index.html": {
       "hash": "ba5b15bb4a53d7221623ac5acd42f97818cac71e4c84e316308cbb2a1fb81721",
@@ -2759,8 +2759,8 @@
       "lastmod": "2026-11-16"
     },
     "/bars/ny/index.html": {
-      "hash": "692396c8d92b0d2bc55ad46b27d9ad76a9c5b7f3d96f45ffe56daed07dfcfa98",
-      "lastmod": "2026-11-24"
+      "hash": "6e34ccb74a1f6353070059ca1ed7e3dc75feec4f80b65bbf6af0faf1702e4a05",
+      "lastmod": "2026-11-27"
     },
     "/bars/ny/lindenhurst/index.html": {
       "hash": "21dc409804d6689dc97bf8344e5dc2312d3fbddc0353cbd7de0df7f083ed0c11",
@@ -2790,8 +2790,8 @@
       "admitted": true
     },
     "/bars/oh/index.html": {
-      "hash": "8e0c541bf7ec8eb5af943bb8211122bd0da0d1d4e1aef2b97cb909d71f6b2fe0",
-      "lastmod": "2026-11-24"
+      "hash": "1dedb63a7682a745569e8823bf466a09bbc91e0c2183876e61c7da74ec67f4d5",
+      "lastmod": "2026-11-27"
     },
     "/bars/oh/lakewood/index.html": {
       "hash": "a6ca19777cd6fa7a4554042c84e0f887266f12a9a787a075cb9ae7bc1d34a27d",
@@ -2812,8 +2812,8 @@
       "admitted": true
     },
     "/bars/or/index.html": {
-      "hash": "774b9c84b5a80eceafaf92f88c825e01d02893ea5b7e018710e77e49ca2a2465",
-      "lastmod": "2026-11-24"
+      "hash": "c845b5e5ccf217de8fd432907ded60c8eda420de9998632352e2881ff73de86c",
+      "lastmod": "2026-11-27"
     },
     "/bars/or/portland/bula-kava-house/index.html": {
       "hash": "465d13d1f116e67e1d7b057e3ecf1586da3cb0c2170dea3dcc329b92a63c8011",
@@ -2840,8 +2840,8 @@
       "admitted": true
     },
     "/bars/pa/index.html": {
-      "hash": "55698ce87a5e4fd28fa8464b48066d0ce2d6d1ac9436b7b96296da7f2b983246",
-      "lastmod": "2026-11-26"
+      "hash": "4a23d14a0a506507303ddb7c2f8b82acd1454753d18c7692b6283c28d3c627e4",
+      "lastmod": "2026-11-27"
     },
     "/bars/pa/philadelphia/index.html": {
       "hash": "ba3c35c7ed6b2b0f683c3f910652a524945de69b0a6fbd9151725c1d8d57c7da",
@@ -2862,8 +2862,8 @@
       "admitted": true
     },
     "/bars/sc/index.html": {
-      "hash": "0fefef4471574059fef845f2dfac8321e093d20bd214efe4b495009352f4cd17",
-      "lastmod": "2026-11-24"
+      "hash": "2755f805bd504c2d0aef871d52f8535df4886861197409ea5c46c3ee68a28ebf",
+      "lastmod": "2026-11-27"
     },
     "/bars/sc/myrtle-beach/index.html": {
       "hash": "d064ea3bf56a59460e1c8ca2cf365569f7403b7cddefa07ba5116b62cd91d6de",
@@ -2884,8 +2884,8 @@
       "admitted": true
     },
     "/bars/tn/chattanooga/index.html": {
-      "hash": "a838edf9c33765a7492b43010d6e0688e3285aa0d46ea9f3a158c2e923ed24ef",
-      "lastmod": "2026-11-10"
+      "hash": "f6de85ad1ebeaf79b4e5b014a24ab9d8e23824465a8a3532c6b2241e36e607b3",
+      "lastmod": "2026-11-27"
     },
     "/bars/tn/chattanooga/the-patch-kava-bar-and-backyard-garden/index.html": {
       "hash": "e4ac70cdb51a7d66f8f307ed7d7a64e216907abf815b39bc851bc228e25c07cf",
@@ -2898,12 +2898,12 @@
       "admitted": true
     },
     "/bars/tn/clarksville/index.html": {
-      "hash": "a7c5df1e6914f4cd9a7118ccf94b7b3d5c752207ee0902cf242da38b61838717",
-      "lastmod": "2026-11-10"
+      "hash": "6b24bcad6ef646708f99924d9e4704d76a02d5d33e183d792317e73f97363aab",
+      "lastmod": "2026-11-27"
     },
     "/bars/tn/gallatin/index.html": {
-      "hash": "eb81493f5e38aa0d40e0bcb292ffefecaa3f8418fc5fcd6cfc76b2cd27369383",
-      "lastmod": "2026-11-10"
+      "hash": "c28559c1d081bb46460bc58f70b4c1f05899d3ad15c7116efb83ff893d7087e3",
+      "lastmod": "2026-11-27"
     },
     "/bars/tn/gallatin/kave-at-house-of-haggai/index.html": {
       "hash": "7bdb49df65fe5e880285ec2b911bebac509ffbecf4461ae38fa2c60dd1199441",
@@ -2911,8 +2911,8 @@
       "admitted": true
     },
     "/bars/tn/hendersonville/index.html": {
-      "hash": "54f3602413ba8ccbd34deddfb541ff97d3c2f019a3ea0a9f0e94a1b876a7f5d3",
-      "lastmod": "2026-11-10"
+      "hash": "6bb264c803d2077f52a7ee293a83d280be8381b4a1cf116d3baf3de3db269cd1",
+      "lastmod": "2026-11-27"
     },
     "/bars/tn/hendersonville/kave-express/index.html": {
       "hash": "b6c3a07ab705cf313f3ff4446b9ca59eb86c8e649a0dbb116c2efc292d4bcf2c",
@@ -2920,50 +2920,50 @@
       "admitted": true
     },
     "/bars/tn/index.html": {
-      "hash": "824b1da249dea86353a7d077fc5bacf18d53c137a7009a2d7ab98c1c65dc4412",
-      "lastmod": "2026-11-24"
+      "hash": "6e8f0e9e6b23af385d77561efe05ddeba59d94b50582c0fce3ed25943579d431",
+      "lastmod": "2026-11-27"
     },
     "/bars/tn/madison/index.html": {
-      "hash": "c164da8f26e4ea7ef6f493fb38357b3727325a5a983a34e577588cbe1f2f694a",
-      "lastmod": "2026-11-10"
+      "hash": "140c66c25584fd29fc9bc73038d1237265c3fe091f4e71207cfd05cc3a24aa1f",
+      "lastmod": "2026-11-27"
     },
     "/bars/tn/madison/passage-kava-lounge/index.html": {
-      "hash": "e0170c8a9d3ecb24a2d34abc1635bc2bb15e176c5203eb406375e29bfe0ea801",
-      "lastmod": "2026-11-10",
+      "hash": "7dd20189ee02dc3764aae6d0f8169494aa2dcc30d41adabed452d198ebfe2e7a",
+      "lastmod": "2026-11-27",
       "admitted": true
     },
     "/bars/tn/nashville/cava-ecyfwy/index.html": {
       "hash": "c53189ed1d0a290b386deb9e7ca13c69c1e9f567da164ee87d10b26ebcb31066",
       "lastmod": "2026-11-10",
-      "admitted": true
+      "removedOn": "2026-11-27"
     },
     "/bars/tn/nashville/cava/index.html": {
       "hash": "ce4af17802f04258ed3a9a0ce24a637e6f44d8009485a2968b97472e390720a9",
       "lastmod": "2026-11-09",
-      "admitted": true
+      "removedOn": "2026-11-27"
     },
     "/bars/tn/nashville/index.html": {
-      "hash": "5c984599f05fe1f0f270568a06ff3d74cc7f5c58d3d5f6c58313d6927ec60aee",
-      "lastmod": "2026-11-10"
+      "hash": "140d02dc6a797c09d337cec4aff6e23ffc67529dd53fd34a1df8b45cb8d5259e",
+      "lastmod": "2026-11-27"
     },
     "/bars/tn/nashville/killjoy-booze-free-beverage-shop/index.html": {
-      "hash": "3a0b27d0befe5fa98294590bb143efaddc69e89c9e941b3be2e63c094f8cf2c8",
-      "lastmod": "2026-11-10",
+      "hash": "e14e10c1320c327adf7eb085bd24d11cd0a60234e31ecca910ce7e1c583d9592",
+      "lastmod": "2026-11-27",
       "admitted": true
     },
     "/bars/tn/nashville/kratom-kava-bar-j-q3ns/index.html": {
-      "hash": "6c80b0e4829ce8366829e6f15370d5724202e8f563a3f85a86c54e9b9782b59e",
-      "lastmod": "2026-11-10",
+      "hash": "8fde78a55a7211d053dd54dbe706d59cd5fa1b5624b8589e5ddbe5179ea41e9c",
+      "lastmod": "2026-11-27",
       "admitted": true
     },
     "/bars/tn/nashville/kratom-kava-bar/index.html": {
-      "hash": "31b07bc5f2029ccbede02557d42f50282d567f756ec419ce37f1010d535103d0",
-      "lastmod": "2026-11-09",
+      "hash": "e65ef8b54732be3cf6aa61877326167c96ae2d718f3949622319a38579f015b9",
+      "lastmod": "2026-11-27",
       "admitted": true
     },
     "/bars/tn/nashville/pharmaca-28/index.html": {
-      "hash": "8792ec0be3eb2b22b2b39e4e8ec513aa93559dcae3058bcb0e1fe8c256d430b7",
-      "lastmod": "2026-11-09",
+      "hash": "8d9204db7ccd2cbe929c18a9c102912e94611fc53fd0dcf14ba5cfac57febc02",
+      "lastmod": "2026-11-27",
       "admitted": true
     },
     "/bars/tx/austin/index.html": {
@@ -3057,7 +3057,7 @@
       "admitted": true
     },
     "/bars/tx/index.html": {
-      "hash": "10ddd5a21b08dcad6cde7b824966328b177c69b9fa48b9aea7f292693080c54b",
+      "hash": "009972f2f9f0a84ad7e4d636aca68e16522b77ca829e231a68060e1c517a9cf9",
       "lastmod": "2026-11-27"
     },
     "/bars/tx/lewisville/index.html": {
@@ -3079,8 +3079,8 @@
       "admitted": true
     },
     "/bars/wa/index.html": {
-      "hash": "c6293000002ec379f3b63145ba466994046ade6b573bc2e82cab16097fc68256",
-      "lastmod": "2026-11-25"
+      "hash": "f7875270c70109eb3b6abf87bdb3347c5d7d6cb738a78e9dea79ebc5b97628b3",
+      "lastmod": "2026-11-27"
     },
     "/bars/wa/olympia/bula-bar/index.html": {
       "hash": "3b1fa6227ff3dabb39424e8e124bd06f4b4fe23a45d5bc3dc52f2ab25a31177b",
@@ -3110,8 +3110,8 @@
       "admitted": true
     },
     "/bars/wi/index.html": {
-      "hash": "304d7417c14e01ed23f9f2e4ebfe2e8afb6299624bc8270240cbacbb7e4ac1e5",
-      "lastmod": "2026-11-24"
+      "hash": "aa87449ca7dd6ed85e610e88de9c97d646d41e07db0d74fd10ae162c823fbd1e",
+      "lastmod": "2026-11-27"
     },
     "/bars/wi/madison/index.html": {
       "hash": "c98fcbc52f037e0d0aa264e847e5579273fff356faa3b3316f03c7e1d875097f",

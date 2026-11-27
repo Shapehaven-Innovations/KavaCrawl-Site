@@ -1,12 +1,12 @@
 {
-  "generated": "2026-11-23T15:45:49Z",
+  "generated": "2026-11-27T21:57:33Z",
   "totals": {
-    "venues": 455,
+    "venues": 453,
     "cities": 194,
     "states": 22,
     "lead": {
       "st": "FL",
-      "share": 0.662
+      "share": 0.664
     }
   },
   "byState": [
@@ -55,7 +55,7 @@
     {
       "st": "TN",
       "name": "TN",
-      "venues": 11,
+      "venues": 9,
       "cities": 6,
       "per100k": null
     },
@@ -794,6 +794,12 @@
         "venues": 1
       }
     ],
+    "ID": [
+      {
+        "city": "Boise",
+        "venues": 1
+      }
+    ],
     "NC": [
       {
         "city": "Charlotte",
@@ -997,7 +1003,7 @@
     "TN": [
       {
         "city": "Nashville",
-        "venues": 6
+        "venues": 4
       },
       {
         "city": "Chattanooga",
@@ -1029,12 +1035,6 @@
     "NM": [
       {
         "city": "Santa Fe",
-        "venues": 1
-      }
-    ],
-    "ID": [
-      {
-        "city": "Boise",
         "venues": 1
       }
     ]

@@ -42,10 +42,10 @@ jobs:
     timeout-minutes: 40
     steps:
       - name: Check out this repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 24
 
@@ -119,6 +119,14 @@ jobs:
             echo "::error::site-pipeline.yml has not run on schedule for ${hours} hours; check that it is still enabled."
             exit 1
           fi
+
+      - name: Check the Cloudflare token
+        if: ${{ !cancelled() }}
+        timeout-minutes: 3
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: node scripts/check-token.mjs
 
       - name: Open or update the failure issue
         if: failure()

@@ -71,7 +71,7 @@ function check(e, cand, zipC, log) {
   return true
 }
 
-async function censusBatch(entries) {
+async function censusBatch(entries, pause) {
   const csv = entries.map((e, i) => [String(i), e.street, e.city, e.st, e.zip].map(csvField).join(',')).join('\n') + '\n'
   const fd = new FormData()
   fd.append('addressFile', new Blob([csv], { type: 'text/csv' }), 'addresses.csv')
@@ -97,10 +97,10 @@ async function censusBatch(entries) {
       return out
     } catch (err) {
       console.log('census batch failed:', err.message, attempt < 2 ? '(retrying)' : '')
-      await sleep(5000)
+      if (attempt < 2) await pause(5000)
     }
   }
-  return new Map()
+  return null // the service failed: not the same as "no match"
 }
 
 let lastNominatim = 0
@@ -111,20 +111,22 @@ async function nominatim(params) {
   const q = new URLSearchParams({ ...params, country: 'United States', countrycodes: 'us', format: 'jsonv2', addressdetails: '1', limit: '1' })
   try {
     const res = await fetch(`${NOMINATIM}?${q}`, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(30000) })
-    if (!res.ok) { console.log('nominatim HTTP', res.status); return null }
+    if (!res.ok) { console.log('nominatim HTTP', res.status); return { failed: true } }
     const j = await res.json()
     if (!j[0]) return null
     const iso = j[0].address?.['ISO3166-2-lvl4'] || ''
     return { lat: Number(j[0].lat), lng: Number(j[0].lon), st: iso.startsWith('US-') ? iso.slice(3) : null, type: j[0].addresstype || j[0].type || null }
   } catch (err) {
     console.log('nominatim failed:', err.message)
-    return null
+    return { failed: true }
   }
 }
 
 // entries: [{ id, addr, street, city, st, zip }]. zipOf(zip) -> [lat, lng] or undefined.
 // Returns Map id -> { lat, lng, src: 'census'|'nominatim'|'zip'|null, match, addr } and writes the cache.
-export async function geocodeAll(entries, zipOf, cachePath) {
+// A fallback reached because a geocoder failed is returned but not cached, so the next run retries it.
+export async function geocodeAll(entries, zipOf, cachePath, { pause = sleep } = {}) {
+  const provisional = new Map()
   let cache = {}
   try { cache = JSON.parse(await readFile(cachePath, 'utf8')) } catch { /* first run */ }
   const todo = entries.filter((e) => cache[e.id]?.addr !== e.addr)
@@ -134,10 +136,11 @@ export async function geocodeAll(entries, zipOf, cachePath) {
   if (todo.length) {
     console.log(`geocoding ${todo.length} addresses (${stats.cached} cached)`)
     stats.calls++
-    const census = await censusBatch(todo)
+    const census = await censusBatch(todo, pause)
     for (const e of todo) {
       const zipC = zipOf(e.zip)
-      const c = census.get(e.id)
+      const c = census?.get(e.id)
+      let failed = census === null
       if (c?.lat != null && check(e, { ...c, src: `census ${c.type}` }, zipC, rejected)) {
         cache[e.id] = { lat: round(c.lat), lng: round(c.lng), src: 'census', match: c.type, addr: e.addr }
         stats.census++
@@ -152,17 +155,19 @@ export async function geocodeAll(entries, zipOf, cachePath) {
       for (const t of tries) {
         stats.calls++
         const n = await nominatim(t)
+        if (n?.failed) { failed = true; continue }
         if (n && check(e, { ...n, src: 'nominatim' }, zipC, rejected)) { hit = n; break }
       }
       if (hit) {
         cache[e.id] = { lat: round(hit.lat), lng: round(hit.lng), src: 'nominatim', match: hit.type, addr: e.addr }
         stats.nominatim++
-      } else if (zipC) {
-        cache[e.id] = { lat: zipC[0], lng: zipC[1], src: 'zip', match: c ? `census ${c.status}` : null, addr: e.addr }
-        stats.zip++
       } else {
-        cache[e.id] = { lat: null, lng: null, src: null, match: null, addr: e.addr }
-        stats.none++
+        const fallback = zipC
+          ? { lat: zipC[0], lng: zipC[1], src: 'zip', match: c ? `census ${c.status}` : null, addr: e.addr }
+          : { lat: null, lng: null, src: null, match: null, addr: e.addr }
+        if (failed) provisional.set(e.id, fallback)
+        else cache[e.id] = fallback
+        stats[zipC ? 'zip' : 'none']++
       }
     }
     const sorted = Object.fromEntries(Object.keys(cache).sort().map((k) => [k, cache[k]]))
@@ -170,5 +175,5 @@ export async function geocodeAll(entries, zipOf, cachePath) {
   }
   if (rejected.length) console.log('rejected geocodes:\n  ' + rejected.join('\n  '))
   console.log('geocode', JSON.stringify(stats))
-  return new Map(entries.map((e) => [e.id, cache[e.id]]))
+  return new Map(entries.map((e) => [e.id, provisional.get(e.id) ?? cache[e.id]]))
 }

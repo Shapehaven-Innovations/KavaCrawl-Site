@@ -99,3 +99,18 @@ test('refresh-stats still checks the other schedule on a day the venue list fail
   const watch = steps.find((s) => s.includes('actions/workflows/site-pipeline.yml/runs'))
   assert.match(watch, /if: \$\{\{ !cancelled\(\) \}\}/)
 })
+
+test('workflows use supported action runtimes', () => {
+  for (const w of workflows) {
+    for (const [, action, major] of w.code.matchAll(/uses: actions\/([\w-]+)@v(\d+)/g)) {
+      assert.ok(Number(major) >= 5, `${w.name}: ${action}@v${major}`)
+    }
+  }
+})
+
+test('refresh-stats checks the Cloudflare token daily, even after a failed step', () => {
+  const { steps } = workflows.find((w) => w.name === 'refresh-stats.yml')
+  const step = steps.find((s) => s.includes('node scripts/check-token.mjs'))
+  assert.match(step ?? '', /if: \$\{\{ !cancelled\(\) \}\}/)
+  assert.match(step, /secrets\.CLOUDFLARE_API_TOKEN/)
+})

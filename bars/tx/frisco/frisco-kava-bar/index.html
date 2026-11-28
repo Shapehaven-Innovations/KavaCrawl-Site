@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Frisco Kava Bar in Frisco, TX | KavaCrawl</title>
-<meta name="description" content="Frisco Kava Bar is a kava bar at 7151 Preston Rd #111a, Frisco, TX. See menu prices, plus nearby kava bars.">
+<meta name="description" content="Frisco Kava Bar is a kava bar at 7151 Preston Rd #111a, Frisco, TX. See events and menu prices, plus nearby kava bars.">
 <link rel="canonical" href="https://kavacrawl.app/bars/tx/frisco/frisco-kava-bar/">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
@@ -12,12 +12,12 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="KavaCrawl">
 <meta property="og:title" content="Frisco Kava Bar in Frisco, TX | KavaCrawl">
-<meta property="og:description" content="Frisco Kava Bar is a kava bar at 7151 Preston Rd #111a, Frisco, TX. See menu prices, plus nearby kava bars.">
+<meta property="og:description" content="Frisco Kava Bar is a kava bar at 7151 Preston Rd #111a, Frisco, TX. See events and menu prices, plus nearby kava bars.">
 <meta property="og:url" content="https://kavacrawl.app/bars/tx/frisco/frisco-kava-bar/">
 <meta property="og:image" content="https://kavacrawl.app/assets/lifestyle.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Frisco Kava Bar in Frisco, TX | KavaCrawl">
-<meta name="twitter:description" content="Frisco Kava Bar is a kava bar at 7151 Preston Rd #111a, Frisco, TX. See menu prices, plus nearby kava bars.">
+<meta name="twitter:description" content="Frisco Kava Bar is a kava bar at 7151 Preston Rd #111a, Frisco, TX. See events and menu prices, plus nearby kava bars.">
 <meta name="twitter:image" content="https://kavacrawl.app/assets/lifestyle.png">
 <style>
 /* Bar pages (/bars/{st}/{city}/{slug}/). Copied from the approved mockup, which copies the tokens and
@@ -213,6 +213,13 @@ nav .btn.go svg{width:12px;height:12px}
     </div>
   </header>
   <div class="stack">
+  <section class="panel" id="events" aria-labelledby="events-h">
+    <header><h2 id="events-h">Events</h2><p>Weekly, as posted by the bar</p></header>
+    <ul class="chips" id="tonight" aria-label="Tonight" hidden></ul>
+    <ul class="events">
+      <li data-i="0"><span class="d">Mon</span><span><span class="nm">Kava Taste Experience</span></span><span class="t">4 PM &ndash; 7 PM</span></li>
+    </ul>
+  </section>
   <section class="panel" id="menu" aria-labelledby="menu-h">
     <header><h2 id="menu-h">Menu</h2><p>Latest prices we have</p></header>
     <ul class="menu">
@@ -536,7 +543,7 @@ nav .btn.go svg{width:12px;height:12px}
 }
   </style>
   <!-- footer-css:end -->
-<script type="application/json" id="bar-data">{"tz":"America/Chicago","hours":null,"events":[]}</script>
+<script type="application/json" id="bar-data">{"tz":"America/Chicago","hours":null,"events":[{"day":1,"start":"16:00","end":"19:00","is_recurring":true,"start_date":null,"end_date":null}]}</script>
 <script type="module">
 // Bar page client: inlined into each /bars/.../ page as a module script (exports stripped by the renderer).
 // Reads the page's JSON data element (id "bar-data") { tz, hours, events } and, in the

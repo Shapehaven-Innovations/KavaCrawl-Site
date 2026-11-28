@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Kava Bar Denton in Denton, TX | KavaCrawl</title>
-<meta name="description" content="The Kava Bar Denton is a kava bar at 109 Industrial St, Denton, TX. See hours, plus nearby kava bars.">
+<meta name="description" content="The Kava Bar Denton is a kava bar at 109 Industrial St, Denton, TX. See hours and events, plus nearby kava bars.">
 <link rel="canonical" href="https://kavacrawl.app/bars/tx/denton/the-kava-bar-denton/">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
@@ -12,12 +12,12 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="KavaCrawl">
 <meta property="og:title" content="The Kava Bar Denton in Denton, TX | KavaCrawl">
-<meta property="og:description" content="The Kava Bar Denton is a kava bar at 109 Industrial St, Denton, TX. See hours, plus nearby kava bars.">
+<meta property="og:description" content="The Kava Bar Denton is a kava bar at 109 Industrial St, Denton, TX. See hours and events, plus nearby kava bars.">
 <meta property="og:url" content="https://kavacrawl.app/bars/tx/denton/the-kava-bar-denton/">
 <meta property="og:image" content="https://kavacrawl.app/assets/lifestyle.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Kava Bar Denton in Denton, TX | KavaCrawl">
-<meta name="twitter:description" content="The Kava Bar Denton is a kava bar at 109 Industrial St, Denton, TX. See hours, plus nearby kava bars.">
+<meta name="twitter:description" content="The Kava Bar Denton is a kava bar at 109 Industrial St, Denton, TX. See hours and events, plus nearby kava bars.">
 <meta name="twitter:image" content="https://kavacrawl.app/assets/lifestyle.png">
 <style>
 /* Bar pages (/bars/{st}/{city}/{slug}/). Copied from the approved mockup, which copies the tokens and
@@ -223,6 +223,13 @@ nav .btn.go svg{width:12px;height:12px}
       <li data-day="5"><b>Fri</b><span>8:00 AM &ndash; 1:00 AM</span></li>
       <li data-day="6"><b>Sat</b><span>8:00 AM &ndash; 1:00 AM</span></li>
       <li data-day="0"><b>Sun</b><span>8:00 AM &ndash; 12:00 AM</span></li>
+    </ul>
+  </section>
+  <section class="panel" id="events" aria-labelledby="events-h">
+    <header><h2 id="events-h">Events</h2><p>Weekly, as posted by the bar</p></header>
+    <ul class="chips" id="tonight" aria-label="Tonight" hidden></ul>
+    <ul class="events">
+      <li data-i="0"><span class="d">Mon</span><span><span class="nm">Open Mic</span></span><span class="t">8 PM &ndash; 10 PM</span></li>
     </ul>
   </section>
   </div>
@@ -517,7 +524,7 @@ nav .btn.go svg{width:12px;height:12px}
 }
   </style>
   <!-- footer-css:end -->
-<script type="application/json" id="bar-data">{"tz":"America/Chicago","hours":[{"day":0,"open":"08:00","close":"00:00"},{"day":1,"open":"08:00","close":"00:00"},{"day":2,"open":"08:00","close":"00:00"},{"day":3,"open":"08:00","close":"00:00"},{"day":4,"open":"08:00","close":"00:00"},{"day":5,"open":"08:00","close":"01:00"},{"day":6,"open":"08:00","close":"01:00"}],"events":[]}</script>
+<script type="application/json" id="bar-data">{"tz":"America/Chicago","hours":[{"day":0,"open":"08:00","close":"00:00"},{"day":1,"open":"08:00","close":"00:00"},{"day":2,"open":"08:00","close":"00:00"},{"day":3,"open":"08:00","close":"00:00"},{"day":4,"open":"08:00","close":"00:00"},{"day":5,"open":"08:00","close":"01:00"},{"day":6,"open":"08:00","close":"01:00"}],"events":[{"day":1,"start":"20:00","end":"22:00","is_recurring":true,"start_date":null,"end_date":null}]}</script>
 <script type="module">
 // Bar page client: inlined into each /bars/.../ page as a module script (exports stripped by the renderer).
 // Reads the page's JSON data element (id "bar-data") { tz, hours, events } and, in the

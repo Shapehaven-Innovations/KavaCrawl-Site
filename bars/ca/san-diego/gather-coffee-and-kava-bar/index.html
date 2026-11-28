@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gather Coffee &amp; Kava Bar in San Diego, CA | KavaCrawl</title>
-<meta name="description" content="Gather Coffee &amp; Kava Bar is a kava bar at 3811 Ray St, San Diego, CA. See hours, plus nearby kava bars.">
+<meta name="description" content="Gather Coffee &amp; Kava Bar is a kava bar at 3811 Ray St, San Diego, CA. See hours and events, plus nearby kava bars.">
 <link rel="canonical" href="https://kavacrawl.app/bars/ca/san-diego/gather-coffee-and-kava-bar/">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
@@ -12,12 +12,12 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="KavaCrawl">
 <meta property="og:title" content="Gather Coffee &amp; Kava Bar in San Diego, CA | KavaCrawl">
-<meta property="og:description" content="Gather Coffee &amp; Kava Bar is a kava bar at 3811 Ray St, San Diego, CA. See hours, plus nearby kava bars.">
+<meta property="og:description" content="Gather Coffee &amp; Kava Bar is a kava bar at 3811 Ray St, San Diego, CA. See hours and events, plus nearby kava bars.">
 <meta property="og:url" content="https://kavacrawl.app/bars/ca/san-diego/gather-coffee-and-kava-bar/">
 <meta property="og:image" content="https://kavacrawl.app/assets/lifestyle.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gather Coffee &amp; Kava Bar in San Diego, CA | KavaCrawl">
-<meta name="twitter:description" content="Gather Coffee &amp; Kava Bar is a kava bar at 3811 Ray St, San Diego, CA. See hours, plus nearby kava bars.">
+<meta name="twitter:description" content="Gather Coffee &amp; Kava Bar is a kava bar at 3811 Ray St, San Diego, CA. See hours and events, plus nearby kava bars.">
 <meta name="twitter:image" content="https://kavacrawl.app/assets/lifestyle.png">
 <style>
 /* Bar pages (/bars/{st}/{city}/{slug}/). Copied from the approved mockup, which copies the tokens and
@@ -225,11 +225,18 @@ nav .btn.go svg{width:12px;height:12px}
       <li data-day="0"><b>Sun</b><span>2:00 PM &ndash; 11:00 PM</span></li>
     </ul>
   </section>
+  <section class="panel" id="events" aria-labelledby="events-h">
+    <header><h2 id="events-h">Events</h2><p>Weekly, as posted by the bar</p></header>
+    <ul class="chips" id="tonight" aria-label="Tonight" hidden></ul>
+    <ul class="events">
+      <li data-i="0"><span class="d">Thu</span><span><span class="nm">Trivia Thursday</span></span><span class="t">8:30 PM &ndash; 10:30 PM</span></li>
+    </ul>
+  </section>
   </div>
   <section class="panel near-panel" id="nearby" aria-labelledby="nearby-h">
     <header><h2 id="nearby-h">Nearby bars</h2><p>Closest, in a straight line</p></header>
     <ul class="near">
-      <li><a href="/bars/ca/san-diego/kava-collective/"><span class="nm">Kava Collective</span><span class="meta"><span class="price">$7.00</span><span class="score" title="KavaCrawl Index">63</span></span><span class="sub">1.1 mi</span></a></li>
+      <li><a href="/bars/ca/san-diego/kava-collective/"><span class="nm">Kava Collective</span><span class="meta"><span class="price">$7.00</span><span class="score" title="KavaCrawl Index">64</span></span><span class="sub">1.1 mi</span></a></li>
       <li><a href="/bars/ca/la-mesa/kratom-kava-bar/"><span class="nm">Kratom Kava Bar</span><span class="sub">6.2 mi</span></a></li>
       <li><a href="/bars/ca/solana-beach/kratom-kava-bar/"><span class="nm">Kratom Kava Bar</span><span class="sub">18.7 mi</span></a></li>
     </ul>
@@ -517,7 +524,7 @@ nav .btn.go svg{width:12px;height:12px}
 }
   </style>
   <!-- footer-css:end -->
-<script type="application/json" id="bar-data">{"tz":"America/Los_Angeles","hours":[{"day":0,"open":"14:00","close":"23:00"},{"day":1,"open":"14:00","close":"23:00"},{"day":2,"open":"14:00","close":"23:00"},{"day":3,"open":"14:00","close":"00:00"},{"day":4,"open":"14:00","close":"00:00"},{"day":5,"open":"14:00","close":"01:00"},{"day":6,"open":"14:00","close":"01:00"}],"events":[]}</script>
+<script type="application/json" id="bar-data">{"tz":"America/Los_Angeles","hours":[{"day":0,"open":"14:00","close":"23:00"},{"day":1,"open":"14:00","close":"23:00"},{"day":2,"open":"14:00","close":"23:00"},{"day":3,"open":"14:00","close":"00:00"},{"day":4,"open":"14:00","close":"00:00"},{"day":5,"open":"14:00","close":"01:00"},{"day":6,"open":"14:00","close":"01:00"}],"events":[{"day":4,"start":"20:30","end":"22:30","is_recurring":true,"start_date":null,"end_date":null}]}</script>
 <script type="module">
 // Bar page client: inlined into each /bars/.../ page as a module script (exports stripped by the renderer).
 // Reads the page's JSON data element (id "bar-data") { tz, hours, events } and, in the

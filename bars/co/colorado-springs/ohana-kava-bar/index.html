@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ohana Kava Bar in Colorado Springs, CO | KavaCrawl</title>
-<meta name="description" content="Ohana Kava Bar is a kava bar at 4337 N Academy Blvd #100, Colorado Springs, CO. Get directions and see nearby kava bars.">
+<meta name="description" content="Ohana Kava Bar is a kava bar at 4337 N Academy Blvd #100, Colorado Springs, CO. See events, plus nearby kava bars.">
 <link rel="canonical" href="https://kavacrawl.app/bars/co/colorado-springs/ohana-kava-bar/">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
@@ -12,12 +12,12 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="KavaCrawl">
 <meta property="og:title" content="Ohana Kava Bar in Colorado Springs, CO | KavaCrawl">
-<meta property="og:description" content="Ohana Kava Bar is a kava bar at 4337 N Academy Blvd #100, Colorado Springs, CO. Get directions and see nearby kava bars.">
+<meta property="og:description" content="Ohana Kava Bar is a kava bar at 4337 N Academy Blvd #100, Colorado Springs, CO. See events, plus nearby kava bars.">
 <meta property="og:url" content="https://kavacrawl.app/bars/co/colorado-springs/ohana-kava-bar/">
 <meta property="og:image" content="https://kavacrawl.app/assets/lifestyle.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ohana Kava Bar in Colorado Springs, CO | KavaCrawl">
-<meta name="twitter:description" content="Ohana Kava Bar is a kava bar at 4337 N Academy Blvd #100, Colorado Springs, CO. Get directions and see nearby kava bars.">
+<meta name="twitter:description" content="Ohana Kava Bar is a kava bar at 4337 N Academy Blvd #100, Colorado Springs, CO. See events, plus nearby kava bars.">
 <meta name="twitter:image" content="https://kavacrawl.app/assets/lifestyle.png">
 <style>
 /* Bar pages (/bars/{st}/{city}/{slug}/). Copied from the approved mockup, which copies the tokens and
@@ -202,7 +202,7 @@ nav .btn.go svg{width:12px;height:12px}
 <body>
 <div class="wrap">
   <nav><a class="brand" href="/"><img src="/assets/icon.webp" alt="" width="40" height="40"><span class="wm">KavaCrawl</span></a><a class="btn go" href="https://apps.apple.com/us/app/kavacrawl/id6772610237">Get the app <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></nav>
-  <main class="bar thin">
+  <main class="bar">
   <header class="bar-head">
     <p class="crumb"><a href="/bars/co/">Colorado</a> &rsaquo; <a href="/bars/co/colorado-springs/">Colorado Springs</a></p>
     <h1>Ohana Kava Bar</h1>
@@ -213,14 +213,18 @@ nav .btn.go svg{width:12px;height:12px}
     </div>
   </header>
   <div class="stack">
-  <section class="panel" id="known" aria-labelledby="known-h">
-    <header><h2 id="known-h">What we know</h2></header>
-    <div class="unavail">
-      <b>Hours, events and menu aren't listed yet</b>
-      <p>We list only what we've checked. Check the bar's own listing before you go.</p>
-      <ul class="chips" aria-label="Missing details"><li>Hours</li><li>Events</li><li>Shell price</li><li>Menu</li></ul>
-      <div><span class="rbox na">Not yet scored</span></div>
-    </div>
+  <section class="panel" id="events" aria-labelledby="events-h">
+    <header><h2 id="events-h">Events</h2><p>Weekly, as posted by the bar</p></header>
+    <ul class="chips" id="tonight" aria-label="Tonight" hidden></ul>
+    <ul class="events">
+      <li data-i="0"><span class="d">Mon</span><span><span class="nm">2X Points Promotion</span></span><span class="t">1 PM &ndash; 3 PM</span></li>
+      <li data-i="1"><span class="d">Tue</span><span><span class="nm">Open Mic Night</span></span><span class="t">7 PM &ndash; 9 PM</span></li>
+      <li data-i="2"><span class="d">Thu</span><span><span class="nm">Trivia Night</span></span><span class="t">7 PM &ndash; 9 PM</span></li>
+      <li data-i="3"><span class="d">Fri</span><span><span class="nm">Laugh Luau Comedy Show</span></span><span class="t">7 PM &ndash; 9 PM</span></li>
+      <li data-i="4"><span class="d">Sat</span><span><span class="nm">Mindful Morning</span></span><span class="t">11 AM &ndash; 1 PM</span></li>
+      <li data-i="5"><span class="d">Sat</span><span><span class="nm">Bingo Night</span></span><span class="t">7 PM &ndash; 9 PM</span></li>
+      <li data-i="6"><span class="d">Sat</span><span><span class="nm">Karaoke</span></span><span class="t">7 PM &ndash; 9 PM</span></li>
+    </ul>
   </section>
   </div>
   <section class="panel near-panel" id="nearby" aria-labelledby="nearby-h">
@@ -514,7 +518,7 @@ nav .btn.go svg{width:12px;height:12px}
 }
   </style>
   <!-- footer-css:end -->
-<script type="application/json" id="bar-data">{"tz":"America/Denver","hours":null,"events":[]}</script>
+<script type="application/json" id="bar-data">{"tz":"America/Denver","hours":null,"events":[{"day":1,"start":"13:00","end":"15:00","is_recurring":true,"start_date":null,"end_date":null},{"day":2,"start":"19:00","end":"21:00","is_recurring":true,"start_date":null,"end_date":null},{"day":4,"start":"19:00","end":"21:00","is_recurring":true,"start_date":null,"end_date":null},{"day":5,"start":"19:00","end":"21:00","is_recurring":true,"start_date":null,"end_date":null},{"day":6,"start":"11:00","end":"13:00","is_recurring":true,"start_date":null,"end_date":null},{"day":6,"start":"19:00","end":"21:00","is_recurring":true,"start_date":null,"end_date":null},{"day":6,"start":"19:00","end":"21:00","is_recurring":true,"start_date":null,"end_date":null}]}</script>
 <script type="module">
 // Bar page client: inlined into each /bars/.../ page as a module script (exports stripped by the renderer).
 // Reads the page's JSON data element (id "bar-data") { tz, hours, events } and, in the

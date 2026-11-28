@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Botanical Brewing Kava Bar in Lakeland, FL | KavaCrawl</title>
-<meta name="description" content="Botanical Brewing Kava Bar is a kava bar at 8515 US Hwy 98 N, Lakeland, FL. See menu prices, plus nearby kava bars.">
+<meta name="description" content="Botanical Brewing Kava Bar is a kava bar at 8515 US Hwy 98 N, Lakeland, FL. See events and menu prices, plus nearby kava bars.">
 <link rel="canonical" href="https://kavacrawl.app/bars/fl/lakeland/botanical-brewing-kava-bar/">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
@@ -12,12 +12,12 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="KavaCrawl">
 <meta property="og:title" content="Botanical Brewing Kava Bar in Lakeland, FL | KavaCrawl">
-<meta property="og:description" content="Botanical Brewing Kava Bar is a kava bar at 8515 US Hwy 98 N, Lakeland, FL. See menu prices, plus nearby kava bars.">
+<meta property="og:description" content="Botanical Brewing Kava Bar is a kava bar at 8515 US Hwy 98 N, Lakeland, FL. See events and menu prices, plus nearby kava bars.">
 <meta property="og:url" content="https://kavacrawl.app/bars/fl/lakeland/botanical-brewing-kava-bar/">
 <meta property="og:image" content="https://kavacrawl.app/assets/lifestyle.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Botanical Brewing Kava Bar in Lakeland, FL | KavaCrawl">
-<meta name="twitter:description" content="Botanical Brewing Kava Bar is a kava bar at 8515 US Hwy 98 N, Lakeland, FL. See menu prices, plus nearby kava bars.">
+<meta name="twitter:description" content="Botanical Brewing Kava Bar is a kava bar at 8515 US Hwy 98 N, Lakeland, FL. See events and menu prices, plus nearby kava bars.">
 <meta name="twitter:image" content="https://kavacrawl.app/assets/lifestyle.png">
 <style>
 /* Bar pages (/bars/{st}/{city}/{slug}/). Copied from the approved mockup, which copies the tokens and
@@ -213,6 +213,16 @@ nav .btn.go svg{width:12px;height:12px}
     </div>
   </header>
   <div class="stack">
+  <section class="panel" id="events" aria-labelledby="events-h">
+    <header><h2 id="events-h">Events</h2><p>Weekly, as posted by the bar</p></header>
+    <ul class="chips" id="tonight" aria-label="Tonight" hidden></ul>
+    <ul class="events">
+      <li data-i="0"><span class="d">Tue</span><span><span class="nm">Tuesday Trivia</span></span><span class="t">7 PM &ndash; 9 PM</span></li>
+      <li data-i="1"><span class="d">Wed</span><span><span class="nm">Paint and Sip Movie Night</span></span><span class="t">8 PM &ndash; 10 PM</span></li>
+      <li data-i="2"><span class="d">Thu</span><span><span class="nm">Electric Guitar Raffle &amp; Open Jam</span></span><span class="t">7 PM &ndash; 9 PM</span></li>
+      <li data-i="3"><span class="d">Thu</span><span><span class="nm">Karaoke Night</span></span><span class="t">8 PM &ndash; 10 PM</span></li>
+    </ul>
+  </section>
   <section class="panel" id="menu" aria-labelledby="menu-h">
     <header><h2 id="menu-h">Menu</h2><p>Latest prices we have</p></header>
     <ul class="menu">
@@ -513,7 +523,7 @@ nav .btn.go svg{width:12px;height:12px}
 }
   </style>
   <!-- footer-css:end -->
-<script type="application/json" id="bar-data">{"tz":"America/New_York","hours":null,"events":[]}</script>
+<script type="application/json" id="bar-data">{"tz":"America/New_York","hours":null,"events":[{"day":2,"start":"19:00","end":"21:00","is_recurring":true,"start_date":null,"end_date":null},{"day":3,"start":"20:00","end":"22:00","is_recurring":true,"start_date":null,"end_date":null},{"day":4,"start":"19:00","end":"21:00","is_recurring":true,"start_date":null,"end_date":null},{"day":4,"start":"20:00","end":"22:00","is_recurring":true,"start_date":null,"end_date":null}]}</script>
 <script type="module">
 // Bar page client: inlined into each /bars/.../ page as a module script (exports stripped by the renderer).
 // Reads the page's JSON data element (id "bar-data") { tz, hours, events } and, in the

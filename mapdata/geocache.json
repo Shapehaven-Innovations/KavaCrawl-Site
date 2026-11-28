@@ -146,6 +146,13 @@
   "match": "Non_Exact",
   "addr": "2110 S Lamar Blvd Ste a, Austin, TX 78704"
  },
+ "ChIJ3UwoFlwn2YgROzmrwxrCqhk": {
+  "lat": 26.57194,
+  "lng": -80.10388,
+  "src": "census",
+  "match": "Exact",
+  "addr": "3932 Hypoluxo Rd, Boynton Beach, FL 33436"
+ },
  "ChIJ3X18gYLdmoARYxa3Kka7OUg": {
   "lat": 38.61442,
   "lng": -121.27109,
@@ -181,12 +188,33 @@
   "match": "Exact",
   "addr": "10952 Eagle Village Dr #460, Fort Myers, FL 33913"
  },
+ "ChIJ42Fq2XkB3ogRGR1SrIq-Mlg": {
+  "lat": 28.35001,
+  "lng": -80.72766,
+  "src": "census",
+  "match": "Exact",
+  "addr": "902 Florida Ave, Cocoa, FL 32922"
+ },
  "ChIJ44bmcwC1RIYR8MTGfLi96jc": {
   "lat": 30.26359,
   "lng": -97.72497,
   "src": "census",
   "match": "Exact",
   "addr": "1620 E 7th St, Austin, TX 78702"
+ },
+ "ChIJ49WC5wD17IgRKmkYUrJ3aLs": {
+  "lat": 30.44721,
+  "lng": -84.30775,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1600 W Call St Apt 112, Tallahassee, FL 32304"
+ },
+ "ChIJ4RrwvCK1wogRVe3Szy1Jch4": {
+  "lat": 28.14363,
+  "lng": -82.29536,
+  "src": "census",
+  "match": "Exact",
+  "addr": "10857 Cross Creek Blvd Unit 10857, Tampa, FL 33647"
  },
  "ChIJ4SwTVb_p3ogR9r5mlFngB0s": {
   "lat": 27.26424,
@@ -237,6 +265,13 @@
   "match": "Exact",
   "addr": "10341 66th St N, Pinellas Park, FL 33782"
  },
+ "ChIJ5UKubEVAw4gR73q9TXVHO9Y": {
+  "lat": 27.31636,
+  "lng": -82.53115,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1926 Hillview St, Sarasota, FL 34239"
+ },
  "ChIJ5wbjg50XK4cRQZgCrNPeGE4": {
   "lat": 33.45782,
   "lng": -112.06754,
@@ -251,12 +286,26 @@
   "match": "Exact",
   "addr": "8925 Tamiami Trl N, Naples, FL 34108"
  },
+ "ChIJ61gsmhK30YgRpmhL0w0fJH4": {
+  "lat": 24.55901,
+  "lng": -81.79821,
+  "src": "census",
+  "match": "Exact",
+  "addr": "901 Fleming St, Key West, FL 33040"
+ },
  "ChIJ61vCCzrv2ogR52ViZSbFArY": {
   "lat": 25.95492,
   "lng": -81.72261,
   "src": "census",
   "match": "Exact",
   "addr": "1069 N Collier Blvd #214, Marco Island, FL 34145"
+ },
+ "ChIJ63tOlfIv2YgROqyqlWMbaac": {
+  "lat": 26.68083,
+  "lng": -80.21025,
+  "src": "census",
+  "match": "Exact",
+  "addr": "10125 Southern Blvd, Royal Palm Beach, FL 33411"
  },
  "ChIJ64Z2aCTV2IgRzbUqDdpMsxU": {
   "lat": 26.80726,
@@ -279,12 +328,26 @@
   "match": "Exact",
   "addr": "3200 Merrie Lynn Ave, Austin, TX 78722"
  },
+ "ChIJ6RXm1ccfR4cR3EK6XvyO5mg": {
+  "lat": 39.08697,
+  "lng": -108.46056,
+  "src": "census",
+  "match": "Exact",
+  "addr": "569 32 Rd #9a, Grand Junction, CO 81504"
+ },
  "ChIJ6YAS_w7j2ogReYo7-pHjbTM": {
   "lat": 26.11645,
   "lng": -81.75617,
   "src": "census",
   "match": "Exact",
   "addr": "4121 Tamiami Trl E, Naples, FL 34112"
+ },
+ "ChIJ6YSf1H-35YgRDQuYKqY5oFk": {
+  "lat": 30.31627,
+  "lng": -81.65593,
+  "src": "census",
+  "match": "Exact",
+  "addr": "1430 Prudential Dr, Jacksonville, FL 32207"
  },
  "ChIJ6Z3f9xKr2YgRyRAlmHxt3Os": {
   "lat": 26.01052,
@@ -1245,6 +1308,13 @@
   "match": "Exact",
   "addr": "3003 SW Port St Lucie Blvd, Port St. Lucie, FL 34953"
  },
+ "ChIJP2AS0orzWYgRVU19fKtDaD8": {
+  "lat": 35.59585,
+  "lng": -82.55055,
+  "src": "census",
+  "match": "Exact",
+  "addr": "122 College St, Asheville, NC 28801"
+ },
  "ChIJP329de6j6IgReVbqyN8wEyI": {
   "lat": 29.65199,
   "lng": -82.33099,
@@ -1469,6 +1539,13 @@
   "match": "Exact",
   "addr": "1878 Dr. Andres Way, Delray Beach, FL 33445"
  },
+ "ChIJRZe8hxnDrIkRcVoTOB9HQJ8": {
+  "lat": 35.91022,
+  "lng": -79.07244,
+  "src": "census",
+  "match": "Exact",
+  "addr": "105 W Main St, Carrboro, NC 27510"
+ },
  "ChIJR_EHJOUV24gR8cNvQPqYqwg": {
   "lat": 26.54498,
   "lng": -81.84195,
@@ -1650,6 +1727,13 @@
   "src": "nominatim",
   "match": "place",
   "addr": "7151 Preston Rd #111a, Frisco, TX 75034"
+ },
+ "ChIJX0X1AKavU4gRUmH15GitfrU": {
+  "lat": 36.10382,
+  "lng": -80.25977,
+  "src": "census",
+  "match": "Exact",
+  "addr": "918 Bridge St NW Ste 160, Winston-Salem, NC 27101"
  },
  "ChIJX4UcmdD_rlQRzJN-KYfjm_8": {
   "lat": 43.64585,
@@ -1902,6 +1986,20 @@
   "src": "census",
   "match": "Exact",
   "addr": "749 Washington Ave, Miami Beach, FL 33139"
+ },
+ "ChIJa2sJ15CnrIkRnNNrSd8TwEk": {
+  "lat": 35.47865,
+  "lng": -79.17947,
+  "src": "census",
+  "match": "Exact",
+  "addr": "200 S Horner Blvd, Sanford, NC 27330"
+ },
+ "ChIJa8BsiqXzrIkRf6vmiPEmwJM": {
+  "lat": 35.99684,
+  "lng": -78.91605,
+  "src": "census",
+  "match": "Non_Exact",
+  "addr": "1114 W Chapel Hill St Unit B, Durham, NC 27701"
  },
  "ChIJa8zpbIAP3ogReRa841xhJuA": {
   "lat": 28.11957,
@@ -2966,6 +3064,13 @@
   "src": "census",
   "match": "Exact",
   "addr": "112 E Boulder St, Colorado Springs, CO 80903"
+ },
+ "ChIJwaVlA_FfrIkRj3Xd0xOXJjM": {
+  "lat": 35.78911,
+  "lng": -78.63442,
+  "src": "census",
+  "match": "Exact",
+  "addr": "709 N Person St, Raleigh, NC 27604"
  },
  "ChIJwc4vxEZv1oYRNTm397-CQp8": {
   "lat": 32.23613,

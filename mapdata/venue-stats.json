@@ -1,21 +1,21 @@
 {
-  "generated": "2026-11-27T21:57:33Z",
+  "generated": "2026-11-28T01:54:43Z",
   "totals": {
-    "venues": 453,
-    "cities": 194,
+    "venues": 468,
+    "cities": 203,
     "states": 22,
     "lead": {
       "st": "FL",
-      "share": 0.664
+      "share": 0.66
     }
   },
   "byState": [
     {
       "st": "FL",
       "name": "Florida",
-      "venues": 301,
-      "cities": 97,
-      "per100k": 1.28
+      "venues": 309,
+      "cities": 100,
+      "per100k": 1.32
     },
     {
       "st": "CA",
@@ -27,9 +27,9 @@
     {
       "st": "NC",
       "name": "North Carolina",
-      "venues": 20,
-      "cities": 11,
-      "per100k": 0.18
+      "venues": 26,
+      "cities": 16,
+      "per100k": 0.23
     },
     {
       "st": "AZ",
@@ -41,9 +41,9 @@
     {
       "st": "CO",
       "name": "Colorado",
-      "venues": 16,
-      "cities": 9,
-      "per100k": 0.27
+      "venues": 17,
+      "cities": 10,
+      "per100k": 0.28
     },
     {
       "st": "TX",
@@ -169,7 +169,7 @@
     {
       "city": "Tampa",
       "st": "FL",
-      "venues": 16
+      "venues": 17
     },
     {
       "city": "St. Petersburg",
@@ -194,7 +194,7 @@
     {
       "city": "Jacksonville",
       "st": "FL",
-      "venues": 10
+      "venues": 11
     },
     {
       "city": "Orlando",
@@ -388,6 +388,10 @@
         "venues": 1
       },
       {
+        "city": "Grand Junction",
+        "venues": 1
+      },
+      {
         "city": "Greeley",
         "venues": 1
       },
@@ -407,7 +411,7 @@
     "FL": [
       {
         "city": "Tampa",
-        "venues": 16
+        "venues": 17
       },
       {
         "city": "St. Petersburg",
@@ -427,7 +431,7 @@
       },
       {
         "city": "Jacksonville",
-        "venues": 10
+        "venues": 11
       },
       {
         "city": "Orlando",
@@ -470,6 +474,10 @@
         "venues": 6
       },
       {
+        "city": "Boynton Beach",
+        "venues": 5
+      },
+      {
         "city": "Delray Beach",
         "venues": 5
       },
@@ -494,10 +502,6 @@
         "venues": 5
       },
       {
-        "city": "Boynton Beach",
-        "venues": 4
-      },
-      {
         "city": "Dania Beach",
         "venues": 4
       },
@@ -515,6 +519,10 @@
       },
       {
         "city": "Cape Coral",
+        "venues": 3
+      },
+      {
+        "city": "Cocoa",
         "venues": 3
       },
       {
@@ -551,10 +559,6 @@
       },
       {
         "city": "Brandon",
-        "venues": 2
-      },
-      {
-        "city": "Cocoa",
         "venues": 2
       },
       {
@@ -618,6 +622,10 @@
         "venues": 2
       },
       {
+        "city": "Sarasota",
+        "venues": 2
+      },
+      {
         "city": "Winter Park",
         "venues": 2
       },
@@ -671,6 +679,10 @@
       },
       {
         "city": "Kenneth City",
+        "venues": 1
+      },
+      {
+        "city": "Key West",
         "venues": 1
       },
       {
@@ -750,7 +762,7 @@
         "venues": 1
       },
       {
-        "city": "Sarasota",
+        "city": "Royal Palm Beach",
         "venues": 1
       },
       {
@@ -759,6 +771,10 @@
       },
       {
         "city": "Seminole",
+        "venues": 1
+      },
+      {
+        "city": "Tallahassee",
         "venues": 1
       },
       {
@@ -802,12 +818,12 @@
     ],
     "NC": [
       {
-        "city": "Charlotte",
+        "city": "Asheville",
         "venues": 5
       },
       {
-        "city": "Asheville",
-        "venues": 4
+        "city": "Charlotte",
+        "venues": 5
       },
       {
         "city": "Fayetteville",
@@ -822,7 +838,15 @@
         "venues": 1
       },
       {
+        "city": "Carrboro",
+        "venues": 1
+      },
+      {
         "city": "Conover",
+        "venues": 1
+      },
+      {
+        "city": "Durham",
         "venues": 1
       },
       {
@@ -842,7 +866,19 @@
         "venues": 1
       },
       {
+        "city": "Raleigh",
+        "venues": 1
+      },
+      {
+        "city": "Sanford",
+        "venues": 1
+      },
+      {
         "city": "Weaverville",
+        "venues": 1
+      },
+      {
+        "city": "Winston-Salem",
         "venues": 1
       }
     ],
